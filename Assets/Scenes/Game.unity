@@ -1249,7 +1249,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ReferenceResolution: {x: 1080, y: 1920}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
@@ -1296,10 +1296,10 @@ RectTransform:
   - {fileID: 1135386771}
   - {fileID: 963325533}
   - {fileID: 787142964}
-  - {fileID: 1365817685}
   - {fileID: 1267038402}
-  - {fileID: 2145310355}
   - {fileID: 2123566100}
+  - {fileID: 2145310355}
+  - {fileID: 1365817685}
   - {fileID: 1229454115}
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -1429,7 +1429,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1184155090}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1585,7 +1585,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1184155090}
-  m_RootOrder: 6
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1365817686
 SpriteRenderer:
@@ -1753,7 +1753,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1184155090}
-  m_RootOrder: 9
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
@@ -1823,7 +1823,7 @@ GameObject:
   - component: {fileID: 2145310355}
   - component: {fileID: 2145310356}
   m_Layer: 0
-  m_Name: HikayeKart
+  m_Name: ArkaCircle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

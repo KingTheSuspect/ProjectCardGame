@@ -1307,11 +1307,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6742336281668762753, guid: cbf1ed9fcec4a8a4e832bb18d01465a2, type: 3}
       propertyPath: rotateDegreeLeft
-      value: 555
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 6742336281668762753, guid: cbf1ed9fcec4a8a4e832bb18d01465a2, type: 3}
       propertyPath: rotateDegreeRight
-      value: -555
+      value: -35
       objectReference: {fileID: 0}
     - target: {fileID: 7516206087473146185, guid: cbf1ed9fcec4a8a4e832bb18d01465a2, type: 3}
       propertyPath: m_text

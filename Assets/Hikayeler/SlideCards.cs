@@ -71,18 +71,20 @@ public class SlideCards : MonoBehaviour
             {
                 // Rotate card according to center and update card position
 
+                float clamp = Mathf.Clamp(0f, rotateDegreeRight, rotateDegreeLeft);
                 if (card.anchoredPosition.x >= 0 && card.anchoredPosition.x <= 0)
                 {
-                    rb.rotation = 0f * Time.deltaTime;
+                    card.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0f, 0f, 0f), (rotateSpeed * 2) * Time.deltaTime);
                 }
+                
 
-                else if (card.anchoredPosition.x < 0)
+                else if (card.anchoredPosition.x < -10)
                 {
-                    rb.rotation =  rotateDegreeLeft * Time.fixedDeltaTime;
+                    card.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0f, 0f, rotateDegreeLeft), rotateSpeed * Time.deltaTime);
                 }
-                else if (card.anchoredPosition.x > 0)
+                else if (card.anchoredPosition.x > 10)
                 {
-                    rb.rotation = rotateDegreeRight * Time.fixedDeltaTime;
+                    card.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0f, 0f, rotateDegreeRight), rotateSpeed * Time.deltaTime);
                 }
 
                 // Inform the Player to the choose

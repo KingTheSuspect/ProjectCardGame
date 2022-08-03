@@ -17,6 +17,8 @@ public class SlideCards : MonoBehaviour
     private Story story;
     bool isInLeft;
     bool isInRight;
+    bool chooseLeft;
+    bool chooseRight;
     bool DisableTouch;
 
     RectTransform card;
@@ -45,7 +47,7 @@ public class SlideCards : MonoBehaviour
     }
 
 
-    private void Update()
+    void Update()
     {
         HandleDrag();
     }
@@ -69,7 +71,7 @@ public class SlideCards : MonoBehaviour
             {
                 // Rotate card according to center and update card position
 
-                if (card.anchoredPosition.x >= -300 && card.anchoredPosition.x <= 300)
+                if (card.anchoredPosition.x >= 0 && card.anchoredPosition.x <= 0)
                 {
                     this.transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0f, 0f, 0f), (rotateSpeed * 2) * Time.deltaTime);
                 }
@@ -155,13 +157,13 @@ public class SlideCards : MonoBehaviour
 
                 else
                 {
-                    if (!isInLeft && !isInRight)
+                    if (!chooseLeft && !chooseRight)
                     {
 
                         transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, 0f));
                         card.anchoredPosition = new Vector2(0f, 0f) / canvas.scaleFactor;
                     }
-                    else if (isInLeft)
+                    else if (chooseLeft)
                     {
                         transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, 0f));
                         card.anchoredPosition = new Vector2(0f, 0f) / canvas.scaleFactor;
@@ -169,7 +171,7 @@ public class SlideCards : MonoBehaviour
                         story.ChooseChoiceIndex(0);
                         StartCoroutine(TypeMainStory(story.Continue()));
                     }
-                    else if (isInRight)
+                    else if (chooseRight)
                     {
                         transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, 0f));
                         card.anchoredPosition = new Vector2(0f, 0f) / canvas.scaleFactor;
@@ -223,12 +225,19 @@ public class SlideCards : MonoBehaviour
     {
         if (collision.CompareTag("LeftChoice")) isInLeft = true;
         else if (collision.CompareTag("RightChoice")) isInRight = true;
+
+        if (collision.CompareTag("ChooseLeft")) chooseLeft = true;
+        else if (collision.CompareTag("ChooseRight")) chooseRight = false;
+
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         isInLeft = false;
         isInRight = false;
+
+        chooseLeft = false;
+        chooseRight = false;
     }
 
 

@@ -21,7 +21,8 @@ public class SlideCards : MonoBehaviour
 
     RectTransform card;
     GameObject cardPrefab;
-    Rigidbody2D rb;
+    RectTransform leftchoiceCollider;
+    RectTransform rightchoiceCollider;
     Canvas canvas;
     TextMeshProUGUI mainStory;
     TextMeshProUGUI choices;
@@ -30,7 +31,6 @@ public class SlideCards : MonoBehaviour
     {
         canvas = transform.root.GetComponent<Canvas>();
         card = container.transform.GetChild(0).GetComponent<RectTransform>();
-        rb = GetComponent<Rigidbody2D>();
         cardPrefab = Resources.Load("Kart") as GameObject;
 
         mainStory = container.transform.GetChild(0).GetChild(0).GetComponent<TextMeshProUGUI>();
@@ -71,16 +71,17 @@ public class SlideCards : MonoBehaviour
 
                 if (card.anchoredPosition.x >= -300 && card.anchoredPosition.x <= 300)
                 {
-                    rb.rotation = 0f * Time.deltaTime;
+                    this.transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0f, 0f, 0f), (rotateSpeed * 2) * Time.deltaTime);
                 }
 
-                else if (card.anchoredPosition.x < 0)
+
+                else if (card.anchoredPosition.x < -10)
                 {
-                    rb.rotation =  rotateDegreeLeft * Time.fixedDeltaTime;
+                    this.transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0f, 0f, rotateDegreeLeft), rotateSpeed * Time.deltaTime);
                 }
-                else if (card.anchoredPosition.x > 0)
+                else if (card.anchoredPosition.x > 10)
                 {
-                    rb.rotation = rotateDegreeRight * Time.fixedDeltaTime;
+                    this.transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0f, 0f, rotateDegreeRight), rotateSpeed * Time.deltaTime);
                 }
 
                 // Inform the Player to the choose

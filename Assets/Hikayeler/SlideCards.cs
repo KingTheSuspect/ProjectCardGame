@@ -164,7 +164,7 @@ public class SlideCards : MonoBehaviour
                         transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, 0f));
                         card.anchoredPosition = new Vector2(0f, 0f) / canvas.scaleFactor;
                     }
-                    else if (chooseLeft)
+                    if (chooseLeft)
                     {
                         transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, 0f));
                         card.anchoredPosition = new Vector2(0f, 0f) / canvas.scaleFactor;
@@ -172,7 +172,7 @@ public class SlideCards : MonoBehaviour
                         story.ChooseChoiceIndex(0);
                         StartCoroutine(TypeMainStory(story.Continue()));
                     }
-                    else if (chooseRight)
+                    if (chooseRight)
                     {
                         transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, 0f));
                         card.anchoredPosition = new Vector2(0f, 0f) / canvas.scaleFactor;
@@ -228,7 +228,7 @@ public class SlideCards : MonoBehaviour
         else if (collision.CompareTag("RightChoice")) isInRight = true;
 
         if (collision.CompareTag("ChooseLeft")) chooseLeft = true;
-        else if (collision.CompareTag("ChooseRight")) chooseRight = false;
+        else if (collision.CompareTag("ChooseRight")) chooseRight = true;
 
     }
 

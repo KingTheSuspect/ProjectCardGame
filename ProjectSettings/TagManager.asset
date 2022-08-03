@@ -7,8 +7,6 @@ TagManager:
   - MainCard
   - LeftChoice
   - RightChoice
-  - ChooseLeft
-  - ChooseRight
   layers:
   - Default
   - TransparentFX

@@ -17,8 +17,6 @@ public class SlideCards : MonoBehaviour
     private Story story;
     bool isInLeft;
     bool isInRight;
-    bool chooseLeft;
-    bool chooseRight;
     bool DisableTouch;
 
     RectTransform card;
@@ -47,7 +45,7 @@ public class SlideCards : MonoBehaviour
     }
 
 
-    void Update()
+    private void Update()
     {
         HandleDrag();
     }
@@ -71,7 +69,7 @@ public class SlideCards : MonoBehaviour
             {
                 // Rotate card according to center and update card position
 
-                if (card.anchoredPosition.x >= 0 && card.anchoredPosition.x <= 0)
+                if (card.anchoredPosition.x >= -300 && card.anchoredPosition.x <= 300)
                 {
                     rb.rotation = 0f * Time.deltaTime;
                 }
@@ -156,13 +154,13 @@ public class SlideCards : MonoBehaviour
 
                 else
                 {
-                    if (!chooseLeft && !chooseRight)
+                    if (!isInLeft && !isInRight)
                     {
 
                         transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, 0f));
                         card.anchoredPosition = new Vector2(0f, 0f) / canvas.scaleFactor;
                     }
-                    else if (chooseLeft)
+                    else if (isInLeft)
                     {
                         transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, 0f));
                         card.anchoredPosition = new Vector2(0f, 0f) / canvas.scaleFactor;
@@ -170,7 +168,7 @@ public class SlideCards : MonoBehaviour
                         story.ChooseChoiceIndex(0);
                         StartCoroutine(TypeMainStory(story.Continue()));
                     }
-                    else if (chooseRight)
+                    else if (isInRight)
                     {
                         transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, 0f));
                         card.anchoredPosition = new Vector2(0f, 0f) / canvas.scaleFactor;
@@ -224,19 +222,12 @@ public class SlideCards : MonoBehaviour
     {
         if (collision.CompareTag("LeftChoice")) isInLeft = true;
         else if (collision.CompareTag("RightChoice")) isInRight = true;
-
-        if (collision.CompareTag("ChooseLeft")) chooseLeft = true;
-        else if (collision.CompareTag("ChooseRight")) chooseRight = false;
-
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         isInLeft = false;
         isInRight = false;
-
-        chooseLeft = false;
-        chooseRight = false;
     }
 
 

@@ -139,14 +139,14 @@ public class SlideCards : MonoBehaviour
                     {
                         transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, 0f));
                         card.anchoredPosition = new Vector2(0f, 0f) / canvas.scaleFactor;
-                        if (isInLeft && story.currentChoices.Count == 0)
+                        if (chooseLeft && isInLeft && story.currentChoices.Count == 0)
                         {
                             transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, 0f));
                             card.anchoredPosition = new Vector2(0f, 0f) / canvas.scaleFactor;
                             choices.text = "";
                             StartCoroutine(TypeMainStory(story.Continue()));
                         }
-                        else if (isInRight && story.currentChoices.Count == 0)
+                        else if (chooseRight && isInRight && story.currentChoices.Count == 0)
                         {
                             transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, 0f));
                             card.anchoredPosition = new Vector2(0f, 0f) / canvas.scaleFactor;

@@ -1299,7 +1299,7 @@ PrefabInstance:
       objectReference: {fileID: 2120269917}
     - target: {fileID: 6742336281668762753, guid: cbf1ed9fcec4a8a4e832bb18d01465a2, type: 3}
       propertyPath: rotateSpeed
-      value: 33
+      value: -44
       objectReference: {fileID: 0}
     - target: {fileID: 6742336281668762753, guid: cbf1ed9fcec4a8a4e832bb18d01465a2, type: 3}
       propertyPath: writingSpeed
@@ -1312,6 +1312,10 @@ PrefabInstance:
     - target: {fileID: 6742336281668762753, guid: cbf1ed9fcec4a8a4e832bb18d01465a2, type: 3}
       propertyPath: rotateDegreeRight
       value: -35
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742336281668762753, guid: cbf1ed9fcec4a8a4e832bb18d01465a2, type: 3}
+      propertyPath: touch_movement_sensivity
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7516206087473146185, guid: cbf1ed9fcec4a8a4e832bb18d01465a2, type: 3}
       propertyPath: m_text

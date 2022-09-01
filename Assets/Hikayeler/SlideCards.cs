@@ -6,6 +6,15 @@ using System.Collections.Generic;
 
 public class SlideCards : MonoBehaviour
 {
+
+
+    private float move_aim_x = 0;
+    [SerializeField] float touch_movement_sensivity;
+    float range = 1;
+    Vector3 beganmove;
+
+
+
     public float writingSpeed;
     public float rotateDegreeLeft;
     public float rotateDegreeRight;
@@ -63,29 +72,30 @@ public class SlideCards : MonoBehaviour
             // Touch began
             if (touch.phase == TouchPhase.Began)
             {
+                beganmove = touch.position;
                 
             }
 
             // Touch Moved
             else if (touch.phase == TouchPhase.Moved)
             {
-                // Rotate card according to center and update card position
 
-                float clamp = Mathf.Clamp(0f, rotateDegreeRight, rotateDegreeLeft);
-                if (card.anchoredPosition.x >= 0 && card.anchoredPosition.x <= 0)
-                {
-                    card.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0f, 0f, 0f), (rotateSpeed * 2) * Time.deltaTime);
-                }
-                
 
-                else if (card.anchoredPosition.x < -10)
-                {
-                    card.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0f, 0f, rotateDegreeLeft), rotateSpeed * Time.deltaTime);
-                }
-                else if (card.anchoredPosition.x > 10)
-                {
-                    card.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0f, 0f, rotateDegreeRight), rotateSpeed * Time.deltaTime);
-                }
+
+/*                float rotationZero = Mathf.Clamp(touch.deltaPosition.x, 1f, -1f);
+                transform.Rotate(0f, 0f, rotationZero * rotateSpeed, Space.World);*/
+
+                float currentPosition = touch.deltaPosition.x / Screen.width;
+
+                move_aim_x += touch_movement_sensivity * currentPosition;
+
+                move_aim_x = Mathf.Clamp(move_aim_x, -range / 2f, range / 2f);
+
+
+                transform.rotation = Quaternion.Euler(0f, 0f, move_aim_x * rotateSpeed);
+
+
+
 
                 // Inform the Player to the choose
                 card.anchoredPosition += new Vector2(touch.deltaPosition.x, 0f) / canvas.scaleFactor;

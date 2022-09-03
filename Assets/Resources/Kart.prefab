@@ -274,8 +274,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81dc44befd202a64595ba36a7b4e21a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  touch_movement_sensivity: 0
   writingSpeed: 0
   rotateDegreeLeft: 0
   rotateDegreeRight: 0
   rotateSpeed: 0
-  container: {fileID: 0}
+  text: {fileID: 0}

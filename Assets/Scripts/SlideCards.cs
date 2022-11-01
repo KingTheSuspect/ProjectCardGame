@@ -53,7 +53,7 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
         if (DisableTouch)
             return;
 
-        pointerEventData.delta = new Vector2(pointerEventData.delta.x, 0);
+        //pointerEventData.delta = new Vector2(pointerEventData.delta.x, 0);
         float currentPosition = pointerEventData.delta.x / Screen.width;
         move_aim_x += touch_movement_sensivity * currentPosition;
         move_aim_x = Mathf.Clamp(move_aim_x, -range / 2f, range / 2f);
@@ -88,7 +88,7 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
         if (DisableTouch)
             return;
 
-        ResetCardCanvas();
+
         choices.text = "";
         move_aim_x = 0;
 
@@ -120,6 +120,7 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
                 StartCoroutine(TypeMainStory(story.Continue()));
             }
         }
+        ResetCardCanvas();
     }
 
     private void ResetCardCanvas()

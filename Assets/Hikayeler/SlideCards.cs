@@ -1,24 +1,17 @@
-using UnityEngine;
 using Ink.Runtime;
-using TMPro;
 using System.Collections;
-using System.Collections.Generic;
+using TMPro;
+using UnityEngine;
 using UnityEngine.EventSystems;
-using Unity.VisualScripting;
-using UnityEditor.UIElements;
 
 public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler
 {
-
-
     private float move_aim_x = 0;
-    [SerializeField] float touch_movement_sensivity;
-    float range = 1;
-    Vector3 beganmove;
+    [SerializeField] private float touch_movement_sensivity;
+    private float range = 1;
+    private Vector3 beganmove;
 
-
-
-    public float writingSpeed;
+    public float writingDelay;
     public float rotateDegreeLeft;
     public float rotateDegreeRight;
     public float rotateSpeed;
@@ -26,19 +19,20 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
     public TextAsset text;
 
     private Story story;
-    bool isInLeft;
-    bool isInRight;
-    bool chooseLeft;
-    bool chooseRight;
-    bool DisableTouch;
+    private bool isInLeft;
+    private bool isInRight;
+    private bool chooseLeft;
+    private bool chooseRight;
+    private bool DisableTouch;
 
-    RectTransform card;
-    GameObject cardPrefab;
-    Rigidbody2D rb;
-    Canvas canvas;
-    TextMeshProUGUI mainStory;
-    TextMeshProUGUI choices;
-    TextAsset storydata;
+    private RectTransform card;
+    private GameObject cardPrefab;
+    private Rigidbody2D rb;
+    private Canvas canvas;
+    private TextMeshProUGUI mainStory;
+    private TextMeshProUGUI choices;
+    private TextAsset storydata;
+
     private void Start()
     {
         canvas = transform.root.GetComponent<Canvas>();
@@ -49,130 +43,92 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
         mainStory = transform.GetChild(0).GetComponent<TextMeshProUGUI>();
         choices = GameObject.Find("Choices").GetComponent<TextMeshProUGUI>();
 
-
-
         story = new Story(text.text);
-
 
         StartCoroutine(TypeMainStory(story.Continue()));
     }
 
-
     public void OnDrag(PointerEventData pointerEventData)
     {
+        if (DisableTouch)
+            return;
 
-
+        pointerEventData.delta = new Vector2(pointerEventData.delta.x, 0);
         float currentPosition = pointerEventData.delta.x / Screen.width;
-
         move_aim_x += touch_movement_sensivity * currentPosition;
         move_aim_x = Mathf.Clamp(move_aim_x, -range / 2f, range / 2f);
 
         transform.rotation = Quaternion.Euler(0f, 0f, move_aim_x * rotateSpeed);
 
-
         // Inform the Player to the choose
         card.anchoredPosition += pointerEventData.delta / canvas.scaleFactor;
 
-
-
-        // Show choice text 0 when holding card in the left
-        if (isInLeft && story.currentChoices.Count > 0)
+        if (story.currentChoices.Count > 0)
         {
-            choices.text = story.currentChoices[0].text;
+            if (isInLeft)
+                choices.text = story.currentChoices[0].text;
+            else if (isInRight)
+                choices.text = story.currentChoices[1].text;
         }
-
-        // Show choice text 1 when holding card in the right
-        else if (isInRight && story.currentChoices.Count > 0)
+        else if (story.canContinue && story.currentChoices.Count == 0)
         {
-            choices.text = story.currentChoices[1].text;
-        }
-        else
-        {
-            choices.text = "";
-        }
-
-
-
-        if (story.canContinue)
-        {
-            if (DisableTouch == false)
-            {
-                if (isInLeft && story.currentChoices.Count == 0)
-                {
-                    choices.text = "Continue";
-                }
-                else if (isInRight && story.currentChoices.Count == 0)
-                {
-                    choices.text = "Continue";
-                }
-            }
+            if (isInLeft)
+                choices.text = "Hayýr";
+            else if (isInRight)
+                choices.text = "Evet";
         }
     }
 
     public void OnBeginDrag(PointerEventData pointerEventData)
     {
-
     }
 
     public void OnEndDrag(PointerEventData pointerEventData)
     {
+        if (DisableTouch)
+            return;
+
+        ResetCardCanvas();
+        choices.text = "";
+        move_aim_x = 0;
+
+        Debug.Log("choose left:" + chooseLeft);
+        Debug.Log("choose right:" + chooseRight);
+        Debug.Log("story can countinue:" + story.canContinue);
+
         if (story.canContinue)
         {
-            if (DisableTouch == false)
+            if (chooseLeft && isInLeft && story.currentChoices.Count == 0)
             {
-                transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, 0f));
-                card.anchoredPosition = new Vector2(0f, 0f) / canvas.scaleFactor;
-                if (chooseLeft && isInLeft && story.currentChoices.Count == 0)
-                {
-                    transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, 0f));
-                    card.anchoredPosition = new Vector2(0f, 0f) / canvas.scaleFactor;
-                    choices.text = "";
-                    StartCoroutine(TypeMainStory(story.Continue()));
-                }
-                else if (chooseRight && isInRight && story.currentChoices.Count == 0)
-                {
-                    transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, 0f));
-                    card.anchoredPosition = new Vector2(0f, 0f) / canvas.scaleFactor;
-                    choices.text = "";
-                    StartCoroutine(TypeMainStory(story.Continue()));
-                }
+                StartCoroutine(TypeMainStory(story.Continue()));
+            }
+            else if (chooseRight && isInRight && story.currentChoices.Count == 0)
+            {
+                StartCoroutine(TypeMainStory(story.Continue()));
             }
         }
-
         else
         {
-            if (!chooseLeft && !chooseRight)
-            {
-
-                transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, 0f));
-                card.anchoredPosition = new Vector2(0f, 0f) / canvas.scaleFactor;
-            }
             if (chooseLeft)
             {
-                transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, 0f));
-                card.anchoredPosition = new Vector2(0f, 0f) / canvas.scaleFactor;
-                choices.text = "";
                 story.ChooseChoiceIndex(0);
                 StartCoroutine(TypeMainStory(story.Continue()));
             }
-            if (chooseRight)
+            else if (chooseRight)
             {
-                transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, 0f));
-                card.anchoredPosition = new Vector2(0f, 0f) / canvas.scaleFactor;
-                choices.text = "";
                 story.ChooseChoiceIndex(1);
                 StartCoroutine(TypeMainStory(story.Continue()));
             }
         }
     }
 
+    private void ResetCardCanvas()
+    {
+        transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, 0f));
+        card.anchoredPosition = new Vector2(0f, 0f) / canvas.scaleFactor;
+    }
 
-
-
-
-
-
-    void HandleStory()
+    private void HandleStory()
     {
         /*GameObject card = Instantiate(cardPrefab, cardPrefab.transform.position, cardPrefab.transform.rotation);
         GameObject card2 = Instantiate(cardPrefab, cardPrefab.transform.position, cardPrefab.transform.rotation);
@@ -182,30 +138,19 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
 
         card.transform.SetParent(container.transform, false);
         card2.transform.SetParent(container.transform, false);*/
-
     }
 
-
-    IEnumerator TypeMainStory(string sentence)
+    private IEnumerator TypeMainStory(string sentence)
     {
         DisableTouch = true;
-        if (DisableTouch)
+        mainStory.text = "";
+        foreach (char letter in sentence.ToCharArray())
         {
-            mainStory.text = "";
-            foreach (char letter in sentence.ToCharArray())
-            {
-                mainStory.text += letter;
-                yield return new WaitForSeconds(writingSpeed);
-            }
-            mainStory.text += "...";
-
+            mainStory.text += letter;
+            yield return new WaitForSeconds(writingDelay);
         }
         DisableTouch = false;
     }
-
-
-
-
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -214,17 +159,14 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
 
         if (collision.CompareTag("ChooseLeft")) chooseLeft = true;
         else if (collision.CompareTag("ChooseRight")) chooseRight = true;
-
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        isInLeft = false;
-        isInRight = false;
+        if (collision.CompareTag("LeftChoice")) isInLeft = false;
+        else if (collision.CompareTag("RightChoice")) isInRight = false;
 
-        chooseLeft = false;
-        chooseRight = false;
+        if (collision.CompareTag("ChooseLeft")) chooseLeft = false;
+        else if (collision.CompareTag("ChooseRight")) chooseRight = false;
     }
-
-
 }

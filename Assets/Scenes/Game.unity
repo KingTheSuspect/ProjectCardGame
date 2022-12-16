@@ -1222,6 +1222,10 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6742336281668762753, guid: cbf1ed9fcec4a8a4e832bb18d01465a2, type: 3}
+      propertyPath: events
+      value: 
+      objectReference: {fileID: 4900000, guid: 2c5573158fd1abd43b08433069537fd4, type: 3}
+    - target: {fileID: 6742336281668762753, guid: cbf1ed9fcec4a8a4e832bb18d01465a2, type: 3}
       propertyPath: writingDelay
       value: 0.015
       objectReference: {fileID: 0}
@@ -1229,6 +1233,10 @@ PrefabInstance:
       propertyPath: writingSpeed
       value: 0.05
       objectReference: {fileID: 0}
+    - target: {fileID: 6742336281668762753, guid: cbf1ed9fcec4a8a4e832bb18d01465a2, type: 3}
+      propertyPath: gameManagerObject
+      value: 
+      objectReference: {fileID: 1084606804}
     - target: {fileID: 7516206087473146185, guid: cbf1ed9fcec4a8a4e832bb18d01465a2, type: 3}
       propertyPath: m_fontSize
       value: 60
@@ -1696,7 +1704,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit

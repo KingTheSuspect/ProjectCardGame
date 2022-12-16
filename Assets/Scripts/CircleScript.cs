@@ -16,24 +16,26 @@ public class CircleScript : MonoBehaviour
 
     void Start()
     {
+        healtcount = 5;
+        happycount = 5;
         healtbar.fillAmount = 0.5f;
         happybar.fillAmount = 0.5f;
     }
     //Animasyon eklenecek
-    public void HealtAdd()
+    public void HealtAdd(int healthAmount)
     {
-        healtcount++;
-        healtbar.fillAmount += 0.1f;
+        healtcount+=healthAmount;
+        healtbar.fillAmount += healthAmount / 10;
     }
     public void HealtRemove()
     {
         healtcount--;
         healtbar.fillAmount += 0.1f;
     }
-    public void HappyAdd()
+    public void HappyAdd(int happinessAmount)
     {
-        happycount++;
-        happybar.fillAmount += 0.1f;
+        happycount+=happinessAmount;
+        happybar.fillAmount += happinessAmount/10;
     }
     public void HappyRemove()
     {

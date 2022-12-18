@@ -1,4 +1,7 @@
 {
-    "0": ["Hello!","Hi!","Merhaba!",[5,-2],[-5,2]],
-    "1": ["Trying","What are you trying?","Well.",[5,-2],[-5,2]]
+    "0": ["Bir grup isyancı, krallığın sınırında bir kaleye el koymuş ve bölgenin istikrarını tehdit etmektedir.","Kaleyi geri almak için bir askeri kampanya başlatın.","İsyancılarla barışçıl bir çözüm için görüşmeye çalışın.",[8,-2],[-7,4]],
+    "1": ["Krallıkta yeni bir hastalık ortaya çıktı ve bilinen bir çare yok.","Tüm enfekte olan kişileri izole edin ve bir çözüm bulmak için araştırma yapın.","Hastalığı görmezden gelin ve kendiliğinden gitmesini umduğunuzu söyleyin.",[-9,-4],[5,2]],
+    "2": ["Krallıkta ciddi bir kuraklık patlak vermiş ve ürün yetersizliği ile yiyecek sıkıntısı yaratmıştır.","Herkesin yeterince yemesi için sıkı tasarruf önlemleri uygulayın.","Kıtaya yiyecek satın alın ve sıkıntıları azaltın.",[6,-1],[5,5]],
+    "3": ["Güçlü birkaç noble, krallığın bir komşu krallığa savaş ilan etmesi için baskı yapmaktadır.","Savaş ilan edin ve sonuçları için risk alın.","Savaşa gitmeyi reddedin ve nobleleri rahatsız edecek riski alın.",[11,-7],[-10,5]],
+    "4": ["Yüksek vergilerden şikayetçi olan bir grup köylü, yardım talep etmektedir.","Krallığın finansal istikrarını tehlikeye düşürecek bile olsa, vergileri azaltın.","Köylülerin fikirlerini önemsemeyip vergileri düşürmeyi reddedin",[8,8],[-3,-14]]
 }

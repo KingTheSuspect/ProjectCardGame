@@ -21,7 +21,7 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
     public float rotateDegreeLeft;
     public float rotateDegreeRight;
     public float rotateSpeed;
-    public float randomValue;
+    //public float randomValue;
     public float index;
 
     public TextAsset text;
@@ -49,6 +49,8 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
 
     private void Start()
     {
+        eventList = JObject.Parse(events.text);
+        jObj = (JObject)JsonConvert.DeserializeObject(events.text);
         circleScript = gameManagerObject.GetComponent<CircleScript>();
         canvas = transform.root.GetComponent<Canvas>();
         card = GetComponent<RectTransform>();
@@ -60,7 +62,9 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
 
         story = new Story(text.text);
 
-        StartCoroutine(TypeMainStory(story.Continue()));
+        index = Random.value;
+
+        StartCoroutine(TypeMainStory(eventList[((int)(index * jObj.Count)).ToString()][0].ToString()));
     }
 
     public void OnDrag(PointerEventData pointerEventData)
@@ -78,30 +82,10 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
         // Inform the Player to the choose
         card.anchoredPosition += pointerEventData.delta / canvas.scaleFactor;
 
-        if (story.canContinue && randomValue > 0.6f)
-        {
-            if (isInLeft)
-                choices.text = eventList[((int)(index * jObj.Count)).ToString()][1].ToString();
-            else if (isInRight)
-                choices.text = eventList[((int)(index * jObj.Count)).ToString()][2].ToString();
-        }
-        else
-        {
-            if (story.currentChoices.Count > 0)
-            {
-                if (isInLeft)
-                    choices.text = story.currentChoices[0].text;
-                else if (isInRight)
-                    choices.text = story.currentChoices[1].text;
-            }
-            else if (story.canContinue && story.currentChoices.Count == 0)
-            {
-                if (isInLeft)
-                    choices.text = "Hayýr";
-                else if (isInRight)
-                    choices.text = "Evet";
-            }
-        }
+        if (isInLeft)
+            choices.text = eventList[((int)(index * jObj.Count)).ToString()][1].ToString();
+        else if (isInRight)
+            choices.text = eventList[((int)(index * jObj.Count)).ToString()][2].ToString();
     }
 
     public void OnBeginDrag(PointerEventData pointerEventData)
@@ -120,90 +104,22 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
         Debug.Log("choose right:" + chooseRight);
         Debug.Log("story can countinue:" + story.canContinue);
 
-        if (story.canContinue && randomValue > 0.6f)
-        {
             if (chooseLeft && isInLeft)
             {
                 circleScript.HealtAdd((int)(eventList[((int)(index * jObj.Count)).ToString()][3][0]));
                 circleScript.HappyAdd((int)(eventList[((int)(index * jObj.Count)).ToString()][3][1]));
-                randomValue = Random.value;
-                if (randomValue > 0.6f)
-                {
-                    index = Random.value;
-                    eventList = JObject.Parse(events.text);
-                    jObj = (JObject)JsonConvert.DeserializeObject(events.text);
-                    StartCoroutine(TypeMainStory(eventList[((int)(index * jObj.Count)).ToString()][0].ToString()));
-                }
-                else
-                {
-                    StartCoroutine(TypeMainStory(story.Continue()));
-                }
+
+                index = Random.value;
+
+                StartCoroutine(TypeMainStory(eventList[((int)(index * jObj.Count)).ToString()][0].ToString()));
             }
             else if (chooseRight && isInRight)
             {
                 circleScript.HealtAdd((int)(eventList[((int)(index * jObj.Count)).ToString()][4][0]));
                 circleScript.HappyAdd((int)(eventList[((int)(index * jObj.Count)).ToString()][4][1]));
-                randomValue = Random.value;
-                if (randomValue > 0.6f)
-                {
-                    index = Random.value;
-                    eventList = JObject.Parse(events.text);
-                    jObj = (JObject)JsonConvert.DeserializeObject(events.text);
-                    StartCoroutine(TypeMainStory(eventList[((int)(index * jObj.Count)).ToString()][0].ToString()));
-                }
-                else
-                {
-                    StartCoroutine(TypeMainStory(story.Continue()));
-                }
+                index = Random.value;
+                StartCoroutine(TypeMainStory(eventList[((int)(index * jObj.Count)).ToString()][0].ToString()));
             }
-        }
-        else if (story.canContinue && randomValue<0.6f)
-        {
-            if (chooseLeft && isInLeft && story.currentChoices.Count == 0)
-            {
-                randomValue = Random.value;
-                if (randomValue>0.6f)
-                {
-                    index = Random.value;
-                    eventList = JObject.Parse(events.text);
-                    jObj = (JObject)JsonConvert.DeserializeObject(events.text);
-                    StartCoroutine(TypeMainStory(eventList[((int)(index * jObj.Count)).ToString()][0].ToString()));
-                }
-                else
-                {
-                    StartCoroutine(TypeMainStory(story.Continue()));
-                }
-
-            }
-            else if (chooseRight && isInRight && story.currentChoices.Count == 0)
-            {
-                randomValue = Random.value;
-                if (randomValue>0.6f)
-                {
-                    index = Random.value;
-                    eventList = JObject.Parse(events.text);
-                    jObj = (JObject)JsonConvert.DeserializeObject(events.text);
-                    StartCoroutine(TypeMainStory(eventList[((int)(index * jObj.Count)).ToString()][0].ToString()));
-                }
-                else
-                {
-                    StartCoroutine(TypeMainStory(story.Continue()));
-                }
-            }
-        }
-        else
-        {
-            if (chooseLeft)
-            {
-                story.ChooseChoiceIndex(0);
-                StartCoroutine(TypeMainStory(story.Continue()));
-            }
-            else if (chooseRight)
-            {
-                story.ChooseChoiceIndex(1);
-                StartCoroutine(TypeMainStory(story.Continue()));
-            }
-        }
 
         Debug.Log("Health: " + CircleScript.healtcount);
         Debug.Log("Happiness: " + CircleScript.happycount);

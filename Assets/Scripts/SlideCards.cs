@@ -3,6 +3,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections;
+using System.Linq;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -21,8 +22,11 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
     public float rotateDegreeLeft;
     public float rotateDegreeRight;
     public float rotateSpeed;
-    //public float randomValue;
+    public int eventLength;
+    public int choice1;
+    public int choice2;
     public float index;
+    public int controlLength;
 
     public TextAsset text;
     public TextAsset events;
@@ -49,6 +53,7 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
 
     private void Start()
     {
+        controlLength = 0;
         eventList = JObject.Parse(events.text);
         jObj = (JObject)JsonConvert.DeserializeObject(events.text);
         circleScript = gameManagerObject.GetComponent<CircleScript>();
@@ -63,8 +68,10 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
         story = new Story(text.text);
 
         index = Random.value;
+        eventLength = eventList[((int)(index * jObj.Count)).ToString()].Count();
 
-        StartCoroutine(TypeMainStory(eventList[((int)(index * jObj.Count)).ToString()][0].ToString()));
+        //StartCoroutine(TypeMainStory(eventList[((int)(index * jObj.Count)).ToString()][0].ToString()));
+        HandleStory();
     }
 
     public void OnDrag(PointerEventData pointerEventData)
@@ -83,9 +90,9 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
         card.anchoredPosition += pointerEventData.delta / canvas.scaleFactor;
 
         if (isInLeft)
-            choices.text = eventList[((int)(index * jObj.Count)).ToString()][1].ToString();
+            choices.text = eventList[((int)(index * jObj.Count)).ToString()][choice1].ToString();
         else if (isInRight)
-            choices.text = eventList[((int)(index * jObj.Count)).ToString()][2].ToString();
+            choices.text = eventList[((int)(index * jObj.Count)).ToString()][choice2].ToString();
     }
 
     public void OnBeginDrag(PointerEventData pointerEventData)
@@ -100,26 +107,31 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
         choices.text = "";
         move_aim_x = 0;
 
-        Debug.Log("choose left:" + chooseLeft);
-        Debug.Log("choose right:" + chooseRight);
-        Debug.Log("story can countinue:" + story.canContinue);
+        //Debug.Log("choose left:" + chooseLeft);
+        //Debug.Log("choose right:" + chooseRight);
+        //Debug.Log("story can countinue:" + story.canContinue);
 
-            if (chooseLeft && isInLeft)
+        if (chooseLeft && isInLeft)
+        {
+            if (controlLength + 2 == eventLength)
             {
-                circleScript.HealtAdd((int)(eventList[((int)(index * jObj.Count)).ToString()][3][0]));
-                circleScript.HappyAdd((int)(eventList[((int)(index * jObj.Count)).ToString()][3][1]));
-
-                index = Random.value;
-
-                StartCoroutine(TypeMainStory(eventList[((int)(index * jObj.Count)).ToString()][0].ToString()));
+                circleScript.HealtAdd((int)(eventList[((int)(index * jObj.Count)).ToString()][eventLength - 2][0]));
+                circleScript.HappyAdd((int)(eventList[((int)(index * jObj.Count)).ToString()][eventLength - 2][1]));
             }
-            else if (chooseRight && isInRight)
+
+            HandleStory();
+
+        }
+        else if (chooseRight && isInRight)
+        {
+            if (controlLength + 2 == eventLength)
             {
-                circleScript.HealtAdd((int)(eventList[((int)(index * jObj.Count)).ToString()][4][0]));
-                circleScript.HappyAdd((int)(eventList[((int)(index * jObj.Count)).ToString()][4][1]));
-                index = Random.value;
-                StartCoroutine(TypeMainStory(eventList[((int)(index * jObj.Count)).ToString()][0].ToString()));
+                circleScript.HealtAdd((int)(eventList[((int)(index * jObj.Count)).ToString()][eventLength - 1][0]));
+                circleScript.HappyAdd((int)(eventList[((int)(index * jObj.Count)).ToString()][eventLength - 1][1]));
             }
+
+            HandleStory();
+        }
 
         Debug.Log("Health: " + CircleScript.healtcount);
         Debug.Log("Happiness: " + CircleScript.happycount);
@@ -134,14 +146,25 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
 
     private void HandleStory()
     {
-        /*GameObject card = Instantiate(cardPrefab, cardPrefab.transform.position, cardPrefab.transform.rotation);
-        GameObject card2 = Instantiate(cardPrefab, cardPrefab.transform.position, cardPrefab.transform.rotation);
+        if (controlLength < eventList[((int)(index * jObj.Count)).ToString()].Count() - 2)
+        {
+            StartCoroutine(TypeMainStory(eventList[((int)(index * jObj.Count)).ToString()][controlLength].ToString()));
+            choice1 = controlLength + 1;
+            choice2 = controlLength + 2;
+            controlLength += 3;
+        }
+        else
+        {
+            RandomIndex();
+            eventLength = eventList[((int)(index * jObj.Count)).ToString()].Count();
+            controlLength = 0;
+            HandleStory();
+        }
+    }
 
-        card.name = "Kart";
-        card2.name = "Kart 2";
-
-        card.transform.SetParent(container.transform, false);
-        card2.transform.SetParent(container.transform, false);*/
+    private void RandomIndex()
+    {
+        index = Random.value;
     }
 
     private IEnumerator TypeMainStory(string sentence)

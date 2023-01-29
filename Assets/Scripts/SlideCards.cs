@@ -5,6 +5,7 @@ using System;
 using System.Collections;
 using System.Linq;
 using TMPro;
+using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -17,6 +18,9 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
     [SerializeField] private float touch_movement_sensivity;
     private float range = 1;
     private Vector3 beganmove;
+    private float animationDuration = 0.3f;
+    private Vector3 targetPosition;
+    private bool animationControl;
 
     public float writingDelay;
     public float rotateDegreeLeft;
@@ -70,8 +74,20 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
         index = Random.value;
         eventLength = eventList[((int)(index * jObj.Count)).ToString()].Count();
 
-        //StartCoroutine(TypeMainStory(eventList[((int)(index * jObj.Count)).ToString()][0].ToString()));
         HandleStory();
+    }
+
+    private void Update()
+    {
+        gameObject.transform.GetChild(1).GetComponent<TextMeshProUGUI>().alpha = math.abs(gameObject.transform.position.x-297) * 1 / 563f;
+        gameObject.transform.GetChild(2).GetComponent<TextMeshProUGUI>().alpha = math.abs(gameObject.transform.position.x-297) * 1 / 563f;
+
+        if (gameObject.transform.position == targetPosition && animationControl == true)
+        {
+            ResetCardCanvas();
+            HandleStory();
+            animationControl = false;
+        }
     }
 
     public void OnDrag(PointerEventData pointerEventData)
@@ -79,20 +95,24 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
         if (DisableTouch)
             return;
 
-        //pointerEventData.delta = new Vector2(pointerEventData.delta.x, 0);
         float currentPosition = pointerEventData.delta.x / Screen.width;
         move_aim_x += touch_movement_sensivity * currentPosition;
         move_aim_x = Mathf.Clamp(move_aim_x, -range / 2f, range / 2f);
 
         transform.rotation = Quaternion.Euler(0f, 0f, move_aim_x * rotateSpeed);
 
-        // Inform the Player to the choose
         card.anchoredPosition += pointerEventData.delta / canvas.scaleFactor;
 
         if (isInLeft)
-            choices.text = eventList[((int)(index * jObj.Count)).ToString()][choice1].ToString();
+        {
+            gameObject.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = eventList[((int)(index * jObj.Count)).ToString()][choice1].ToString();
+            gameObject.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = "";
+        }
         else if (isInRight)
-            choices.text = eventList[((int)(index * jObj.Count)).ToString()][choice2].ToString();
+        {
+            gameObject.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = eventList[((int)(index * jObj.Count)).ToString()][choice2].ToString();
+            gameObject.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = "";
+        }
     }
 
     public void OnBeginDrag(PointerEventData pointerEventData)
@@ -107,48 +127,63 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
         choices.text = "";
         move_aim_x = 0;
 
-        //Debug.Log("choose left:" + chooseLeft);
-        //Debug.Log("choose right:" + chooseRight);
-        //Debug.Log("story can countinue:" + story.canContinue);
-
         if (chooseLeft && isInLeft)
         {
-            if (controlLength + 2 == eventLength)
+            if (controlLength + 3 == eventLength)
+            {
+                circleScript.HealtAdd((int)(eventList[((int)(index * jObj.Count)).ToString()][eventLength - 3][0]));
+                circleScript.HappyAdd((int)(eventList[((int)(index * jObj.Count)).ToString()][eventLength - 3][1]));
+            }
+
+            CardAnimation();
+
+        }
+        else if (chooseRight && isInRight)
+        {
+            if (controlLength + 3 == eventLength)
             {
                 circleScript.HealtAdd((int)(eventList[((int)(index * jObj.Count)).ToString()][eventLength - 2][0]));
                 circleScript.HappyAdd((int)(eventList[((int)(index * jObj.Count)).ToString()][eventLength - 2][1]));
             }
 
-            HandleStory();
-
+            CardAnimation();
         }
-        else if (chooseRight && isInRight)
+        else
         {
-            if (controlLength + 2 == eventLength)
-            {
-                circleScript.HealtAdd((int)(eventList[((int)(index * jObj.Count)).ToString()][eventLength - 1][0]));
-                circleScript.HappyAdd((int)(eventList[((int)(index * jObj.Count)).ToString()][eventLength - 1][1]));
-            }
-
-            HandleStory();
+            PutBackCard();
         }
 
         Debug.Log("Health: " + CircleScript.healtcount);
         Debug.Log("Happiness: " + CircleScript.happycount);
-        ResetCardCanvas();
     }
 
     private void ResetCardCanvas()
     {
         transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, 0f));
         card.anchoredPosition = new Vector2(0f, 0f) / canvas.scaleFactor;
+        gameObject.transform.position = new Vector3(canvas.transform.localPosition.x, canvas.transform.localPosition.y+1000, 0f);
+        targetPosition = new Vector3(canvas.transform.localPosition.x, canvas.transform.localPosition.y, 0f);
+        LeanTween.move(gameObject, targetPosition, animationDuration).setEaseInOutCubic().setDelay(0.2f);
+    }
+
+    private void PutBackCard()
+    {
+        gameObject.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = "";
+        gameObject.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = "";
+        transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, 0f));
+        card.anchoredPosition = new Vector2(0f, 0f) / canvas.scaleFactor;
     }
 
     private void HandleStory()
     {
-        if (controlLength < eventList[((int)(index * jObj.Count)).ToString()].Count() - 2)
+        if (controlLength < eventList[((int)(index * jObj.Count)).ToString()].Count() - 3)
         {
             StartCoroutine(TypeMainStory(eventList[((int)(index * jObj.Count)).ToString()][controlLength].ToString()));
+            gameObject.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = "";
+            gameObject.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = "";
+            gameObject.transform.GetChild(3).GetComponent<TextMeshProUGUI>().text = (eventList[((int)(index * jObj.Count)).ToString()][eventLength - 1]).ToString();
+            gameObject.GetComponent<Image>().sprite = Resources.Load<Sprite>($"PersonImages/{eventList[((int)(index * jObj.Count)).ToString()][eventLength - 1]}");
+            gameObject.GetComponent<Image>().color = Color.white;
             choice1 = controlLength + 1;
             choice2 = controlLength + 2;
             controlLength += 3;
@@ -160,6 +195,20 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
             controlLength = 0;
             HandleStory();
         }
+    }
+    private void CardAnimation()
+    {
+        if (isInRight && chooseRight)
+        {
+            targetPosition = new Vector3(1202, -500, 0);
+            LeanTween.move(gameObject, targetPosition, animationDuration).setEaseInOutCubic().setDelay(0.1f);
+        }
+        else if (isInLeft && chooseLeft)
+        {
+            targetPosition = new Vector3(-642, -500, 0);
+            LeanTween.move(gameObject, targetPosition, animationDuration).setEaseInOutCubic().setDelay(0.1f);
+        }
+        animationControl = true;
     }
 
     private void RandomIndex()

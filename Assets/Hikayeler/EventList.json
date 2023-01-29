@@ -1,33 +1,38 @@
-{
+ {
     "0": ["Bir grup isyancı, krallığın sınırında bir kaleye el koymuş ve bölgenin istikrarını tehdit etmektedir.",
     "Kaleyi geri almak için bir askeri kampanya başlatın.",
     "İsyancılarla barışçıl bir çözüm için görüşmeye çalışın.",
     [8,-2],
-    [-7,4]],
+    [-7,4],
+    "Köylü"],
 
     "1": ["Krallıkta yeni bir hastalık ortaya çıktı ve bilinen bir çare yok.",
     "Tüm enfekte olan kişileri izole edin ve bir çözüm bulmak için araştırma yapın.",
     "Hastalığı görmezden gelin ve kendiliğinden gitmesini umduğunuzu söyleyin.",
     [-9,-4],
-    [5,2]],
+    [5,2],
+    "Sağlık Bakanı"],
 
     "2": ["Krallıkta ciddi bir kuraklık patlak vermiş ve ürün yetersizliği ile yiyecek sıkıntısı yaratmıştır.",
     "Herkesin yeterince yemesi için sıkı tasarruf önlemleri uygulayın.",
     "Kıtaya yiyecek satın alın ve sıkıntıları azaltın.",
     [6,-1],
-    [5,5]],
+    [5,5],
+    "Sağlık Bakanı"],
 
     "3": ["Güçlü birkaç noble, krallığın bir komşu krallığa savaş ilan etmesi için baskı yapmaktadır.",
     "Savaş ilan edin ve sonuçları için risk alın.",
     "Savaşa gitmeyi reddedin ve nobleleri rahatsız edecek riski alın.",
     [11,-7],
-    [-10,5]],
+    [-10,5],
+    "Köylü"],
 
     "4": ["Yüksek vergilerden şikayetçi olan bir grup köylü, yardım talep etmektedir.",
     "Krallığın finansal istikrarını tehlikeye düşürecek bile olsa, vergileri azaltın.",
     "Köylülerin fikirlerini önemsemeyip vergileri düşürmeyi reddedin",
     [8,8],
-    [-3,-14]],
+    [-3,-14],
+    "General"],
 
     "5": ["Krallıkta bazı yabancı topluluklar çok sorun çıkartmaya başladılar.",
     "Neden bahsediyorsun sen?",
@@ -36,7 +41,8 @@
     "Hemen askeri önlem alın ve yabancılara verilen imkanları kısıtlayın.",
     "Biraz başkalaşmanın kimseye zararı olmaz.",
     [7,-4],
-    [-2,9]],
+    [-2,9],
+    "General"],
 
     "6": ["Şef... Seni bununla rahatsız etmek istemezdim. Belki b-biraz, önemsiz ama, ben...",
     "Söyleyecek misin artık?",
@@ -45,5 +51,6 @@
     "Bu kişileri tespit etmek için birkaç askere görev verelim ve gerekli cezaları kesilsin.",
     "Haklıymışsın bu kadar gereksiz bir sorun olamazdı. Şimdi gidebilirsin.",
     [5,2],
-    [-16,1]]
+    [-16,1],
+    "Köylü"]
 }

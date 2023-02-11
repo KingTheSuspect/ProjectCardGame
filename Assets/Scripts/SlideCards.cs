@@ -21,6 +21,8 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
     private float animationDuration = 0.3f;
     private Vector3 targetPosition;
     private bool animationControl;
+    private float animationLeftTime;
+    private float resetLeftTime;
 
     public float writingDelay;
     public float rotateDegreeLeft;
@@ -79,11 +81,33 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
 
     private void Update()
     {
-        gameObject.transform.GetChild(1).GetComponent<TextMeshProUGUI>().alpha = math.abs(gameObject.transform.position.x-297) * 1 / 563f;
-        gameObject.transform.GetChild(2).GetComponent<TextMeshProUGUI>().alpha = math.abs(gameObject.transform.position.x-297) * 1 / 563f;
+        animationLeftTime -= Time.deltaTime;
+        resetLeftTime -= Time.deltaTime;
 
-        if (gameObject.transform.position == targetPosition && animationControl == true)
+        //Debug.Log(resetLeftTime);
+        Debug.Log(targetPosition.x);
+
+        if (animationControl == true)
         {
+            transform.position += (targetPosition - transform.position).normalized * 3000f * Time.deltaTime;
+        }
+
+        if (resetLeftTime >= 0f)
+        {
+            transform.position += (targetPosition - transform.position).normalized * 3000f * Time.deltaTime;
+        }
+
+        if (targetPosition.x == 297 && targetPosition.y == 282 && math.abs(gameObject.transform.position.x - targetPosition.x) <= 10 && math.abs(gameObject.transform.position.y - targetPosition.y) <= 10)
+        {
+            resetLeftTime = 0f;
+        }
+        //Debug.Log($"X: {gameObject.transform.position.x} \nY: {gameObject.transform.position.y}");
+        gameObject.transform.GetChild(1).GetComponent<TextMeshProUGUI>().alpha = math.abs(gameObject.transform.position.x-297) * 1 / 200f;
+        gameObject.transform.GetChild(2).GetComponent<TextMeshProUGUI>().alpha = math.abs(gameObject.transform.position.x-297) * 1 / 200f;
+
+        if (math.abs(gameObject.transform.position.x - targetPosition.x) <= 100 && math.abs(gameObject.transform.position.y - targetPosition.y) <= 100 && animationLeftTime <=0 && animationControl == true)
+        {
+            Debug.Log("Same Position");
             ResetCardCanvas();
             HandleStory();
             animationControl = false;
@@ -150,6 +174,7 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
         }
         else
         {
+            Debug.Log("PutBack");
             PutBackCard();
         }
 
@@ -159,11 +184,16 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
 
     private void ResetCardCanvas()
     {
+        Debug.Log("ResetCardCanvas");
         transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, 0f));
         card.anchoredPosition = new Vector2(0f, 0f) / canvas.scaleFactor;
-        gameObject.transform.position = new Vector3(canvas.transform.localPosition.x, canvas.transform.localPosition.y+1000, 0f);
+        transform.position = new Vector3(297f, 1000f, 0f);
         targetPosition = new Vector3(canvas.transform.localPosition.x, canvas.transform.localPosition.y, 0f);
-        LeanTween.move(gameObject, targetPosition, animationDuration).setEaseInOutCubic().setDelay(0.2f);
+        resetLeftTime = 5f;
+        //LeanTween.move(gameObject, targetPosition, animationDuration).setEaseInOutCubic().setDelay(0.2f);
+        //transform.position = Vector3.MoveTowards(transform.position, targetPosition, Time.deltaTime);
+        //var normalizeDirection = (targetPosition - transform.position).normalized;
+        //transform.position += normalizeDirection * 5f * Time.deltaTime;
     }
 
     private void PutBackCard()
@@ -198,15 +228,25 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
     }
     private void CardAnimation()
     {
+        animationLeftTime = 0.6f;
+        Debug.Log("CardAnimation");
         if (isInRight && chooseRight)
         {
-            targetPosition = new Vector3(1202, -500, 0);
-            LeanTween.move(gameObject, targetPosition, animationDuration).setEaseInOutCubic().setDelay(0.1f);
+            Debug.Log("RightAnimation");
+            targetPosition = new Vector3(1200f, -500f, 0);
+            //LeanTween.move(gameObject, targetPosition, animationDuration).setEaseInOutCubic().setDelay(0.2f);
+            //transform.position = Vector3.MoveTowards(transform.position, targetPosition, 200f*Time.deltaTime);
+            //var normalizeDirection = (targetPosition - transform.position).normalized;
+            //transform.position += normalizeDirection * 5f * Time.deltaTime;
         }
         else if (isInLeft && chooseLeft)
         {
-            targetPosition = new Vector3(-642, -500, 0);
-            LeanTween.move(gameObject, targetPosition, animationDuration).setEaseInOutCubic().setDelay(0.1f);
+            Debug.Log("LeftAnimation");
+            targetPosition = new Vector3(-640f, -500f, 0);
+            //LeanTween.move(gameObject, targetPosition, animationDuration).setEaseInOutCubic().setDelay(0.2f);
+            //transform.position = Vector3.MoveTowards(transform.position, targetPosition, 200f*Time.deltaTime);
+            //var normalizeDirection = (targetPosition - transform.position).normalized;
+            //transform.position += normalizeDirection * 5f * Time.deltaTime;
         }
         animationControl = true;
     }

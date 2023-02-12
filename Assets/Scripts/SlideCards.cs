@@ -34,7 +34,7 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
     public float index;
     public int controlLength;
 
-    public TextAsset text;
+    //public TextAsset text;
     public TextAsset events;
     public GameObject gameManagerObject;
     public GameObject TopStory;
@@ -73,7 +73,7 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
         mainStory = TopStory.GetComponent<TextMeshProUGUI>();
         choices = GameObject.Find("Choices").GetComponent<TextMeshProUGUI>();
 
-        story = new Story(text.text);
+        //story = new Story(text.text);
 
         index = Random.value;
         eventLength = eventList[((int)(index * jObj.Count)).ToString()].Count();
@@ -85,9 +85,6 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
     {
         animationLeftTime -= Time.deltaTime;
         resetLeftTime -= Time.deltaTime;
-
-        //Debug.Log(resetLeftTime);
-        Debug.Log(targetPosition.x);
 
         if (animationControl == true)
         {

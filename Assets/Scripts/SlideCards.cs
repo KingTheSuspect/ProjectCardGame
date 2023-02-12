@@ -38,6 +38,7 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
     public TextAsset events;
     public GameObject gameManagerObject;
     public GameObject TopStory;
+    public GameObject Stats;
 
     private Story story;
     private bool isInLeft;
@@ -101,8 +102,8 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
             resetLeftTime = 0f;
         }
         //Debug.Log($"X: {gameObject.transform.position.x} \nY: {gameObject.transform.position.y}");
-        gameObject.transform.GetChild(1).GetComponent<TextMeshProUGUI>().alpha = math.abs(gameObject.transform.position.x-297) * 1 / 200f;
-        gameObject.transform.GetChild(2).GetComponent<TextMeshProUGUI>().alpha = math.abs(gameObject.transform.position.x-297) * 1 / 200f;
+        gameObject.transform.GetChild(1).GetComponent<TextMeshProUGUI>().alpha = math.abs(gameObject.transform.position.x-297) * 1 / 100f;
+        gameObject.transform.GetChild(2).GetComponent<TextMeshProUGUI>().alpha = math.abs(gameObject.transform.position.x-297) * 1 / 100f;
 
         if (math.abs(gameObject.transform.position.x - targetPosition.x) <= 100 && math.abs(gameObject.transform.position.y - targetPosition.y) <= 100 && animationLeftTime <=0 && animationControl == true)
         {
@@ -154,8 +155,10 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
         {
             if (controlLength + 3 == eventLength)
             {
-                circleScript.HealtAdd((int)(eventList[((int)(index * jObj.Count)).ToString()][eventLength - 3][0]));
+                circleScript.HealthAdd((int)(eventList[((int)(index * jObj.Count)).ToString()][eventLength - 3][0]));
                 circleScript.HappyAdd((int)(eventList[((int)(index * jObj.Count)).ToString()][eventLength - 3][1]));
+                circleScript.MoneyAdd((int)(eventList[((int)(index * jObj.Count)).ToString()][eventLength - 3][2]));
+                circleScript.SociabilityAdd((int)(eventList[((int)(index * jObj.Count)).ToString()][eventLength - 3][3]));
             }
 
             CardAnimation();
@@ -165,8 +168,10 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
         {
             if (controlLength + 3 == eventLength)
             {
-                circleScript.HealtAdd((int)(eventList[((int)(index * jObj.Count)).ToString()][eventLength - 2][0]));
+                circleScript.HealthAdd((int)(eventList[((int)(index * jObj.Count)).ToString()][eventLength - 2][0]));
                 circleScript.HappyAdd((int)(eventList[((int)(index * jObj.Count)).ToString()][eventLength - 2][1]));
+                circleScript.MoneyAdd((int)(eventList[((int)(index * jObj.Count)).ToString()][eventLength - 2][2]));
+                circleScript.SociabilityAdd((int)(eventList[((int)(index * jObj.Count)).ToString()][eventLength - 2][3]));
             }
 
             CardAnimation();
@@ -176,9 +181,6 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
             Debug.Log("PutBack");
             PutBackCard();
         }
-
-        Debug.Log("Health: " + CircleScript.healtcount);
-        Debug.Log("Happiness: " + CircleScript.happycount);
     }
 
     private void ResetCardCanvas()
@@ -220,6 +222,7 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
         else
         {
             RandomIndex();
+            SetStats();
             eventLength = eventList[((int)(index * jObj.Count)).ToString()].Count();
             controlLength = 0;
             HandleStory();
@@ -253,6 +256,16 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
     private void RandomIndex()
     {
         index = Random.value;
+        circleScript.AgeAdd();
+    }
+
+    private void SetStats()
+    {
+        Stats.transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().text = $"Health\n{CircleScript.healthcount}";
+        Stats.transform.GetChild(1).gameObject.GetComponent<TextMeshProUGUI>().text = $"Happiness\n{CircleScript.happycount}";
+        Stats.transform.GetChild(2).gameObject.GetComponent<TextMeshProUGUI>().text = $"Money\n{CircleScript.money}";
+        Stats.transform.GetChild(3).gameObject.GetComponent<TextMeshProUGUI>().text = $"Sociability\n{CircleScript.sociability}";
+        Stats.transform.GetChild(4).gameObject.GetComponent<TextMeshProUGUI>().text = $"Age\n{CircleScript.age}";
     }
 
     private IEnumerator TypeMainStory(string sentence)

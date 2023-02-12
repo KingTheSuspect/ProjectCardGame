@@ -8,39 +8,58 @@ using UnityEngine.UI;
 
 public class CircleScript : MonoBehaviour
 {
-    public Image healtbar;
+    public Image healthbar;
     public Image happybar;
-    public static int healtcount = 5;
-    public static int happycount = 5;
+    public static int healthcount = 50;
+    public static int happycount = 50;
+    public static int money = 50;
+    public static int sociability = 50;
+    public static int age = 22;
 
 
     void Start()
     {
-        healtcount = 5;
-        happycount = 5;
-        healtbar.fillAmount = 0.5f;
-        happybar.fillAmount = 0.5f;
+        healthcount = 50;
+        happycount = 50;
+        money = 50;
+        sociability = 50;
+        age = 22;
+        //healthbar.fillAmount = 0.5f;
+        //happybar.fillAmount = 0.5f;
     }
     //Animasyon eklenecek
-    public void HealtAdd(int healthAmount)
+    public void HealthAdd(int healthAmount)
     {
-        healtcount+=healthAmount;
-        healtbar.fillAmount += healthAmount / 10;
+        healthcount += healthAmount;
+        //healthbar.fillAmount += healthAmount / 10;
     }
-    public void HealtRemove()
+    public void HealthRemove()
     {
-        healtcount--;
-        healtbar.fillAmount += 0.1f;
+        healthcount--;
+        //healthbar.fillAmount += 0.1f;
     }
     public void HappyAdd(int happinessAmount)
     {
-        happycount+=happinessAmount;
-        happybar.fillAmount += happinessAmount/10;
+        happycount += happinessAmount;
+        //happybar.fillAmount += happinessAmount / 10;
     }
     public void HappyRemove()
     {
         happycount--;
-        happybar.fillAmount += 0.1f;
+        //happybar.fillAmount += 0.1f;
+    }
+    public void MoneyAdd(int moneyAmount)
+    {
+        money += moneyAmount;
+    }
+
+    public void SociabilityAdd(int sociabilityAmount)
+    {
+        sociability += sociabilityAmount;
+    }
+    public void AgeAdd()
+    {
+        age++;
     }
     
 }

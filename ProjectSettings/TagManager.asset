@@ -9,6 +9,7 @@ TagManager:
   - RightChoice
   - ChooseLeft
   - ChooseRight
+  - PlayButton
   layers:
   - Default
   - TransparentFX

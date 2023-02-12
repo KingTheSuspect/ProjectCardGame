@@ -37,6 +37,7 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
     public TextAsset text;
     public TextAsset events;
     public GameObject gameManagerObject;
+    public GameObject TopStory;
 
     private Story story;
     private bool isInLeft;
@@ -68,7 +69,8 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
         rb = GetComponent<Rigidbody2D>();
         cardPrefab = Resources.Load("Kart") as GameObject;
 
-        mainStory = transform.GetChild(0).GetComponent<TextMeshProUGUI>();
+        //mainStory = transform.GetChild(0).GetComponent<TextMeshProUGUI>();
+        mainStory = TopStory.GetComponent<TextMeshProUGUI>();
         choices = GameObject.Find("Choices").GetComponent<TextMeshProUGUI>();
 
         story = new Story(text.text);

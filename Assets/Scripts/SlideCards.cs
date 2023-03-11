@@ -17,8 +17,6 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
     private float move_aim_x = 0;
     [SerializeField] private float touch_movement_sensivity;
     private float range = 1;
-    private Vector3 beganmove;
-    private float animationDuration = 0.3f;
     private Vector3 targetPosition;
     private bool animationControl;
     private float animationLeftTime;
@@ -40,7 +38,6 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
     public GameObject TopStory;
     public GameObject Stats;
 
-    private Story story;
     private bool isInLeft;
     private bool isInRight;
     private bool chooseLeft;
@@ -70,11 +67,8 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
         rb = GetComponent<Rigidbody2D>();
         cardPrefab = Resources.Load("Kart") as GameObject;
 
-        //mainStory = transform.GetChild(0).GetComponent<TextMeshProUGUI>();
         mainStory = TopStory.GetComponent<TextMeshProUGUI>();
         choices = GameObject.Find("Choices").GetComponent<TextMeshProUGUI>();
-
-        //story = new Story(text.text);
 
         index = Random.value;
         eventLength = eventList[((int)(index * jObj.Count)).ToString()].Count();
@@ -101,7 +95,6 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
         {
             resetLeftTime = 0f;
         }
-        //Debug.Log($"X: {gameObject.transform.position.x} \nY: {gameObject.transform.position.y}");
         gameObject.transform.GetChild(1).GetComponent<TextMeshProUGUI>().alpha = math.abs(gameObject.transform.position.x-297) * 1 / 100f;
         gameObject.transform.GetChild(2).GetComponent<TextMeshProUGUI>().alpha = math.abs(gameObject.transform.position.x-297) * 1 / 100f;
 
@@ -129,12 +122,12 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
 
         if (isInLeft)
         {
-            gameObject.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = eventList[((int)(index * jObj.Count)).ToString()][choice1].ToString();
+            gameObject.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = eventList[((int)(index * jObj.Count)).ToString()][choice1][0].ToString();
             gameObject.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = "";
         }
         else if (isInRight)
         {
-            gameObject.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = eventList[((int)(index * jObj.Count)).ToString()][choice2].ToString();
+            gameObject.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = eventList[((int)(index * jObj.Count)).ToString()][choice2][0].ToString();
             gameObject.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = "";
         }
     }
@@ -153,27 +146,31 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
 
         if (chooseLeft && isInLeft)
         {
-            if (controlLength + 3 == eventLength)
-            {
-                circleScript.HealthAdd((int)(eventList[((int)(index * jObj.Count)).ToString()][eventLength - 3][0]));
-                circleScript.HappyAdd((int)(eventList[((int)(index * jObj.Count)).ToString()][eventLength - 3][1]));
-                circleScript.MoneyAdd((int)(eventList[((int)(index * jObj.Count)).ToString()][eventLength - 3][2]));
-                circleScript.SociabilityAdd((int)(eventList[((int)(index * jObj.Count)).ToString()][eventLength - 3][3]));
-            }
+            SetStats((int)(eventList[((int)(index * jObj.Count)).ToString()][choice1][2][0]),
+                (int)(eventList[((int)(index * jObj.Count)).ToString()][choice1][2][1]),
+                (int)(eventList[((int)(index * jObj.Count)).ToString()][choice1][2][2]),
+                (int)(eventList[((int)(index * jObj.Count)).ToString()][choice1][2][3]),
+                (int)(eventList[((int)(index * jObj.Count)).ToString()][choice1][1]));
 
+            if ((int)eventList[((int)(index * jObj.Count)).ToString()][choice1][1] == 0)
+            {
+                controlLength = (int)eventList[((int)(index * jObj.Count)).ToString()].Count();
+            }
             CardAnimation();
 
         }
         else if (chooseRight && isInRight)
         {
-            if (controlLength + 3 == eventLength)
-            {
-                circleScript.HealthAdd((int)(eventList[((int)(index * jObj.Count)).ToString()][eventLength - 2][0]));
-                circleScript.HappyAdd((int)(eventList[((int)(index * jObj.Count)).ToString()][eventLength - 2][1]));
-                circleScript.MoneyAdd((int)(eventList[((int)(index * jObj.Count)).ToString()][eventLength - 2][2]));
-                circleScript.SociabilityAdd((int)(eventList[((int)(index * jObj.Count)).ToString()][eventLength - 2][3]));
-            }
+            SetStats((int)(eventList[((int)(index * jObj.Count)).ToString()][choice2][2][0]),
+                (int)(eventList[((int)(index * jObj.Count)).ToString()][choice2][2][1]),
+                (int)(eventList[((int)(index * jObj.Count)).ToString()][choice2][2][2]),
+                (int)(eventList[((int)(index * jObj.Count)).ToString()][choice2][2][3]),
+                (int)(eventList[((int)(index * jObj.Count)).ToString()][choice2][1]));
 
+            if ((int)eventList[((int)(index * jObj.Count)).ToString()][choice2][1] == 0)
+            {
+                controlLength = (int)eventList[((int)(index * jObj.Count)).ToString()].Count();
+            }
             CardAnimation();
         }
         else
@@ -191,10 +188,6 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
         transform.position = new Vector3(297f, 1000f, 0f);
         targetPosition = new Vector3(canvas.transform.localPosition.x, canvas.transform.localPosition.y, 0f);
         resetLeftTime = 5f;
-        //LeanTween.move(gameObject, targetPosition, animationDuration).setEaseInOutCubic().setDelay(0.2f);
-        //transform.position = Vector3.MoveTowards(transform.position, targetPosition, Time.deltaTime);
-        //var normalizeDirection = (targetPosition - transform.position).normalized;
-        //transform.position += normalizeDirection * 5f * Time.deltaTime;
     }
 
     private void PutBackCard()
@@ -207,7 +200,7 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
 
     private void HandleStory()
     {
-        if (controlLength < eventList[((int)(index * jObj.Count)).ToString()].Count() - 3)
+        if (controlLength < eventList[((int)(index * jObj.Count)).ToString()].Count() - 1)
         {
             StartCoroutine(TypeMainStory(eventList[((int)(index * jObj.Count)).ToString()][controlLength].ToString()));
             gameObject.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = "";
@@ -222,7 +215,6 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
         else
         {
             RandomIndex();
-            SetStats();
             eventLength = eventList[((int)(index * jObj.Count)).ToString()].Count();
             controlLength = 0;
             HandleStory();
@@ -236,19 +228,11 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
         {
             Debug.Log("RightAnimation");
             targetPosition = new Vector3(1200f, -500f, 0);
-            //LeanTween.move(gameObject, targetPosition, animationDuration).setEaseInOutCubic().setDelay(0.2f);
-            //transform.position = Vector3.MoveTowards(transform.position, targetPosition, 200f*Time.deltaTime);
-            //var normalizeDirection = (targetPosition - transform.position).normalized;
-            //transform.position += normalizeDirection * 5f * Time.deltaTime;
         }
         else if (isInLeft && chooseLeft)
         {
             Debug.Log("LeftAnimation");
             targetPosition = new Vector3(-640f, -500f, 0);
-            //LeanTween.move(gameObject, targetPosition, animationDuration).setEaseInOutCubic().setDelay(0.2f);
-            //transform.position = Vector3.MoveTowards(transform.position, targetPosition, 200f*Time.deltaTime);
-            //var normalizeDirection = (targetPosition - transform.position).normalized;
-            //transform.position += normalizeDirection * 5f * Time.deltaTime;
         }
         animationControl = true;
     }
@@ -256,16 +240,28 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
     private void RandomIndex()
     {
         index = Random.value;
-        circleScript.AgeAdd();
     }
 
-    private void SetStats()
+    private void SetStats(int stat1, int stat2, int stat3, int stat4, int ageSituation)
     {
+        if (ageSituation == 0)
+        {
+            circleScript.AgeAdd();
+            Stats.transform.GetChild(4).gameObject.GetComponent<TextMeshProUGUI>().text = $"Age\n{CircleScript.age}";
+        }
+
+        circleScript.HealthAdd(stat1);
         Stats.transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().text = $"Health\n{CircleScript.healthcount}";
+
+        circleScript.HappyAdd(stat2);
         Stats.transform.GetChild(1).gameObject.GetComponent<TextMeshProUGUI>().text = $"Happiness\n{CircleScript.happycount}";
+
+        circleScript.MoneyAdd(stat3);
         Stats.transform.GetChild(2).gameObject.GetComponent<TextMeshProUGUI>().text = $"Money\n{CircleScript.money}";
+
+        circleScript.SociabilityAdd(stat4);
         Stats.transform.GetChild(3).gameObject.GetComponent<TextMeshProUGUI>().text = $"Sociability\n{CircleScript.sociability}";
-        Stats.transform.GetChild(4).gameObject.GetComponent<TextMeshProUGUI>().text = $"Age\n{CircleScript.age}";
+        
     }
 
     private IEnumerator TypeMainStory(string sentence)

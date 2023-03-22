@@ -93,7 +93,7 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
             transform.position += (targetPosition - transform.position).normalized * 3000f * Time.deltaTime;
         }
 
-        if (targetPosition.x == 297 && targetPosition.y == 282 && math.abs(gameObject.transform.position.x - targetPosition.x) <= 10 && math.abs(gameObject.transform.position.y - targetPosition.y) <= 10)
+        if (math.abs(targetPosition.x - 297) < 5 && math.abs(targetPosition.y - 282) < 5 && math.abs(gameObject.transform.position.x - targetPosition.x) <= 10 && math.abs(gameObject.transform.position.y - targetPosition.y) <= 10)
         {
             resetLeftTime = 0f;
         }
@@ -189,7 +189,7 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
         card.anchoredPosition = new Vector2(0f, 0f) / canvas.scaleFactor;
         transform.position = new Vector3(297f, 1000f, 0f);
         targetPosition = new Vector3(canvas.transform.localPosition.x, canvas.transform.localPosition.y, 0f);
-        resetLeftTime = 0.3f;
+        resetLeftTime = 0.245f;
     }
 
     private void PutBackCard()

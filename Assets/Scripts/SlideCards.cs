@@ -58,6 +58,8 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
 
     private void Start()
     {
+        Application.targetFrameRate = 60;
+
         controlLength = 0;
         eventList = JObject.Parse(events.text);
         jObj = (JObject)JsonConvert.DeserializeObject(events.text);
@@ -187,7 +189,7 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
         card.anchoredPosition = new Vector2(0f, 0f) / canvas.scaleFactor;
         transform.position = new Vector3(297f, 1000f, 0f);
         targetPosition = new Vector3(canvas.transform.localPosition.x, canvas.transform.localPosition.y, 0f);
-        resetLeftTime = 5f;
+        resetLeftTime = 0.3f;
     }
 
     private void PutBackCard()

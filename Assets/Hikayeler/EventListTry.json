@@ -679,9 +679,272 @@
     ["Haklısın.", 0, [-1, 0, 0, 0]],
     ["Gereği yok.", 0, [1, 0, 0, 0]],
     "Mimar"
+    ],
+
+
+
+    "108": [
+    "Askerlerimize daha güçlü silahlar yapmamı ister misiniz?",
+    ["Zaten güçlüyüz.", 0, [0, -1, 1, 0]],
+    ["Yanlış düşünüyorsunuz.", 0, [0, 1, -1, 0]],
+    "Demirci"
+    ],
+    "109": [
+    "Diğer krallıklar bizden önde! Silahlara yatırım yapmalıyız.",
+    ["Haklısın!", 0, [0, -1, 1, 0]],
+    ["Biz daha güçlüyüz.", 0, [0, 1, -1, 0]],
+    "Demirci"
+    ],
+    "110": [
+    "Demirden bir asker heykeli ordumuza biraz moral katabilir.",
+    ["Mantıklı.", 0, [-1, 0, 1, 0]],
+    ["Çok gereksiz.", 0, [1, 0, -1, 0]],
+    "Demirci"
+    ],
+    "111": [
+    "Fırınımı körüklemek için kömüre ihtiyacım var.",
+    ["Üzgünüm, olmaz.", 0, [0, 0, -1, 1]],
+    ["Sarayın deposundan birkaç çuval alabilirsin.", 0, [-1, 0, 1, 0]],
+    "Demirci"
+    ],
+    "112": [
+    "Yeni bir demir madeni keşfettim, ama yolu biraz tehlikeli askerler bana eşlik edebilir mi?",
+    ["Kendi işini kendin hallet.", 0, [1, 0, -1, 0]],
+    ["Peki.", 0, [-1, 0, 1, 0]],
+    "Demirci"
+    ],
+    "113": [
+    "Krallığımızı korumak için savunma siperlerini demirden yapabiliriz.",
+    ["Çıldırdın mı sen?", 0, [0, 0, 0, 0]],
+    ["Demir gibi bir savunma!", 0, [-1, 0, 1, 0]],
+    "Demirci"
+    ],
+    "114": [
+    "Eşiniz benden mücevherler için elmas eritmemi istedi.",
+    ["Madenlerden çıkarılan elmasları kullan.", 0, [-1, 0, 0, 1]],
+    ["Görmezden gel.", 0, [1, 0, 0, -1]],
+    "Demirci"
+    ],
+    "115": [
+    "Askerlerimize daha sağlam zırhlar yakışır. Ne dersiniz?",
+    ["Çok haklısın.", 0, [-1, 0, 1, 0]],
+    ["Zırhlarımızın neyi var ki?", 0, [1, 0, -1, 0]],
+    "Demirci"
+    ],
+    "116": [
+    "Atlarımızın da zırh giymesi ordumuzu daha güçlü yapar.",
+    ["Savunma önceliğimiz.", 0, [0, -1, 1, 0]],
+    ["Manevra önceliğimiz.", 0, [0, 1, -1, 0]],
+    "Demirci"
+    ],   
+
+
+
+
+    "117": [
+    "Lordum, dağlardan gelen garip yaratıklar depolarımıza saldırıyor. Bana onları avlamam için bir ekip vermenizi istiyorum.",
+    ["Ne istiyorsan demirciye söyle.", 0, [-1, 0, 1, 0]],
+    ["Uydurma!", 0, [0, -1, 0, 1]],
+    "Avcı"
+    ],
+    "118": [
+    "Lordum, dağlarda yaşayan bir ejderha yakaladım! Pullarından ne yapalım?",
+    ["Dayanıklı zırhlar yapın.", 0, [0, 1, 0, -1]],
+    ["Tüccarlara satın.", 0, [0, -1, 0, 1]],
+    "Avcı"
+    ],
+    "119": [
+    "Lordum, veba salgını için avcı sayısını arttırmalıyız (bu kart oyunda birden fazla kez gelmelidir.)",
+    ["Gereği yok.", 0, [1, 0, -1, 0]],
+    ["Peki.", 0, [-1, 0, 1, 0]],
+    "Avcı"
+    ],
+    "120": [
+    "Efendim, vebayı engellemek amacıyla hastalıklı insanları öldürmeliyiz. Ne olur ne olmaz.",
+    ["Üzgünüm, kendi halkımın canına kıyamam.", 0, [-1, -1, 0, 0]],
+    ["Nasıl diyorsan.", 0, [0, 0, 1, -1]],
+    "Avcı"
+    ],
+    "121": [
+    "Efendim, yerel halka silah kullanmayı öğretmeliyiz. Böylece kendilerini koruyabilirler.",
+    ["Çok riskli.", 0, [0, -1, 1, 0]],
+    ["Mantıklı.", 0, [0, 1, -1, 0]],
+    "Avcı"
+    ],
+    "122": [
+    "Halk arasında efsane olarak bilinen yaratıkları avlamak için gümüşten aletlere ihtiyacım var.",
+    ["Onlar uydurmaca.", 0, [0, -1, 0, 0]],
+    ["Demirciye söyle.", 0, [-1, 0, 1, 0]],
+    "Avcı"
+    ],
+    "123": [
+    "Zehirli oklar ile daha pahalı hayvanlar avlanabilir! Çevrenin kirlenmesi kimin umurundaki?",
+    ["Haklısın.", 0, [1, 0, -1, 0]],
+    ["Benim umurumda!", 0, [-1, 0, 1, 0]],
+    "Avcı"
+    ],
+    "124": [
+    "İnsanları gerçek olmayan varlıklara inandırarak onlardan daha fazla av parası alabiliriz.",
+    ["Çok güzel.", 0, [-1, 0, 1, 0]],
+    ["Üzgünüm ama kendi halkımı kandıramam.", 0, [1, 0, -1, 0]],
+    "Avcı"
+    ],
+    "125": [
+    "Avcılık hakkında bir kitap yazdırmalısınız.",
+    ["Haklısın.", 0, [0, -1, 1, 0]],
+    ["Gereği yok.", 0, [0, 1, -1, 0]],
+    "Avcı"
+    ],
+
+
+
+
+    "126": [
+    "Lordum, halkımızı bilgilendirmek adına bir kitap yazmak istiyorum.",
+    ["Yaz.", 0, [-1, 0, 1, 0]],
+    ["Gereği yok.", 0, [1, 0, -1, 0]],
+    "Yazar"
+    ],
+    "127": [
+    "Lordum, askerlerimiz adına bir strateji kitabı yazmak istiyorum.",
+    ["Yaz.", 0, [-1, 0, 1, 0]],
+    ["Gereği yok.", 0, [1, 0, -1, 0]],
+    "Yazar"
+    ],
+    "128": [
+    "Lordum, halkı kaynakların kullanımı hakkında bilgilendirecek bir kitap yazmak istiyorum.",
+    ["Yaz.", 0, [-1, 0, 1, 0]],
+    ["Gereği yok.", 0, [-1, 0, 1, 0]],
+    "Yazar"
+    ],
+    "129": [
+    "Lordum, yeni bir kütüphane açmak istiyorum. Bu maliyetli bir iş ama sonunda halkımıza katkıda bulunacağından eminim.",
+    ["Üzgünüm, olmaz.", 0, [0, -1, 0, 0]],
+    ["Nasıl diyorsan.", 0, [0, 1, 0, -1]],
+    "Yazar"
+    ],
+    "130": [
+    "Matbaalarımız çok eski!",
+    ["Yenileyin.", 0, [-1, 0, 0, 0]],
+    ["Yapabileceğim bir şey yok.", 0, [0, 0, 0, -1]],
+    "Yazar"
+    ],
+    "131": [
+    "Bir sıhhiye kitabı ordumuza çok şey katabilir.",
+    ["Ne duruyorsun o zaman?", 0, [-1, 0, 1, 0]],
+    ["Gereği yok.", 0, [1, 0, -1, 0]],
+    "Yazar"
+    ],
+    "132": [
+    "Yeni yapılan kütüphanemiz yanıyor! Söndürmek için kuyulardaki suları kullanmalıyız.",
+    ["Köy sularını kullan!", 0, [0, -1, 0, 1]],
+    ["Başka bir yöntem bul.", 0, [0, 1, 0, -1]],
+    "Yazar"
+    ],
+    "133": [
+    "Size bir masal anlatmamı ister misiniz?",
+    ["Olur.", 0, [0, 0, 0, 0]],
+    ["Benim zamanım değerli.", 0, [0, 0, 0, 0]],
+    "Yazar"
+    ],
+
+
+    "134": [
+    "Efendim, halka açık bir şiir gösterisi yapmak istiyorum.",
+    ["Ne istiyorsan yap.", 0, [-1, 0, 0, 1]],
+    ["Olmaz.", 0, [0, 0, -1, 0]],
+    "Şair"
+    ],
+
+
+
+
+    "135": [
+    "Efendim, görüyorum ki asker sayınız az. Biraz köle almak ister misiniz?",
+    ["Tabi ki.", 0, [-1, 0, 0, 1]],
+    ["Hayır.", 0, [0, 0, -1, 0]],
+    "Köle Tüccarı"
+    ],
+
+
+
+
+    "136": [
+    "Lordum, şehrin tam ortasına sizin heykelinizi yapmak istiyoruz. Hem askerlerimizin morali de artar.",
+    ["Haklısın.", 0, [-1, 0, 0, 1]],
+    ["Böyle bir şeyi hak etmiyorum.", 0, [0, 0, -1, 0]],
+    "Heykeltraş"
+    ],
+
+
+
+    "137": [
+    "Lordum veba denilen hastalık bizim krallığımıza da geldi!",
+    ["NE!", 0, [0, -1, -1, -1]],
+    ["NE!", 0, [0, -1, -1, -1]],
+    "Veba Doktoru"
+    ],
+
+
+    "138": [
+    "Lordum askeri teknolojilerde tüm krallıklardan öndeyiz!",
+    ["HARİKA!", 0, [0, 0, 1, -1]],
+    ["HARİKA!", 0, [0, 0, 1, -1]],
+    "Komutan"
+    ],
+
+
+
+
+
+
+
+    "139": [
+    "Lordum yakın zamanda bir yabancı ile karşılaşacaksınız. Ne istiyorsa verin.",
+    ["Papaz 5. diyalog bir süre sonra oyuncunun karşısına gelir.", 0, [0, 0, 1, -1]],
+    "Kahin"
+    ],
+    "140": [
+    "Lordum yakın zamanda büyük bir tehdit ile karşılaşabilirsiniz. Dikkatli seçim yapın.",
+    ["Bu uyarıdan sonra daha çok veba olayı tehlikesi bulunan kart gelir.", 0, [0, 0, 1, -1]],
+    "Kahin"
+    ],
+    "141": [
+    "Lordum yakın zamanda bir işgale uğrayacağız. Savaşa hazırlık yapın.",
+    ["Bu uyarıdan bir kaç kart sonra elçilerden savaş haberi gelir.", 0, [0, 0, 1, -1]],
+    "Kahin"
+    ],
+    "142": [
+    "Lordum Karanlık Abynalara bir sefer düzenleyin pişman olamayacaksınız.",
+    ["Kaşif’e bu yeri keşfetmesini söyleyebilirsiniz.", 0, [0, 0, 1, -1]],
+    "Kahin"
+    ],
+    "143": [
+    "Lordum Kara Yıldız Geçidine bir sefer düzenleyin pişman olamayacaksınız.",
+    ["Kaşif’e bu yeri keşfetmesini söyleyebilirsiniz.", 0, [0, 0, 1, -1]],
+    "Kahin"
+    ],
+    "144": [
+    "Lordum Gölge Kalesine bir sefer düzenleyin pişman olamayacaksınız.",
+    ["Kaşif’e bu yeri keşfetmesini söyleyebilirsiniz.", 0, [0, 0, 1, -1]],
+    "Kahin"
+    ],
+    "145": [
+    "Lordum Kayıp Ufuklar Gemisinde sizi bir şey bekliyor.",
+    ["Kaşif’e bu yeri keşfetmesini söyleyebilirsiniz.", 0, [0, 0, 1, -1]],
+    "Kahin"
+    ],
+    "146": [
+    "Shadowfire'ın gözü size seçimlerinizde yardımcı olacaktır.",
+    ["Bu gözü oyuncu istediği an kullanır ve neyin ne kadar azalacağını görür.", 0, [0, 0, 1, -1]],
+    "Kahin"
+    ],
+    "147": [
+    "Çok üzgünüm ama kraliçe size ihanet edecek. Onu öldürmelisiniz.",
+    ["Oyuncuya öldürme veya öldürmeme fırsatı sunulur. Öldürünce bir şey kaybetmez veya kazanmaz ama öldürmez ise güvenlik azalır.", 0, [0, 0, 1, -1]],
+    "Kahin"
     ]
 
-    
 
-        
+
 }

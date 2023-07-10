@@ -246,11 +246,11 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
 
     private void SetStats(int stat1, int stat2, int stat3, int stat4, int ageSituation)
     {
-        if (ageSituation == 0)
-        {
-            circleScript.AgeAdd();
-            Stats.transform.GetChild(4).gameObject.GetComponent<TextMeshProUGUI>().text = $"Age\n{CircleScript.age}";
-        }
+        //if (ageSituation == 0)
+        //{
+        //    circleScript.AgeAdd();
+        //    Stats.transform.GetChild(4).gameObject.GetComponent<TextMeshProUGUI>().text = $"Age\n{CircleScript.age}";
+        //}
 
         circleScript.HealthAdd(stat1);
         Stats.transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().text = $"Health\n{CircleScript.healthcount}";

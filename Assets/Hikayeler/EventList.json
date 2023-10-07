@@ -1,0 +1,959 @@
+{
+    "0": [
+    "Lordum askerlere bir gösteri planlamaya ne dersiniz?",
+    ["Evet iyi olur.", 0, [-5, 0, 0, 5]],
+    ["Disiplinsizliğe gerek yok.", 0, [5, 0, 0, -5]],
+    "Soytarı"
+    ],
+    "1": [
+    "Lordum bir tiyatro sahnesi yapmak istiyorum.",
+    ["Krallığımızın gelişmesi adına iyi olur.", 0, [0, 5, -5, 0]],
+    ["Halkın boş şeylere ayıracak vakti yok.", 0, [0, -5, 5, 0]],
+    "Soytarı"
+    ],
+    "2": [
+    "Lordum, insanlara açık alanda bir isyancı idamına ne dersiniz?",
+    ["Canice.", 0, [0, 0, 0, 0]],
+    ["Soysuzları asın.", 0, [0, 5, 0, 0]],
+    "Soytarı"
+    ],
+    "3": [
+    "Festival zamanı yaklaştı. Daha fazla para için askerleri de festivale alalım mı?",
+    ["Eğlenmek onlarında hakkı.", 0, [0, 0, 0, 10]],
+    ["Onlar asker dolayısıyla görevleri eğlenmek değil.", 0, [10, 0, 0, 0]],
+    "Soytarı"
+    ],
+    "4": [
+    "Lordum, bilgilendirici bir tiyatro için kostümlere ihtiyacım var. Biraz kumaş alabilir miyim?",
+    ["Halkımız kültürlensin.", 0, [0, 5, 0, 0]],
+    ["Hayır, kaynakları boşa harcayamayız.", 0, [0, 0, 5, 0]],
+    "Soytarı"
+    ],
+    "5": [
+    "Lordum, bir isyan yanlısı soylu yakalandı. Ne yapmamızı emredersiniz?",
+    ["Askerlere verin onlar öldürsün.", 0, [10, -5, 0, 0]],
+    ["Halkın ortasında sallandırın.", 0, [0, 5, 0, 0]],
+    "Soytarı"
+    ],
+    "6": [
+    "Kaynakların iyi kullanımı hakkında bir tiyatro yapmak istiyorum ama, biraz paraya ihtiyacım var.",
+    ["Sorman hata.", 0, [0, 0, 10, -5]],
+    ["Çok gereksiz!", 0, [0, 0, 0, 5]],
+    "Soytarı"
+    ],
+    "7": [
+    "Lordum, askerlerimize canlı insanlar üzerinde talim yaptırmaya ne dersiniz?",
+    ["İğrenç! Asla.", 0, [-5, 0, 0, 0]],
+    ["Yakalanması zor hedefler hm… Mantıklı.", 0, [0, 0, 0, 0]],
+    "Soytarı"
+    ],
+    "8": [
+    "Bir gösteriye ne dersiniz?",
+    ["Teşekkürler.", 0, [0, 0, 0, 0]],
+    ["Git başımdan.", 0, [5, 0, 0, 0]],
+    "Soytarı"
+    ],
+
+
+
+
+
+    "9": 
+    [
+    "Bir tüccar bize sınırdan geçmek için rüşvet teklif ediyor. Ne yapmalıyız?",
+    ["Toz olmalarını söyle!", 0, [5, 0, 0, 0]],
+    ["İçeri alın.", 0, [0, 0, 0, 10]],
+    "Muhafız"
+    ],
+    "10": [
+    "At arabasının tahtaları çürümüş durumda. Askerlerimiz için yenilemeliyiz.",
+    ["Marangoza haber ver öyleyse.", 0, [5, 0, 0, -5]],
+    ["Biraz daha idare edin.", 0, [0, 0, 0, 0]],
+    "Muhafız"
+    ],
+    "11": [
+    "Bir grup insan kapıdaki muhafızlara taş atıyor. Ne yapalım?",
+    ["Tutuklayıp zindana atın.", 0, [10, 0, 0, 0]],
+    ["Hepsini kılıçtan geçirin!", 0, [0, 0, 0, 0]],
+    "Muhafız"
+    ],
+    "12": [
+    "Yakında yapılacak serginin koruma görevi için bize para teklif ediyorlar.",
+    ["Fazladan askerimiz var nasıl olsa da.", 0, [-5, 0, 0, 5]],
+    ["Biz uşak mıyız?", 0, [10, 0, 0, 0]],
+    "Muhafız"
+    ],
+    "13": [
+    "Soyludan birisi cinayete karışmış. Üstünü örtmemizi istiyor.",
+    ["Hem cinayetten hem de rüşvetten yargılansın.", 0, [5, 0, 0, 0]],
+    ["Biraz hoşgörüden kimseye zarar gelmez.", 0, [-5, 0, 0, 5]],
+    "Muhafız"
+    ],
+    "14": [
+    "Lordum, isyancılar halkı bize karşı kışkırtıyorlar. İsyancıları aramak için bir ekip göndermeliyiz.",
+    ["Bulun onları!", 0, [10, 0, 0, 0]],
+    ["Bir avuç insandan zarar gelmez.", 0, [0, 0, 0, 0]],
+    "Muhafız"
+    ],
+    "15": [
+    "Tüm silahlarımız paslanmış durumda. Yenilememiz gerek.",
+    ["Peki.", 0, [5, 0, 0, -5]],
+    ["Boş verin.", 0, [0, 0, 0, 0]],
+    "Muhafız"
+    ],
+    "16": [
+    "Halk kızıl saçlı insanları kafalarına göre cadı ilan ederek yakmaya çalışıyorlar. Bu konuda ne yapmalıyız?",
+    ["Askerler hemen müdahale etsin!", 0, [-5, 5, 0, 0]],
+    ["Haklılar!", 0, [0, 0, 0, 0]],
+    "Muhafız"
+    ],
+    "17": [
+    "Muhafızlarımızın sayısı yetersiz kalmaya başladı. Yeni alımlar yapmalıyız.",
+    ["Yeni alımlar yapın.", 0, [0, 0, 0, 0]],
+    ["O zaman daha iyi olun!", 0, [0, 0, 0, 0]],
+    "Muhafız"
+    ],
+
+
+
+    "18": [
+    "Lordum, genel halktan daha değerli olduğumuzu düşünüyoruz.",
+    ["Zaten öylesiniz.", 0, [0, 0, 0, 5]],
+    ["Yanlış düşünüyorsunuz.", 0, [0, 0, 0, -5]],
+    "Soylu"
+    ],
+    "19": [
+    "Lordum, kervanlarımıza güvenlik talep ediyoruz.",
+    ["Kendiniz halledin.", 0, [0, 0, 0, 0]],
+    ["Saraydan birkaç asker alın.", 0, [-5, 0, 0, 10]],
+    "Soylu"
+    ],
+    "20": [
+    "Kaynak ticaretinde bize özel vergilendirme istiyoruz.",
+    ["Saçmalamayın.", 0, [0, 0, 0, 5]],
+    ["Peki.", 0, [0, 0, 5, 0]],
+    "Soylu"
+    ],
+    "21": [
+    "Soylu olarak kaynaklarınızı kullanmak istiyoruz.",
+    ["Üzgünüm, olmaz.", 0, [0, 0, 0, -5]],
+    ["Peki.", 0, [0, 0, -5, 5]],
+    "Soylu"
+    ],
+    "22": [
+    "Soylu olarak asker talep ediyoruz.",
+    ["Üzgünüm, olmaz.", 0, [0, 0, 0, -5]],
+    ["Peki.", 0, [-5, 0, 0, 5]],
+    "Soylu"
+    ],
+    "23": [
+    "Soylu olarak kütüphanelerin bize özel olmasını istiyoruz.",
+    ["Üzgünüm, olmaz.", 0, [0, 0, 0, -5]],
+    ["Peki.", 0, [0, -5, 0, 5]],
+    "Soylu"
+    ],
+    "24": [
+    "İsyancılar bize karşı bir tehdit.",
+    ["Haklısın, bir ekip göndereceğim.", 0, [-5, 0, 0, 0]],
+    ["Yapabileceğim bir şey yok.", 0, [0, 0, 0, -5]],
+    "Soylu"
+    ],
+    "25": [
+    "Soylu olarak hukuksal dokunulmazlık istiyoruz.",
+    ["Hemen.", 0, [0, -5, 0, 0]],
+    ["Üzgünüm, ama olmaz.", 0, [0, 0, 0, -5]],
+    "Soylu"
+    ],
+    "26": [
+    "Devrimci Soylu baş göstermeye başladı.",
+    ["Hepsini yakalayın.", 0, [5, 0, 0, -5]],
+    ["Bırakın dursunlar.", 0, [0, 0, 0, 5]],
+    "Soylu"
+    ],
+
+
+
+    "27": [
+    "Bir mancınık yapmak istiyorum ne dersin lordum?",
+    ["İyi bir caydırma yöntemi.", 0, [5, 0, 0, -5]],
+    ["Gereği yok.", 0, [-5, 0, 0, 0]],
+    "Marangoz"
+    ],
+    "28": [
+    "Kraliçemiz yeni mobilyalar istiyor.",
+    ["Ne duruyorsun?", 0, [0, 0, 0, -5]],
+    ["Görmezden gel.", 0, [0, 0, 0, 0]],
+    "Marangoz"
+    ],
+    "29": [
+    "Lordum kış geliyor elimizdeki odunları mı yakalım yoksa karşı krallıktan kömür mü alalım?",
+    ["Saçmalamayın.", 0, [0, 0, 0, 5]],
+    ["Peki.", 0, [0, 0, 5, 0]],
+    "Marangoz"
+    ],
+    "30": [
+    "Evleri odunlardan yapmak yerine taşlardan yapsak?",
+    ["Odunları yak.", 0, [0, 0, -5, 0]],
+    ["Kömür al.", 0, [0, 0, 0, -5]],
+    "Marangoz"
+    ],
+    "31": [
+    "Ordulara talim için tahtadan hedefler yapsak iyi olmaz mıydı?",
+    ["Mantıklı.", 0, [10, 0, 0, -5]],
+    ["Hayır.", 0, [-5, 0, 0, 0]],
+    "Marangoz"
+    ],
+    "32": [
+    "Elimizdeki aletler eskidi ağaç kesemiyoruz. Yeni aletler gerek.",
+    ["Aletleriniz gayet iyi.", 0, [0, 0, -5, 0]],
+    ["Demirciye söyleyin.", 0, [0, 0, 5, -5]],
+    "Marangoz"
+    ],
+    "33": [
+    "Yeni bir kütüphane yapmak istiyorum.",
+    ["Planları için mimar ile görüşün.", 0, [0, 5, 0, -5]],
+    ["Yapabileceğim bir şey yok.", 0, [0, -5, 0, 0]],
+    "Marangoz"
+    ],
+    "34": [
+    "Okçularımızın okları bitmek üzere. Ne yapalım?",
+    ["Hemen çalışmaya başlayın.", 0, [10, 0, -5, 0]],
+    ["Okçu birliğinin asker sayısını azaltın.", 0, [0, 0, 0, 0]],
+    "Marangoz"
+    ],
+    "35": [
+    "Yeni bir orman keşif ettik! Bir kaç asker koruma ile gidip kaynak getirebiliriz.",
+    ["Sana güvenmiyorum.", 0, [0, 0, -5, 0]],
+    ["Komutanın yanına git.", 0, [-5, 0, 10, 0]],
+    "Marangoz"
+    ],
+
+
+
+    "36": [
+    "Lordum, insanlar adaletimizi sorguluyorlar. Ne yapalım?",
+    ["Sorgulayanları asın.", 0, [10, 0, 0, 0]],
+    ["Yapacak bir şey yok.", 0, [0, 10, 0, 0]],
+    "Yargıç"
+    ],
+    "37": [
+    "Efendim, soylular yaptıklarının cezalarını kabul etmiyorlar.",
+    ["Ne demek etmiyorlar!", 0, [0, 0, 0, 0]],
+    ["Onlar halktan daha üstün.", 0, [0, 0, 0, 5]],
+    "Yargıç"
+    ],
+    "38": [
+    "Rüşvet teklif edenler konusunda ne yapmalıyız?",
+    ["Hapse atın.", 0, [10, 0, 0, 0]],
+    ["Kabul edin.", 0, [0, 0, 0, 10]],
+    "Yargıç"
+    ],
+    "39": [
+    "Lordum, isyancıları ne yapalım?",
+    ["10 yıl ceza verin.", 0, [0, 0, 0, 0]],
+    ["Meydanda sallandırın.", 0, [0, 5, 0, 0]],
+    "Yargıç"
+    ],
+    "40": [
+    "Çiftçiler hasılatlarının bu yıl çıkmadığını söylüyor. Bize olan borçlarını ne yapalım?",
+    ["Unutun gitsin.", 0, [0, 0, 5, -5]],
+    ["Zorla alın.", 0, [0, 0, -5, 5]],
+    "Yargıç"
+    ],
+    "41": [
+    "Komutanlardan birinin yanlış kararı sonucu 25 askerimiz ölmüş. Ne yapmalıyız?",
+    ["Hapse atın.", 0, [0, 5, 0, 0]],
+    ["Salın.", 0, [5, 0, 0, 0]],
+    "Yargıç"
+    ],
+    "42": [
+    "Elimizde bir dava var. Karar veremedik, size danışmak istiyoruz. Kabul eder misiniz?",
+    ["Tabi ki.", 0, [0, 0, 0, 0]],
+    ["Beni uğraştırmayın.", 0, [0, 0, 0, 0]],
+    "Yargıç"
+    ],
+    "43": [
+    "Okçularımızdan birisi bir çiftliğin yakınından geçerken çiftçinin evine giren eli satırlı birisini görmüş ardından olayı merak edip beklemiş. Bir süre sonra adam çiftçiyi kovalayarak dışarı çıkmış. Okçumuz adamı ok ile vurarak öldürmüş ama elinden düşen meşale tüm çiftliği tutuşturmuş. Çiftçi sizden tarlanın parasını istiyor ama okçumuz onun hayatını kurtarmış. Sizce kim haklı?",
+    ["Çiftçi.", 0, [0, 0, 0, 0]],
+    ["Okçu.", 0, [0, 0, 0, 0]],
+    "Yargıç"
+    ],
+    "44": [
+    "Bir kadın profesörün isyancılardan birisi olduğunu ihbar etmiş ama hiç kanıt yok ne yapmalıyız?",
+    ["Hapse atın.", 0, [5, -5, 0, 0]],
+    ["Bırakın dursun.", 0, [0, 5, 0, 0]],
+    "Yargıç"
+    ],
+
+
+
+    "45": [
+    "Efendim, yeni gelen mallar bize düşman olan bir krallıktan gelmiş kabul etsek mi?",
+    ["Kabul edin.", 0, [0, 0, 10, 10]],
+    ["Geri gönderin.", 0, [0, 0, 0, 0]],
+    "Tüccar"
+    ],
+    "46": [
+    "Efendim, soylular gümrük vergisinden muaf olmak istiyorlar.",
+    ["Yok öyle bir dünya.", 0, [0, 0, 0, 5]],
+    ["Tamam öyle olsun.", 0, [0, 0, -5, -5]],
+    "Tüccar"
+    ],
+    "47": [
+    "Lordum, kış geliyor her taraf haydutla dolacak. Bize biraz asker verir misiniz?",
+    ["Tamam.", 0, [-5, 0, 5, 0]],
+    ["Kendiniz halledin.", 0, [5, 0, 0, 0]],
+    "Tüccar"
+    ],
+    "48": [
+    "İyi at arabaları ile daha iyi iş yapabiliriz.",
+    ["Üzgünüm olmaz.", 0, [0, 0, 0, 5]],
+    ["Peki.", 0, [0, 0, 5, -5]],
+    "Tüccar"
+    ],
+    "49": [
+    "Lordum, başka krallıklardan cüzi bir miktar karşılığında kitaplar satın alabiliriz.",
+    ["İyi teklif.", 0, [0, 10, 0, -5]],
+    ["Gereği yok.", 0, [0, 0, 0, 0]],
+    "Tüccar"
+    ],
+    "50": [
+    "Tüccarlar olarak vergilerin kısılmasını istiyoruz.",
+    ["Üzgünüm olmaz.", 0, [0, 0, -5, 0]],
+    ["Peki.", 0, [0, 0, 5, -5]],
+    "Tüccar"
+    ],
+    "51": [
+    "Diğer krallıklardan en yeni askeri teknolojileri getirebiliriz.",
+    ["Ne duruyorsun?", 0, [5, 0, 0, -5]],
+    ["Biz gayet iyiyiz.", 0, [-5, 0, 0, 0]],
+    "Tüccar"
+    ],
+    "52": [
+    "Veridiania krallığının askerleri kervanlarımızı yağmaladı ne yapmalıyız?",
+    ["Sakin kalın.", 0, [0, 0, -5, 0]],
+    ["Aynısını.", 0, [-5, 0, 5, 0]],
+    "Tüccar"
+    ],
+    "53": [
+    "İsyancılar bizden silah istiyor. Ne yapalım?",
+    ["Hepsinin yerini söyleyin.", 0, [10, 0, 0, -5]],
+    ["Ne istiyorlarsa verin. Bir şey olmaz.", 0, [0, 0, 0, 10]],
+    "Tüccar"
+    ],
+
+
+
+
+    "54": [
+    "Lordum, insanlar üzerinde deney yapmaya ne dersiniz? Böylece daha fazla bilgi elde edebiliriz.",
+    ["Asla.", 0, [0, -5, 0, 0]],
+    ["Çok iyi.", 0, [0, 10, 0, 0]],
+    "Bilim Adamı"
+    ],
+    "55": [
+    "Lordum, yeni bir kimyasal formül buldum. Bunu silah olarak kullanabiliriz ama biraz maliyetli.",
+    ["Hemen üretime geç.", 0, [5, 0, 0, -5]],
+    ["Ordumuz yeterince güçlü.", 0, [-5, 0, 0, 0]],
+    "Bilim Adamı"
+    ],
+    "56": [
+    "Lordum, kış geliyor kimyasal yakıtları kullanmaya ne dersiniz? Etrafı biraz kirletebilir.",
+    ["Kullanın.", 0, [0, 0, -5, 5]],
+    ["Asla!", 0, [0, 0, 5, 0]],
+    "Bilim Adamı"
+    ],
+    "57": [
+    "Düşmanlarımızın krallığında bir virüs yapma önerim var. Çok tehlikeli ama denemeye değer.",
+    ["Böyle bir suçu işleyemem.", 0, [-5, 0, 0, 0]],
+    ["Peki deneyelim.", 0, [10, 0, 0, 0]],
+    "Bilim Adamı"
+    ],
+    "58": [
+    "Askerler arasında bir hastalık var! Hemen şimdi bir çare bulmalıyız!",
+    ["Haklısın.", 0, [0, 0, 0, 5]],
+    ["Zamanla geçer.", 0, [-5, 0, 0, 0]],
+    "Bilim Adamı"
+    ],
+    "59": [
+    "Ordumuzu kimyasal enjekte edilmiş askerler ile güçlendirmeye ne dersiniz?",
+    ["Mükemmel olur.", 0, [5, 0, 0, -5]],
+    ["Olmaz.", 0, [0, 0, 0, 0]],
+    "Bilim Adamı"
+    ],
+    "60": [
+    "Laboratuvarımı geliştirmek istiyorum. Kirli suları temizleme üstüne bir çalışma yapacağım.",
+    ["Ne istersen yap.", 0, [0, 0, 5, -5]],
+    ["Yapabileceğim bir şey yok.", 0, [0, 0, -5, 0]],
+    "Bilim Adamı"
+    ],
+    "61": [
+    "İnsanlara biraz bilim hakkında bilgilendirmelerde bulunsak mı?",
+    ["Halk bilimi ne yapsın?", 0, [0, -10, 0, 0]],
+    ["İyi olabilir.", 0, [0, 5, 0, -5]],
+    "Bilim Adamı"
+    ],
+    "62": [
+    "Soylular büyü ile uğraşarak bilime zarar veriyor! Bir şeyler yapmalıyız.",
+    ["Hepsini yakalayın.", 0, [0, 5, 0, -5]],
+    ["Bırak ne isterlerse yapsınlar.", 0, [0, -5, 0, 5]],
+    "Bilim Adamı"
+    ],
+
+
+
+
+
+    "63": [
+    "Kralığımızın asker yardımına ihtiyacı var. Karşılığını ödemeye hazırız.",
+    ["Pekâlâ öyle olsun.", 0, [-5, 0, 0, 5]],
+    ["Üzgünüm kabul etmiyoruz.", 0, [0, 0, 0, 0]],
+    "Elçi"
+    ],
+    "64": [
+    "Kralığımızın paraya ihtiyacı var ve karşılığında size kaynak sağlayabiliriz.",
+    ["Pekâlâ öyle olsun.", 0, [0, 0, 5, -5]],
+    ["Üzgünüm, kabul etmiyoruz.", 0, [0, 0, 0, 0]],
+    "Elçi"
+    ],
+    "65": [
+    "Kralığımızın kaynağa ihtiyacı var. Karşılığında size en iyi birliklerimizden birini vereceğiz.",
+    ["Pekâlâ öyle olsun.", 0, [5, 0, -5, 0]],
+    ["Üzgünüm, kabul etmiyoruz.", 0, [0, 0, 0, 0]],
+    "Elçi"
+    ],
+    "66": [
+    "Kralığımızın bilgiye ihtiyacı var. Parası karşılığında kütüphanelerinizi satın almak isteriz.",
+    ["Pekâlâ öyle olsun.", 0, [0, -5, 0, 5]],
+    ["Üzgünüm kabul etmiyoruz.", 0, [0, 0, 0, 0]],
+    "Elçi"
+    ],
+    "67": [
+    "Veridiana kralı Lois, kaynaklarınızı almak için savaş açmıştır. Ya teslim olup kaynaklarımızı verin ya da gazabımıza uğrayın.",
+    ["Ölürüm de teslim olmam.", 0, [-5, 0, 0, 0]],
+    ["Teslim oluyoruz.", 0, [0, 0, -10, 0]],
+    "Elçi"
+    ],
+    "68": [
+    "Serendelle kralı Victor, hazinenizi yağmalamak amacıyla size savaş açmıştır. Ya teslim olup ganimetimizi verin ya da gazabımıza uğrayın.",
+    ["Ölürüm de teslim olmam.", 0, [-5, 0, 0, 0]],
+    ["Teslim oluyoruz.", 0, [0, 0, 0, -10]],
+    "Elçi"
+    ],
+    "69": [
+    "Mythoria Kralı II. Anna, sizin kütüphanelerinizi alma amacıyla size savaş açmıştır. Ya teslim olup kitapları getirin ya da gazabımıza uğrayın.",
+    ["Ölürüm de teslim olmam.", 0, [-5, 0, 0, 0]],
+    ["Teslim oluyoruz.", 0, [0, -10, 0, 0]],
+    "Elçi"
+    ],
+    "70": [
+    "Serendelle kralı Victor’dan hediyeler getirdim.",
+    ["Sağ olun.", 0, [0, 0, 5, 0]],
+    ["Sağ olun.", 0, [0, 0, 5, 0]],
+    "Elçi"
+    ],
+    "71": [
+    "Lordum, Veridiana kralı Lois size bir hediye gönderdi.",
+    ["Sağ olun.", 0, [0, 0, 5, 0]],
+    ["Sağ olun.", 0, [0, 0, 5, 0]],
+    "Elçi"
+    ],
+
+
+
+
+    "72": [
+    "Lordum, sarayın terzileri zam istiyorlar.",
+    ["Pekâlâ öyle olsun.", 0, [0, 0, -5, 5]],
+    ["Üzgünüm, olmaz.", 0, [0, 0, -5, 0]],
+    "Kraliçe"
+    ],
+    "73": [
+    "Lordum, tüccarlarımızdan bir tanesi casus çıktı.",
+    ["Hemen yakalayın.", 0, [0, 0, 5, -5]],
+    ["Görmezden gelin.", 0, [-5, 0, 0, 5]],
+    "Kraliçe"
+    ],
+    "74": [
+    "Halk soylular ile eşit haklara sahip olduklarını söylüyor.",
+    ["Saçmalamasınlar.", 0, [0, -5, 0, 5]],
+    ["Haklılar.", 0, [0, 5, 0, 0]],
+    "Kraliçe"
+    ],
+    "75": [
+    "Terzilerin arasında çok yetenekli kadınlar var. Orduya almaya ne dersiniz?",
+    ["Mantıklı.", 0, [5, 0, -5, 0]],
+    ["Üzgünüm, olmaz.", 0, [0, 0, 5, 0]],
+    "Kraliçe"
+    ],
+    "76": [
+    "Yeni kıyafetler istiyorum.",
+    ["Peki.", 0, [0, 0, 0, -5]],
+    ["Üzgünüm olmaz.", 0, [0, 0, 0, 0]],
+    "Kraliçe"
+    ],
+    "77": [
+    "Çocuğumuzun korumaya ihtiyacı var. Endişeleniyorum.",
+    ["Biraz fazladan askerimiz vardı.", 0, [-5, 0, 0, 0]],
+    ["Onlar krallığın koruyucuları.", 0, [0, 0, 0, 0]],
+    "Kraliçe"
+    ],
+    "78": [
+    "Yeni bir eğitim sistemi düşünüyorum. Ne dersin?",
+    ["Güzel düşünmüşsün.", 0, [0, 5, 0, -5]],
+    ["Şu anki eğitim sistemimiz gayet iyi.", 0, [0, -5, 0, 0]],
+    "Kraliçe"
+    ],
+    "79": [
+    "Elmas madenlerinden yeni elmaslar çıkartsak güzel olmaz mı?",
+    ["Hemen.", 0, [0, 0, -5, 5]],
+    ["Üzgünüm ama kaynaklarımızı kullanamam.", 0, [0, 0, 5, 0]],
+    "Kraliçe"
+    ],
+    "80": [
+    "Halkı isyancılar hakkında bilgilendirmeli miyiz?",
+    ["Tabi ki de.", 0, [0, 5, 0, 0]],
+    ["Ne kadar az şey bilirlerse o kadar iyi.", 0, [0, -5, 0, 0]],
+    "Kraliçe"
+    ],
+    "81": [
+    "Tüm orduya kaliteli yemek sağlamak bize pahalıya gelecek. Ne yapalım?",
+    ["Daha iyi yemekler şart.", 0, [5, 0, 0, -5]],
+    ["Biraz kaliteden ödün verin.", 0, [-5, 0, 0, 0]],
+    "Aşçı"
+    ],
+    "82": [
+    "Yeni tarifler denemek istiyorum.",
+    ["Peki.", 0, [0, 0, 0, -5]],
+    ["Ne gereği var?", 0, [0, 0, 0, 0]],
+    "Aşçı"
+    ],
+    "83": [
+    "Lordum kış geliyor eğer bir sera yapmazsak aç kalacağız!",
+    ["Hemen inşaata başlayın!", 0, [0, 0, 5, -5]],
+    ["Biraz daha dayanırız.", 0, [0, 0, -5, 0]],
+    "Aşçı"
+    ],
+    "84": [
+    "Daha büyük bir fırın ocağı yaparsak daha fazla yiyecek temin edebiliriz.",
+    ["Haklısın.", 0, [0, 0, 5, -5]],
+    ["Fırınlarımız yeterince büyük.", 0, [0, 0, -5, 5]],
+    "Aşçı"
+    ],
+    "85": [
+    "Temiz su bulmak zorlaşıyor! Halkı bilgilendirmeliyiz.",
+    ["Üzgünüm, olmaz.", 0, [0, -5, -5, 5]],
+    ["Bir gösteri düzenleyin.", 0, [0, 5, 5, -5]],
+    "Aşçı"
+    ],
+    "86": [
+    "Yeni mutfak aletleri ile ordumuza daha iyi yemekler yapabilirim.",
+    ["Elinizdekiyle yetinin.", 0, [0, 0, 0, 5]],
+    ["Bana demirciyi çağır.", 0, [0, 0, 5, -5]],
+    "Aşçı"
+    ],
+    "87": [
+    "Soylular halkla eşit olmadıklarını ve daha lüks yemekler istediklerini söylüyor.",
+    ["Haklılar.", 0, [0, 0, 0, 5]],
+    ["Bu krallıkta herkes eşit.", 0, [0, 0, 0, -5]],
+    "Aşçı"
+    ],
+    "88": [
+    "Fırında yangın çıktı! Köy suyunu kullanarak durduralım mı?",
+    ["Hemen!", 0, [0, 0, -5, 0]],
+    ["Deniz suyunu kullanın.", 0, [0, 0, 0, -5]],
+    "Aşçı"
+    ],
+    "89": [
+    "Karşı krallıktan yeni tarifler almalıyız.",
+    ["Haklısın.", 0, [0, 0, 5, -5]],
+    ["Gereği yok.", 0, [0, 0, -5, 5]],
+    "Aşçı"
+    ],
+    "90": [
+    "İnsanlar dinden çıkıyor! Bir şeyler yapmalıyız.",
+    ["Yapabileceğimiz bir şey yok.", 0, [0, 5, 0, -5]],
+    ["Müdahale etmeliyiz.", 0, [0, -5, 0, 5]],
+    "Papaz"
+    ],
+    "91": [
+    "Kitaplar insanları dinden çıkartıyor! Hepsini yakmalıyız.",
+    ["Saçmalık!", 0, [0, 5, 0, -5]],
+    ["Haklısın.", 0, [0, -5, 0, 5]],
+    "Papaz"
+    ],
+    "92": [
+    "Kedi derileri şu sıralar soylular tarafından çok talep ediliyor. Kedilerin şeytan olduğunu yayarak onları kolayca öldürebiliriz.",
+    ["Ben halkımı kandırmam.", 0, [0, 5, 0, -5]],
+    ["Peki.", 0, [0, 0, 0, 5]],
+    "Papaz"
+    ],
+    "93": [
+    "Altın büyük bir haç askerlerimize cesaret verirdi.",
+    ["Çok gereksiz bir harcama.", 0, [-5, 0, 0, 0]],
+    ["Nasıl diyorsan.", 0, [10, 0, 0, -10]],
+    "Papaz"
+    ],
+    "94": [
+    "Efendim kendisini tanrının habercisi olarak adlandıran bir adam sizinle konuşmak istiyor.",
+    ["Çağır gelsin.", 0, [0, 0, 0, 0]],
+    ["Önünüze geleni almayın.", 0, [0, 0, 0, 0]],
+    "Papaz"
+    ],
+    "95": [
+    "YABANCI: Merhabalar lordum. Ben kurak bir köyden gelmekteyim. Rüyamda Tanrı sizin bana yardım edeceğinizi söyledi. Sizden köyüm için biraz su ve yiyecek istemekteyim.",
+    ["Bu adama ne isterse verin.", 0, [0, 0, -10, 0]],
+    ["Burada yalancılara yer yok.", 0, [0, 0, 0, 0]],
+    "Papaz"
+    ],
+    "96": [
+    "İnsanlara öbür taraftan araziler teklif ederek paralarını çalmaya ne dersiniz?",
+    ["Çok mantıklı.", 0, [0, -5, 0, 5]],
+    ["Çok alçakça bir hareket!", 0, [0, 5, 0, 0]],
+    "Papaz"
+    ],
+    "97": [
+    "Bir adam büyüsü ile çiftçilere yardım ediyormuş! İleride bize saldırmayacağını kim garanti edebilir?",
+    ["Hemen yakalayın!", 0, [5, 0, -5, 0]],
+    ["Bize bir zararı olmaz.", 0, [-5, 0, 5, 0]],
+    "Papaz"
+    ],
+    "98": [
+    "Kimyacılar insanları dinden uzaklaştırıyor! Kimyacılara ayrılan bütçeyi kısmalıyız.",
+    ["Haklısın.", 0, [0, -5, 0, 0]],
+    ["Asla.", 0, [0, 5, 0, -5]],
+    "Papaz"
+    ],
+
+
+    "99": [
+    "Lordum, yeni bir laboratuvar yaptırmak isterim.",
+    ["Nasıl istersen.", 0, [0, 5, 0, -5]],
+    ["Gereği yok!", 0, [0, -5, 0, 0]],
+    "Mimar"
+    ],
+    "10": [
+    "Lordum, yeni bir askeri okul açmalıyız! Asker sayısını arttırırsak çok daha güçlü oluruz.",
+    ["Haklısın.", 0, [5, 0, 0, -5]],
+    ["İhtiyacımız yok.", 0, [-5, 0, 0, 0]],
+    "Mimar"
+    ],
+    "101": [
+    "Lordum inşaatların maliyetlerini azaltacak birkaç öğreti kitabı buldum. Bunları krallığımıza katmalıyız.",
+    ["Gereği yok.", 0, [0, 0, -5, 5]],
+    ["Haklısın.", 0, [0, 0, 5, -5]],
+    "Mimar"
+    ],
+    "102": [
+    "Lordum yeni bir değirmen yaparsak bu yılki hasılatı arttırabiliriz.",
+    ["Mantıklı.", 0, [0, 0, 5, -5]],
+    ["Yeterince hasılatımız var.", 0, [0, 0, -5, 0]],
+    "Mimar"
+    ],
+    "103": [
+    "Yeni bir demirci açarsak çok daha güçlü silahlar yapabiliriz.",
+    ["Haklısın.", 0, [5, 0, -5, 0]],
+    ["Silahlarımızın durumu iyi.", 0, [-5, 0, 0, 0]],
+    "Mimar"
+    ],
+    "104": [
+    "Çiftçilere özel tarım makineleri üretmeye başlamalıyız.",
+    ["Zamanı geldi de geçiyor.", 0, [0, 0, 5, -5]],
+    ["Tırpanlar yetmiyor mu?", 0, [0, 0, -5, 0]],
+    "Mimar"
+    ],
+    "105": [
+    "Banka inşaatı çok maliyetli olmaya başladı. Daha fazla kaynak kullanmalı mıyız?",
+    ["Kullan.", 0, [0, 0, -5, 5]],
+    ["İnşaatı bitir.", 0, [0, 0, 5, 0]],
+    "Mimar"
+    ],
+    "106": [
+    "Şairler için bir opera salonu yaptırmalıyız.",
+    ["Çok güzel olur.", 0, [0, 5, 0, -5]],
+    ["İhtiyacımız yok.", 0, [0, -5, 0, 0]],
+    "Mimar"
+    ],
+    "107": [
+    "Hastanelerimiz çok eski! Çok tehlikeli sonuçları olabilir.",
+    ["Haklısın.", 0, [0, 0, 0, -5]],
+    ["Gereği yok.", 0, [0, 0, 0, 0]],
+    "Mimar"
+    ],
+
+
+
+    "108": [
+    "Askerlerimize daha güçlü silahlar yapmamı ister misiniz?",
+    ["Zaten güçlüyüz.", 0, [-5, 0, 0, 0]],
+    ["Yanlış düşünüyorsunuz.", 0, [0, 0, 0, -5]],
+    "Demirci"
+    ],
+    "109": [
+    "Diğer krallıklar bizden önde! Silahlara yatırım yapmalıyız.",
+    ["Haklısın!", 0, [5, 0, 0, -5]],
+    ["Biz daha güçlüyüz.", 0, [-5, 0, 0, 0]],
+    "Demirci"
+    ],
+    "110": [
+    "Demirden bir asker heykeli ordumuza biraz moral katabilir.",
+    ["Mantıklı.", 0, [5, 0, 0, -5]],
+    ["Çok gereksiz.", 0, [0, 0, 0, 0]],
+    "Demirci"
+    ],
+    "111": [
+    "Fırınımı körüklemek için kömüre ihtiyacım var.",
+    ["Üzgünüm, olmaz.", 0, [-5, 0, 0, 0]],
+    ["Sarayın deposundan birkaç çuval alabilirsin.", 0, [5, 0, -5, 0]],
+    "Demirci"
+    ],
+    "112": [
+    "Yeni bir demir madeni keşfettim, ama yolu biraz tehlikeli askerler bana eşlik edebilir mi?",
+    ["Kendi işini kendin hallet.", 0, [5, 0, 0, 0]],
+    ["Peki.", 0, [-5, 0, 5, 0]],
+    "Demirci"
+    ],
+    "113": [
+    "Krallığımızı korumak için savunma siperlerini demirden yapabiliriz.",
+    ["Çıldırdın mı sen?", 0, [0, 0, 0, 0]],
+    ["Demir gibi bir savunma!", 0, [5, 0, 0, -5]],
+    "Demirci"
+    ],
+    "114": [
+    "Eşiniz benden mücevherler için elmas eritmemi istedi.",
+    ["Madenlerden çıkarılan elmasları kullan.", 0, [0, 0, -5, 0]],
+    ["Görmezden gel.", 0, [0, 0, 0, -5]],
+    "Demirci"
+    ],
+    "115": [
+    "Askerlerimize daha sağlam zırhlar yakışır. Ne dersiniz?",
+    ["Çok haklısın.", 0, [5, 0, 0, -5]],
+    ["Zırhlarımızın neyi var ki?", 0, [-5, 0, 0, 0]],
+    "Demirci"
+    ],
+    "116": [
+    "Atlarımızın da zırh giymesi ordumuzu daha güçlü yapar.",
+    ["Savunma önceliğimiz.", 0, [5, 0, 0, -5]],
+    ["Manevra önceliğimiz.", 0, [-5, 0, 0, 5]],
+    "Demirci"
+    ],   
+
+
+
+
+    "117": [
+    "Lordum, dağlardan gelen garip yaratıklar depolarımıza saldırıyor. Bana onları avlamam için bir ekip vermenizi istiyorum.",
+    ["Ne istiyorsan demirciye söyle.", 0, [0, 0, 5, -5]],
+    ["Uydurma!", 0, [0, 0, -5, 0]],
+    "Avcı"
+    ],
+    "118": [
+    "Lordum, dağlarda yaşayan bir ejderha yakaladım! Pullarından ne yapalım?",
+    ["Dayanıklı zırhlar yapın.", 0, [5, 0, 0, 0]],
+    ["Tüccarlara satın.", 0, [0, 0, 0, 5]],
+    "Avcı"
+    ],
+    "119": [
+    "Lordum, veba salgını için avcı sayısını arttırmalıyız (bu kart oyunda birden fazla kez gelmelidir.)",
+    ["Gereği yok.", 0, [0, 0, 0, 5]],
+    ["Peki.", 0, [0, 0, 0, -5]],
+    "Avcı"
+    ],
+    "120": [
+    "Efendim, vebayı engellemek amacıyla hastalıklı insanları öldürmeliyiz. Ne olur ne olmaz.",
+    ["Üzgünüm, kendi halkımın canına kıyamam.", 0, [0, 0, -5, -5]],
+    ["Nasıl diyorsan.", 0, [-5, 0, 0, 0]],
+    "Avcı"
+    ],
+    "121": [
+    "Efendim, yerel halka silah kullanmayı öğretmeliyiz. Böylece kendilerini koruyabilirler.",
+    ["Çok riskli.", 0, [-5, 0, 0, 0]],
+    ["Mantıklı.", 0, [5, 0, 0, 0]],
+    "Avcı"
+    ],
+    "122": [
+    "Halk arasında efsane olarak bilinen yaratıkları avlamak için gümüşten aletlere ihtiyacım var.",
+    ["Onlar uydurmaca.", 0, [-5, 0, 0, 0]],
+    ["Demirciye söyle.", 0, [5, 0, 0, -5]],
+    "Avcı"
+    ],
+    "123": [
+    "Zehirli oklar ile daha pahalı hayvanlar avlanabilir! Çevrenin kirlenmesi kimin umurundaki?",
+    ["Haklısın.", 0, [0, 0, -5, 5]],
+    ["Benim umurumda!", 0, [0, 0, 5, 0]],
+    "Avcı"
+    ],
+    "124": [
+    "İnsanları gerçek olmayan varlıklara inandırarak onlardan daha fazla av parası alabiliriz.",
+    ["Çok güzel.", 0, [0, -5, 0, 5]],
+    ["Üzgünüm ama kendi halkımı kandıramam.", 0, [0, 5, 0, -5]],
+    "Avcı"
+    ],
+    "125": [
+    "Avcılık hakkında bir kitap yazdırmalısınız.",
+    ["Haklısın.", 0, [0, 5, 0, -5]],
+    ["Gereği yok.", 0, [0, -5, 0, 5]],
+    "Avcı"
+    ],
+
+
+
+
+    "126": [
+    "Lordum, halkımızı bilgilendirmek adına bir kitap yazmak istiyorum.",
+    ["Yaz.", 0, [0, 5, 0, -5]],
+    ["Gereği yok.", 0, [0, -5, 0, 0]],
+    "Yazar"
+    ],
+    "127": [
+    "Lordum, askerlerimiz adına bir strateji kitabı yazmak istiyorum.",
+    ["Yaz.", 0, [5, 0, 0, -5]],
+    ["Gereği yok.", 0, [-5, 0, 0, 0]],
+    "Yazar"
+    ],
+    "128": [
+    "Lordum, halkı kaynakların kullanımı hakkında bilgilendirecek bir kitap yazmak istiyorum.",
+    ["Yaz.", 0, [-5, 0, 5, 0]],
+    ["Gereği yok.", 0, [0, 0, 0, -5]],
+    "Yazar"
+    ],
+    "129": [
+    "Lordum, yeni bir kütüphane açmak istiyorum. Bu maliyetli bir iş ama sonunda halkımıza katkıda bulunacağından eminim.",
+    ["Üzgünüm, olmaz.", 0, [0, -5, 0, 0]],
+    ["Nasıl diyorsan.", 0, [0, 5, 0, -5]],
+    "Yazar"
+    ],
+    "130": [
+    "Matbaalarımız çok eski!",
+    ["Yenileyin.", 0, [0, 0, 0, -5]],
+    ["Yapabileceğim bir şey yok.", 0, [0, -5, 0, 0]],
+    "Yazar"
+    ],
+    "131": [
+    "Bir sıhhiye kitabı ordumuza çok şey katabilir.",
+    ["Ne duruyorsun o zaman?", 0, [5, 0, 0, -5]],
+    ["Gereği yok.", 0, [-5, 0, 0, 0]],
+    "Yazar"
+    ],
+    "132": [
+    "Yeni yapılan kütüphanemiz yanıyor! Söndürmek için kuyulardaki suları kullanmalıyız.",
+    ["Köy sularını kullan!", 0, [0, 5, -5, 0]],
+    ["Başka bir yöntem bul.", 0, [0, -5, 5, 0]],
+    "Yazar"
+    ],
+    "133": [
+    "Size bir masal anlatmamı ister misiniz?",
+    ["Olur.", 0, [0, 0, 0, 0]],
+    ["Benim zamanım değerli.", 0, [0, 0, 0, 0]],
+    "Yazar"
+    ],
+
+
+    "134": [
+    "Efendim, halka açık bir şiir gösterisi yapmak istiyorum.",
+    ["Ne istiyorsan yap.", 0, [0, 5, 0, -5]],
+    ["Olmaz.", 0, [0, -5, 0, 0]],
+    "Şair"
+    ],
+
+
+
+
+    "135": [
+    "Efendim, görüyorum ki asker sayınız az. Biraz köle almak ister misiniz?",
+    ["Tabi ki.", 0, [5, 0, 0, -5]],
+    ["Hayır.", 0, [-5, 0, 0, 0]],
+    "Köle Tüccarı"
+    ],
+
+
+
+
+    "136": [
+    "Lordum, şehrin tam ortasına sizin heykelinizi yapmak istiyoruz. Hem askerlerimizin morali de artar.",
+    ["Haklısın.", 0, [5, 0, 0, -5]],
+    ["Böyle bir şeyi hak etmiyorum.", 0, [0, 0, 0, 0]],
+    "Heykeltraş"
+    ],
+
+
+
+    "137": [
+    "Lordum veba denilen hastalık bizim krallığımıza da geldi!",
+    ["NE!", 0, [-30, 0, -30, -30]],
+    ["NE!", 0, [-30, 0, -30, -30]],
+    "Veba Doktoru"
+    ],
+
+
+    "138": [
+    "Lordum askeri teknolojilerde tüm krallıklardan öndeyiz!",
+    ["HARİKA!", 0, [15, 0, 0, 0]],
+    ["HARİKA!", 0, [15, 0, 0, 0]],
+    "Komutan"
+    ],
+
+
+
+
+
+
+
+    "139": [
+    "Lordum yakın zamanda bir yabancı ile karşılaşacaksınız. Ne istiyorsa verin.",
+    ["Papaz 5. diyalog bir süre sonra oyuncunun karşısına gelir.", 0, [0, 0, 0, 0]],
+    ["Papaz 5. diyalog bir süre sonra oyuncunun karşısına gelir.", 0, [0, 0, 0, 0]],
+    "Kahin"
+    ],
+    "140": [
+    "Lordum yakın zamanda büyük bir tehdit ile karşılaşabilirsiniz. Dikkatli seçim yapın.",
+    ["Bu uyarıdan sonra daha çok veba olayı tehlikesi bulunan kart gelir.", 0, [0, 0, 0, 0]],
+    ["Bu uyarıdan sonra daha çok veba olayı tehlikesi bulunan kart gelir.", 0, [0, 0, 0, 0]],
+    "Kahin"
+    ],
+    "141": [
+    "Lordum yakın zamanda bir işgale uğrayacağız. Savaşa hazırlık yapın.",
+    ["Bu uyarıdan bir kaç kart sonra elçilerden savaş haberi gelir.", 0, [0, 0, 0, 0]],
+    ["Bu uyarıdan bir kaç kart sonra elçilerden savaş haberi gelir.", 0, [0, 0, 0, 0]],
+    "Kahin"
+    ],
+    "142": [
+    "Lordum Karanlık Abynalara bir sefer düzenleyin pişman olamayacaksınız.",
+    ["Kaşif’e bu yeri keşfetmesini söyleyebilirsiniz.", 0, [0, 0, 0, 0]],
+    ["Kaşif’e bu yeri keşfetmesini söyleyebilirsiniz.", 0, [0, 0, 0, 0]],
+    "Kahin"
+    ],
+    "143": [
+    "Lordum Kara Yıldız Geçidine bir sefer düzenleyin pişman olamayacaksınız.",
+    ["Kaşif’e bu yeri keşfetmesini söyleyebilirsiniz.", 0, [0, 0, 0, 0]],
+    ["Kaşif’e bu yeri keşfetmesini söyleyebilirsiniz.", 0, [0, 0, 0, 0]],
+    "Kahin"
+    ],
+    "144": [
+    "Lordum Gölge Kalesine bir sefer düzenleyin pişman olamayacaksınız.",
+    ["Kaşif’e bu yeri keşfetmesini söyleyebilirsiniz.", 0, [0, 0, 0, 0]],
+    ["Kaşif’e bu yeri keşfetmesini söyleyebilirsiniz.", 0, [0, 0, 0, 0]],
+    "Kahin"
+    ],
+    "145": [
+    "Lordum Kayıp Ufuklar Gemisinde sizi bir şey bekliyor.",
+    ["Kaşif’e bu yeri keşfetmesini söyleyebilirsiniz.", 0, [0, 0, 0, 0]],
+    ["Kaşif’e bu yeri keşfetmesini söyleyebilirsiniz.", 0, [0, 0, 0, 0]],
+    "Kahin"
+    ],
+    "146": [
+    "Shadowfire'ın gözü size seçimlerinizde yardımcı olacaktır.",
+    ["Bu gözü oyuncu istediği an kullanır ve neyin ne kadar azalacağını görür.", 0, [0, 0, 0, 0]],
+    ["Bu gözü oyuncu istediği an kullanır ve neyin ne kadar azalacağını görür.", 0, [0, 0, 0, 0]],
+    "Kahin"
+    ],
+    "147": [
+    "Çok üzgünüm ama kraliçe size ihanet edecek. Onu öldürmelisiniz.",
+    ["Oyuncuya öldürme veya öldürmeme fırsatı sunulur. Öldürünce bir şey kaybetmez veya kazanmaz ama öldürmez ise güvenlik azalır.", 0, [0, 0, 0, 0]],
+    ["Oyuncuya öldürme veya öldürmeme fırsatı sunulur. Öldürünce bir şey kaybetmez veya kazanmaz ama öldürmez ise güvenlik azalır.", 0, [0, 0, 0, 0]],
+    "Kahin"
+    ]
+
+
+
+}

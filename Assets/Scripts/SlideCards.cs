@@ -37,6 +37,10 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
     public GameObject gameManagerObject;
     public GameObject TopStory;
     public GameObject Stats;
+    [HideInInspector]public JObject eventList;
+    [HideInInspector]public JObject jObj;
+    public GameObject[] GonnaChange;
+
 
     private bool isInLeft;
     private bool isInRight;
@@ -51,8 +55,8 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
     private TextMeshProUGUI mainStory;
     private TextMeshProUGUI choices;
     private TextAsset storydata;
-    private JObject eventList;
-    private JObject jObj;
+    
+    
 
     CircleScript circleScript;
 
@@ -121,16 +125,40 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
         transform.rotation = Quaternion.Euler(0f, 0f, move_aim_x * rotateSpeed);
 
         card.anchoredPosition += pointerEventData.delta / canvas.scaleFactor;
-
+        //Bu sola ilk kaydýrdýðýmda gelen þey lütfen yazýn
         if (isInLeft)
         {
             gameObject.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = eventList[((int)(index * jObj.Count)).ToString()][choice1][0].ToString();
             gameObject.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = "";
+
+            for (int i = 0; i < 4; i++)
+            {
+                if (eventList[((int)(index * jObj.Count)).ToString()][choice1][2][i].ToObject<int>() > 0 || eventList[((int)(index * jObj.Count)).ToString()][choice1][2][i].ToObject<int>() < 0)
+                {
+                    GonnaChange[i].gameObject.SetActive(true);
+                }
+                else
+                {
+                    GonnaChange[i].gameObject.SetActive(false);
+                }
+            }
         }
         else if (isInRight)
         {
             gameObject.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = eventList[((int)(index * jObj.Count)).ToString()][choice2][0].ToString();
             gameObject.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = "";
+
+            for (int i = 0; i < 4; i++)
+            {
+                if (eventList[((int)(index * jObj.Count)).ToString()][choice2][2][i].ToObject<int>() > 0 || eventList[((int)(index * jObj.Count)).ToString()][choice2][2][i].ToObject<int>() < 0)
+                {
+                    GonnaChange[i].gameObject.SetActive(true);
+                }
+                else
+                {
+                    GonnaChange[i].gameObject.SetActive(false);
+                }
+            }
         }
     }
 
@@ -154,6 +182,7 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
                 (int)(eventList[((int)(index * jObj.Count)).ToString()][choice1][2][3]),
                 (int)(eventList[((int)(index * jObj.Count)).ToString()][choice1][1]));
 
+
             if ((int)eventList[((int)(index * jObj.Count)).ToString()][choice1][1] == 0)
             {
                 controlLength = (int)eventList[((int)(index * jObj.Count)).ToString()].Count();
@@ -169,6 +198,7 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
                 (int)(eventList[((int)(index * jObj.Count)).ToString()][choice2][2][3]),
                 (int)(eventList[((int)(index * jObj.Count)).ToString()][choice2][1]));
 
+
             if ((int)eventList[((int)(index * jObj.Count)).ToString()][choice2][1] == 0)
             {
                 controlLength = (int)eventList[((int)(index * jObj.Count)).ToString()].Count();
@@ -179,6 +209,11 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
         {
             Debug.Log("PutBack");
             PutBackCard();
+        }
+
+        for (int i = 0; i < 4; i++)
+        {
+            GonnaChange[i].gameObject.SetActive(false);
         }
     }
 
@@ -253,16 +288,16 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
         //}
 
         circleScript.HealthAdd(stat1);
-        Stats.transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().text = $"Health\n{CircleScript.healthcount}";
+        Stats.transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().text = $"{CircleScript.healthcount}";
 
         circleScript.HappyAdd(stat2);
-        Stats.transform.GetChild(1).gameObject.GetComponent<TextMeshProUGUI>().text = $"Happiness\n{CircleScript.happycount}";
+        Stats.transform.GetChild(1).gameObject.GetComponent<TextMeshProUGUI>().text = $"{CircleScript.happycount}";
 
         circleScript.MoneyAdd(stat3);
-        Stats.transform.GetChild(2).gameObject.GetComponent<TextMeshProUGUI>().text = $"Money\n{CircleScript.money}";
+        Stats.transform.GetChild(2).gameObject.GetComponent<TextMeshProUGUI>().text = $"{CircleScript.money}";
 
         circleScript.SociabilityAdd(stat4);
-        Stats.transform.GetChild(3).gameObject.GetComponent<TextMeshProUGUI>().text = $"Sociability\n{CircleScript.sociability}";
+        Stats.transform.GetChild(3).gameObject.GetComponent<TextMeshProUGUI>().text = $"{CircleScript.sociability}";
         
     }
 

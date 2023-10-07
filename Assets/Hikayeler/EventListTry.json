@@ -1,7 +1,7 @@
 {
     "0": [
     "Lordum askerlere bir gösteri planlamaya ne dersiniz?",
-    ["Evet iyi olur.", 0, [8, -2, 4, -1]],
+    ["Evet iyi olur.", 0, [-10, 0, 0, 20]],
     ["Disiplinsizliğe gerek yok.", 0, [-7, 4, 4, 4]],
     "Soytarı"
     ],

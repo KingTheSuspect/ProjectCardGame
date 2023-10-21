@@ -47,6 +47,7 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
     private bool chooseLeft;
     private bool chooseRight;
     private bool DisableTouch;
+    private bool isCardPuttingBack;
 
     private RectTransform card;
     private GameObject cardPrefab;
@@ -84,6 +85,15 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
 
     private void Update()
     {
+        CardMovementUpdate();
+        CardVisualUpdate();
+        HandleArrivalAndAnimationControl();
+        CardPuttingBackAnimation();
+    }
+
+    //Kart hareketleri güncellernir.
+    private void CardMovementUpdate()
+    {
         animationLeftTime -= Time.deltaTime;
         resetLeftTime -= Time.deltaTime;
 
@@ -101,10 +111,20 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
         {
             resetLeftTime = 0f;
         }
-        gameObject.transform.GetChild(1).GetComponent<TextMeshProUGUI>().alpha = math.abs(gameObject.transform.position.x-297) * 1 / 100f;
-        gameObject.transform.GetChild(2).GetComponent<TextMeshProUGUI>().alpha = math.abs(gameObject.transform.position.x-297) * 1 / 100f;
+    }
 
-        if (math.abs(gameObject.transform.position.x - targetPosition.x) <= 100 && math.abs(gameObject.transform.position.y - targetPosition.y) <= 100 && animationLeftTime <=0 && animationControl == true)
+    //Kardýn seçimlerde alpha deðerinin deðiþmesini saðlar.
+    private void CardVisualUpdate()
+    {
+        gameObject.transform.GetChild(1).GetComponent<TextMeshProUGUI>().alpha = math.abs(gameObject.transform.position.x - 297) * 1 / 100f;
+        gameObject.transform.GetChild(2).GetComponent<TextMeshProUGUI>().alpha = math.abs(gameObject.transform.position.x - 297) * 1 / 100f;
+    }
+
+    //Kardýn hedefe varýp varmadýðý kontrol edilir, seçim yapýlýp kart býrakýldýðýnda
+    //oynatýlan animasyonun bitmesini bekler ve bitince kardý diðer event için sýfýrlar.
+    private void HandleArrivalAndAnimationControl()
+    {
+        if (math.abs(gameObject.transform.position.x - targetPosition.x) <= 100 && math.abs(gameObject.transform.position.y - targetPosition.y) <= 100 && animationLeftTime <= 0 && animationControl == true)
         {
             Debug.Log("Same Position");
             ResetCardCanvas();
@@ -231,10 +251,37 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
     {
         gameObject.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = "";
         gameObject.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = "";
-        transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, 0f));
-        card.anchoredPosition = new Vector2(0f, 0f) / canvas.scaleFactor;
-    }
 
+        isCardPuttingBack = true;
+
+        //Old Code Blocks
+        //transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, 0f));
+        //card.anchoredPosition = new Vector2(0f, 0f) / canvas.scaleFactor;
+    }
+    //Kart býrakýldýðýnda yerine yumaþak þekilde geçiþ yapar.
+    private void CardPuttingBackAnimation()
+    {
+        Vector2 targetPosition = Vector2.zero / canvas.scaleFactor;
+        Quaternion targetQuaternion = Quaternion.Euler(0, 0, 0);
+
+        Debug.Log(card.anchoredPosition == targetPosition);
+
+        if (Vector2.Distance(card.anchoredPosition, targetPosition) < 4f)
+        {
+            DisableTouch = false;
+            isCardPuttingBack = false;
+        }
+
+        if (!isCardPuttingBack)
+            return;
+
+        //10 deðeri keyfidir, bir deðiþkene atanabilir.
+        transform.rotation = Quaternion.Lerp(transform.rotation, targetQuaternion, Time.deltaTime * 10);
+        card.anchoredPosition = Vector2.Lerp(card.anchoredPosition, targetPosition, Time.deltaTime * 10);
+
+        //Geri dönüþ animasyonu bitmeden kart tekrardan hareket ettirilemez.
+        DisableTouch = true;
+    }
     private void HandleStory()
     {
         if (controlLength < eventList[((int)(index * jObj.Count)).ToString()].Count() - 1)
@@ -287,16 +334,16 @@ public class SlideCards : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
         //    Stats.transform.GetChild(4).gameObject.GetComponent<TextMeshProUGUI>().text = $"Age\n{CircleScript.age}";
         //}
 
-        circleScript.HealthAdd(stat1);
+        circleScript.AddHealth(stat1);
         Stats.transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().text = $"{CircleScript.healthcount}";
 
-        circleScript.HappyAdd(stat2);
+        circleScript.AddHappiness(stat2);
         Stats.transform.GetChild(1).gameObject.GetComponent<TextMeshProUGUI>().text = $"{CircleScript.happycount}";
 
-        circleScript.MoneyAdd(stat3);
+        circleScript.AddMoney(stat3);
         Stats.transform.GetChild(2).gameObject.GetComponent<TextMeshProUGUI>().text = $"{CircleScript.money}";
 
-        circleScript.SociabilityAdd(stat4);
+        circleScript.AddSociability(stat4);
         Stats.transform.GetChild(3).gameObject.GetComponent<TextMeshProUGUI>().text = $"{CircleScript.sociability}";
         
     }

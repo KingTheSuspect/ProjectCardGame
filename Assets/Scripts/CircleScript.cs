@@ -26,19 +26,19 @@ public class CircleScript : MonoBehaviour
         money = 25;
         sociability = 25;
     }
-    public void HealthAdd(int healthAmount)
+    public void AddHealth(int healthAmount)
     {
         healthcount += healthAmount;
     }
-    public void HappyAdd(int happinessAmount)
+    public void AddHappiness(int happinessAmount)
     {
         happycount += happinessAmount;
     }
-    public void MoneyAdd(int moneyAmount)
+    public void AddMoney(int moneyAmount)
     {
         money += moneyAmount;
     }
-    public void SociabilityAdd(int sociabilityAmount)
+    public void AddSociability(int sociabilityAmount)
     {
         sociability += sociabilityAmount;
     }

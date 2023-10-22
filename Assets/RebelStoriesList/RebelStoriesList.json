@@ -1,0 +1,62 @@
+[
+  {
+    "StoryTellerName": "Hancı",
+    "StoryContent": "İsyancılarımızın öfkelerini körüklemek için bu akşam han da bir konuşma yapmalısınız",
+    "OptionA": {
+      "OptionName": "Haklısın",
+      "Privacy": -2,
+      "Aggressiveness": 3,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4
+    },
+    "OptionB": {
+      "OptionName": "Bunları gizli yapmalıyız",
+      "Privacy": 4,
+      "Aggressiveness": -2,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4
+    }
+  },
+  {
+    "StoryTellerName": "Hancı",
+    "StoryContent": "Bu gün bir soylu bize hakaret etti, bende yüzünü dağıttım!",
+    "OptionA": {
+      "OptionName": "İyi yapmışsın",
+      "Privacy": 0,
+      "Aggressiveness": 3,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4
+    },
+    "OptionB": {
+      "OptionName": "Hancı kendini ele verebilirdin! Daha dikkatli davran",
+      "Privacy": 4,
+      "Aggressiveness": -2,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4
+    }
+  },
+  {
+    "StoryTellerName": "Hancı",
+    "StoryContent": "Sokaklara ilan vermeli ve halkı isyana davet etmeliyiz",
+    "OptionA": {
+      "OptionName": "Gizliliğimizi tehlikeye atamam",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4
+    },
+    "OptionB": {
+      "OptionName": "Hazırlıklara başlayın",
+      "Privacy": -5,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0
+    }
+  }
+]

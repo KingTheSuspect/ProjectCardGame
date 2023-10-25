@@ -2467,6 +2467,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1513763930}
   m_CullTransparentMesh: 1
+--- !u!1 &1537241579
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1537241581}
+  - component: {fileID: 1537241580}
+  m_Layer: 0
+  m_Name: RebelStats
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1537241580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1537241579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7549c1c0e058bc9448b5d2f903f6b8c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1537241581
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1537241579}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 552.9059, y: 282, z: 90}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1541415200
 GameObject:
   m_ObjectHideFlags: 0
@@ -3251,6 +3295,53 @@ RectTransform:
   m_AnchoredPosition: {x: 124.999985, y: 221.99994}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &2016859035
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2016859037}
+  - component: {fileID: 2016859036}
+  m_Layer: 0
+  m_Name: CharacterImagesDatabase
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2016859036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2016859035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79836892d8f2d59408a9892578d828ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterImages:
+  - CharacterName: "Hanc\u0131"
+    CharacterImg: {fileID: 21300000, guid: 492b9988436bd45049a9a6bc52ac8fb0, type: 3}
+--- !u!4 &2016859037
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2016859035}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 552.9059, y: 282, z: 90}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &733854361729901013
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3404,8 +3495,8 @@ GameObject:
   - component: {fileID: 6045934712695597550}
   - component: {fileID: 1165330177481906063}
   - component: {fileID: 6045934712695597538}
-  - component: {fileID: 6742336282788950847}
   - component: {fileID: 6742336282788950848}
+  - component: {fileID: 6742336282788950847}
   m_Layer: 6
   m_Name: Kart
   m_TagString: MainCard
@@ -3458,7 +3549,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6045934712695597542}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 81dc44befd202a64595ba36a7b4e21a5, type: 3}
   m_Name: 
@@ -3494,21 +3585,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76f96de12aef72f44bb0e0d98310de3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touch_movement_sensivity: 0
-  writingDelay: 0
-  rotateDegreeLeft: 0
-  rotateDegreeRight: 0
-  rotateSpeed: 0
+  touch_movement_sensivity: 2
+  writingDelay: 0.015
+  rotateDegreeLeft: 35
+  rotateDegreeRight: -35
+  rotateSpeed: -44
   eventLength: 0
   choice1: 0
   choice2: 0
   index: 0
   controlLength: 0
-  events: {fileID: 0}
-  gameManagerObject: {fileID: 0}
-  TopStory: {fileID: 0}
-  Stats: {fileID: 0}
-  GonnaChange: []
+  events: {fileID: 4900000, guid: b446f02b5ae2fc04d8c7edc9bbaa64e8, type: 3}
+  gameManagerObject: {fileID: 1084606804}
+  TopStory: {fileID: 1541415200}
+  Stats: {fileID: 472060569}
+  GonnaChange:
+  - {fileID: 1568787258}
+  - {fileID: 1451599553}
+  - {fileID: 1967059630}
+  - {fileID: 201720120}
 --- !u!114 &7516206088517314295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3608,3 +3703,5 @@ SceneRoots:
   - {fileID: 1084606806}
   - {fileID: 1852444015}
   - {fileID: 936438275}
+  - {fileID: 2016859037}
+  - {fileID: 1537241581}

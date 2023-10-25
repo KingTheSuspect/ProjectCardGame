@@ -3,6 +3,8 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections;
+using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using TMPro;
 using Unity.Mathematics;
@@ -12,7 +14,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
-public class CardSelectionHandler : MonoBehaviour
+public class CardSelectionHandler : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler
 {
     private float move_aim_x = 0;
     [SerializeField] private float touch_movement_sensivity;
@@ -57,7 +59,8 @@ public class CardSelectionHandler : MonoBehaviour
     private TextMeshProUGUI choices;
     private TextAsset storydata;
 
-
+    private StoriesHandler _storiesHandler;
+    private StoryCard _currentHandlingStoryCard;
 
     CircleScript circleScript;
 
@@ -78,6 +81,8 @@ public class CardSelectionHandler : MonoBehaviour
 
         index = Random.value;
         eventLength = eventList[((int)(index * jObj.Count)).ToString()].Count();
+
+        _storiesHandler = FindObjectOfType<StoriesHandler>();
 
         HandleStory();
     }
@@ -134,6 +139,7 @@ public class CardSelectionHandler : MonoBehaviour
 
     public void OnDrag(PointerEventData pointerEventData)
     {
+        Debug.Log(DisableTouch);
         if (DisableTouch)
             return;
 
@@ -147,36 +153,37 @@ public class CardSelectionHandler : MonoBehaviour
         //Bu sola ilk kaydýrdýðýmda gelen þey lütfen yazýn
         if (isInLeft)
         {
-            gameObject.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = eventList[((int)(index * jObj.Count)).ToString()][choice1][0].ToString();
+            gameObject.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = _currentHandlingStoryCard.OptionA.OptionName;
             gameObject.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = "";
 
+            //Burasý update edilecek!
             for (int i = 0; i < 4; i++)
             {
-                if (eventList[((int)(index * jObj.Count)).ToString()][choice1][2][i].ToObject<int>() > 0 || eventList[((int)(index * jObj.Count)).ToString()][choice1][2][i].ToObject<int>() < 0)
-                {
-                    GonnaChange[i].gameObject.SetActive(true);
-                }
-                else
-                {
-                    GonnaChange[i].gameObject.SetActive(false);
-                }
+                //if (eventList[((int)(index * jObj.Count)).ToString()][choice1][2][i].ToObject<int>() > 0 || eventList[((int)(index * jObj.Count)).ToString()][choice1][2][i].ToObject<int>() < 0)
+                //{
+                //    GonnaChange[i].gameObject.SetActive(true);
+                //}
+                //else
+                //{
+                //    GonnaChange[i].gameObject.SetActive(false);
+                //}
             }
         }
         else if (isInRight)
         {
-            gameObject.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = eventList[((int)(index * jObj.Count)).ToString()][choice2][0].ToString();
+            gameObject.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = _currentHandlingStoryCard.OptionB.OptionName;
             gameObject.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = "";
 
             for (int i = 0; i < 4; i++)
             {
-                if (eventList[((int)(index * jObj.Count)).ToString()][choice2][2][i].ToObject<int>() > 0 || eventList[((int)(index * jObj.Count)).ToString()][choice2][2][i].ToObject<int>() < 0)
-                {
-                    GonnaChange[i].gameObject.SetActive(true);
-                }
-                else
-                {
-                    GonnaChange[i].gameObject.SetActive(false);
-                }
+                //if (eventList[((int)(index * jObj.Count)).ToString()][choice2][2][i].ToObject<int>() > 0 || eventList[((int)(index * jObj.Count)).ToString()][choice2][2][i].ToObject<int>() < 0)
+                //{
+                //    GonnaChange[i].gameObject.SetActive(true);
+                //}
+                //else
+                //{
+                //    GonnaChange[i].gameObject.SetActive(false);
+                //}
             }
         }
     }
@@ -193,35 +200,21 @@ public class CardSelectionHandler : MonoBehaviour
         choices.text = "";
         move_aim_x = 0;
 
+        RebelOption selectedOption;
+
         if (chooseLeft && isInLeft)
         {
-            SetStats((int)(eventList[((int)(index * jObj.Count)).ToString()][choice1][2][0]),
-                (int)(eventList[((int)(index * jObj.Count)).ToString()][choice1][2][1]),
-                (int)(eventList[((int)(index * jObj.Count)).ToString()][choice1][2][2]),
-                (int)(eventList[((int)(index * jObj.Count)).ToString()][choice1][2][3]),
-                (int)(eventList[((int)(index * jObj.Count)).ToString()][choice1][1]));
-
-
-            if ((int)eventList[((int)(index * jObj.Count)).ToString()][choice1][1] == 0)
-            {
-                controlLength = (int)eventList[((int)(index * jObj.Count)).ToString()].Count();
-            }
+            selectedOption = _currentHandlingStoryCard.OptionA;
+            ChangeStatsAfterSelection(selectedOption);
+            RefreshStatsUi();
             CardAnimation();
 
         }
         else if (chooseRight && isInRight)
         {
-            SetStats((int)(eventList[((int)(index * jObj.Count)).ToString()][choice2][2][0]),
-                (int)(eventList[((int)(index * jObj.Count)).ToString()][choice2][2][1]),
-                (int)(eventList[((int)(index * jObj.Count)).ToString()][choice2][2][2]),
-                (int)(eventList[((int)(index * jObj.Count)).ToString()][choice2][2][3]),
-                (int)(eventList[((int)(index * jObj.Count)).ToString()][choice2][1]));
-
-
-            if ((int)eventList[((int)(index * jObj.Count)).ToString()][choice2][1] == 0)
-            {
-                controlLength = (int)eventList[((int)(index * jObj.Count)).ToString()].Count();
-            }
+            selectedOption = _currentHandlingStoryCard.OptionB;
+            ChangeStatsAfterSelection(selectedOption);
+            RefreshStatsUi();
             CardAnimation();
         }
         else
@@ -230,12 +223,19 @@ public class CardSelectionHandler : MonoBehaviour
             PutBackCard();
         }
 
+
         for (int i = 0; i < 4; i++)
         {
             GonnaChange[i].gameObject.SetActive(false);
         }
     }
-
+    private void ChangeStatsAfterSelection(RebelOption selectedOption)
+    {
+        RebelStatsManager.Instance.AddPrivacy(selectedOption.Privacy);
+        RebelStatsManager.Instance.AddAggressiveness(selectedOption.Aggressiveness);
+        RebelStatsManager.Instance.AddLawCount(selectedOption.Law);
+        RebelStatsManager.Instance.AddRoyaltyCount(selectedOption.Royalty);
+    }
     private void ResetCardCanvas()
     {
         Debug.Log("ResetCardCanvas");
@@ -283,25 +283,22 @@ public class CardSelectionHandler : MonoBehaviour
     }
     private void HandleStory()
     {
-        if (controlLength < eventList[((int)(index * jObj.Count)).ToString()].Count() - 1)
-        {
-            StartCoroutine(TypeMainStory(eventList[((int)(index * jObj.Count)).ToString()][controlLength].ToString()));
-            gameObject.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = "";
-            gameObject.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = "";
-            gameObject.transform.GetChild(3).GetComponent<TextMeshProUGUI>().text = (eventList[((int)(index * jObj.Count)).ToString()][eventLength - 1]).ToString();
-            gameObject.GetComponent<Image>().sprite = Resources.Load<Sprite>($"PersonImages/{eventList[((int)(index * jObj.Count)).ToString()][eventLength - 1]}");
-            gameObject.GetComponent<Image>().color = Color.white;
-            choice1 = controlLength + 1;
-            choice2 = controlLength + 2;
-            controlLength += 3;
-        }
-        else
-        {
-            RandomIndex();
-            eventLength = eventList[((int)(index * jObj.Count)).ToString()].Count();
-            controlLength = 0;
-            HandleStory();
-        }
+        Debug.Log("Story Handle");
+        StoryCard randomStoryCard = GetRandomStoryFromJsonFile();
+        StartCoroutine(TypeMainStory(randomStoryCard.StoryContent));
+        gameObject.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = "";
+        gameObject.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = "";
+        gameObject.transform.GetChild(3).GetComponent<TextMeshProUGUI>().text = randomStoryCard.StoryTellerName;
+        gameObject.GetComponent<Image>().sprite = RebelCharactersImagesDatabase.Instance.GetCharacterSpriteWithName(randomStoryCard.StoryTellerName);
+        gameObject.GetComponent<Image>().color = Color.white;
+        _currentHandlingStoryCard = randomStoryCard;
+    }
+    private StoryCard GetRandomStoryFromJsonFile()
+    {
+        List<StoryCard> stories = _storiesHandler.LoadStoriesList();
+        Debug.Log(stories.Count);
+        StoryCard randomCard = stories[Random.Range(0, stories.Count)];
+        return randomCard;
     }
     private void CardAnimation()
     {
@@ -324,29 +321,13 @@ public class CardSelectionHandler : MonoBehaviour
     {
         index = Random.value;
     }
-
-    private void SetStats(int stat1, int stat2, int stat3, int stat4, int ageSituation)
+    private void RefreshStatsUi()
     {
-        //if (ageSituation == 0)
-        //{
-        //    circleScript.AgeAdd();
-        //    Stats.transform.GetChild(4).gameObject.GetComponent<TextMeshProUGUI>().text = $"Age\n{CircleScript.age}";
-        //}
-
-        circleScript.AddHealth(stat1);
-        Stats.transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().text = $"{CircleScript.healthcount}";
-
-        circleScript.AddHappiness(stat2);
-        Stats.transform.GetChild(1).gameObject.GetComponent<TextMeshProUGUI>().text = $"{CircleScript.happycount}";
-
-        circleScript.AddMoney(stat3);
-        Stats.transform.GetChild(2).gameObject.GetComponent<TextMeshProUGUI>().text = $"{CircleScript.money}";
-
-        circleScript.AddSociability(stat4);
-        Stats.transform.GetChild(3).gameObject.GetComponent<TextMeshProUGUI>().text = $"{CircleScript.sociability}";
-
+        Stats.transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().text = RebelStatsManager.Instance.PrivacyCount + "";
+        Stats.transform.GetChild(1).gameObject.GetComponent<TextMeshProUGUI>().text = RebelStatsManager.Instance.AggressivenessCount + "";
+        Stats.transform.GetChild(2).gameObject.GetComponent<TextMeshProUGUI>().text = RebelStatsManager.Instance.LawCount + "";
+        Stats.transform.GetChild(3).gameObject.GetComponent<TextMeshProUGUI>().text = RebelStatsManager.Instance.RoyaltyCount + "";
     }
-
     private IEnumerator TypeMainStory(string sentence)
     {
         DisableTouch = true;

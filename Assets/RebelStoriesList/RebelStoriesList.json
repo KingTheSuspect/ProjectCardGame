@@ -8,7 +8,8 @@
       "Aggressiveness": 3,
       "Law": 0,
       "Royalty": 0,
-      "MainQuestModifierType": 4
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
     },
     "OptionB": {
       "OptionName": "Bunları gizli yapmalıyız",
@@ -16,7 +17,8 @@
       "Aggressiveness": -2,
       "Law": 0,
       "Royalty": 0,
-      "MainQuestModifierType": 4
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
     }
   },
   {
@@ -28,7 +30,8 @@
       "Aggressiveness": 3,
       "Law": 0,
       "Royalty": 0,
-      "MainQuestModifierType": 4
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
     },
     "OptionB": {
       "OptionName": "Hancı kendini ele verebilirdin! Daha dikkatli davran",
@@ -36,7 +39,8 @@
       "Aggressiveness": -2,
       "Law": 0,
       "Royalty": 0,
-      "MainQuestModifierType": 4
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
     }
   },
   {
@@ -48,7 +52,8 @@
       "Aggressiveness": 0,
       "Law": 0,
       "Royalty": 0,
-      "MainQuestModifierType": 4
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
     },
     "OptionB": {
       "OptionName": "Hazırlıklara başlayın",
@@ -56,7 +61,740 @@
       "Aggressiveness": 0,
       "Law": 0,
       "Royalty": 0,
-      "MainQuestModifierType": 0
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    }
+  },
+  {
+    "StoryTellerName": "Hancı",
+    "StoryContent": "İsyancı kardeşlerimizi zindanlarda yalnız bırakamayız!",
+    "OptionA": {
+      "OptionName": "Kurtuluş için birkaç kişi kaybetmelidir",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": -4,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Bir plan oluşturmalıyız",
+      "Privacy": -4,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 5,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    }
+  },
+  {
+    "StoryTellerName": "Hancı",
+    "StoryContent": "Muhafızlar halktan zorla mallarını alıyorlar. Halkı muhafızlar karşı hiddetlendirmeliyiz!",
+    "OptionA": {
+      "OptionName": "Doğru",
+      "Privacy": -5,
+      "Aggressiveness": 6,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Hayır, biz onlar gibi değiliz",
+      "Privacy": 5,
+      "Aggressiveness": -4,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    }
+  },
+  {
+    "StoryTellerName": "Hancı",
+    "StoryContent": "Çocuklar handa sıkılıyor! Biraz atraksiyon hayatlarına renk katardı",
+    "OptionA": {
+      "OptionName": "Peki madem, öyle olsun",
+      "Privacy": -3,
+      "Aggressiveness": 3,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Sıkılmaya devam edecekler desene",
+      "Privacy": 3,
+      "Aggressiveness": -4,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    }
+  },
+  {
+    "StoryTellerName": "Hancı",
+    "StoryContent": "Kraliyet muhafızları dün bizden yasa dışı haraç istediler. Bu gün tekrar geleceklermiş. Ne yapmalıyız?",
+    "OptionA": {
+      "OptionName": "Hadlerini bildirin",
+      "Privacy": -6,
+      "Aggressiveness": 8,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Yapacak bir şey yok, ne istiyorlarsa verin",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": -4,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    }
+  },
+  {
+    "StoryTellerName": "Hancı",
+    "StoryContent": "Bir casusumuzdan haber aldık. Yarın buradan kraliyetin kervanı geçecekmiş. Şu adamları biraz zorlamaya ne dersin? ",
+    "OptionA": {
+      "OptionName": "Hazırlanın derim",
+      "Privacy": -7,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 3,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Biraz sakin kalın! Derim",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": -3,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    }
+  },
+  {
+    "StoryTellerName": "Hancı",
+    "StoryContent": "Şu masadaki soylular geldiklerinden beri bizi izliyorlar. Konuşsak mı?",
+    "OptionA": {
+      "OptionName": "Bakalım dertleri neymiş",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Bakalım dertleri neymiş",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    }
+  },
+  {
+    "StoryTellerName": "Köylü",
+    "StoryContent": "İsyancıların çok agresif davranıyorlar. Lütfen biraz sakinleşmelerini söyle!",
+    "OptionA": {
+      "OptionName": "Ancak kralın kanı aktığı gün sakinleşiriz",
+      "Privacy": 0,
+      "Aggressiveness": 5,
+      "Law": 0,
+      "Royalty": -4,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Disiplinsizliğe gerek yok",
+      "Privacy": 0,
+      "Aggressiveness": -2,
+      "Law": 5,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    }
+  },
+  {
+    "StoryTellerName": "Köylü",
+    "StoryContent": "İsyankarların isyana katılmak istemeyenleri tehdit ediyor, halkı birleştirmek istiyorsan onlara sevgi göstermelisin",
+    "OptionA": {
+      "OptionName": "Haklısın",
+      "Privacy": 0,
+      "Aggressiveness": -4,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "O tehditler devrimi getirecek!",
+      "Privacy": 0,
+      "Aggressiveness": 5,
+      "Law": 0,
+      "Royalty": -3,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    }
+  },
+  {
+    "StoryTellerName": "Köylü",
+    "StoryContent": "Madem halkın yanındasın bize yardım et. Muhafızlar bize resmen işkence ediyor. Onlara bir dur de! ",
+    "OptionA": {
+      "OptionName": "Merak etme, elbette sizin yanınızdayız",
+      "Privacy": -3,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 6,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Muhafızlara karışamayız",
+      "Privacy": 0,
+      "Aggressiveness": 6,
+      "Law": 0,
+      "Royalty": -3,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    }
+  },
+  {
+    "StoryTellerName": "Köylü",
+    "StoryContent": "İsyan için nasıl bir yol izleyeceksin? ",
+    "OptionA": {
+      "OptionName": "Kanlı bir yol izleyeceğim",
+      "Privacy": 0,
+      "Aggressiveness": 6,
+      "Law": 0,
+      "Royalty": -4,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Barışçıl bir yol izleyeceğim",
+      "Privacy": 0,
+      "Aggressiveness": -4,
+      "Law": 0,
+      "Royalty": 6,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    }
+  },
+  {
+    "StoryTellerName": "Köylü",
+    "StoryContent": "Lord dostlarımızdan birisini açık alanda asacak, bunu yaparsa halkın isyancılara bakış açısı etkilenir",
+    "OptionA": {
+      "OptionName": "Bu idama engel olacağız",
+      "Privacy": -4,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 5,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Elimizden bir şey gelmez",
+      "Privacy": 5,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": -4,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    }
+  },
+  {
+    "StoryTellerName": "Köylü",
+    "StoryContent": "Krallığın kervanlarından bir tanesi yarın buradan geçecek. Temiz bir plan ile kervanı ele geçirebiliriz",
+    "OptionA": {
+      "OptionName": "Hızlıca plan yapmaya başlayalım",
+      "Privacy": -5,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 3,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Kaleye bu kadar yakın bir yerde bunu yapamayız",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": -2,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    }
+  },
+  {
+    "StoryTellerName": "Köylü",
+    "StoryContent": "İsyan için aramızdan birkaç kişiyi muhafızların arasına katalım",
+    "OptionA": {
+      "OptionName": "Mantıklı",
+      "Privacy": -4,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 2,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Gereği yok",
+      "Privacy": 0,
+      "Aggressiveness": -3,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    }
+  },
+  {
+    "StoryTellerName": "Köylü",
+    "StoryContent": " Geçen gün bazı köylüler muhafızları taşlamış!",
+    "OptionA": {
+      "OptionName": "İyi yapmışlar",
+      "Privacy": -4,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Hemen onları bulup krallığa teslim edin",
+      "Privacy": 7,
+      "Aggressiveness": -2,
+      "Law": 0,
+      "Royalty": -2,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    }
+  },
+  {
+    "StoryTellerName": "Köylü",
+    "StoryContent": "Krallık bedava yemekler dağıtıyor. Fakir kesim onların tarafına geçebilir",
+    "OptionA": {
+      "OptionName": "Fakir kesimi daha çok kışkırtmalıyız",
+      "Privacy": -3,
+      "Aggressiveness": 5,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Yapabileceğimiz bir şey yok",
+      "Privacy": 5,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": -3,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    }
+  },
+  {
+    "StoryTellerName": "Çiftçi",
+    "StoryContent": "Bu soylular iyice azıttı! Ellerini kollarını sallayarak hayvanlarımızı çalıyorlar! Biri bunlara dur demeli",
+    "OptionA": {
+      "OptionName": "Evet, haklısın",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": -4,
+      "Royalty": 5,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Yapabileceğimiz bir şey yok",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": -3,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    }
+  },
+  {
+    "StoryTellerName": "Çiftçi",
+    "StoryContent": "Tüccarlar bizden zorla ucuza mal alıyorlar. Lütfen yardım edin",
+    "OptionA": {
+      "OptionName": "Pekala, şu tüccarlara bir gözükelim",
+      "Privacy": -3,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 5,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": " Halkın boş şeylere ayıracak vakti yok",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": -3,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    }
+  },
+  {
+    "StoryTellerName": "Çiftçi",
+    "StoryContent": "Krallığa biraz gözdağı vermek lazım. Sizden isteğim tarlamı yakın. \nBöylece hem bana mağdur olduğum için paramı verirler. Hem de krallık kaynak sıkıntısına düşer",
+    "OptionA": {
+      "OptionName": "Güzel düşünmüşsün",
+      "Privacy": -4,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 3,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": " Bu çapta bir olayı krallık karşılıksız bırakmaz, çok tehlikeli!",
+      "Privacy": 0,
+      "Aggressiveness": -4,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    }
+  },
+  {
+    "StoryTellerName": "Çiftçi",
+    "StoryContent": "Soylular tarafından ezilmekten bıktık! Eğer kuracağınız düzende soylu ve çiftçi eşit olacaksa yanınızdayız!",
+    "OptionA": {
+      "OptionName": "Tabi ki de eşit olacaksınız!",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": -5,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Demek ki yanımızda değilsiniz",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": -3,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    }
+  },
+  {
+    "StoryTellerName": "Çiftçi",
+    "StoryContent": "Bu yıl çıkan hasılat berbat! Muhafızlar geldiğinde ne diyeceğiz? ",
+    "OptionA": {
+      "OptionName": "Baş kaldırın ve isteklerine cevap vermeyin",
+      "Privacy": -4,
+      "Aggressiveness": 7,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Yalvarın",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": -4,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    }
+  },
+  {
+    "StoryTellerName": "Çiftçi",
+    "StoryContent": "Soylular sizinle konuşmak istediklerini söylediler",
+    "OptionA": {
+      "OptionName": "Konuşalım bakalım",
+      "Privacy": -4,
+      "Aggressiveness": 0,
+      "Law": 5,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Kendimi açık edemem",
+      "Privacy": 6,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    }
+  },
+  {
+    "StoryTellerName": "Çiftçi",
+    "StoryContent": "Krallığın bel bükücü vergilerini karşılayamıyoruz. Ne yapmalıyız? ",
+    "OptionA": {
+      "OptionName": "İsyanımıza katılın",
+      "Privacy": -3,
+      "Aggressiveness": 4,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Mesleğinizi bırakın o zaman",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": -3,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    }
+  },
+  {
+    "StoryTellerName": "Çiftçi",
+    "StoryContent": "Çiftçi halkına bir konuşma yapmak ister misiniz?",
+    "OptionA": {
+      "OptionName": "Neden olmasın",
+      "Privacy": -4,
+      "Aggressiveness": 6,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Üzgünüm ama olmaz",
+      "Privacy": 5,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    }
+  },
+  {
+    "StoryTellerName": "Çiftçi",
+    "StoryContent": "Muhafızlar nedensiz yere bir arkadaşımızın oğlunu idam ile cezalandırdı. Ona iftira attılar! ",
+    "OptionA": {
+      "OptionName": "Merak etmeyin onu kurtaracağız",
+      "Privacy": -3,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 5,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Çok üzgünüm ama yapabileceğimiz şeyler sınırlı",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": -4,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    }
+  },
+  {
+    "StoryTellerName": "Savaş Gazisi",
+    "StoryContent": "Bir gözüm görmese de görebildiğim şey bu soylulardan bize hayır gelmeyeceği. ",
+    "OptionA": {
+      "OptionName": "Senin sözünün üstüne söz olmaz",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": -3,
+      "Royalty": 4,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Onlar da bizde",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 5,
+      "Royalty": -4,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    }
+  },
+  {
+    "StoryTellerName": "Savaş Gazisi",
+    "StoryContent": "Bak benim sözüme güven, kalenin planlarını çaldırmadan kaybederiz",
+    "OptionA": {
+      "OptionName": "Casusa bu dediklerini ileteceğim",
+      "Privacy": -3,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 2,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Böyle bir riske giremeyiz",
+      "Privacy": 7,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": -4,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    }
+  },
+  {
+    "StoryTellerName": "Savaş Gazisi",
+    "StoryContent": "Duyduğuma göre lord bir tiyatro düzenleyecekmiş. O gösteri üzerinden bir propaganda yapalım",
+    "OptionA": {
+      "OptionName": "Halka seslenmek için biçilmiş kaftan",
+      "Privacy": 4,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Orayı tam teçhizat korurlar, yapamayız",
+      "Privacy": 7,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": -6,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    }
+  },
+  {
+    "StoryTellerName": "Savaş Gazisi",
+    "StoryContent": "Şu etrafındakileri biraz sakinleştir. Önlerine geleni parçalıyorlar",
+    "OptionA": {
+      "OptionName": "Kurtuluş gününe kadar sakin olmak yok",
+      "Privacy": 0,
+      "Aggressiveness": 5,
+      "Law": 0,
+      "Royalty": -4,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Haklısın, çok asabiler",
+      "Privacy": 0,
+      "Aggressiveness": -5,
+      "Law": 0,
+      "Royalty": 5,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    }
+  },
+  {
+    "StoryTellerName": "Savaş Gazisi",
+    "StoryContent": "Hemen başka bir yere gitmeliyiz. Bir köylü bizi ihbar etmiş!",
+    "OptionA": {
+      "OptionName": "Hadi ama",
+      "Privacy": -7,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Hadi ama",
+      "Privacy": -7,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    }
+  },
+  {
+    "StoryTellerName": "Savaş Gazisi",
+    "StoryContent": "Dostlarımız teker teker zindanlara atılıyor. Onları kurtarmak için nasıl bir yol izleyeceğiz",
+    "OptionA": {
+      "OptionName": " Soylular üzerinden hallederiz",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": -5,
+      "Royalty": 7,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": " Kanlı bir yol izleyeceğiz",
+      "Privacy": -5,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 7,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    }
+  },
+  {
+    "StoryTellerName": "Savaş Gazisi",
+    "StoryContent": "Biraz boş zamanın var mı?",
+    "OptionA": {
+      "OptionName": "Evet",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": {
+        "StoryID": 0,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": true,
+        "name": "Index33OptionA_container",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": "Üzgünüm çok meşgulüm",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    }
+  },
+  {
+    "StoryTellerName": "Savaş Gazisi",
+    "StoryContent": "Biliyor musun, şu yaptıklarımız beni o kadar sarsıyor ki. Eskiden komutanlığını yaptığım krallığa şimdi isyan planı yapıyorum. \nSence yanlış mı yapıyorum? ",
+    "OptionA": {
+      "OptionName": "Hayır dostum, onlar bunu yapmaya bizi zorladı",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Burada duygulara yer yok! Bunu en iyi senin bilmen gerek",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    }
+  },
+  {
+    "StoryTellerName": "Savaş Gazisi",
+    "StoryContent": "Bu muhafızları adım gibi tanırım. Canları pahasına kralı koruyacaklardır. Ne yapacağız? ",
+    "OptionA": {
+      "OptionName": "Doğru laf konuştuktan sonra itiraz edeceklerini sanmam",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 6,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Ya boyun eğerler ya da boyunlarını kaybederler",
+      "Privacy": 0,
+      "Aggressiveness": 6,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
     }
   }
 ]

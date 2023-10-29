@@ -20,7 +20,7 @@ public class CardSelectionHandler : MonoBehaviour, IDragHandler, IBeginDragHandl
     [SerializeField] private float touch_movement_sensivity;
     private float range = 1;
     private Vector3 targetPosition;
-    private bool animationControl;
+    public bool AnimationControl;
     private float animationLeftTime;
     private float resetLeftTime;
 
@@ -61,6 +61,7 @@ public class CardSelectionHandler : MonoBehaviour, IDragHandler, IBeginDragHandl
 
     private StoriesHandler _storiesHandler;
     private StoryCard _currentHandlingStoryCard;
+    private RebelOption _currentSelectedOption;
 
     CircleScript circleScript;
 
@@ -84,7 +85,9 @@ public class CardSelectionHandler : MonoBehaviour, IDragHandler, IBeginDragHandl
 
         _storiesHandler = FindObjectOfType<StoriesHandler>();
 
-        HandleStory();
+        List<StoryCard> stories = _storiesHandler.LoadStoriesList();
+        HandleStory(stories[33]);
+
     }
 
     private void Update()
@@ -101,7 +104,7 @@ public class CardSelectionHandler : MonoBehaviour, IDragHandler, IBeginDragHandl
         animationLeftTime -= Time.deltaTime;
         resetLeftTime -= Time.deltaTime;
 
-        if (animationControl == true)
+        if (AnimationControl == true)
         {
             transform.position += (targetPosition - transform.position).normalized * 3000f * Time.deltaTime;
         }
@@ -128,18 +131,28 @@ public class CardSelectionHandler : MonoBehaviour, IDragHandler, IBeginDragHandl
     //oynatýlan animasyonun bitmesini bekler ve bitince kardý diðer event için sýfýrlar.
     private void HandleArrivalAndAnimationControl()
     {
-        if (math.abs(gameObject.transform.position.x - targetPosition.x) <= 100 && math.abs(gameObject.transform.position.y - targetPosition.y) <= 100 && animationLeftTime <= 0 && animationControl == true)
-        {
-            Debug.Log("Same Position");
-            ResetCardCanvas();
-            HandleStory();
-            animationControl = false;
+        if (math.abs(gameObject.transform.position.x - targetPosition.x) <= 100 && math.abs(gameObject.transform.position.y - targetPosition.y) <= 100 && animationLeftTime <= 0 && AnimationControl == true)
+        {  
+            if (_currentSelectedOption.StoryEventContainer != null)
+            {
+                StoryEventContainer currentEventContainer = StoryEventHandler.Instance.GetEventWithIndex(_currentSelectedOption.StoryEventContainer.StoryID);
+
+                StoryEventHandler.Instance.ExecuteEvent(currentEventContainer.StoryID);
+
+                if (currentEventContainer.ContinueRandomStoryHandlingAfterEvent)
+                {
+                    HandleStory();
+                }
+            }
+            else
+            {
+                HandleStory();
+            }
         }
     }
 
     public void OnDrag(PointerEventData pointerEventData)
     {
-        Debug.Log(DisableTouch);
         if (DisableTouch)
             return;
 
@@ -205,6 +218,8 @@ public class CardSelectionHandler : MonoBehaviour, IDragHandler, IBeginDragHandl
         if (chooseLeft && isInLeft)
         {
             selectedOption = _currentHandlingStoryCard.OptionA;
+            _currentSelectedOption = selectedOption;
+            
             ChangeStatsAfterSelection(selectedOption);
             RefreshStatsUi();
             CardAnimation();
@@ -213,9 +228,12 @@ public class CardSelectionHandler : MonoBehaviour, IDragHandler, IBeginDragHandl
         else if (chooseRight && isInRight)
         {
             selectedOption = _currentHandlingStoryCard.OptionB;
+            _currentSelectedOption = selectedOption;
+            
             ChangeStatsAfterSelection(selectedOption);
             RefreshStatsUi();
             CardAnimation();
+
         }
         else
         {
@@ -236,9 +254,8 @@ public class CardSelectionHandler : MonoBehaviour, IDragHandler, IBeginDragHandl
         RebelStatsManager.Instance.AddLawCount(selectedOption.Law);
         RebelStatsManager.Instance.AddRoyaltyCount(selectedOption.Royalty);
     }
-    private void ResetCardCanvas()
+    public void ResetCardCanvas()
     {
-        Debug.Log("ResetCardCanvas");
         transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, 0f));
         card.anchoredPosition = new Vector2(0f, 0f) / canvas.scaleFactor;
         transform.position = new Vector3(297f, 1000f, 0f);
@@ -263,8 +280,6 @@ public class CardSelectionHandler : MonoBehaviour, IDragHandler, IBeginDragHandl
         Vector2 targetPosition = Vector2.zero / canvas.scaleFactor;
         Quaternion targetQuaternion = Quaternion.Euler(0, 0, 0);
 
-        Debug.Log(card.anchoredPosition == targetPosition);
-
         if (Vector2.Distance(card.anchoredPosition, targetPosition) < 4f)
         {
             DisableTouch = false;
@@ -281,17 +296,30 @@ public class CardSelectionHandler : MonoBehaviour, IDragHandler, IBeginDragHandl
         //Geri dönüþ animasyonu bitmeden kart tekrardan hareket ettirilemez.
         DisableTouch = true;
     }
-    private void HandleStory()
+    public void HandleStory()
     {
-        Debug.Log("Story Handle");
+        ResetCardCanvas();
         StoryCard randomStoryCard = GetRandomStoryFromJsonFile();
-        StartCoroutine(TypeMainStory(randomStoryCard.StoryContent));
+        CardUiUpdateAfterStoryHandling(randomStoryCard);
+        _currentHandlingStoryCard = randomStoryCard;
+        AnimationControl = false;
+
+    }
+    public void HandleStory(StoryCard card)
+    {
+        ResetCardCanvas();
+        CardUiUpdateAfterStoryHandling(card);
+        _currentHandlingStoryCard = card;
+        AnimationControl = false;
+    }
+    private void CardUiUpdateAfterStoryHandling(StoryCard card)
+    {
+        StartCoroutine(TypeMainStory(card.StoryContent));
         gameObject.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = "";
         gameObject.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = "";
-        gameObject.transform.GetChild(3).GetComponent<TextMeshProUGUI>().text = randomStoryCard.StoryTellerName;
-        gameObject.GetComponent<Image>().sprite = RebelCharactersImagesDatabase.Instance.GetCharacterSpriteWithName(randomStoryCard.StoryTellerName);
+        gameObject.transform.GetChild(3).GetComponent<TextMeshProUGUI>().text = card.StoryTellerName;
+        gameObject.GetComponent<Image>().sprite = RebelCharactersImagesDatabase.Instance.GetCharacterSpriteWithName(card.StoryTellerName);
         gameObject.GetComponent<Image>().color = Color.white;
-        _currentHandlingStoryCard = randomStoryCard;
     }
     private StoryCard GetRandomStoryFromJsonFile()
     {
@@ -314,7 +342,7 @@ public class CardSelectionHandler : MonoBehaviour, IDragHandler, IBeginDragHandl
             Debug.Log("LeftAnimation");
             targetPosition = new Vector3(-640f, -500f, 0);
         }
-        animationControl = true;
+        AnimationControl = true;
     }
 
     private void RandomIndex()

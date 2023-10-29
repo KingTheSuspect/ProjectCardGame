@@ -20,6 +20,9 @@ public class StoriesHandlerWindow : EditorWindow
     private int lawInputB;
     private int royaltyInputB;
 
+    private StoryEventContainer optionAEvent;
+    private StoryEventContainer optionBEvent;
+
     private RebelMainQuestModifierType rebelMainQuestModifierTypeOptionA;
     private RebelMainQuestModifierType rebelMainQuestModifierTypeOptionB;
 
@@ -61,6 +64,7 @@ public class StoriesHandlerWindow : EditorWindow
         lawInputA = EditorGUILayout.IntField("Law", lawInputA);
         royaltyInputA = EditorGUILayout.IntField("Royalty", royaltyInputA);
         rebelMainQuestModifierTypeOptionA = (RebelMainQuestModifierType)EditorGUILayout.EnumPopup("Main Quest",rebelMainQuestModifierTypeOptionA);
+        optionAEvent = EditorGUILayout.ObjectField("Option A Event", optionAEvent, typeof(StoryEventContainer), true) as StoryEventContainer;
 
         storyOptionB = EditorGUILayout.TextField("Option B Name", storyOptionB);
         privacyInputB = EditorGUILayout.IntField("Privacy", privacyInputB);
@@ -68,6 +72,7 @@ public class StoriesHandlerWindow : EditorWindow
         lawInputB = EditorGUILayout.IntField("Law", lawInputB);
         royaltyInputB = EditorGUILayout.IntField("Royalty", royaltyInputB);
         rebelMainQuestModifierTypeOptionB = (RebelMainQuestModifierType)EditorGUILayout.EnumPopup("Main Quest", rebelMainQuestModifierTypeOptionB);
+        optionBEvent = EditorGUILayout.ObjectField("Option B Event", optionBEvent, typeof(StoryEventContainer), true) as StoryEventContainer;
 
 
 
@@ -83,7 +88,8 @@ public class StoriesHandlerWindow : EditorWindow
                 Aggressiveness = aggressivenessInputA,
                 Law = lawInputA,
                 Royalty = royaltyInputA,
-                MainQuestModifierType = rebelMainQuestModifierTypeOptionA
+                MainQuestModifierType = rebelMainQuestModifierTypeOptionA,
+                StoryEventContainer = optionAEvent
             };
             card.OptionB = new RebelOption
             {
@@ -92,11 +98,16 @@ public class StoriesHandlerWindow : EditorWindow
                 Aggressiveness = aggressivenessInputB,
                 Law = lawInputB,
                 Royalty = royaltyInputB,
-                MainQuestModifierType = rebelMainQuestModifierTypeOptionB
+                MainQuestModifierType = rebelMainQuestModifierTypeOptionB,
+                StoryEventContainer = optionBEvent
             };
 
             if (_storiesHandler != null)
             {
+                int storyCount = _storiesHandler.LoadStoriesList().Count;
+                card.OptionA.StoryEventContainer.StoryID = storyCount;
+                card.OptionB.StoryEventContainer.StoryID = storyCount;
+
                 _storiesHandler.AddNewStoryCard(card);
             }
             else
@@ -110,6 +121,7 @@ public class StoriesHandlerWindow : EditorWindow
             StoryCard card = new StoryCard();
             card.StoryTellerName = storyTellerNameInput;
             card.StoryContent = storyContentInput;
+
             card.OptionA = new RebelOption
             {
                 OptionName = storyOptionA,
@@ -117,7 +129,8 @@ public class StoriesHandlerWindow : EditorWindow
                 Aggressiveness = aggressivenessInputA,
                 Law = lawInputA,
                 Royalty = royaltyInputA,
-                MainQuestModifierType = rebelMainQuestModifierTypeOptionA
+                MainQuestModifierType = rebelMainQuestModifierTypeOptionA,
+                StoryEventContainer = optionAEvent
             };
             card.OptionB = new RebelOption
             {
@@ -126,7 +139,8 @@ public class StoriesHandlerWindow : EditorWindow
                 Aggressiveness = aggressivenessInputB,
                 Law = lawInputB,
                 Royalty = royaltyInputB,
-                MainQuestModifierType = rebelMainQuestModifierTypeOptionB
+                MainQuestModifierType = rebelMainQuestModifierTypeOptionB,
+                StoryEventContainer = optionBEvent
             };
             stories[selectedStoryIndex] = card;
             _storiesHandler?.SaveStoriesListToFile(stories);
@@ -189,6 +203,8 @@ public class StoriesHandlerWindow : EditorWindow
                         royaltyInputA = stories[i].OptionA.Royalty;
                         rebelMainQuestModifierTypeOptionA = stories[i].OptionA.MainQuestModifierType;
                         rebelMainQuestModifierTypeOptionB = stories[i].OptionB.MainQuestModifierType;
+                        optionAEvent = stories[i].OptionA.StoryEventContainer;
+                        optionBEvent = stories[i].OptionB.StoryEventContainer;
                     }
 
                     GUILayout.EndHorizontal();

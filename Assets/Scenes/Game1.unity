@@ -369,8 +369,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60
-  m_fontSizeBase: 60
+  m_fontSize: 39.21
+  m_fontSizeBase: 39.21
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 50
@@ -405,7 +405,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 281.24008, y: 97.35216, z: -279.2601, w: 161.96675}
+  m_margin: {x: 235.75008, y: 97.35216, z: -322.2228, w: 161.96675}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -506,7 +506,7 @@ GameObject:
   - component: {fileID: 271156893}
   - component: {fileID: 271156892}
   m_Layer: 6
-  m_Name: BilgiYazi
+  m_Name: AggressivenessTxt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -640,7 +640,7 @@ GameObject:
   - component: {fileID: 355906763}
   - component: {fileID: 355906762}
   m_Layer: 6
-  m_Name: GuvenlikYazi
+  m_Name: PrivacyTxt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -762,6 +762,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 355906760}
   m_CullTransparentMesh: 1
+--- !u!1 &394612914
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 394612916}
+  - component: {fileID: 394612915}
+  m_Layer: 0
+  m_Name: StoryEventHandler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &394612915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394612914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38b0a979eca05c844a43c0bbb8d07fbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  events:
+  - {fileID: 11400000, guid: 015f67b631dfaac47b7150548c8dbbea, type: 2}
+--- !u!4 &394612916
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394612914}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &472060569
 GameObject:
   m_ObjectHideFlags: 0
@@ -1061,7 +1107,7 @@ GameObject:
   - component: {fileID: 731934928}
   - component: {fileID: 731934927}
   m_Layer: 6
-  m_Name: ParaYazi
+  m_Name: RoyaltyTxt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1311,8 +1357,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60
-  m_fontSizeBase: 60
+  m_fontSize: 48.1
+  m_fontSizeBase: 48.1
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 50
@@ -1347,7 +1393,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 40, y: 449.27615, z: 40, w: 514.41144}
+  m_margin: {x: -0.43557733, y: 449.27615, z: -5.490019, w: 514.41144}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1373,7 +1419,7 @@ GameObject:
   - component: {fileID: 1054229528}
   - component: {fileID: 1054229527}
   m_Layer: 6
-  m_Name: Ekonomi
+  m_Name: Royalty
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1721,8 +1767,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60
-  m_fontSizeBase: 60
+  m_fontSize: 39.21
+  m_fontSizeBase: 39.21
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 50
@@ -1964,7 +2010,7 @@ GameObject:
   - component: {fileID: 1381626056}
   - component: {fileID: 1381626055}
   m_Layer: 6
-  m_Name: Kaynak
+  m_Name: Law
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2039,7 +2085,7 @@ GameObject:
   - component: {fileID: 1432294802}
   - component: {fileID: 1432294801}
   m_Layer: 6
-  m_Name: KaynakYazi
+  m_Name: LawTxt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2404,7 +2450,7 @@ GameObject:
   - component: {fileID: 1513763933}
   - component: {fileID: 1513763932}
   m_Layer: 6
-  m_Name: Guvenlik
+  m_Name: Privacy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2449,7 +2495,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 74ef79f96709017419c9344a45bb0968, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d8fc88d7be56bbc4da61d633e71eca57, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2732,7 +2778,7 @@ GameObject:
   - component: {fileID: 1796312314}
   - component: {fileID: 1796312313}
   m_Layer: 6
-  m_Name: Bilgi
+  m_Name: Aggressiveness
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2941,7 +2987,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1855015807
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3327,6 +3373,12 @@ MonoBehaviour:
   characterImages:
   - CharacterName: "Hanc\u0131"
     CharacterImg: {fileID: 21300000, guid: 492b9988436bd45049a9a6bc52ac8fb0, type: 3}
+  - CharacterName: "K\xF6yl\xFC"
+    CharacterImg: {fileID: 21300000, guid: 492b9988436bd45049a9a6bc52ac8fb0, type: 3}
+  - CharacterName: "\xC7ift\xE7i"
+    CharacterImg: {fileID: 21300000, guid: 492b9988436bd45049a9a6bc52ac8fb0, type: 3}
+  - CharacterName: "Sava\u015F Gazisi"
+    CharacterImg: {fileID: 21300000, guid: 492b9988436bd45049a9a6bc52ac8fb0, type: 3}
 --- !u!4 &2016859037
 Transform:
   m_ObjectHideFlags: 0
@@ -3586,6 +3638,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   touch_movement_sensivity: 2
+  AnimationControl: 0
   writingDelay: 0.015
   rotateDegreeLeft: 35
   rotateDegreeRight: -35
@@ -3705,3 +3758,4 @@ SceneRoots:
   - {fileID: 936438275}
   - {fileID: 2016859037}
   - {fileID: 1537241581}
+  - {fileID: 394612916}

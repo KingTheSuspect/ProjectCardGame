@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 [System.Serializable]
 public struct RebelOption
@@ -12,6 +13,7 @@ public struct RebelOption
     public int Law;
     public int Royalty;
     public RebelMainQuestModifierType MainQuestModifierType;
+    public StoryEventContainer StoryEventContainer;
 }
 public enum RebelMainQuestModifierType
 {

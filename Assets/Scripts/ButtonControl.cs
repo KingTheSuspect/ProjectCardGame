@@ -5,20 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class ButtonControl : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] private GameObject _mainPanelObject;
+    [SerializeField] private GameObject _roleSelectionPanelObject;
     void Start()
     {
         Application.targetFrameRate = 60;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void Play()
     {
-        SceneManager.LoadScene("Game");
+        _mainPanelObject.SetActive(false);
+        _roleSelectionPanelObject.SetActive(true);
     }
 }

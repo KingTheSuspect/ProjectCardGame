@@ -52,12 +52,9 @@ public class CardSelectionHandler : MonoBehaviour, IDragHandler, IBeginDragHandl
     private bool isCardPuttingBack;
 
     private RectTransform card;
-    private GameObject cardPrefab;
-    private Rigidbody2D rb;
     private Canvas canvas;
     private TextMeshProUGUI mainStory;
     private TextMeshProUGUI choices;
-    private TextAsset storydata;
 
     private StoriesHandler _storiesHandler;
     private StoryCard _currentHandlingStoryCard;
@@ -74,19 +71,14 @@ public class CardSelectionHandler : MonoBehaviour, IDragHandler, IBeginDragHandl
         circleScript = gameManagerObject.GetComponent<CircleScript>();
         canvas = transform.root.GetComponent<Canvas>();
         card = GetComponent<RectTransform>();
-        rb = GetComponent<Rigidbody2D>();
-        cardPrefab = Resources.Load("Kart") as GameObject;
 
         mainStory = TopStory.GetComponent<TextMeshProUGUI>();
         choices = GameObject.Find("Choices").GetComponent<TextMeshProUGUI>();
 
-        index = Random.value;
-        eventLength = eventList[((int)(index * jObj.Count)).ToString()].Count();
-
         _storiesHandler = FindObjectOfType<StoriesHandler>();
 
         List<StoryCard> stories = _storiesHandler.LoadStoriesList();
-        HandleStory(stories[33]);
+        HandleStory(stories[8]);
 
     }
 
@@ -169,38 +161,36 @@ public class CardSelectionHandler : MonoBehaviour, IDragHandler, IBeginDragHandl
             gameObject.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = _currentHandlingStoryCard.OptionA.OptionName;
             gameObject.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = "";
 
-            //Burasý update edilecek!
-            for (int i = 0; i < 4; i++)
-            {
-                //if (eventList[((int)(index * jObj.Count)).ToString()][choice1][2][i].ToObject<int>() > 0 || eventList[((int)(index * jObj.Count)).ToString()][choice1][2][i].ToObject<int>() < 0)
-                //{
-                //    GonnaChange[i].gameObject.SetActive(true);
-                //}
-                //else
-                //{
-                //    GonnaChange[i].gameObject.SetActive(false);
-                //}
-            }
+            RebelOption viewingOption = _currentHandlingStoryCard.OptionA;
+
+            SetGonnaChanges(viewingOption);
+
         }
         else if (isInRight)
         {
             gameObject.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = _currentHandlingStoryCard.OptionB.OptionName;
             gameObject.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = "";
 
-            for (int i = 0; i < 4; i++)
-            {
-                //if (eventList[((int)(index * jObj.Count)).ToString()][choice2][2][i].ToObject<int>() > 0 || eventList[((int)(index * jObj.Count)).ToString()][choice2][2][i].ToObject<int>() < 0)
-                //{
-                //    GonnaChange[i].gameObject.SetActive(true);
-                //}
-                //else
-                //{
-                //    GonnaChange[i].gameObject.SetActive(false);
-                //}
-            }
+            RebelOption viewingOption = _currentHandlingStoryCard.OptionB;
+
+            SetGonnaChanges(viewingOption);
+
         }
     }
-
+    private void SetGonnaChanges(RebelOption viewingOption)
+    {
+        GonnaChange[0].SetActive(Mathf.Abs(viewingOption.Privacy) > 0);
+        GonnaChange[1].SetActive(Mathf.Abs(viewingOption.Aggressiveness) > 0);
+        GonnaChange[2].SetActive(Mathf.Abs(viewingOption.Law) > 0);
+        GonnaChange[3].SetActive(Mathf.Abs(viewingOption.Royalty) > 0);
+    }
+    private void ResetGonnaChanges()
+    {
+        for (int i = 0; i < 4; i++)
+        {
+            GonnaChange[i].gameObject.SetActive(false);
+        }
+    }
     public void OnBeginDrag(PointerEventData pointerEventData)
     {
     }
@@ -242,10 +232,7 @@ public class CardSelectionHandler : MonoBehaviour, IDragHandler, IBeginDragHandl
         }
 
 
-        for (int i = 0; i < 4; i++)
-        {
-            GonnaChange[i].gameObject.SetActive(false);
-        }
+        ResetGonnaChanges();
     }
     private void ChangeStatsAfterSelection(RebelOption selectedOption)
     {
@@ -349,7 +336,7 @@ public class CardSelectionHandler : MonoBehaviour, IDragHandler, IBeginDragHandl
     {
         index = Random.value;
     }
-    private void RefreshStatsUi()
+    public void RefreshStatsUi()
     {
         Stats.transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().text = RebelStatsManager.Instance.PrivacyCount + "";
         Stats.transform.GetChild(1).gameObject.GetComponent<TextMeshProUGUI>().text = RebelStatsManager.Instance.AggressivenessCount + "";

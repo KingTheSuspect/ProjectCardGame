@@ -185,7 +185,13 @@
       "Law": 0,
       "Royalty": 0,
       "MainQuestModifierType": 4,
-      "StoryEventContainer": null
+      "StoryEventContainer": {
+        "StoryID": 0,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": true,
+        "name": "Index8OptionAB_container",
+        "hideFlags": 0
+      }
     },
     "OptionB": {
       "OptionName": "Bakalım dertleri neymiş",
@@ -194,7 +200,13 @@
       "Law": 0,
       "Royalty": 0,
       "MainQuestModifierType": 4,
-      "StoryEventContainer": null
+      "StoryEventContainer": {
+        "StoryID": 0,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": true,
+        "name": "Index8OptionAB_container",
+        "hideFlags": 0
+      }
     }
   },
   {
@@ -791,6 +803,380 @@
       "OptionName": "Ya boyun eğerler ya da boyunlarını kaybederler",
       "Privacy": 0,
       "Aggressiveness": 6,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    }
+  },
+  {
+    "StoryTellerName": "İsyankar",
+    "StoryContent": "Krallığı zayıflatmak adına muhafızları zehirleyelim! ",
+    "OptionA": {
+      "OptionName": "Harika bir fikir",
+      "Privacy": -4,
+      "Aggressiveness": 3,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Dikkat çekmeyelim",
+      "Privacy": -5,
+      "Aggressiveness": 6,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    }
+  },
+  {
+    "StoryTellerName": "İsyankar",
+    "StoryContent": "Muhafızlar dostlarımızı öldürüp duruyor. Karşılık vermeyecek miyiz? ",
+    "OptionA": {
+      "OptionName": "Tabi ki vereceğiz",
+      "Privacy": -5,
+      "Aggressiveness": 4,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Verebilecek güçte değiliz",
+      "Privacy": -5,
+      "Aggressiveness": 6,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    }
+  },
+  {
+    "StoryTellerName": "İsyankar",
+    "StoryContent": "Muhafız üsleri önceliğimiz olmalı",
+    "OptionA": {
+      "OptionName": "Haklısın",
+      "Privacy": 0,
+      "Aggressiveness": 5,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Önceliğimiz siyasal yollar ile içeri sızmak",
+      "Privacy": -5,
+      "Aggressiveness": 6,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    }
+  },
+  {
+    "StoryTellerName": "İsyankar",
+    "StoryContent": "İsyana katılmak istemeyenler bize yük! Hepsini bir şekilde ortadan kaldıralım",
+    "OptionA": {
+      "OptionName": "Asla! Biz onlar değiliz",
+      "Privacy": 0,
+      "Aggressiveness": -4,
+      "Law": 0,
+      "Royalty": 4,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Haklısın, onlar sadece yük",
+      "Privacy": -5,
+      "Aggressiveness": 6,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    }
+  },
+  {
+    "StoryTellerName": "İsyankar",
+    "StoryContent": "Bizi ispiyonlayacağını söyleyen bir köylü var!",
+    "OptionA": {
+      "OptionName": "İkna etmeye çalış",
+      "Privacy": -5,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 6,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Kimse görmeden onu bir yere kapat",
+      "Privacy": -5,
+      "Aggressiveness": 6,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    }
+  },
+  {
+    "StoryTellerName": "İsyankar",
+    "StoryContent": "Bize katılmak istemeyen soyluları biraz korkutsak yeter",
+    "OptionA": {
+      "OptionName": "Korku her şeyin çaresidir",
+      "Privacy": -5,
+      "Aggressiveness": 0,
+      "Law": 5,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Riskli iş",
+      "Privacy": -5,
+      "Aggressiveness": 6,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    }
+  },
+  {
+    "StoryTellerName": "İsyankar",
+    "StoryContent": "Krallığa kaynak sağlayan tüm esnafları yanımıza çekmeliyiz",
+    "OptionA": {
+      "OptionName": "Haklısın",
+      "Privacy": -4,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 3,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Şu an böyle bir şey yapamayız",
+      "Privacy": -5,
+      "Aggressiveness": 6,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    }
+  },
+  {
+    "StoryTellerName": "İsyankar",
+    "StoryContent": "Muhafızlar gün geçtikçe gelişiyor! Aralarına birisini sokmalıyız",
+    "OptionA": {
+      "OptionName": "Bana casusu çağır",
+      "Privacy": -5,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 2,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Üzgünüm ama böyle bir şeyi kimse yapamaz",
+      "Privacy": -5,
+      "Aggressiveness": 6,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    }
+  },
+  {
+    "StoryTellerName": "İsyankar",
+    "StoryContent": "Halkı boş verin! Biz bu düzeni devirmeye yeteriz",
+    "OptionA": {
+      "OptionName": "Halk arkamızda olmadıkça bir ağacı bile deviremeyiz",
+      "Privacy": 0,
+      "Aggressiveness": -5,
+      "Law": 0,
+      "Royalty": 6,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Bizim tekimiz onların yüzlerine bedel!",
+      "Privacy": -5,
+      "Aggressiveness": 6,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    }
+  },
+  {
+    "StoryTellerName": "Haydut",
+    "StoryContent": "Biraz yağma yapmaya ne dersiniz? ",
+    "OptionA": {
+      "OptionName": "Hazırlan derim",
+      "Privacy": -3,
+      "Aggressiveness": 8,
+      "Law": -2,
+      "Royalty": -2,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Gereği yok",
+      "Privacy": 5,
+      "Aggressiveness": -6,
+      "Law": 4,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    }
+  },
+  {
+    "StoryTellerName": "Haydut",
+    "StoryContent": "Daha fazla faaliyet yapmalıyız",
+    "OptionA": {
+      "OptionName": "Haklısın",
+      "Privacy": -5,
+      "Aggressiveness": 5,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Biraz sakin olmalıyız",
+      "Privacy": 0,
+      "Aggressiveness": -6,
+      "Law": 4,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    }
+  },
+  {
+    "StoryTellerName": "Haydut",
+    "StoryContent": "Bize katılmayan köylülerin evlerini yağmalayalım",
+    "OptionA": {
+      "OptionName": "Biz devrim için buradayız, hırsızlık için değil",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 7,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Onlar bizden değil. Ne istersen yap",
+      "Privacy": 0,
+      "Aggressiveness": 4,
+      "Law": 0,
+      "Royalty": -4,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    }
+  },
+  {
+    "StoryTellerName": "Haydut",
+    "StoryContent": "Çiftçilerden gelen erzak olmasa bu krallık çok yaşamazdı. Çiftlikleri yakalım!",
+    "OptionA": {
+      "OptionName": "Çok haklısın",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": -6,
+      "MainQuestModifierType": 3,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Güzel dille çiftçileri yanımıza çekmeliyiz",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 6,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    }
+  },
+  {
+    "StoryTellerName": "Haydut",
+    "StoryContent": "Şu soylulara iyice uyuz oldum",
+    "OptionA": {
+      "OptionName": "Merak etme onları da halledeceğiz",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": -5,
+      "Royalty": 5,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Onlar da bizden",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 5,
+      "Royalty": -5,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    }
+  },
+  {
+    "StoryTellerName": "Haydut",
+    "StoryContent": "İsyancıları yarın burada zincirler eşliğinde zindana götürecekler. \nBuna engel olmalıyız! ",
+    "OptionA": {
+      "OptionName": "Kardeşlerimiz zindana varmadan yanımda olacaklar",
+      "Privacy": -4,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 5,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Böyle bir olayı korumasız yapmazlar. Çok riskli...",
+      "Privacy": 6,
+      "Aggressiveness": 0,
+      "Law": 5,
+      "Royalty": -4,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    }
+  },
+  {
+    "StoryTellerName": "Haydut",
+    "StoryContent": "Merak ettiğim bir konu var. İsyan başarılı olursa ne yapacaksın? ",
+    "OptionA": {
+      "OptionName": "Bir köşeye çekilip huzur içinde yaşayacağım",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Krallığın yönetiminde bulunacağım",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    }
+  },
+  {
+    "StoryTellerName": "Haydut",
+    "StoryContent": "Bu hancı iyice sinirlerimi bozuyor!",
+    "OptionA": {
+      "OptionName": "Öfkenizi birbirinize değil, düşmana kullanın",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 5,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Hancı ile konuşurum",
+      "Privacy": 0,
+      "Aggressiveness": 5,
       "Law": 0,
       "Royalty": 0,
       "MainQuestModifierType": 4,

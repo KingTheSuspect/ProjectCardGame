@@ -105,8 +105,11 @@ public class StoriesHandlerWindow : EditorWindow
             if (_storiesHandler != null)
             {
                 int storyCount = _storiesHandler.LoadStoriesList().Count;
-                card.OptionA.StoryEventContainer.StoryID = storyCount;
-                card.OptionB.StoryEventContainer.StoryID = storyCount;
+
+                if (card.OptionA.StoryEventContainer != null)
+                    card.OptionA.StoryEventContainer.StoryID = storyCount;
+                if (card.OptionB.StoryEventContainer != null)
+                    card.OptionB.StoryEventContainer.StoryID = storyCount;
 
                 _storiesHandler.AddNewStoryCard(card);
             }

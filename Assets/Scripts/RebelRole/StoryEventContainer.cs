@@ -18,4 +18,8 @@ public class StoryEventContainer : ScriptableObject
 
         cardSelectionHandler.HandleStory(card);
     }
+    public void AddRandomizationStat(StatRandomizationInfoScriptableObject info)
+    {
+        RebelStatsManager.Instance.AddRandomizationWithPosibility(info.StatRandomizationInfo);
+    }
 }

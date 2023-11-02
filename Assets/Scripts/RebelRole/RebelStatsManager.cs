@@ -37,6 +37,7 @@ public class RebelStatsManager : MonoSingleton<RebelStatsManager>
     }
     public void AddRandomizationWithPosibility(List<StatRandomizationInfo> possibilities)
     {
+
         float randomValue = Random.Range(0.0f, 1.0f);
 
         float cumulativeProbability = 0.0f;
@@ -70,6 +71,9 @@ public class RebelStatsManager : MonoSingleton<RebelStatsManager>
                 AddRoyaltyCount(valueToAdd);
                 break;
         }
+
+        FindObjectOfType<CardSelectionHandler>().RefreshStatsUi();
+
     }
 
 }

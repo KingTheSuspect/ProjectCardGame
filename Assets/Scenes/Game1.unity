@@ -3380,6 +3380,14 @@ MonoBehaviour:
     CharacterImg: {fileID: 21300000, guid: 492b9988436bd45049a9a6bc52ac8fb0, type: 3}
   - CharacterName: "Sava\u015F Gazisi"
     CharacterImg: {fileID: 21300000, guid: 492b9988436bd45049a9a6bc52ac8fb0, type: 3}
+  - CharacterName: "\u0130syankar"
+    CharacterImg: {fileID: 21300000, guid: 492b9988436bd45049a9a6bc52ac8fb0, type: 3}
+  - CharacterName: Haydut
+    CharacterImg: {fileID: 21300000, guid: 492b9988436bd45049a9a6bc52ac8fb0, type: 3}
+  - CharacterName: "Kiral\u0131k Katil"
+    CharacterImg: {fileID: 21300000, guid: 492b9988436bd45049a9a6bc52ac8fb0, type: 3}
+  - CharacterName: Casus
+    CharacterImg: {fileID: 21300000, guid: 492b9988436bd45049a9a6bc52ac8fb0, type: 3}
 --- !u!4 &2016859037
 Transform:
   m_ObjectHideFlags: 0

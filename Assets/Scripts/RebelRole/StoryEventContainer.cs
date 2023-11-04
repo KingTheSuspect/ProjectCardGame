@@ -22,4 +22,8 @@ public class StoryEventContainer : ScriptableObject
     {
         RebelStatsManager.Instance.AddRandomizationWithPosibility(info.StatRandomizationInfo);
     }
+    public void CancelTheCharacter(string rebelCharecterName)
+    {
+        //Ýlgili karaktere ait kartlar oyun boyu gösterilmeyecek hale getirilir.
+    }
 }

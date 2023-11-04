@@ -40,4 +40,15 @@ public class StoriesHandler : MonoBehaviour
         stories.RemoveAt(index);
         SaveStoriesListToFile(stories);
     }
+    public int GetIndexWithContent(StoryCard card)
+    {
+        for (int i = 0;i < LoadStoriesList().Count; i++)
+        {
+            if (LoadStoriesList()[i].StoryContent == card.StoryContent)
+            {
+                return i;
+            }
+        }
+        return -1;
+    }
 }

@@ -186,7 +186,7 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": {
-        "StoryID": 0,
+        "StoryID": "8A",
         "Event": {},
         "ContinueRandomStoryHandlingAfterEvent": true,
         "name": "Index8OptionAB_container",
@@ -201,7 +201,7 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": {
-        "StoryID": 0,
+        "StoryID": "8B",
         "Event": {},
         "ContinueRandomStoryHandlingAfterEvent": true,
         "name": "Index8OptionAB_container",
@@ -748,7 +748,7 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": {
-        "StoryID": 0,
+        "StoryID": "33A",
         "Event": {},
         "ContinueRandomStoryHandlingAfterEvent": true,
         "name": "Index33OptionA_container",
@@ -1220,12 +1220,12 @@
     "OptionB": {
       "OptionName": "Ne istersen yap",
       "Privacy": 0,
-      "Aggressiveness": 5,
-      "Law": 5,
-      "Royalty": -4,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": {
-        "StoryID": 54,
+        "StoryID": "54B",
         "Event": {},
         "ContinueRandomStoryHandlingAfterEvent": false,
         "name": "Index54OptionB_container",
@@ -1480,13 +1480,13 @@
     "StoryContent": "Lord yeni önlemler alıyormuş. Bu önlemler bize karşı olabilir. Öğrenmem gerek...",
     "OptionA": {
       "OptionName": "Git öğren",
-      "Privacy": 0,
+      "Privacy": -5,
       "Aggressiveness": 0,
       "Law": 0,
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": {
-        "StoryID": 66,
+        "StoryID": "66A",
         "Event": {},
         "ContinueRandomStoryHandlingAfterEvent": false,
         "name": "Index66OptionA_container",
@@ -1501,7 +1501,7 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": {
-        "StoryID": 66,
+        "StoryID": "66B",
         "Event": {},
         "ContinueRandomStoryHandlingAfterEvent": false,
         "name": "Index66OptionB_container",
@@ -1542,7 +1542,7 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": {
-        "StoryID": 68,
+        "StoryID": "68A",
         "Event": {},
         "ContinueRandomStoryHandlingAfterEvent": false,
         "name": "Index68OptionAB_container",
@@ -1557,7 +1557,7 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": {
-        "StoryID": 68,
+        "StoryID": "68B",
         "Event": {},
         "ContinueRandomStoryHandlingAfterEvent": false,
         "name": "Index68OptionAB_container",
@@ -1752,7 +1752,7 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": {
-        "StoryID": 77,
+        "StoryID": "77A",
         "Event": {},
         "ContinueRandomStoryHandlingAfterEvent": false,
         "name": "Index77OptionA_container",
@@ -1780,7 +1780,7 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": {
-        "StoryID": 78,
+        "StoryID": "78A",
         "Event": {},
         "ContinueRandomStoryHandlingAfterEvent": true,
         "name": "Index78OptionAB_container",
@@ -1791,16 +1791,10 @@
       "OptionName": "Ne diyorsun be adam sen",
       "Privacy": 0,
       "Aggressiveness": 0,
-      "Law": -8,
+      "Law": 0,
       "Royalty": 0,
       "MainQuestModifierType": 4,
-      "StoryEventContainer": {
-        "StoryID": 78,
-        "Event": {},
-        "ContinueRandomStoryHandlingAfterEvent": true,
-        "name": "Index78OptionAB_container",
-        "hideFlags": 0
-      }
+      "StoryEventContainer": null
     }
   },
   {

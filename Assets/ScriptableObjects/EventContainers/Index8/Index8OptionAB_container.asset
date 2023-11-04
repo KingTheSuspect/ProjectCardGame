@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89f933dd2f4ee9f4dac27a34f28d3610, type: 3}
   m_Name: Index8OptionAB_container
   m_EditorClassIdentifier: 
-  StoryID: 0
+  StoryID: 
   Event:
     m_PersistentCalls:
       m_Calls:

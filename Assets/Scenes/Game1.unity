@@ -794,6 +794,12 @@ MonoBehaviour:
   events:
   - {fileID: 11400000, guid: 015f67b631dfaac47b7150548c8dbbea, type: 2}
   - {fileID: 11400000, guid: 07e807a49dc1db3498ce908c7a1c20dc, type: 2}
+  - {fileID: 11400000, guid: 7742a0813c49e0a4d9fd700ef88ca11f, type: 2}
+  - {fileID: 11400000, guid: f22fe8c4bfc792440ad04ee14e75db36, type: 2}
+  - {fileID: 11400000, guid: 894b6c0bddf9ea948a022d1e9524643c, type: 2}
+  - {fileID: 11400000, guid: 83dd89b9052c19849aa517e2419cd0d0, type: 2}
+  - {fileID: 11400000, guid: bf4f4381b5817a74dbb61540fec5dab7, type: 2}
+  - {fileID: 11400000, guid: ad19ae49211c4b74f872abe20db3b758, type: 2}
 --- !u!4 &394612916
 Transform:
   m_ObjectHideFlags: 0
@@ -3387,6 +3393,20 @@ MonoBehaviour:
   - CharacterName: "Kiral\u0131k Katil"
     CharacterImg: {fileID: 21300000, guid: 492b9988436bd45049a9a6bc52ac8fb0, type: 3}
   - CharacterName: Casus
+    CharacterImg: {fileID: 21300000, guid: 492b9988436bd45049a9a6bc52ac8fb0, type: 3}
+  - CharacterName: "Hikaye Anlat\u0131c\u0131"
+    CharacterImg: {fileID: 21300000, guid: 492b9988436bd45049a9a6bc52ac8fb0, type: 3}
+  - CharacterName: Soylu Devrimciler
+    CharacterImg: {fileID: 21300000, guid: 492b9988436bd45049a9a6bc52ac8fb0, type: 3}
+  - CharacterName: Cellat
+    CharacterImg: {fileID: 21300000, guid: 492b9988436bd45049a9a6bc52ac8fb0, type: 3}
+  - CharacterName: "Sat\u0131lm\u0131\u015F Yarg\u0131\xE7"
+    CharacterImg: {fileID: 21300000, guid: 492b9988436bd45049a9a6bc52ac8fb0, type: 3}
+  - CharacterName: "Silah T\xFCccar\u0131"
+    CharacterImg: {fileID: 21300000, guid: 492b9988436bd45049a9a6bc52ac8fb0, type: 3}
+  - CharacterName: "Mahzen G\xF6revlisi"
+    CharacterImg: {fileID: 21300000, guid: 492b9988436bd45049a9a6bc52ac8fb0, type: 3}
+  - CharacterName: "K\xF6le"
     CharacterImg: {fileID: 21300000, guid: 492b9988436bd45049a9a6bc52ac8fb0, type: 3}
 --- !u!4 &2016859037
 Transform:

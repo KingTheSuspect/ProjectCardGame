@@ -78,7 +78,7 @@ public class CardSelectionHandler : MonoBehaviour, IDragHandler, IBeginDragHandl
         _storiesHandler = FindObjectOfType<StoriesHandler>();
 
         List<StoryCard> stories = _storiesHandler.LoadStoriesList();
-        HandleStory(stories[8]);
+        HandleStory(stories[77]);
 
     }
 
@@ -129,6 +129,8 @@ public class CardSelectionHandler : MonoBehaviour, IDragHandler, IBeginDragHandl
             {
                 StoryEventContainer currentEventContainer = StoryEventHandler.Instance.GetEventWithIndex(_currentSelectedOption.StoryEventContainer.StoryID);
 
+                Debug.Log(_currentSelectedOption.StoryEventContainer.StoryID);
+                StoryEventHandler.Instance.PrintEventsContainerIds();
                 StoryEventHandler.Instance.ExecuteEvent(currentEventContainer.StoryID);
 
                 if (currentEventContainer.ContinueRandomStoryHandlingAfterEvent)

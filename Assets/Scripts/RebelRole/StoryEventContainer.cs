@@ -6,9 +6,11 @@ using UnityEngine.Events;
 [CreateAssetMenu(fileName ="Story Event Container",menuName ="Scriptable Objects/Story Event Container")]
 public class StoryEventContainer : ScriptableObject
 {
-    [HideInInspector] public int StoryID;
+    public string StoryID;
+    public bool BothOptionsEvent;
     public UnityEvent Event;
     public bool ContinueRandomStoryHandlingAfterEvent = true;
+
 
     public void GoSpesificStory(int storyIndex)
     {

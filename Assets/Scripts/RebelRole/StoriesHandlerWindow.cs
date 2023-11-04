@@ -107,9 +107,9 @@ public class StoriesHandlerWindow : EditorWindow
                 int storyCount = _storiesHandler.LoadStoriesList().Count;
 
                 if (card.OptionA.StoryEventContainer != null)
-                    card.OptionA.StoryEventContainer.StoryID = storyCount;
+                    card.OptionA.StoryEventContainer.StoryID = storyCount + "A";
                 if (card.OptionB.StoryEventContainer != null)
-                    card.OptionB.StoryEventContainer.StoryID = storyCount;
+                    card.OptionB.StoryEventContainer.StoryID = storyCount + "B";
 
                 _storiesHandler.AddNewStoryCard(card);
             }
@@ -145,6 +145,20 @@ public class StoriesHandlerWindow : EditorWindow
                 MainQuestModifierType = rebelMainQuestModifierTypeOptionB,
                 StoryEventContainer = optionBEvent
             };
+
+            if (_storiesHandler != null)
+            {
+
+                if (card.OptionA.StoryEventContainer != null)
+                    card.OptionA.StoryEventContainer.StoryID = _storiesHandler.GetIndexWithContent(card) + "A";
+                if (card.OptionB.StoryEventContainer != null)
+                    card.OptionB.StoryEventContainer.StoryID = _storiesHandler.GetIndexWithContent(card) + "B";
+            }
+            else
+            {
+                Debug.LogWarning("Kartý güncelleyemezsin çünkü sahnede storieshandler yok dostum.");
+            }
+
             stories[selectedStoryIndex] = card;
             _storiesHandler?.SaveStoriesListToFile(stories);
         }

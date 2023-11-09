@@ -18,6 +18,8 @@ public class RebelStatsManager : MonoSingleton<RebelStatsManager>
         AggressivenessCount = 10;
         LawCount = 10;
         RoyaltyCount = 10;
+
+        FindAnyObjectByType<CardSelectionHandler>().RefreshStatsUi();
     }
     public void AddPrivacy(int value)
     {

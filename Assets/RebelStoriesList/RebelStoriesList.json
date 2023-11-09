@@ -19,7 +19,8 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Hancı",
@@ -41,7 +42,8 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Hancı",
@@ -63,7 +65,8 @@
       "Royalty": 0,
       "MainQuestModifierType": 0,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Hancı",
@@ -85,7 +88,8 @@
       "Royalty": 5,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Hancı",
@@ -107,7 +111,8 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Hancı",
@@ -129,7 +134,8 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Hancı",
@@ -151,7 +157,8 @@
       "Royalty": -4,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Hancı",
@@ -173,7 +180,8 @@
       "Royalty": -3,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Hancı",
@@ -209,7 +217,8 @@
         "name": "Index8OptionAB_container",
         "hideFlags": 0
       }
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Köylü",
@@ -231,7 +240,8 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Köylü",
@@ -253,7 +263,8 @@
       "Royalty": -3,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Köylü",
@@ -275,7 +286,8 @@
       "Royalty": -3,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Köylü",
@@ -297,7 +309,8 @@
       "Royalty": 6,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Köylü",
@@ -319,7 +332,8 @@
       "Royalty": -4,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Köylü",
@@ -341,7 +355,8 @@
       "Royalty": -2,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Köylü",
@@ -363,7 +378,8 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Köylü",
@@ -385,7 +401,8 @@
       "Royalty": -2,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Köylü",
@@ -407,7 +424,8 @@
       "Royalty": -3,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Çiftçi",
@@ -429,7 +447,8 @@
       "Royalty": -3,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Çiftçi",
@@ -451,7 +470,8 @@
       "Royalty": -3,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Çiftçi",
@@ -473,7 +493,8 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Çiftçi",
@@ -495,7 +516,8 @@
       "Royalty": -3,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Çiftçi",
@@ -517,7 +539,8 @@
       "Royalty": -4,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Çiftçi",
@@ -539,7 +562,8 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Çiftçi",
@@ -561,7 +585,8 @@
       "Royalty": -3,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Çiftçi",
@@ -583,7 +608,8 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Çiftçi",
@@ -605,7 +631,8 @@
       "Royalty": -4,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Savaş Gazisi",
@@ -627,7 +654,8 @@
       "Royalty": -4,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Savaş Gazisi",
@@ -649,7 +677,8 @@
       "Royalty": -4,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Savaş Gazisi",
@@ -671,7 +700,8 @@
       "Royalty": -6,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Savaş Gazisi",
@@ -693,7 +723,8 @@
       "Royalty": 5,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Savaş Gazisi",
@@ -715,7 +746,8 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Savaş Gazisi",
@@ -737,7 +769,8 @@
       "Royalty": 7,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Savaş Gazisi",
@@ -766,7 +799,8 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Savaş Gazisi",
@@ -788,7 +822,8 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": true
   },
   {
     "StoryTellerName": "Savaş Gazisi",
@@ -810,7 +845,8 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "İsyankar",
@@ -832,7 +868,8 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "İsyankar",
@@ -854,7 +891,8 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "İsyankar",
@@ -876,7 +914,8 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "İsyankar",
@@ -898,7 +937,8 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "İsyankar",
@@ -920,7 +960,8 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "İsyankar",
@@ -942,7 +983,8 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "İsyankar",
@@ -964,7 +1006,8 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "İsyankar",
@@ -986,7 +1029,8 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "İsyankar",
@@ -1008,7 +1052,8 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Haydut",
@@ -1030,7 +1075,8 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Haydut",
@@ -1052,7 +1098,8 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Haydut",
@@ -1074,7 +1121,8 @@
       "Royalty": -4,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Haydut",
@@ -1096,7 +1144,8 @@
       "Royalty": 6,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Haydut",
@@ -1118,7 +1167,8 @@
       "Royalty": -5,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Haydut",
@@ -1140,7 +1190,8 @@
       "Royalty": -4,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Haydut",
@@ -1162,7 +1213,8 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Haydut",
@@ -1184,7 +1236,8 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Kiralık Katil",
@@ -1206,7 +1259,8 @@
       "Royalty": -5,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Kiralık Katil",
@@ -1235,7 +1289,8 @@
         "name": "Index54OptionB_container",
         "hideFlags": 0
       }
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Kiralık Katil",
@@ -1251,13 +1306,14 @@
     },
     "OptionB": {
       "OptionName": "Güzel",
-      "Privacy": -5,
-      "Aggressiveness": 5,
+      "Privacy": 0,
+      "Aggressiveness": 0,
       "Law": 0,
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": true
   },
   {
     "StoryTellerName": "Kiralık Katil",
@@ -1279,7 +1335,8 @@
       "Royalty": 5,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Kiralık Katil",
@@ -1301,7 +1358,8 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Kiralık Katil",
@@ -1323,7 +1381,8 @@
       "Royalty": 6,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Kiralık Katil",
@@ -1345,7 +1404,8 @@
       "Royalty": 6,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Kiralık Katil",
@@ -1367,7 +1427,8 @@
       "Royalty": -4,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Kiralık Katil",
@@ -1389,7 +1450,8 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Casus",
@@ -1411,7 +1473,8 @@
       "Royalty": -4,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Casus",
@@ -1433,7 +1496,8 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Casus",
@@ -1455,7 +1519,8 @@
       "Royalty": 6,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Casus",
@@ -1477,7 +1542,8 @@
       "Royalty": 5,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Casus",
@@ -1513,7 +1579,8 @@
         "name": "Index66OptionB_container",
         "hideFlags": 0
       }
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Casus",
@@ -1529,13 +1596,14 @@
     },
     "OptionB": {
       "OptionName": "Hemen toparlanın",
-      "Privacy": 7,
+      "Privacy": 0,
       "Aggressiveness": 0,
       "Law": 0,
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": true
   },
   {
     "StoryTellerName": "Casus",
@@ -1571,7 +1639,8 @@
         "name": "Index68OptionAB_container",
         "hideFlags": 0
       }
-    }
+    },
+    "IgnoreRandomization": true
   },
   {
     "StoryTellerName": "Hikaye Anlatıcı",
@@ -1593,7 +1662,8 @@
       "Royalty": -10,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Casus",
@@ -1615,7 +1685,8 @@
       "Royalty": -5,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Casus",
@@ -1637,7 +1708,8 @@
       "Royalty": 6,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Soylu Devrimciler",
@@ -1659,7 +1731,8 @@
       "Royalty": 6,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Soylu Devrimciler",
@@ -1681,7 +1754,8 @@
       "Royalty": 6,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Soylu Devrimciler",
@@ -1703,7 +1777,8 @@
       "Royalty": 5,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Soylu Devrimciler",
@@ -1725,7 +1800,8 @@
       "Royalty": 5,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Soylu Devrimciler",
@@ -1743,11 +1819,12 @@
       "OptionName": "Sorun yok",
       "Privacy": 0,
       "Aggressiveness": 0,
-      "Law": -4,
+      "Law": 0,
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Soylu Devrimciler",
@@ -1776,7 +1853,8 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Soylu Devrimciler",
@@ -1805,7 +1883,8 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": true
   },
   {
     "StoryTellerName": "Soylu Devrimciler",
@@ -1827,7 +1906,8 @@
       "Royalty": -4,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Soylu Devrimciler",
@@ -1849,7 +1929,8 @@
       "Royalty": -4,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Satılmış Yargıç",
@@ -1871,7 +1952,8 @@
       "Royalty": 5,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Satılmış Yargıç",
@@ -1893,7 +1975,8 @@
       "Royalty": 5,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Satılmış Yargıç",
@@ -1915,7 +1998,8 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Satılmış Yargıç",
@@ -1937,7 +2021,8 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Satılmış Yargıç",
@@ -1959,7 +2044,8 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Satılmış Yargıç",
@@ -1981,7 +2067,8 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Satılmış Yargıç",
@@ -2003,7 +2090,8 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Satılmış Yargıç",
@@ -2025,7 +2113,8 @@
       "Royalty": 7,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Satılmış Yargıç",
@@ -2047,7 +2136,8 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Cellat",
@@ -2069,7 +2159,8 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Silah Tüccarı",
@@ -2091,7 +2182,8 @@
       "Royalty": 0,
       "MainQuestModifierType": 1,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Mahzen Görevlisi",
@@ -2113,7 +2205,8 @@
       "Royalty": 7,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Köle",
@@ -2135,7 +2228,8 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
-    }
+    },
+    "IgnoreRandomization": false
   },
   {
     "StoryTellerName": "Hancı",
@@ -2148,7 +2242,7 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": {
-        "StoryID": "94B",
+        "StoryID": "94A",
         "BothOptionsEvent": true,
         "Event": {},
         "ContinueRandomStoryHandlingAfterEvent": false,
@@ -2171,7 +2265,8 @@
         "name": "Index94Ending",
         "hideFlags": 0
       }
-    }
+    },
+    "IgnoreRandomization": true
   },
   {
     "StoryTellerName": "Hikaye Anlatıcı",
@@ -2185,10 +2280,10 @@
       "MainQuestModifierType": 4,
       "StoryEventContainer": {
         "StoryID": "95B",
-        "BothOptionsEvent": false,
+        "BothOptionsEvent": true,
         "Event": {},
-        "ContinueRandomStoryHandlingAfterEvent": true,
-        "name": "GameEnd_container",
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "name": "GameEnd_container94",
         "hideFlags": 0
       }
     },
@@ -2201,13 +2296,14 @@
       "MainQuestModifierType": 4,
       "StoryEventContainer": {
         "StoryID": "95B",
-        "BothOptionsEvent": false,
+        "BothOptionsEvent": true,
         "Event": {},
-        "ContinueRandomStoryHandlingAfterEvent": true,
-        "name": "GameEnd_container",
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "name": "GameEnd_container94",
         "hideFlags": 0
       }
-    }
+    },
+    "IgnoreRandomization": true
   },
   {
     "StoryTellerName": "Hancı",
@@ -2220,7 +2316,7 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": {
-        "StoryID": "96B",
+        "StoryID": "96A",
         "BothOptionsEvent": true,
         "Event": {},
         "ContinueRandomStoryHandlingAfterEvent": false,
@@ -2243,7 +2339,8 @@
         "name": "Index96Ending",
         "hideFlags": 0
       }
-    }
+    },
+    "IgnoreRandomization": true
   },
   {
     "StoryTellerName": "Hikaye Anlatıcı",
@@ -2257,10 +2354,10 @@
       "MainQuestModifierType": 4,
       "StoryEventContainer": {
         "StoryID": "97B",
-        "BothOptionsEvent": false,
+        "BothOptionsEvent": true,
         "Event": {},
-        "ContinueRandomStoryHandlingAfterEvent": true,
-        "name": "GameEnd_container",
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "name": "GameEnd_container96",
         "hideFlags": 0
       }
     },
@@ -2273,13 +2370,14 @@
       "MainQuestModifierType": 4,
       "StoryEventContainer": {
         "StoryID": "97B",
-        "BothOptionsEvent": false,
+        "BothOptionsEvent": true,
         "Event": {},
-        "ContinueRandomStoryHandlingAfterEvent": true,
-        "name": "GameEnd_container",
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "name": "GameEnd_container96",
         "hideFlags": 0
       }
-    }
+    },
+    "IgnoreRandomization": true
   },
   {
     "StoryTellerName": "Savaş Gazisi",
@@ -2292,7 +2390,7 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": {
-        "StoryID": "98B",
+        "StoryID": "98A",
         "BothOptionsEvent": true,
         "Event": {},
         "ContinueRandomStoryHandlingAfterEvent": false,
@@ -2315,7 +2413,8 @@
         "name": "Index98Ending",
         "hideFlags": 0
       }
-    }
+    },
+    "IgnoreRandomization": true
   },
   {
     "StoryTellerName": "Hikaye Anlatıcı",
@@ -2329,10 +2428,10 @@
       "MainQuestModifierType": 4,
       "StoryEventContainer": {
         "StoryID": "99B",
-        "BothOptionsEvent": false,
+        "BothOptionsEvent": true,
         "Event": {},
-        "ContinueRandomStoryHandlingAfterEvent": true,
-        "name": "GameEnd_container",
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "name": "GameEnd_container98",
         "hideFlags": 0
       }
     },
@@ -2345,13 +2444,14 @@
       "MainQuestModifierType": 4,
       "StoryEventContainer": {
         "StoryID": "99B",
-        "BothOptionsEvent": false,
+        "BothOptionsEvent": true,
         "Event": {},
-        "ContinueRandomStoryHandlingAfterEvent": true,
-        "name": "GameEnd_container",
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "name": "GameEnd_container98",
         "hideFlags": 0
       }
-    }
+    },
+    "IgnoreRandomization": true
   },
   {
     "StoryTellerName": "Savaş Gazisi",
@@ -2364,7 +2464,7 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": {
-        "StoryID": "100B",
+        "StoryID": "100A",
         "BothOptionsEvent": true,
         "Event": {},
         "ContinueRandomStoryHandlingAfterEvent": false,
@@ -2387,7 +2487,8 @@
         "name": "Index100Ending",
         "hideFlags": 0
       }
-    }
+    },
+    "IgnoreRandomization": true
   },
   {
     "StoryTellerName": "Hikaye Anlatıcı",
@@ -2401,10 +2502,10 @@
       "MainQuestModifierType": 4,
       "StoryEventContainer": {
         "StoryID": "101B",
-        "BothOptionsEvent": false,
+        "BothOptionsEvent": true,
         "Event": {},
-        "ContinueRandomStoryHandlingAfterEvent": true,
-        "name": "GameEnd_container",
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "name": "GameEnd_container100",
         "hideFlags": 0
       }
     },
@@ -2417,13 +2518,14 @@
       "MainQuestModifierType": 4,
       "StoryEventContainer": {
         "StoryID": "101B",
-        "BothOptionsEvent": false,
+        "BothOptionsEvent": true,
         "Event": {},
-        "ContinueRandomStoryHandlingAfterEvent": true,
-        "name": "GameEnd_container",
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "name": "GameEnd_container100",
         "hideFlags": 0
       }
-    }
+    },
+    "IgnoreRandomization": true
   },
   {
     "StoryTellerName": "Satılmış Yargıç",
@@ -2436,7 +2538,7 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": {
-        "StoryID": "102B",
+        "StoryID": "102A",
         "BothOptionsEvent": true,
         "Event": {},
         "ContinueRandomStoryHandlingAfterEvent": false,
@@ -2459,7 +2561,8 @@
         "name": "Index102Ending",
         "hideFlags": 0
       }
-    }
+    },
+    "IgnoreRandomization": true
   },
   {
     "StoryTellerName": "Hikaye Anlatıcı",
@@ -2473,10 +2576,10 @@
       "MainQuestModifierType": 4,
       "StoryEventContainer": {
         "StoryID": "103B",
-        "BothOptionsEvent": false,
+        "BothOptionsEvent": true,
         "Event": {},
-        "ContinueRandomStoryHandlingAfterEvent": true,
-        "name": "GameEnd_container",
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "name": "GameEnd_container102",
         "hideFlags": 0
       }
     },
@@ -2489,13 +2592,14 @@
       "MainQuestModifierType": 4,
       "StoryEventContainer": {
         "StoryID": "103B",
-        "BothOptionsEvent": false,
+        "BothOptionsEvent": true,
         "Event": {},
-        "ContinueRandomStoryHandlingAfterEvent": true,
-        "name": "GameEnd_container",
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "name": "GameEnd_container102",
         "hideFlags": 0
       }
-    }
+    },
+    "IgnoreRandomization": true
   },
   {
     "StoryTellerName": "Satılmış Yargıç",
@@ -2508,7 +2612,7 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": {
-        "StoryID": "104B",
+        "StoryID": "104A",
         "BothOptionsEvent": true,
         "Event": {},
         "ContinueRandomStoryHandlingAfterEvent": false,
@@ -2531,7 +2635,8 @@
         "name": "Index104Ending",
         "hideFlags": 0
       }
-    }
+    },
+    "IgnoreRandomization": true
   },
   {
     "StoryTellerName": "Hikaye Anlatıcı",
@@ -2545,10 +2650,10 @@
       "MainQuestModifierType": 4,
       "StoryEventContainer": {
         "StoryID": "105B",
-        "BothOptionsEvent": false,
+        "BothOptionsEvent": true,
         "Event": {},
-        "ContinueRandomStoryHandlingAfterEvent": true,
-        "name": "GameEnd_container",
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "name": "GameEnd_container104",
         "hideFlags": 0
       }
     },
@@ -2561,13 +2666,14 @@
       "MainQuestModifierType": 4,
       "StoryEventContainer": {
         "StoryID": "105B",
-        "BothOptionsEvent": false,
+        "BothOptionsEvent": true,
         "Event": {},
-        "ContinueRandomStoryHandlingAfterEvent": true,
-        "name": "GameEnd_container",
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "name": "GameEnd_container104",
         "hideFlags": 0
       }
-    }
+    },
+    "IgnoreRandomization": true
   },
   {
     "StoryTellerName": "Çiftçi",
@@ -2580,7 +2686,7 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": {
-        "StoryID": "106B",
+        "StoryID": "106A",
         "BothOptionsEvent": true,
         "Event": {},
         "ContinueRandomStoryHandlingAfterEvent": false,
@@ -2603,7 +2709,8 @@
         "name": "Index106Ending",
         "hideFlags": 0
       }
-    }
+    },
+    "IgnoreRandomization": true
   },
   {
     "StoryTellerName": "Hikaye Anlatıcı",
@@ -2617,10 +2724,10 @@
       "MainQuestModifierType": 4,
       "StoryEventContainer": {
         "StoryID": "107B",
-        "BothOptionsEvent": false,
+        "BothOptionsEvent": true,
         "Event": {},
-        "ContinueRandomStoryHandlingAfterEvent": true,
-        "name": "GameEnd_container",
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "name": "GameEnd_container106",
         "hideFlags": 0
       }
     },
@@ -2633,13 +2740,14 @@
       "MainQuestModifierType": 4,
       "StoryEventContainer": {
         "StoryID": "107B",
-        "BothOptionsEvent": false,
+        "BothOptionsEvent": true,
         "Event": {},
-        "ContinueRandomStoryHandlingAfterEvent": true,
-        "name": "GameEnd_container",
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "name": "GameEnd_container106",
         "hideFlags": 0
       }
-    }
+    },
+    "IgnoreRandomization": true
   },
   {
     "StoryTellerName": "Çiftçi",
@@ -2652,7 +2760,7 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": {
-        "StoryID": "108B",
+        "StoryID": "108A",
         "BothOptionsEvent": true,
         "Event": {},
         "ContinueRandomStoryHandlingAfterEvent": false,
@@ -2675,7 +2783,8 @@
         "name": "Index108Ending",
         "hideFlags": 0
       }
-    }
+    },
+    "IgnoreRandomization": true
   },
   {
     "StoryTellerName": "Hikaye Anlatıcı",
@@ -2689,10 +2798,10 @@
       "MainQuestModifierType": 4,
       "StoryEventContainer": {
         "StoryID": "109B",
-        "BothOptionsEvent": false,
+        "BothOptionsEvent": true,
         "Event": {},
-        "ContinueRandomStoryHandlingAfterEvent": true,
-        "name": "GameEnd_container",
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "name": "GameEnd_container108",
         "hideFlags": 0
       }
     },
@@ -2705,12 +2814,13 @@
       "MainQuestModifierType": 4,
       "StoryEventContainer": {
         "StoryID": "109B",
-        "BothOptionsEvent": false,
+        "BothOptionsEvent": true,
         "Event": {},
-        "ContinueRandomStoryHandlingAfterEvent": true,
-        "name": "GameEnd_container",
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "name": "GameEnd_container108",
         "hideFlags": 0
       }
-    }
+    },
+    "IgnoreRandomization": true
   }
 ]

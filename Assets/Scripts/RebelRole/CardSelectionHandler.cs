@@ -78,7 +78,7 @@ public class CardSelectionHandler : MonoBehaviour, IDragHandler, IBeginDragHandl
         _storiesHandler = FindObjectOfType<StoriesHandler>();
 
         List<StoryCard> stories = _storiesHandler.LoadStoriesList();
-        HandleStory(stories[8]);
+        HandleStory();
 
     }
 
@@ -131,6 +131,7 @@ public class CardSelectionHandler : MonoBehaviour, IDragHandler, IBeginDragHandl
 
                 Debug.Log(_currentSelectedOption.StoryEventContainer.StoryID);
                 StoryEventHandler.Instance.PrintEventsContainerIds();
+               
                 StoryEventHandler.Instance.ExecuteEvent(currentEventContainer.StoryID);
 
                 if (currentEventContainer.ContinueRandomStoryHandlingAfterEvent)
@@ -327,8 +328,16 @@ public class CardSelectionHandler : MonoBehaviour, IDragHandler, IBeginDragHandl
     private StoryCard GetRandomStoryFromJsonFile()
     {
         List<StoryCard> stories = _storiesHandler.LoadStoriesList();
-        Debug.Log(stories.Count);
-        StoryCard randomCard = stories[Random.Range(0, stories.Count)];
+        List<StoryCard> randomizableCards = new List<StoryCard>();
+        for (int i = 0; i < stories.Count; i++)
+        {
+            if (!stories[i].IgnoreRandomization)
+            {
+                randomizableCards.Add(stories[i]);
+            }
+        }
+
+        StoryCard randomCard = randomizableCards[Random.Range(0, randomizableCards.Count)];
         return randomCard;
     }
     private void CardAnimation()

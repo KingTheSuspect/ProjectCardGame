@@ -19,6 +19,7 @@ public class StoriesHandlerWindow : EditorWindow
     private int aggressivenessInputB;
     private int lawInputB;
     private int royaltyInputB;
+    private bool ignoreRandomization;
 
     private StoryEventContainer optionAEvent;
     private StoryEventContainer optionBEvent;
@@ -74,6 +75,7 @@ public class StoriesHandlerWindow : EditorWindow
         rebelMainQuestModifierTypeOptionB = (RebelMainQuestModifierType)EditorGUILayout.EnumPopup("Main Quest", rebelMainQuestModifierTypeOptionB);
         optionBEvent = EditorGUILayout.ObjectField("Option B Event", optionBEvent, typeof(StoryEventContainer), true) as StoryEventContainer;
 
+        ignoreRandomization = EditorGUILayout.Toggle("Dont Get With Random : ", ignoreRandomization);
 
 
         if (GUILayout.Button("Add Story Card"))
@@ -81,6 +83,7 @@ public class StoriesHandlerWindow : EditorWindow
             StoryCard card = new StoryCard();
             card.StoryTellerName = storyTellerNameInput;
             card.StoryContent = storyContentInput;
+            card.IgnoreRandomization = ignoreRandomization;
             card.OptionA = new RebelOption
             {
                 OptionName = storyOptionA,
@@ -124,6 +127,7 @@ public class StoriesHandlerWindow : EditorWindow
             StoryCard card = new StoryCard();
             card.StoryTellerName = storyTellerNameInput;
             card.StoryContent = storyContentInput;
+            card.IgnoreRandomization = ignoreRandomization;
 
             card.OptionA = new RebelOption
             {
@@ -161,6 +165,24 @@ public class StoriesHandlerWindow : EditorWindow
 
             stories[selectedStoryIndex] = card;
             _storiesHandler?.SaveStoriesListToFile(stories);
+        }
+        if (GUILayout.Button("Update All ID"))
+        {
+            if (_storiesHandler != null)
+            {
+                List<StoryCard> stories = _storiesHandler.LoadStoriesList();
+
+                for (int i = 0; i < stories.Count; i++)
+                {
+                    if (stories[i].OptionA.StoryEventContainer != null)
+                        stories[i].OptionA.StoryEventContainer.StoryID = i + "A";
+                    if (stories[i].OptionB.StoryEventContainer != null)
+                        stories[i].OptionB.StoryEventContainer.StoryID = i + "B";
+                }
+
+                // Güncellenmiþ hikayeleri dosyaya kaydet
+                _storiesHandler.SaveStoriesListToFile(stories);
+            }
         }
 
         // Arama kutusu
@@ -222,6 +244,7 @@ public class StoriesHandlerWindow : EditorWindow
                         rebelMainQuestModifierTypeOptionB = stories[i].OptionB.MainQuestModifierType;
                         optionAEvent = stories[i].OptionA.StoryEventContainer;
                         optionBEvent = stories[i].OptionB.StoryEventContainer;
+                        ignoreRandomization = stories[i].IgnoreRandomization;
                     }
 
                     GUILayout.EndHorizontal();

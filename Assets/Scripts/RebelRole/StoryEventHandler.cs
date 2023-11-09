@@ -22,9 +22,9 @@ public class StoryEventHandler : MonoSingleton<StoryEventHandler>
 
         for (int i = 0; i < events.Count; i++)
         {
+            
             if (events[i].BothOptionsEvent)
             {
-                
                 if (events[i].StoryID == formatted)
                 {
                     return events[i];
@@ -42,17 +42,15 @@ public class StoryEventHandler : MonoSingleton<StoryEventHandler>
     }
     public void ExecuteEvent(string index)
     {
-        char[] charArray = index.ToCharArray();
-        string formatted = new string(charArray, 0, charArray.Length - 1);
+       
 
         for (int i = 0; i < events.Count; i++)
         {
             if (events[i].BothOptionsEvent)
             {
-                Debug.Log("Formatted : " + formatted + " , storyId : " + events[i].StoryID);
-                if (events[i].StoryID == formatted)
+                if (events[i].StoryID == index)
                 {
-
+                    Debug.Log("Çalýþtý");
                     events[i].Event?.Invoke();
                 }
             }

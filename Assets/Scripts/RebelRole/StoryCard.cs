@@ -9,6 +9,7 @@ public class StoryCard
     public string StoryContent { get; set; }
     public RebelOption OptionA { get; set; }
     public RebelOption OptionB { get; set; }
+    public bool IgnoreRandomization { get; set; }
 
 
 }

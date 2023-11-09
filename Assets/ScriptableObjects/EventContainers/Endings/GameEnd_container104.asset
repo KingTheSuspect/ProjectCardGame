@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89f933dd2f4ee9f4dac27a34f28d3610, type: 3}
   m_Name: GameEnd_container104
   m_EditorClassIdentifier: 
-  StoryID: 105B
+  StoryID: 105
   BothOptionsEvent: 1
   Event:
     m_PersistentCalls:

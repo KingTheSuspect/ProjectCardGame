@@ -130,8 +130,7 @@ public class CardSelectionHandler : MonoBehaviour, IDragHandler, IBeginDragHandl
                 StoryEventContainer currentEventContainer = StoryEventHandler.Instance.GetEventWithIndex(_currentSelectedOption.StoryEventContainer.StoryID);
 
                 Debug.Log(_currentSelectedOption.StoryEventContainer.StoryID);
-                StoryEventHandler.Instance.PrintEventsContainerIds();
-               
+                Debug.Log(_currentSelectedOption.StoryEventContainer.StoryID + " , id");
                 StoryEventHandler.Instance.ExecuteEvent(currentEventContainer.StoryID);
 
                 if (currentEventContainer.ContinueRandomStoryHandlingAfterEvent)

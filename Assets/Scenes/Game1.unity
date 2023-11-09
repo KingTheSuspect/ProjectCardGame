@@ -800,6 +800,15 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 83dd89b9052c19849aa517e2419cd0d0, type: 2}
   - {fileID: 11400000, guid: bf4f4381b5817a74dbb61540fec5dab7, type: 2}
   - {fileID: 11400000, guid: ad19ae49211c4b74f872abe20db3b758, type: 2}
+  - {fileID: 11400000, guid: 7f999ba7963e2eb4cb5bf903b11e78d5, type: 2}
+  - {fileID: 11400000, guid: 4fb0fa1c68634d743b6e1f351476f3bb, type: 2}
+  - {fileID: 11400000, guid: b2dca24cd58c3744ea29dbc0da926de0, type: 2}
+  - {fileID: 11400000, guid: 1bd9452161ea43d479c10287d04609f6, type: 2}
+  - {fileID: 11400000, guid: ce51a5d0e74838d4886df1c5bdf27706, type: 2}
+  - {fileID: 11400000, guid: 73716b80ca8385843bd8644fe9a2034a, type: 2}
+  - {fileID: 11400000, guid: 77e17a0c78033754d8107790fc526844, type: 2}
+  - {fileID: 11400000, guid: 65a5146943272dd42b2bff734d0e05af, type: 2}
+  - {fileID: 11400000, guid: 599b81889b84a4941b711d7117f9b1d3, type: 2}
 --- !u!4 &394612916
 Transform:
   m_ObjectHideFlags: 0
@@ -2848,6 +2857,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1796312311}
   m_CullTransparentMesh: 1
+--- !u!1 &1827927770
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1827927772}
+  - component: {fileID: 1827927771}
+  m_Layer: 0
+  m_Name: EndingManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1827927771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1827927770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec9f86bf501d5f14f9af10c5cb4ed5c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1827927772
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1827927770}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1852444013
 GameObject:
   m_ObjectHideFlags: 0
@@ -3788,3 +3841,4 @@ SceneRoots:
   - {fileID: 2016859037}
   - {fileID: 1537241581}
   - {fileID: 394612916}
+  - {fileID: 1827927772}

@@ -78,7 +78,7 @@ public class CardSelectionHandler : MonoBehaviour, IDragHandler, IBeginDragHandl
         _storiesHandler = FindObjectOfType<StoriesHandler>();
 
         List<StoryCard> stories = _storiesHandler.LoadStoriesList();
-        HandleStory(stories[77]);
+        HandleStory(stories[8]);
 
     }
 
@@ -135,12 +135,26 @@ public class CardSelectionHandler : MonoBehaviour, IDragHandler, IBeginDragHandl
 
                 if (currentEventContainer.ContinueRandomStoryHandlingAfterEvent)
                 {
-                    HandleStory();
+                    if (RebelEndingsHandler.Instance.CheckAndGetEndingCard(out StoryCard card))
+                    {
+                        HandleStory(card);
+                    }
+                    else
+                    {
+                        HandleStory();
+                    }
                 }
             }
             else
             {
-                HandleStory();
+                if (RebelEndingsHandler.Instance.CheckAndGetEndingCard(out StoryCard card))
+                {
+                    HandleStory(card);
+                }
+                else
+                {
+                    HandleStory();
+                }
             }
         }
     }

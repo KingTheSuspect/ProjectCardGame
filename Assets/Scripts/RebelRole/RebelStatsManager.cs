@@ -14,10 +14,10 @@ public class RebelStatsManager : MonoSingleton<RebelStatsManager>
     private void Awake()
     {
         //Varsayýlan deðerler.
-        PrivacyCount = 25;
-        AggressivenessCount = 25;
-        LawCount = 25;
-        RoyaltyCount = 25;
+        PrivacyCount = 10;
+        AggressivenessCount = 10;
+        LawCount = 10;
+        RoyaltyCount = 10;
     }
     public void AddPrivacy(int value)
     {

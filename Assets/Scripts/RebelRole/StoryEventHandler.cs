@@ -17,12 +17,14 @@ public class StoryEventHandler : MonoSingleton<StoryEventHandler>
     }
     public StoryEventContainer GetEventWithIndex(string index) 
     {
+        char[] charArray = index.ToCharArray();
+        string formatted = new string(charArray, 0, charArray.Length - 1);
+
         for (int i = 0; i < events.Count; i++)
         {
             if (events[i].BothOptionsEvent)
             {
-                char[] charArray = index.ToCharArray();
-                string formatted = new string(charArray, 0, charArray.Length - 1);
+                
                 if (events[i].StoryID == formatted)
                 {
                     return events[i];
@@ -36,20 +38,21 @@ public class StoryEventHandler : MonoSingleton<StoryEventHandler>
                 }
             }
         }
-        Debug.LogWarning("Böyle bir event bulunamadý ustam");
         return null;
     }
     public void ExecuteEvent(string index)
     {
+        char[] charArray = index.ToCharArray();
+        string formatted = new string(charArray, 0, charArray.Length - 1);
+
         for (int i = 0; i < events.Count; i++)
         {
             if (events[i].BothOptionsEvent)
             {
-                char[] charArray = index.ToCharArray();
-                string formatted = new string(charArray, 0, charArray.Length - 1);
-
+                Debug.Log("Formatted : " + formatted + " , storyId : " + events[i].StoryID);
                 if (events[i].StoryID == formatted)
                 {
+
                     events[i].Event?.Invoke();
                 }
             }

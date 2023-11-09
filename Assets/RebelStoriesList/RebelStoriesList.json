@@ -187,6 +187,7 @@
       "MainQuestModifierType": 4,
       "StoryEventContainer": {
         "StoryID": "8A",
+        "BothOptionsEvent": false,
         "Event": {},
         "ContinueRandomStoryHandlingAfterEvent": true,
         "name": "Index8OptionAB_container",
@@ -202,6 +203,7 @@
       "MainQuestModifierType": 4,
       "StoryEventContainer": {
         "StoryID": "8B",
+        "BothOptionsEvent": false,
         "Event": {},
         "ContinueRandomStoryHandlingAfterEvent": true,
         "name": "Index8OptionAB_container",
@@ -749,6 +751,7 @@
       "MainQuestModifierType": 4,
       "StoryEventContainer": {
         "StoryID": "33A",
+        "BothOptionsEvent": false,
         "Event": {},
         "ContinueRandomStoryHandlingAfterEvent": true,
         "name": "Index33OptionA_container",
@@ -1226,6 +1229,7 @@
       "MainQuestModifierType": 4,
       "StoryEventContainer": {
         "StoryID": "54B",
+        "BothOptionsEvent": false,
         "Event": {},
         "ContinueRandomStoryHandlingAfterEvent": false,
         "name": "Index54OptionB_container",
@@ -1487,6 +1491,7 @@
       "MainQuestModifierType": 4,
       "StoryEventContainer": {
         "StoryID": "66A",
+        "BothOptionsEvent": false,
         "Event": {},
         "ContinueRandomStoryHandlingAfterEvent": false,
         "name": "Index66OptionA_container",
@@ -1502,6 +1507,7 @@
       "MainQuestModifierType": 4,
       "StoryEventContainer": {
         "StoryID": "66B",
+        "BothOptionsEvent": false,
         "Event": {},
         "ContinueRandomStoryHandlingAfterEvent": false,
         "name": "Index66OptionB_container",
@@ -1543,6 +1549,7 @@
       "MainQuestModifierType": 4,
       "StoryEventContainer": {
         "StoryID": "68A",
+        "BothOptionsEvent": false,
         "Event": {},
         "ContinueRandomStoryHandlingAfterEvent": false,
         "name": "Index68OptionAB_container",
@@ -1558,6 +1565,7 @@
       "MainQuestModifierType": 4,
       "StoryEventContainer": {
         "StoryID": "68B",
+        "BothOptionsEvent": false,
         "Event": {},
         "ContinueRandomStoryHandlingAfterEvent": false,
         "name": "Index68OptionAB_container",
@@ -1753,6 +1761,7 @@
       "MainQuestModifierType": 4,
       "StoryEventContainer": {
         "StoryID": "77A",
+        "BothOptionsEvent": false,
         "Event": {},
         "ContinueRandomStoryHandlingAfterEvent": false,
         "name": "Index77OptionA_container",
@@ -1781,6 +1790,7 @@
       "MainQuestModifierType": 4,
       "StoryEventContainer": {
         "StoryID": "78A",
+        "BothOptionsEvent": false,
         "Event": {},
         "ContinueRandomStoryHandlingAfterEvent": true,
         "name": "Index78OptionAB_container",
@@ -2125,6 +2135,582 @@
       "Royalty": 0,
       "MainQuestModifierType": 4,
       "StoryEventContainer": null
+    }
+  },
+  {
+    "StoryTellerName": "Hancı",
+    "StoryContent": "İsyan bir türlü başlamıyor",
+    "OptionA": {
+      "OptionName": "Ne!",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": {
+        "StoryID": "94B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "name": "Index94Ending",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": "Ne!",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": {
+        "StoryID": "94B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "name": "Index94Ending",
+        "hideFlags": 0
+      }
+    }
+  },
+  {
+    "StoryTellerName": "Hikaye Anlatıcı",
+    "StoryContent": "O kadar iletişimsiz kaldınız ki bir türlü isyanı başlatamadınız",
+    "OptionA": {
+      "OptionName": "Son",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": {
+        "StoryID": "95B",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": true,
+        "name": "GameEnd_container",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": "Son",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": {
+        "StoryID": "95B",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": true,
+        "name": "GameEnd_container",
+        "hideFlags": 0
+      }
+    }
+  },
+  {
+    "StoryTellerName": "Hancı",
+    "StoryContent": "Muhafızlar seni soruyor",
+    "OptionA": {
+      "OptionName": "Ne!",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": {
+        "StoryID": "96B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "name": "Index96Ending",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": "Ne!",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": {
+        "StoryID": "96B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "name": "Index96Ending",
+        "hideFlags": 0
+      }
+    }
+  },
+  {
+    "StoryTellerName": "Hikaye Anlatıcı",
+    "StoryContent": "Kraliyet muhafızları halkı isyana sürükleyenin sen olduğunu anladı.\n Herkese ibret olman adına kasabanın ortasında sallandırıldın",
+    "OptionA": {
+      "OptionName": "Son",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": {
+        "StoryID": "97B",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": true,
+        "name": "GameEnd_container",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": "Son",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": {
+        "StoryID": "97B",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": true,
+        "name": "GameEnd_container",
+        "hideFlags": 0
+      }
+    }
+  },
+  {
+    "StoryTellerName": "Savaş Gazisi",
+    "StoryContent": "Savaşçılarımızın öfkeden gözü dönüyor. Bizi dinlemiyorlar! ",
+    "OptionA": {
+      "OptionName": "Ne!",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": {
+        "StoryID": "98B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "name": "Index98Ending",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": "Ne!",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": {
+        "StoryID": "98B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "name": "Index98Ending",
+        "hideFlags": 0
+      }
+    }
+  },
+  {
+    "StoryTellerName": "Hikaye Anlatıcı",
+    "StoryContent": "İsyancıların o kadar öfke doluydu ki plana sadık kalmadan saldırıya geçtiler. İsyan başarısız oldu",
+    "OptionA": {
+      "OptionName": "Son",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": {
+        "StoryID": "99B",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": true,
+        "name": "GameEnd_container",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": "Son",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": {
+        "StoryID": "99B",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": true,
+        "name": "GameEnd_container",
+        "hideFlags": 0
+      }
+    }
+  },
+  {
+    "StoryTellerName": "Savaş Gazisi",
+    "StoryContent": "İsyancılar isyandan vazgeçiyor!",
+    "OptionA": {
+      "OptionName": "Ne!",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": {
+        "StoryID": "100B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "name": "Index100Ending",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": "Ne!",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": {
+        "StoryID": "100B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "name": "Index100Ending",
+        "hideFlags": 0
+      }
+    }
+  },
+  {
+    "StoryTellerName": "Hikaye Anlatıcı",
+    "StoryContent": "İsyancılarını o kadar pasif bıraktın ki artık bir eylem oluşturacak motivasyonları kalmadı",
+    "OptionA": {
+      "OptionName": "Son",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": {
+        "StoryID": "101B",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": true,
+        "name": "GameEnd_container",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": "Son",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": {
+        "StoryID": "101B",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": true,
+        "name": "GameEnd_container",
+        "hideFlags": 0
+      }
+    }
+  },
+  {
+    "StoryTellerName": "Satılmış Yargıç",
+    "StoryContent": "Acaba isyan etmesek mi? ",
+    "OptionA": {
+      "OptionName": "Ne!",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": {
+        "StoryID": "102B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "name": "Index102Ending",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": "Ne!",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": {
+        "StoryID": "102B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "name": "Index102Ending",
+        "hideFlags": 0
+      }
+    }
+  },
+  {
+    "StoryTellerName": "Hikaye Anlatıcı",
+    "StoryContent": "ŞekilHukukta o kadar çok güç edindiniz ki isyandan vazgeçtiniz. Güç gözünüzü kör etti",
+    "OptionA": {
+      "OptionName": "Son",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": {
+        "StoryID": "103B",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": true,
+        "name": "GameEnd_container",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": "Son",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": {
+        "StoryID": "103B",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": true,
+        "name": "GameEnd_container",
+        "hideFlags": 0
+      }
+    }
+  },
+  {
+    "StoryTellerName": "Satılmış Yargıç",
+    "StoryContent": "Artık yanınızda olamayacağım",
+    "OptionA": {
+      "OptionName": "Ne!",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": {
+        "StoryID": "104B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "name": "Index104Ending",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": "Ne!",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": {
+        "StoryID": "104B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "name": "Index104Ending",
+        "hideFlags": 0
+      }
+    }
+  },
+  {
+    "StoryTellerName": "Hikaye Anlatıcı",
+    "StoryContent": "Siyasal olarak tüm gücünüzü kaybedince isyan çıkaracak cesaretiniz kalmadı",
+    "OptionA": {
+      "OptionName": "Son",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": {
+        "StoryID": "105B",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": true,
+        "name": "GameEnd_container",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": "Son",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": {
+        "StoryID": "105B",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": true,
+        "name": "GameEnd_container",
+        "hideFlags": 0
+      }
+    }
+  },
+  {
+    "StoryTellerName": "Çiftçi",
+    "StoryContent": "İsyancılar isyan etmeye çekiniyor",
+    "OptionA": {
+      "OptionName": "Ne!",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": {
+        "StoryID": "106B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "name": "Index106Ending",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": "Ne!",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": {
+        "StoryID": "106B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "name": "Index106Ending",
+        "hideFlags": 0
+      }
+    }
+  },
+  {
+    "StoryTellerName": "Hikaye Anlatıcı",
+    "StoryContent": "İsyancıların o kadar çok birbirine bağlandı ki kayıp vermemek için isyan etmemeye karar verdiler",
+    "OptionA": {
+      "OptionName": "Son",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": {
+        "StoryID": "107B",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": true,
+        "name": "GameEnd_container",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": "Son",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": {
+        "StoryID": "107B",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": true,
+        "name": "GameEnd_container",
+        "hideFlags": 0
+      }
+    }
+  },
+  {
+    "StoryTellerName": "Çiftçi",
+    "StoryContent": "Bu isyan sancağını taşıyacak kişi sen değilsin",
+    "OptionA": {
+      "OptionName": "Ne!",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": {
+        "StoryID": "108B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "name": "Index108Ending",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": "Ne!",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": {
+        "StoryID": "108B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "name": "Index108Ending",
+        "hideFlags": 0
+      }
+    }
+  },
+  {
+    "StoryTellerName": "Hikaye Anlatıcı",
+    "StoryContent": "Seçimlerin ve sözlerin yüzünden insanların sana güveni kalmadı. Yerine başkasını geçirip seni öldürdüler",
+    "OptionA": {
+      "OptionName": "Son",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": {
+        "StoryID": "109B",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": true,
+        "name": "GameEnd_container",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": "Son",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 4,
+      "StoryEventContainer": {
+        "StoryID": "109B",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": true,
+        "name": "GameEnd_container",
+        "hideFlags": 0
+      }
     }
   }
 ]

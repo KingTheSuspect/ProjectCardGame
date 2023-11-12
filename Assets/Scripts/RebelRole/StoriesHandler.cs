@@ -3,23 +3,34 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using Newtonsoft.Json;
+using UnityEngine.SceneManagement;
+using Newtonsoft.Json.Linq;
 
 public class StoriesHandler : MonoBehaviour
 {
-    public static string StoriesListPath = "Assets/RebelStoriesList/RebelStoriesList.json";
+    public static string StoriesListPath = "StreamingAssets/RebelStoriesList/RebelStoriesList.json";
 
+    [System.Obsolete]
     public List<StoryCard> LoadStoriesList()
     {
-        if (File.Exists(StoriesListPath))
+#if UNITY_ANDROID
+        StoriesListPath = Path.Combine(Application.streamingAssetsPath, "RebelStoriesList.json");
+
+        WWW reader = new WWW(StoriesListPath);
+        while (!reader.isDone)
         {
-            string json = File.ReadAllText(StoriesListPath);
-            return JsonConvert.DeserializeObject<List<StoryCard>>(json);
         }
-        else
-        {
-            SaveStoriesListToFile(new List<StoryCard>());
-            return LoadStoriesList();
-        }
+        string json = reader.text;
+        return JsonConvert.DeserializeObject<List<StoryCard>>(json);
+#endif
+        //if (File.Exists(StoriesListPath))
+        //{
+        //    string json = File.ReadAllText(StoriesListPath);
+        //    return JsonConvert.DeserializeObject<List<StoryCard>>(json);
+        //}
+        //SceneManager.LoadScene("MainMenu");
+        //SaveStoriesListToFile(new List<StoryCard>());
+        //return LoadStoriesList();
     }
 
     public void SaveStoriesListToFile(List<StoryCard> stories)
@@ -42,7 +53,7 @@ public class StoriesHandler : MonoBehaviour
     }
     public int GetIndexWithContent(StoryCard card)
     {
-        for (int i = 0;i < LoadStoriesList().Count; i++)
+        for (int i = 0; i < LoadStoriesList().Count; i++)
         {
             if (LoadStoriesList()[i].StoryContent == card.StoryContent)
             {

@@ -37,6 +37,7 @@ public class RebelStatsManager : MonoSingleton<RebelStatsManager>
     {
         RoyaltyCount += value;
     }
+    //Verilen rastgelelik deðerlerine göre ihtimallere baðlý olarak stat deðiþikliði yapar.
     public void AddRandomizationWithPosibility(List<StatRandomizationInfo> possibilities)
     {
 

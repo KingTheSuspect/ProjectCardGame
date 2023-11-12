@@ -4,7 +4,6 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.Events;
 
-#if UNITY_EDITOR
 public class StoriesHandlerWindow : EditorWindow
 {
     private StoriesHandler _storiesHandler;
@@ -257,4 +256,3 @@ public class StoriesHandlerWindow : EditorWindow
         EditorGUILayout.EndScrollView();
     }
 }
-#endif

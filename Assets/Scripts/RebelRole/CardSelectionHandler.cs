@@ -14,10 +14,10 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
-public class CardSelectionHandler : MonoBehaviour, IDragHandler, IEndDragHandler
+public class CardSelectionHandler : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler
 {
-    private float moveAimX = 0;
-    [SerializeField] private float cardMovementSensivity;
+    private float move_aim_x = 0;
+    [SerializeField] private float touch_movement_sensivity;
     private float range = 1;
     private Vector3 targetPosition;
     public bool AnimationControl;
@@ -28,6 +28,10 @@ public class CardSelectionHandler : MonoBehaviour, IDragHandler, IEndDragHandler
     public float rotateDegreeLeft;
     public float rotateDegreeRight;
     public float rotateSpeed;
+    public int eventLength;
+    public int choice1;
+    public int choice2;
+    public float index;
     public int controlLength;
 
     //public TextAsset text;
@@ -35,6 +39,8 @@ public class CardSelectionHandler : MonoBehaviour, IDragHandler, IEndDragHandler
     public GameObject gameManagerObject;
     public GameObject TopStory;
     public GameObject Stats;
+    [HideInInspector] public JObject eventList;
+    [HideInInspector] public JObject jObj;
     public GameObject[] GonnaChange;
 
 
@@ -54,10 +60,15 @@ public class CardSelectionHandler : MonoBehaviour, IDragHandler, IEndDragHandler
     private StoryCard _currentHandlingStoryCard;
     private RebelOption _currentSelectedOption;
 
+    CircleScript circleScript;
+
     private void Start()
     {
         Application.targetFrameRate = 60;
         controlLength = 0;
+        eventList = JObject.Parse(events.text);
+        jObj = (JObject)JsonConvert.DeserializeObject(events.text);
+        circleScript = gameManagerObject.GetComponent<CircleScript>();
         canvas = transform.root.GetComponent<Canvas>();
         card = GetComponent<RectTransform>();
 
@@ -124,39 +135,40 @@ public class CardSelectionHandler : MonoBehaviour, IDragHandler, IEndDragHandler
 
                 if (currentEventContainer.ContinueRandomStoryHandlingAfterEvent)
                 {
-                    HandleStoryWithEndChecking();
+                    if (RebelEndingsHandler.Instance.CheckAndGetEndingCard(out StoryCard card))
+                    {
+                        HandleStory(card);
+                    }
+                    else
+                    {
+                        HandleStory();
+                    }
                 }
             }
             else
             {
-                HandleStoryWithEndChecking();
+                if (RebelEndingsHandler.Instance.CheckAndGetEndingCard(out StoryCard card))
+                {
+                    HandleStory(card);
+                }
+                else
+                {
+                    HandleStory();
+                }
             }
         }
     }
-    //Eðer oyuncu kaybederse ona göre ilgili bitiþ kardý iþlenir.
-    private void HandleStoryWithEndChecking()
-    {
-        if (RebelEndingsHandler.Instance.CheckAndGetEndingCard(out StoryCard card))
-        {
-            HandleStory(card);
-        }
-        else
-        {
-            HandleStory();
-        }
-    }
+
     public void OnDrag(PointerEventData pointerEventData)
     {
-        //Dokunma kapalý ise çalýþmaz
         if (DisableTouch)
             return;
 
-
         float currentPosition = pointerEventData.delta.x / Screen.width;
-        moveAimX += cardMovementSensivity * currentPosition;
-        moveAimX = Mathf.Clamp(moveAimX, -range / 2f, range / 2f);
+        move_aim_x += touch_movement_sensivity * currentPosition;
+        move_aim_x = Mathf.Clamp(move_aim_x, -range / 2f, range / 2f);
 
-        transform.rotation = Quaternion.Euler(0f, 0f, moveAimX * rotateSpeed);
+        transform.rotation = Quaternion.Euler(0f, 0f, move_aim_x * rotateSpeed);
 
         card.anchoredPosition += pointerEventData.delta / canvas.scaleFactor;
         //Bu sola ilk kaydýrdýðýmda gelen þey lütfen yazýn
@@ -181,7 +193,6 @@ public class CardSelectionHandler : MonoBehaviour, IDragHandler, IEndDragHandler
 
         }
     }
-    //Alttaki statslarý seçerken günceller.
     private void SetGonnaChanges(RebelOption viewingOption)
     {
         GonnaChange[0].SetActive(Mathf.Abs(viewingOption.Privacy) > 0);
@@ -196,13 +207,17 @@ public class CardSelectionHandler : MonoBehaviour, IDragHandler, IEndDragHandler
             GonnaChange[i].gameObject.SetActive(false);
         }
     }
+    public void OnBeginDrag(PointerEventData pointerEventData)
+    {
+    }
+
     public void OnEndDrag(PointerEventData pointerEventData)
     {
         if (DisableTouch)
             return;
 
         choices.text = "";
-        moveAimX = 0;
+        move_aim_x = 0;
 
         RebelOption selectedOption;
 
@@ -257,6 +272,10 @@ public class CardSelectionHandler : MonoBehaviour, IDragHandler, IEndDragHandler
         gameObject.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = "";
 
         isCardPuttingBack = true;
+
+        //Old Code Blocks
+        //transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, 0f));
+        //card.anchoredPosition = new Vector2(0f, 0f) / canvas.scaleFactor;
     }
     //Kart býrakýldýðýnda yerine yumaþak þekilde geçiþ yapar.
     private void CardPuttingBackAnimation()
@@ -280,7 +299,6 @@ public class CardSelectionHandler : MonoBehaviour, IDragHandler, IEndDragHandler
         //Geri dönüþ animasyonu bitmeden kart tekrardan hareket ettirilemez.
         DisableTouch = true;
     }
-    //Rastgele hikaye iþlenir.
     public void HandleStory()
     {
         ResetCardCanvas();
@@ -290,7 +308,6 @@ public class CardSelectionHandler : MonoBehaviour, IDragHandler, IEndDragHandler
         AnimationControl = false;
 
     }
-    //Spesifik hikaye iþlenir
     public void HandleStory(StoryCard card)
     {
         ResetCardCanvas();
@@ -339,6 +356,10 @@ public class CardSelectionHandler : MonoBehaviour, IDragHandler, IEndDragHandler
         AnimationControl = true;
     }
 
+    private void RandomIndex()
+    {
+        index = Random.value;
+    }
     public void RefreshStatsUi()
     {
         Stats.transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().text = RebelStatsManager.Instance.PrivacyCount + "";
@@ -360,30 +381,19 @@ public class CardSelectionHandler : MonoBehaviour, IDragHandler, IEndDragHandler
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        SetChooseFlags(collision, true);
+        if (collision.CompareTag("LeftChoice")) isInLeft = true;
+        else if (collision.CompareTag("RightChoice")) isInRight = true;
+
+        if (collision.CompareTag("ChooseLeft")) chooseLeft = true;
+        else if (collision.CompareTag("ChooseRight")) chooseRight = true;
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        SetChooseFlags(collision, false);
-    }
+        if (collision.CompareTag("LeftChoice")) isInLeft = false;
+        else if (collision.CompareTag("RightChoice")) isInRight = false;
 
-    private void SetChooseFlags(Collider2D collision, bool value)
-    {
-        switch (collision.tag)
-        {
-            case "LeftChoice":
-                isInLeft = value;
-                break;
-            case "RightChoice":
-                isInRight = value;
-                break;
-            case "ChooseLeft":
-                chooseLeft = value;
-                break;
-            case "ChooseRight":
-                chooseRight = value;
-                break;
-        }
+        if (collision.CompareTag("ChooseLeft")) chooseLeft = false;
+        else if (collision.CompareTag("ChooseRight")) chooseRight = false;
     }
 }

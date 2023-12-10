@@ -13,6 +13,16 @@ public class StoriesHandler : MonoBehaviour
     [System.Obsolete]
     public List<StoryCard> LoadStoriesList()
     {
+        List<StoryCard> result = new List<StoryCard>();
+
+#if UNITY_EDITOR
+        if (File.Exists(StoriesListPath))
+        {
+            string jsonPC = File.ReadAllText(StoriesListPath);
+            result = JsonConvert.DeserializeObject<List<StoryCard>>(jsonPC);
+        }
+#endif
+
 #if UNITY_ANDROID
         StoriesListPath = Path.Combine(Application.streamingAssetsPath, "RebelStoriesList.json");
 
@@ -21,17 +31,12 @@ public class StoriesHandler : MonoBehaviour
         {
         }
         string json = reader.text;
-        return JsonConvert.DeserializeObject<List<StoryCard>>(json);
+        result = JsonConvert.DeserializeObject<List<StoryCard>>(json);
 #endif
-        //if (File.Exists(StoriesListPath))
-        //{
-        //    string json = File.ReadAllText(StoriesListPath);
-        //    return JsonConvert.DeserializeObject<List<StoryCard>>(json);
-        //}
-        //SceneManager.LoadScene("MainMenu");
-        //SaveStoriesListToFile(new List<StoryCard>());
-        //return LoadStoriesList();
+
+        return result;
     }
+
 
     public void SaveStoriesListToFile(List<StoryCard> stories)
     {

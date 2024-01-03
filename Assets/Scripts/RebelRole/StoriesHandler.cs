@@ -8,7 +8,9 @@ using Newtonsoft.Json.Linq;
 
 public class StoriesHandler : MonoBehaviour
 {
-    public static string StoriesListPath = "StreamingAssets/RebelStoriesList/RebelStoriesList.json";
+    public static string CurrentSelectedStoriesListPath = "StreamingAssets/KingdomStoriesList.json";
+    public static string RebelStoriesListPaths = "StreamingAssets/RebelStoriesList.json";
+    public static string KingdomStoriesListPath = "StreamingAssets/KingdomStoriesList.json";
 
     [System.Obsolete]
     public List<StoryCard> LoadStoriesList()
@@ -16,17 +18,17 @@ public class StoriesHandler : MonoBehaviour
         List<StoryCard> result = new List<StoryCard>();
 
 #if UNITY_EDITOR
-        if (File.Exists(StoriesListPath))
+        if (File.Exists(CurrentSelectedStoriesListPath))
         {
-            string jsonPC = File.ReadAllText(StoriesListPath);
+            string jsonPC = File.ReadAllText(CurrentSelectedStoriesListPath);
             result = JsonConvert.DeserializeObject<List<StoryCard>>(jsonPC);
         }
 #endif
 
 #if UNITY_ANDROID
-        StoriesListPath = Path.Combine(Application.streamingAssetsPath, "RebelStoriesList.json");
+        CurrentSelectedStoriesListPath = Path.Combine(Application.streamingAssetsPath, "KingdomStoriesList.json");
 
-        WWW reader = new WWW(StoriesListPath);
+        WWW reader = new WWW(CurrentSelectedStoriesListPath);
         while (!reader.isDone)
         {
         }
@@ -41,7 +43,7 @@ public class StoriesHandler : MonoBehaviour
     public void SaveStoriesListToFile(List<StoryCard> stories)
     {
         string json = JsonConvert.SerializeObject(stories, Formatting.Indented);
-        File.WriteAllText(StoriesListPath, json);
+        File.WriteAllText(CurrentSelectedStoriesListPath, json);
     }
 
     public void AddNewStoryCard(StoryCard card)

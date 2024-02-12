@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
@@ -6,6 +7,9 @@ using UnityEngine.Events;
 
 public class StoriesHandlerWindow : EditorWindow
 {
+    private TermManager.TermType _termType;
+    private int _termIndex = 0;
+
     private StoriesHandler _storiesHandler;
     private string storyTellerNameInput;
     private string storyContentInput;
@@ -47,10 +51,40 @@ public class StoriesHandlerWindow : EditorWindow
 
         // Seçilen hikaye stilini ayarla (yeþil renk)
         selectedStoryStyle.normal.textColor = Color.green;
+
     }
 
     private void OnGUI()
     {
+        //Enum deðerlerine göre indexler atanýr
+        switch (_termType)
+        {
+            case TermManager.TermType.Kurulus:
+                _termIndex = 0;
+                break;
+            case TermManager.TermType.Fetret:
+                _termIndex = 1;
+                break;
+            case TermManager.TermType.Lale:
+                _termIndex = 2;
+                break;
+            case TermManager.TermType.Cokus:
+                _termIndex = 3;
+                break;
+        }
+
+        TermVariablesContainer currentTermContainer = null;
+
+        if (TermManager.Instance != null) 
+        {
+            currentTermContainer = TermManager.Instance.GetTermVairablesContainerWithIndex(_termIndex);
+
+            if (currentTermContainer == null)
+            {
+                Debug.LogError("Ýndexe ait dönem kontainerý bulunamadý, eklenmemiþ olabilir.");
+            }
+        }
+
         GUILayout.Label("Story Card Editor", EditorStyles.boldLabel);
 
         storyTellerNameInput = EditorGUILayout.TextField("Story Teller Name", storyTellerNameInput);
@@ -58,22 +92,24 @@ public class StoriesHandlerWindow : EditorWindow
         EditorGUILayout.LabelField("Story Content");
         storyContentInput = EditorGUILayout.TextArea(storyContentInput, GUILayout.Height(100));
 
-        // Option A ve Option B alanlarýný ekleyin
-        storyOptionA = EditorGUILayout.TextField("Option A Name", storyOptionA);
-        privacyInputA = EditorGUILayout.IntField("Privacy", privacyInputA);
-        aggressivenessInputA = EditorGUILayout.IntField("Aggressiveness", aggressivenessInputA);
-        lawInputA = EditorGUILayout.IntField("Law", lawInputA);
-        royaltyInputA = EditorGUILayout.IntField("Royalty", royaltyInputA);
-        rebelMainQuestModifierTypeOptionA = (RebelMainQuestModifierType)EditorGUILayout.EnumPopup("Main Quest",rebelMainQuestModifierTypeOptionA);
-        optionAEvent = EditorGUILayout.ObjectField("Option A Event", optionAEvent, typeof(StoryEventContainer), true) as StoryEventContainer;
+        _termType = (TermManager.TermType)EditorGUILayout.EnumPopup("Dönem", _termType);
 
-        storyOptionB = EditorGUILayout.TextField("Option B Name", storyOptionB);
-        privacyInputB = EditorGUILayout.IntField("Privacy", privacyInputB);
-        aggressivenessInputB = EditorGUILayout.IntField("Aggressiveness", aggressivenessInputB);
-        lawInputB = EditorGUILayout.IntField("Law", lawInputB);
-        royaltyInputB = EditorGUILayout.IntField("Royalty", royaltyInputB);
+        // Option A ve Option B alanlarýný ekleyin
+        storyOptionA = EditorGUILayout.TextField("Sol Seçenek", storyOptionA);
+        privacyInputA = EditorGUILayout.IntField(currentTermContainer.Variable1Name, privacyInputA);
+        aggressivenessInputA = EditorGUILayout.IntField(currentTermContainer.Variable2Name, aggressivenessInputA);
+        lawInputA = EditorGUILayout.IntField(currentTermContainer.Variable3Name, lawInputA);
+        royaltyInputA = EditorGUILayout.IntField(currentTermContainer.Variable4Name, royaltyInputA);
+        rebelMainQuestModifierTypeOptionA = (RebelMainQuestModifierType)EditorGUILayout.EnumPopup("Main Quest",rebelMainQuestModifierTypeOptionA);
+        optionAEvent = EditorGUILayout.ObjectField("Sol Seçenek Event", optionAEvent, typeof(StoryEventContainer), true) as StoryEventContainer;
+
+        storyOptionB = EditorGUILayout.TextField("Sað Seçenek", storyOptionB);
+        privacyInputB = EditorGUILayout.IntField(currentTermContainer.Variable1Name, privacyInputB);
+        aggressivenessInputB = EditorGUILayout.IntField(currentTermContainer.Variable2Name, aggressivenessInputB);
+        lawInputB = EditorGUILayout.IntField(currentTermContainer.Variable3Name, lawInputB);
+        royaltyInputB = EditorGUILayout.IntField(currentTermContainer.Variable4Name, royaltyInputB);
         rebelMainQuestModifierTypeOptionB = (RebelMainQuestModifierType)EditorGUILayout.EnumPopup("Main Quest", rebelMainQuestModifierTypeOptionB);
-        optionBEvent = EditorGUILayout.ObjectField("Option B Event", optionBEvent, typeof(StoryEventContainer), true) as StoryEventContainer;
+        optionBEvent = EditorGUILayout.ObjectField("Sað Seçenek Event", optionBEvent, typeof(StoryEventContainer), true) as StoryEventContainer;
 
         ignoreRandomization = EditorGUILayout.Toggle("Dont Get With Random : ", ignoreRandomization);
 

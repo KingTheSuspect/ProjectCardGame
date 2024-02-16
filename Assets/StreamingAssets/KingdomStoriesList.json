@@ -1,1 +1,25 @@
-[]
+[
+  {
+    "StoryTellerName": "Avcı",
+    "StoryContent": "dsadsad",
+    "OptionA": {
+      "OptionName": "dsadsad",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "dsadsad",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": false
+  }
+]

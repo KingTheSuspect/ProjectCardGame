@@ -100,7 +100,7 @@ public class StoriesHandlerWindow : EditorWindow
         aggressivenessInputA = EditorGUILayout.IntField(currentTermContainer.Variable2Name, aggressivenessInputA);
         lawInputA = EditorGUILayout.IntField(currentTermContainer.Variable3Name, lawInputA);
         royaltyInputA = EditorGUILayout.IntField(currentTermContainer.Variable4Name, royaltyInputA);
-        rebelMainQuestModifierTypeOptionA = (RebelMainQuestModifierType)EditorGUILayout.EnumPopup("Main Quest",rebelMainQuestModifierTypeOptionA);
+        //rebelMainQuestModifierTypeOptionA = (RebelMainQuestModifierType)EditorGUILayout.EnumPopup("Main Quest",rebelMainQuestModifierTypeOptionA);
         optionAEvent = EditorGUILayout.ObjectField("Sol Seçenek Event", optionAEvent, typeof(StoryEventContainer), true) as StoryEventContainer;
 
         storyOptionB = EditorGUILayout.TextField("Sað Seçenek", storyOptionB);
@@ -108,7 +108,7 @@ public class StoriesHandlerWindow : EditorWindow
         aggressivenessInputB = EditorGUILayout.IntField(currentTermContainer.Variable2Name, aggressivenessInputB);
         lawInputB = EditorGUILayout.IntField(currentTermContainer.Variable3Name, lawInputB);
         royaltyInputB = EditorGUILayout.IntField(currentTermContainer.Variable4Name, royaltyInputB);
-        rebelMainQuestModifierTypeOptionB = (RebelMainQuestModifierType)EditorGUILayout.EnumPopup("Main Quest", rebelMainQuestModifierTypeOptionB);
+        //rebelMainQuestModifierTypeOptionB = (RebelMainQuestModifierType)EditorGUILayout.EnumPopup("Main Quest", rebelMainQuestModifierTypeOptionB);
         optionBEvent = EditorGUILayout.ObjectField("Sað Seçenek Event", optionBEvent, typeof(StoryEventContainer), true) as StoryEventContainer;
 
         ignoreRandomization = EditorGUILayout.Toggle("Dont Get With Random : ", ignoreRandomization);
@@ -276,8 +276,12 @@ public class StoriesHandlerWindow : EditorWindow
                         aggressivenessInputA = stories[i].OptionA.Aggressiveness;
                         lawInputA = stories[i].OptionA.Law;
                         royaltyInputA = stories[i].OptionA.Royalty;
-                        rebelMainQuestModifierTypeOptionA = stories[i].OptionA.MainQuestModifierType;
-                        rebelMainQuestModifierTypeOptionB = stories[i].OptionB.MainQuestModifierType;
+                        privacyInputB = stories[i].OptionB.Privacy;
+                        aggressivenessInputB = stories[i].OptionB.Aggressiveness;
+                        lawInputB = stories[i].OptionB.Law;
+                        royaltyInputB = stories[i].OptionB.Royalty;
+                        //rebelMainQuestModifierTypeOptionA = stories[i].OptionA.MainQuestModifierType;
+                        //rebelMainQuestModifierTypeOptionB = stories[i].OptionB.MainQuestModifierType;
                         optionAEvent = stories[i].OptionA.StoryEventContainer;
                         optionBEvent = stories[i].OptionB.StoryEventContainer;
                         ignoreRandomization = stories[i].IgnoreRandomization;

@@ -8,9 +8,9 @@ using Newtonsoft.Json.Linq;
 
 public class StoriesHandler : MonoBehaviour
 {
-    public static string CurrentSelectedStoriesListPath = "StreamingAssets/KingdomStoriesList.json";
-    public static string RebelStoriesListPaths = "StreamingAssets/RebelStoriesList.json";
-    public static string KingdomStoriesListPath = "StreamingAssets/KingdomStoriesList.json";
+    public static string CurrentSelectedStoriesListPath = "Assets/StreamingAssets/KingdomStoriesList.json";
+    public static string RebelStoriesListPaths = "Assets/StreamingAssets/RebelStoriesList.json";
+    public static string KingdomStoriesListPath = "Assets/StreamingAssets/KingdomStoriesList.json";
 
     [System.Obsolete]
     public List<StoryCard> LoadStoriesList()
@@ -44,6 +44,7 @@ public class StoriesHandler : MonoBehaviour
     {
         string json = JsonConvert.SerializeObject(stories, Formatting.Indented);
         File.WriteAllText(CurrentSelectedStoriesListPath, json);
+        Debug.Log("güncelleme yapildi");
     }
 
     public void AddNewStoryCard(StoryCard card)
@@ -51,12 +52,14 @@ public class StoriesHandler : MonoBehaviour
         List<StoryCard> stories = LoadStoriesList();
         stories.Add(card);
         SaveStoriesListToFile(stories);
+        Debug.Log("yeni hikaye eklendi");
     }
     public void DeleteStoryWithIndex(int index)
     {
         List<StoryCard> stories = LoadStoriesList();
         stories.RemoveAt(index);
         SaveStoriesListToFile(stories);
+         Debug.Log("index ile beraber hikaye silindi");
     }
     public int GetIndexWithContent(StoryCard card)
     {

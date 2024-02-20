@@ -102,7 +102,7 @@ public class StoriesHandlerWindow : EditorWindow
         royaltyInputA = EditorGUILayout.IntField(currentTermContainer.Variable4Name, royaltyInputA);
         //rebelMainQuestModifierTypeOptionA = (RebelMainQuestModifierType)EditorGUILayout.EnumPopup("Main Quest",rebelMainQuestModifierTypeOptionA);
         optionAEvent = EditorGUILayout.ObjectField("Sol Seçenek Event", optionAEvent, typeof(StoryEventContainer), true) as StoryEventContainer;
-
+        EditorGUILayout.Space();
         storyOptionB = EditorGUILayout.TextField("Sað Seçenek", storyOptionB);
         privacyInputB = EditorGUILayout.IntField(currentTermContainer.Variable1Name, privacyInputB);
         aggressivenessInputB = EditorGUILayout.IntField(currentTermContainer.Variable2Name, aggressivenessInputB);

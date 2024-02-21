@@ -18,7 +18,14 @@
       "Law": 0,
       "Royalty": 0,
       "MainQuestModifierType": 0,
-      "StoryEventContainer": null
+      "StoryEventContainer": {
+        "StoryID": "0B",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": true,
+        "name": "index2",
+        "hideFlags": 0
+      }
     },
     "IgnoreRandomization": false
   },
@@ -43,7 +50,7 @@
       "MainQuestModifierType": 0,
       "StoryEventContainer": null
     },
-    "IgnoreRandomization": false
+    "IgnoreRandomization": true
   },
   {
     "StoryTellerName": "AHİ TOPLULUĞU",
@@ -106,7 +113,7 @@
     "OptionB": {
       "OptionName": "Her önümüze gelene erzak yardımı yapamayız. ",
       "Privacy": 0,
-      "Aggressiveness": -1,
+      "Aggressiveness": 0,
       "Law": 0,
       "Royalty": 0,
       "MainQuestModifierType": 0,
@@ -336,7 +343,7 @@
     "OptionB": {
       "OptionName": "İşlerimiz bir hayli çoktur, kusura bakmayın. ",
       "Privacy": 0,
-      "Aggressiveness": -1,
+      "Aggressiveness": 0,
       "Law": 0,
       "Royalty": 0,
       "MainQuestModifierType": 0,
@@ -762,18 +769,18 @@
     "StoryTellerName": "BİZANS ELÇİSİ ",
     "StoryContent": "Bizansa karşı yapacağınız savaşta ön safhalardasın. Düşman askerleri gözüktü. Saldırı emrini verdin ve sonuç yine Türk zaferi ile sonuçlandı.\r\n",
     "OptionA": {
-      "OptionName": "Peki, aksın. ",
+      "OptionName": "",
       "Privacy": 0,
-      "Aggressiveness": 2,
+      "Aggressiveness": 1,
       "Law": 0,
       "Royalty": 0,
       "MainQuestModifierType": 0,
       "StoryEventContainer": null
     },
     "OptionB": {
-      "OptionName": "Peki, yapın ticaretinizi. ",
+      "OptionName": "",
       "Privacy": 0,
-      "Aggressiveness": 2,
+      "Aggressiveness": 1,
       "Law": 0,
       "Royalty": 0,
       "MainQuestModifierType": 0,
@@ -1338,10 +1345,10 @@
     "StoryContent": "Şu anki popülasyona erzaklarımız yetmemekte. Ne yapacağız?",
     "OptionA": {
       "OptionName": "Durumlar düzelene dek daha fazla insanı almamamız gerek. ",
-      "Privacy": -1,
+      "Privacy": 0,
       "Aggressiveness": 0,
-      "Law": 1,
-      "Royalty": 1,
+      "Law": 0,
+      "Royalty": 0,
       "MainQuestModifierType": 0,
       "StoryEventContainer": null
     },
@@ -1369,7 +1376,7 @@
       "StoryEventContainer": null
     },
     "OptionB": {
-      "OptionName": "Yettiği yere kadar artık. ",
+      "OptionName": "Allaha şükürler olsun. ",
       "Privacy": 0,
       "Aggressiveness": 0,
       "Law": 3,
@@ -1599,7 +1606,7 @@
       "StoryEventContainer": null
     },
     "OptionB": {
-      "OptionName": "Üzgünüm ama olmaz. ",
+      "OptionName": "Geçinecekler tabi. ",
       "Privacy": 0,
       "Aggressiveness": 1,
       "Law": 0,
@@ -1616,7 +1623,7 @@
       "OptionName": "Madem öyle dersin, yapalım. ",
       "Privacy": 0,
       "Aggressiveness": 0,
-      "Law": 0,
+      "Law": -1,
       "Royalty": 0,
       "MainQuestModifierType": 0,
       "StoryEventContainer": null
@@ -1636,7 +1643,7 @@
     "StoryTellerName": "DEMİRCİ",
     "StoryContent": "Beyim Bizans’a yapılan sefer maalesef ki başarısız oldu. Şehidimiz çok.",
     "OptionA": {
-      "OptionName": "Madem öyle dersin, yapalım. ",
+      "OptionName": ".",
       "Privacy": -2,
       "Aggressiveness": 0,
       "Law": 0,
@@ -1645,7 +1652,7 @@
       "StoryEventContainer": null
     },
     "OptionB": {
-      "OptionName": "Merak etme, silahlarımız gayet iyi durumdadır. ",
+      "OptionName": ".",
       "Privacy": -2,
       "Aggressiveness": 0,
       "Law": 0,
@@ -2064,535 +2071,6 @@
       "Aggressiveness": 0,
       "Law": 1,
       "Royalty": -1,
-      "MainQuestModifierType": 0,
-      "StoryEventContainer": null
-    },
-    "IgnoreRandomization": false
-  },
-  {
-    "StoryTellerName": "?",
-    "StoryContent": "Hoş geldin.",
-    "OptionA": {
-      "OptionName": "Sen kimsin? ",
-      "Privacy": 0,
-      "Aggressiveness": 0,
-      "Law": 0,
-      "Royalty": 0,
-      "MainQuestModifierType": 0,
-      "StoryEventContainer": null
-    },
-    "OptionB": {
-      "OptionName": "Burası neresi? ",
-      "Privacy": 0,
-      "Aggressiveness": 0,
-      "Law": 0,
-      "Royalty": 0,
-      "MainQuestModifierType": 0,
-      "StoryEventContainer": null
-    },
-    "IgnoreRandomization": false
-  },
-  {
-    "StoryTellerName": "?",
-    "StoryContent": "Oyunun yapımcısı elbette! Sana ne yapman gerekeceğini açıklayacağım. Birazdan kendini bir Türk beyliğinin başında bulacaksın. İşleri batırma yeter.\r\n",
-    "OptionA": {
-      "OptionName": "İyi de ne yapacağım? ",
-      "Privacy": 0,
-      "Aggressiveness": 0,
-      "Law": 0,
-      "Royalty": 0,
-      "MainQuestModifierType": 0,
-      "StoryEventContainer": null
-    },
-    "OptionB": {
-      "OptionName": "Denerim. ",
-      "Privacy": 0,
-      "Aggressiveness": 0,
-      "Law": 0,
-      "Royalty": 0,
-      "MainQuestModifierType": 0,
-      "StoryEventContainer": null
-    },
-    "IgnoreRandomization": false
-  },
-  {
-    "StoryTellerName": "?",
-    "StoryContent": "Bak şimdi sen yeni kurulan bir beyliği yöneteceksin. Bundan dolayı dikkat etmen gereken 4 şey var.",
-    "OptionA": {
-      "OptionName": "",
-      "Privacy": 0,
-      "Aggressiveness": 0,
-      "Law": 0,
-      "Royalty": 0,
-      "MainQuestModifierType": 0,
-      "StoryEventContainer": null
-    },
-    "OptionB": {
-      "OptionName": "",
-      "Privacy": 0,
-      "Aggressiveness": 0,
-      "Law": 0,
-      "Royalty": 0,
-      "MainQuestModifierType": 0,
-      "StoryEventContainer": null
-    },
-    "IgnoreRandomization": false
-  },
-  {
-    "StoryTellerName": "?",
-    "StoryContent": "Öncelikle yeni kurulan bir beylik olduğundan topraklarını arttırma ve koruman gerekmekte.",
-    "OptionA": {
-      "OptionName": "",
-      "Privacy": 0,
-      "Aggressiveness": 0,
-      "Law": 0,
-      "Royalty": 0,
-      "MainQuestModifierType": 0,
-      "StoryEventContainer": null
-    },
-    "OptionB": {
-      "OptionName": "",
-      "Privacy": 0,
-      "Aggressiveness": 0,
-      "Law": 0,
-      "Royalty": 0,
-      "MainQuestModifierType": 0,
-      "StoryEventContainer": null
-    },
-    "IgnoreRandomization": false
-  },
-  {
-    "StoryTellerName": "?",
-    "StoryContent": "Ve tekrardan yeni kurulan bir beylik olduğundan diğer devlet ve beyliklerle olan ilişkilerine yani siyasete dikkat etmelisin. Onları hoşnut edecek ya da kızdıracak şeyler bu değeri etkileyecektir.",
-    "OptionA": {
-      "OptionName": "",
-      "Privacy": 0,
-      "Aggressiveness": 0,
-      "Law": 0,
-      "Royalty": 0,
-      "MainQuestModifierType": 0,
-      "StoryEventContainer": null
-    },
-    "OptionB": {
-      "OptionName": "",
-      "Privacy": 0,
-      "Aggressiveness": 0,
-      "Law": 0,
-      "Royalty": 0,
-      "MainQuestModifierType": 0,
-      "StoryEventContainer": null
-    },
-    "IgnoreRandomization": false
-  },
-  {
-    "StoryTellerName": "?",
-    "StoryContent": "Son olarak Erzak ve Popülasyon kaldı. Erzak sahip olduğun tüm temel kaynakları temsil eder. Para, erzak, madenler ve benzeri şeyler. Popülasyonda askerlerini, obanda yaşayan halkını temsil eder. Anladın mı?",
-    "OptionA": {
-      "OptionName": "Anladım ama daha sormam gereken çok şey var! ",
-      "Privacy": 0,
-      "Aggressiveness": 0,
-      "Law": 0,
-      "Royalty": 0,
-      "MainQuestModifierType": 0,
-      "StoryEventContainer": null
-    },
-    "OptionB": {
-      "OptionName": "Anladım ama daha sormam gereken çok şey var! ",
-      "Privacy": 0,
-      "Aggressiveness": 0,
-      "Law": 0,
-      "Royalty": 0,
-      "MainQuestModifierType": 0,
-      "StoryEventContainer": null
-    },
-    "IgnoreRandomization": false
-  },
-  {
-    "StoryTellerName": "?",
-    "StoryContent": "Maalesef ki sana ayrılan sürenin sonuna geldik. İyi şanslar!",
-    "OptionA": {
-      "OptionName": "DUR! ",
-      "Privacy": 0,
-      "Aggressiveness": 0,
-      "Law": 0,
-      "Royalty": 0,
-      "MainQuestModifierType": 0,
-      "StoryEventContainer": null
-    },
-    "OptionB": {
-      "OptionName": "DUR! ",
-      "Privacy": 0,
-      "Aggressiveness": 0,
-      "Law": 0,
-      "Royalty": 0,
-      "MainQuestModifierType": 0,
-      "StoryEventContainer": null
-    },
-    "IgnoreRandomization": false
-  },
-  {
-    "StoryTellerName": "?",
-    "StoryContent": "Senin bilinçaltın, nasıl beğendin mi? \r\n",
-    "OptionA": {
-      "OptionName": "Sen kimsin? ",
-      "Privacy": 0,
-      "Aggressiveness": 0,
-      "Law": 0,
-      "Royalty": 0,
-      "MainQuestModifierType": 0,
-      "StoryEventContainer": null
-    },
-    "OptionB": {
-      "OptionName": "Dalga mı geçiyorsun, rüyada falan mıyım? ",
-      "Privacy": 0,
-      "Aggressiveness": 0,
-      "Law": 0,
-      "Royalty": 0,
-      "MainQuestModifierType": 0,
-      "StoryEventContainer": null
-    },
-    "IgnoreRandomization": false
-  },
-  {
-    "StoryTellerName": "?",
-    "StoryContent": "Şaka yapmıyorum, bunlar tamamen gerçek.  Başlamaya hazır mısın?",
-    "OptionA": {
-      "OptionName": "Neye hazır mıyım? ",
-      "Privacy": 0,
-      "Aggressiveness": 0,
-      "Law": 0,
-      "Royalty": 0,
-      "MainQuestModifierType": 0,
-      "StoryEventContainer": null
-    },
-    "OptionB": {
-      "OptionName": "Sanırım. ",
-      "Privacy": 0,
-      "Aggressiveness": 0,
-      "Law": 0,
-      "Royalty": 0,
-      "MainQuestModifierType": 0,
-      "StoryEventContainer": null
-    },
-    "IgnoreRandomization": false
-  },
-  {
-    "StoryTellerName": "?",
-    "StoryContent": "13. Yüzyılda yeni kurulan bir beyliği yöneteceksin. Çok zor olmasa gerek.",
-    "OptionA": {
-      "OptionName": "Ne yapacağımı bilmiyorum ki? ",
-      "Privacy": 0,
-      "Aggressiveness": 0,
-      "Law": 0,
-      "Royalty": 0,
-      "MainQuestModifierType": 0,
-      "StoryEventContainer": null
-    },
-    "OptionB": {
-      "OptionName": "Evet çok zor olmasa gerek. ",
-      "Privacy": 0,
-      "Aggressiveness": 0,
-      "Law": 0,
-      "Royalty": 0,
-      "MainQuestModifierType": 0,
-      "StoryEventContainer": null
-    },
-    "IgnoreRandomization": false
-  },
-  {
-    "StoryTellerName": "A ROTASYONU ",
-    "StoryContent": "Bizans’a karşı yapılan bir kuşatmaya geldin. İlk manevra çok önemlidir. Ne yapacaksın?",
-    "OptionA": {
-      "OptionName": "Kaleyi kuşatalım. Elbet erzakları bitecektir. ",
-      "Privacy": 0,
-      "Aggressiveness": 0,
-      "Law": 0,
-      "Royalty": 0,
-      "MainQuestModifierType": 0,
-      "StoryEventContainer": null
-    },
-    "OptionB": {
-      "OptionName": "Zorla alacağız. Koçbaşını getirin! ",
-      "Privacy": 0,
-      "Aggressiveness": 0,
-      "Law": 0,
-      "Royalty": 0,
-      "MainQuestModifierType": 0,
-      "StoryEventContainer": null
-    },
-    "IgnoreRandomization": false
-  },
-  {
-    "StoryTellerName": "A ROTASYONU ",
-    "StoryContent": "Kaleyi kuşattın beklemedesin. Birkaç günün ardından Bizans askerleri açlıktan ölmektense savaşarak ölmeyi tercih etti. Zırhlı piyadeler ve okçular kalenin dışına çıkıyor. Seninse atlı ve yaya okçuların var. Ne yapacaksın?",
-    "OptionA": {
-      "OptionName": "Planları olabilir, dikkat etmeliyiz. Beklemeye devam edeceğiz. ",
-      "Privacy": 0,
-      "Aggressiveness": 0,
-      "Law": 0,
-      "Royalty": 0,
-      "MainQuestModifierType": 0,
-      "StoryEventContainer": null
-    },
-    "OptionB": {
-      "OptionName": "Bize yaklaşamadan ölmüş olacaklar. Atlılar açık alana yaklaştıkları anda onları çembere alacaklar. ",
-      "Privacy": 0,
-      "Aggressiveness": 0,
-      "Law": 0,
-      "Royalty": 0,
-      "MainQuestModifierType": 0,
-      "StoryEventContainer": null
-    },
-    "IgnoreRandomization": false
-  },
-  {
-    "StoryTellerName": "A ROTASYONU ",
-    "StoryContent": "Beklemek bu durumda en doğru karardı. Saraydan çıkan askerler sadece bir kandırmacaydı. Sol tarafınızdan atlı piyadeler yaklaşmakta. Ne yapacaksın?",
-    "OptionA": {
-      "OptionName": "Hiçbir yere dağılmayın. Olduğunuz yerde yaylım ateşine geçin! ",
-      "Privacy": 0,
-      "Aggressiveness": 0,
-      "Law": 0,
-      "Royalty": 0,
-      "MainQuestModifierType": 0,
-      "StoryEventContainer": null
-    },
-    "OptionB": {
-      "OptionName": "Durmak bir işimize yaramaz! Onlardan daha hızlı hareket edip oklarınız ile avlanın! ",
-      "Privacy": 0,
-      "Aggressiveness": 0,
-      "Law": 0,
-      "Royalty": 0,
-      "MainQuestModifierType": 0,
-      "StoryEventContainer": null
-    },
-    "IgnoreRandomization": false
-  },
-  {
-    "StoryTellerName": "A ROTASYONU ",
-    "StoryContent": "Askerleri bir süre boyunca ateşe tuttun ama yeterli kişiyi indiremediniz. Ordunun içine giren atlı piyadeler çok büyük hasara yol açtı. Piyadelerden geri kalanları o sırada hallettiniz. Bu sefer kale kapısından çıkanlar gelmekte. Ne yapacaksın?",
-    "OptionA": {
-      "OptionName": "Açık alana geçtikleri anda çember oluşturup ok yağmuruna tutun.  ",
-      "Privacy": 0,
-      "Aggressiveness": 0,
-      "Law": 0,
-      "Royalty": 0,
-      "MainQuestModifierType": 0,
-      "StoryEventContainer": null
-    },
-    "OptionB": {
-      "OptionName": "Toparlanın, ondan sonrada olduğunuz yerde yaylım ateşine durun. ",
-      "Privacy": 0,
-      "Aggressiveness": 0,
-      "Law": 0,
-      "Royalty": 0,
-      "MainQuestModifierType": 0,
-      "StoryEventContainer": null
-    },
-    "IgnoreRandomization": false
-  },
-  {
-    "StoryTellerName": "A ROTASYONU ",
-    "StoryContent": "Askerlerin rakip orduyu paramparça etti.  Ordundaki kayıp büyük olsa da savaşın galibi sensin.",
-    "OptionA": {
-      "OptionName": ".",
-      "Privacy": 0,
-      "Aggressiveness": 0,
-      "Law": 0,
-      "Royalty": 0,
-      "MainQuestModifierType": 0,
-      "StoryEventContainer": null
-    },
-    "OptionB": {
-      "OptionName": ".",
-      "Privacy": 0,
-      "Aggressiveness": 0,
-      "Law": 0,
-      "Royalty": 0,
-      "MainQuestModifierType": 0,
-      "StoryEventContainer": null
-    },
-    "IgnoreRandomization": false
-  },
-  {
-    "StoryTellerName": "A ROTASYONU ",
-    "StoryContent": "Askerlerin rakip askerleri ok yağmuruna tuttu, ama aynı şeyi rakipte yaptığından kaybınız var. Çok kan akıtılan bir savaş oldu. Hangi savaş kanla kazanılmaz ki ama değil mi?",
-    "OptionA": {
-      "OptionName": ".",
-      "Privacy": 0,
-      "Aggressiveness": 0,
-      "Law": 0,
-      "Royalty": 0,
-      "MainQuestModifierType": 0,
-      "StoryEventContainer": null
-    },
-    "OptionB": {
-      "OptionName": ".",
-      "Privacy": 0,
-      "Aggressiveness": 0,
-      "Law": 0,
-      "Royalty": 0,
-      "MainQuestModifierType": 0,
-      "StoryEventContainer": null
-    },
-    "IgnoreRandomization": false
-  },
-  {
-    "StoryTellerName": "A ROTASYONU ",
-    "StoryContent": "Askerlerin vur kaç yaparak rakip atlıların canını okudu lakin bu seferde kale kapısından çıkan ordu size doğru gelmekte. Ne yapacaksın?",
-    "OptionA": {
-      "OptionName": "Açık alana geçtikleri anda çember oluşturup ok yağmuruna tutun.  ",
-      "Privacy": 0,
-      "Aggressiveness": 0,
-      "Law": 0,
-      "Royalty": 0,
-      "MainQuestModifierType": 0,
-      "StoryEventContainer": null
-    },
-    "OptionB": {
-      "OptionName": "Toparlanın, ondan sonrada olduğunuz yerde yaylım ateşine durun. ",
-      "Privacy": 0,
-      "Aggressiveness": 0,
-      "Law": 0,
-      "Royalty": 0,
-      "MainQuestModifierType": 0,
-      "StoryEventContainer": null
-    },
-    "IgnoreRandomization": false
-  },
-  {
-    "StoryTellerName": "A ROTASYONU ",
-    "StoryContent": "Askerlerin rakip orduyu paramparça etti.  Neredeyse hiç kayıp vermediniz. Galibiyet senin.",
-    "OptionA": {
-      "OptionName": ".",
-      "Privacy": 0,
-      "Aggressiveness": 0,
-      "Law": 0,
-      "Royalty": 0,
-      "MainQuestModifierType": 0,
-      "StoryEventContainer": null
-    },
-    "OptionB": {
-      "OptionName": ".",
-      "Privacy": 0,
-      "Aggressiveness": 0,
-      "Law": 0,
-      "Royalty": 0,
-      "MainQuestModifierType": 0,
-      "StoryEventContainer": null
-    },
-    "IgnoreRandomization": false
-  },
-  {
-    "StoryTellerName": "A ROTASYONU ",
-    "StoryContent": "Askerlerin rakip askerleri ok yağmuruna tuttu, ama aynı şeyi rakipte yaptığından kaybınız var. Az kayıp ile galibiyet senindir.",
-    "OptionA": {
-      "OptionName": ".",
-      "Privacy": 0,
-      "Aggressiveness": 0,
-      "Law": 0,
-      "Royalty": 0,
-      "MainQuestModifierType": 0,
-      "StoryEventContainer": null
-    },
-    "OptionB": {
-      "OptionName": ".",
-      "Privacy": 0,
-      "Aggressiveness": 0,
-      "Law": 0,
-      "Royalty": 0,
-      "MainQuestModifierType": 0,
-      "StoryEventContainer": null
-    },
-    "IgnoreRandomization": false
-  },
-  {
-    "StoryTellerName": "A ROTASYONU ",
-    "StoryContent": "Fazla aceleci davrandın. Düşman tuzak kurmuş. Sen saray kapısına yaklaştığın sırada arkanızdan gelen atlı piyadeler sizi sıkıştırdı. Atlı askerlerinin çoğu öldü. Geri çekilme kararı aldınız. ",
-    "OptionA": {
-      "OptionName": ".",
-      "Privacy": 0,
-      "Aggressiveness": 0,
-      "Law": 0,
-      "Royalty": 0,
-      "MainQuestModifierType": 0,
-      "StoryEventContainer": null
-    },
-    "OptionB": {
-      "OptionName": ".",
-      "Privacy": 0,
-      "Aggressiveness": 0,
-      "Law": 0,
-      "Royalty": 0,
-      "MainQuestModifierType": 0,
-      "StoryEventContainer": null
-    },
-    "IgnoreRandomization": false
-  },
-  {
-    "StoryTellerName": "A ROTASYONU ",
-    "StoryContent": "Sarayın kapısına dayandınız. Koçbaşı ile kapıyı zorlarken arka tarafınızda bir grup atlı piyade göründü. Ne yapacaksın?",
-    "OptionA": {
-      "OptionName": "Saldırıya geçeceğim. ",
-      "Privacy": 0,
-      "Aggressiveness": 0,
-      "Law": 0,
-      "Royalty": 0,
-      "MainQuestModifierType": 0,
-      "StoryEventContainer": null
-    },
-    "OptionB": {
-      "OptionName": "Savunma yapacağım. ",
-      "Privacy": 0,
-      "Aggressiveness": 0,
-      "Law": 0,
-      "Royalty": 0,
-      "MainQuestModifierType": 0,
-      "StoryEventContainer": null
-    },
-    "IgnoreRandomization": false
-  },
-  {
-    "StoryTellerName": "A ROTASYONU ",
-    "StoryContent": "Saldırıya geçtiniz ama siz savaşırken arkanızdan kalenin kapıları açıldı. Arada kaldınız. Ordunun çoğunu kaybederek geri döndün.",
-    "OptionA": {
-      "OptionName": ".",
-      "Privacy": 0,
-      "Aggressiveness": 0,
-      "Law": 0,
-      "Royalty": 0,
-      "MainQuestModifierType": 0,
-      "StoryEventContainer": null
-    },
-    "OptionB": {
-      "OptionName": ".",
-      "Privacy": 0,
-      "Aggressiveness": 0,
-      "Law": 0,
-      "Royalty": 0,
-      "MainQuestModifierType": 0,
-      "StoryEventContainer": null
-    },
-    "IgnoreRandomization": false
-  },
-  {
-    "StoryTellerName": "A ROTASYONU ",
-    "StoryContent": "Savunma yaptın ama arkanızdan kalenin kapıları açıldı. Mecbur askerlerini ikiye bölerek savunmaya devam ettin ve bulduğunuz ilk fırsatta geri çekildiniz. ",
-    "OptionA": {
-      "OptionName": ".",
-      "Privacy": 0,
-      "Aggressiveness": 0,
-      "Law": 0,
-      "Royalty": 0,
-      "MainQuestModifierType": 0,
-      "StoryEventContainer": null
-    },
-    "OptionB": {
-      "OptionName": ".",
-      "Privacy": 0,
-      "Aggressiveness": 0,
-      "Law": 0,
-      "Royalty": 0,
       "MainQuestModifierType": 0,
       "StoryEventContainer": null
     },

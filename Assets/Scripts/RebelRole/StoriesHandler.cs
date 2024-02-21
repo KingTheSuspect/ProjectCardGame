@@ -8,9 +8,12 @@ using Newtonsoft.Json.Linq;
 
 public class StoriesHandler : MonoBehaviour
 {
-    public static string CurrentSelectedStoriesListPath = "Assets/StreamingAssets/KingdomStoriesList.json";
-    public static string RebelStoriesListPaths = "Assets/StreamingAssets/RebelStoriesList.json";
-    public static string KingdomStoriesListPath = "Assets/StreamingAssets/KingdomStoriesList.json";
+    [HideInInspector]public string CurrentSelectedStoriesListPath = "";
+    //public static string RebelStoriesListPaths = "Assets/StreamingAssets/RebelStoriesList.json";
+    public static string KurulusListPath = "Assets/StreamingAssets/KurulusStories.json";
+    public static string FetretStoriesPath = "Assets/StreamingAssets/FetretStories.json";
+    public static string LaleStoriesPath = "Assets/StreamingAssets/LaleStories.json";
+    public static string CokusStoriesPath = "Assets/StreamingAssets/CokusStories.json";
 
     [System.Obsolete]
     public List<StoryCard> LoadStoriesList()
@@ -22,19 +25,20 @@ public class StoriesHandler : MonoBehaviour
         {
             string jsonPC = File.ReadAllText(CurrentSelectedStoriesListPath);
             result = JsonConvert.DeserializeObject<List<StoryCard>>(jsonPC);
+            Debug.Log(CurrentSelectedStoriesListPath);
         }
 #endif
 
-#if UNITY_ANDROID
-        CurrentSelectedStoriesListPath = Path.Combine(Application.streamingAssetsPath, "KingdomStoriesList.json");
+//#if UNITY_ANDROID
+//        CurrentSelectedStoriesListPath = Path.Combine(Application.streamingAssetsPath, "KurulusStories.json");
 
-        WWW reader = new WWW(CurrentSelectedStoriesListPath);
-        while (!reader.isDone)
-        {
-        }
-        string json = reader.text;
-        result = JsonConvert.DeserializeObject<List<StoryCard>>(json);
-#endif
+//        WWW reader = new WWW(CurrentSelectedStoriesListPath);
+//        while (!reader.isDone)
+//        {
+//        }
+//        string json = reader.text;
+//        result = JsonConvert.DeserializeObject<List<StoryCard>>(json);
+//#endif
 
         return result;
     }
@@ -52,8 +56,10 @@ public class StoriesHandler : MonoBehaviour
         List<StoryCard> stories = LoadStoriesList();
         stories.Add(card);
         SaveStoriesListToFile(stories);
-        Debug.Log("yeni hikaye eklendi");
+        Debug.Log("Yeni hikaye eklendi. Dosya yolu: " + CurrentSelectedStoriesListPath); // Debug log eklendi
+
     }
+
     public void DeleteStoryWithIndex(int index)
     {
         List<StoryCard> stories = LoadStoriesList();

@@ -56,20 +56,25 @@ public class StoriesHandlerWindow : EditorWindow
 
     private void OnGUI()
     {
+        
         //Enum deðerlerine göre indexler atanýr
         switch (_termType)
         {
             case TermManager.TermType.Kurulus:
                 _termIndex = 0;
+                _storiesHandler.CurrentSelectedStoriesListPath = StoriesHandler.KurulusListPath;
                 break;
             case TermManager.TermType.Fetret:
                 _termIndex = 1;
+                _storiesHandler.CurrentSelectedStoriesListPath = StoriesHandler.FetretStoriesPath;
                 break;
             case TermManager.TermType.Lale:
                 _termIndex = 2;
+                _storiesHandler.CurrentSelectedStoriesListPath = StoriesHandler.LaleStoriesPath;
                 break;
             case TermManager.TermType.Cokus:
                 _termIndex = 3;
+                _storiesHandler.CurrentSelectedStoriesListPath = StoriesHandler.CokusStoriesPath;
                 break;
         }
 

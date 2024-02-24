@@ -1212,7 +1212,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38b0a979eca05c844a43c0bbb8d07fbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  events: []
+  events:
+  - {fileID: 11400000, guid: a91f07b3c5a384c4ab061b9bc3b8523d, type: 2}
+  - {fileID: 11400000, guid: 0757e4e6fdaff0b45966a49274ae9ab6, type: 2}
+  - {fileID: 11400000, guid: 966c5d4a3d182e44a8a27199c477ba92, type: 2}
 --- !u!4 &1030937916
 Transform:
   m_ObjectHideFlags: 0
@@ -3121,6 +3124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfb6c045871a61444ab3234915b3aecd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CurrentSelectedStoriesListPath: Assets/StreamingAssets/FetretStories.json
 --- !u!4 &1783223720
 Transform:
   m_ObjectHideFlags: 0

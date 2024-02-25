@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 89f933dd2f4ee9f4dac27a34f28d3610, type: 3}
-  m_Name: 70BFetret
+  m_Name: 78BK
   m_EditorClassIdentifier: 
-  StoryID: 70B
+  StoryID: 78B
   BothOptionsEvent: 0
   Event:
     m_PersistentCalls:
@@ -24,9 +24,9 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 71
+          m_IntArgument: 79
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  ContinueRandomStoryHandlingAfterEvent: 1
+  ContinueRandomStoryHandlingAfterEvent: 0

@@ -752,7 +752,14 @@
       "Law": 0,
       "Royalty": 0,
       "MainQuestModifierType": 0,
-      "StoryEventContainer": null
+      "StoryEventContainer": {
+        "StoryID": "32A",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": true,
+        "name": "32ABKurulus",
+        "hideFlags": 0
+      }
     },
     "OptionB": {
       "OptionName": "Öyle olsun. ",
@@ -761,7 +768,14 @@
       "Law": 0,
       "Royalty": 0,
       "MainQuestModifierType": 0,
-      "StoryEventContainer": null
+      "StoryEventContainer": {
+        "StoryID": "32B",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": true,
+        "name": "32ABKurulus",
+        "hideFlags": 0
+      }
     },
     "IgnoreRandomization": false
   },
@@ -786,7 +800,7 @@
       "MainQuestModifierType": 0,
       "StoryEventContainer": null
     },
-    "IgnoreRandomization": false
+    "IgnoreRandomization": true
   },
   {
     "StoryTellerName": "BİZANS ELÇİSİ ",
@@ -936,7 +950,14 @@
       "Law": 0,
       "Royalty": 0,
       "MainQuestModifierType": 0,
-      "StoryEventContainer": null
+      "StoryEventContainer": {
+        "StoryID": "40A",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "name": "40AK",
+        "hideFlags": 0
+      }
     },
     "OptionB": {
       "OptionName": "Çok tehlikeli bunu yapmamalıyız. ",
@@ -970,7 +991,7 @@
       "MainQuestModifierType": 0,
       "StoryEventContainer": null
     },
-    "IgnoreRandomization": false
+    "IgnoreRandomization": true
   },
   {
     "StoryTellerName": "ORHAN GAZİ ",
@@ -1244,7 +1265,14 @@
       "Law": 0,
       "Royalty": 0,
       "MainQuestModifierType": 0,
-      "StoryEventContainer": null
+      "StoryEventContainer": {
+        "StoryID": "53B",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "name": "53BK",
+        "hideFlags": 0
+      }
     },
     "IgnoreRandomization": false
   },
@@ -1269,7 +1297,7 @@
       "MainQuestModifierType": 0,
       "StoryEventContainer": null
     },
-    "IgnoreRandomization": false
+    "IgnoreRandomization": true
   },
   {
     "StoryTellerName": "ÇİFTÇİ",
@@ -1626,7 +1654,14 @@
       "Law": -1,
       "Royalty": 0,
       "MainQuestModifierType": 0,
-      "StoryEventContainer": null
+      "StoryEventContainer": {
+        "StoryID": "70A",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": true,
+        "name": "70AK",
+        "hideFlags": 0
+      }
     },
     "OptionB": {
       "OptionName": "Merak etme, silahlarımız gayet iyi durumdadır. ",
@@ -1635,7 +1670,14 @@
       "Law": 0,
       "Royalty": 0,
       "MainQuestModifierType": 0,
-      "StoryEventContainer": null
+      "StoryEventContainer": {
+        "StoryID": "70B",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": true,
+        "name": "70BK",
+        "hideFlags": 0
+      }
     },
     "IgnoreRandomization": false
   },
@@ -1660,7 +1702,7 @@
       "MainQuestModifierType": 0,
       "StoryEventContainer": null
     },
-    "IgnoreRandomization": false
+    "IgnoreRandomization": true
   },
   {
     "StoryTellerName": "DEMİRCİ",
@@ -1683,7 +1725,7 @@
       "MainQuestModifierType": 0,
       "StoryEventContainer": null
     },
-    "IgnoreRandomization": false
+    "IgnoreRandomization": true
   },
   {
     "StoryTellerName": "DEMİRCİ",
@@ -1830,7 +1872,7 @@
       "OptionName": "Bu sıkıntı olacak. ",
       "Privacy": 0,
       "Aggressiveness": 0,
-      "Law": -1,
+      "Law": -3,
       "Royalty": 0,
       "MainQuestModifierType": 0,
       "StoryEventContainer": null
@@ -1839,12 +1881,12 @@
       "OptionName": "Bu sıkıntı olacak. ",
       "Privacy": 0,
       "Aggressiveness": 0,
-      "Law": -1,
+      "Law": -3,
       "Royalty": 0,
       "MainQuestModifierType": 0,
       "StoryEventContainer": null
     },
-    "IgnoreRandomization": false
+    "IgnoreRandomization": true
   },
   {
     "StoryTellerName": "TACİR ",
@@ -1865,7 +1907,14 @@
       "Law": 0,
       "Royalty": 0,
       "MainQuestModifierType": 0,
-      "StoryEventContainer": null
+      "StoryEventContainer": {
+        "StoryID": "80B",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "name": "80BK",
+        "hideFlags": 0
+      }
     },
     "IgnoreRandomization": false
   },
@@ -1890,7 +1939,7 @@
       "MainQuestModifierType": 0,
       "StoryEventContainer": null
     },
-    "IgnoreRandomization": false
+    "IgnoreRandomization": true
   },
   {
     "StoryTellerName": "TACİR ",
@@ -1971,7 +2020,14 @@
       "Law": 0,
       "Royalty": 0,
       "MainQuestModifierType": 0,
-      "StoryEventContainer": null
+      "StoryEventContainer": {
+        "StoryID": "85A",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "name": "85AK",
+        "hideFlags": 0
+      }
     },
     "OptionB": {
       "OptionName": "Tamamdır gönderelim.",
@@ -2005,7 +2061,7 @@
       "MainQuestModifierType": 0,
       "StoryEventContainer": null
     },
-    "IgnoreRandomization": false
+    "IgnoreRandomization": true
   },
   {
     "StoryTellerName": "TACİR ",

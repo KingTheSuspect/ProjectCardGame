@@ -1216,6 +1216,15 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a91f07b3c5a384c4ab061b9bc3b8523d, type: 2}
   - {fileID: 11400000, guid: 0757e4e6fdaff0b45966a49274ae9ab6, type: 2}
   - {fileID: 11400000, guid: 966c5d4a3d182e44a8a27199c477ba92, type: 2}
+  - {fileID: 11400000, guid: 7339ce35b01d980438fedc0eded44f81, type: 2}
+  - {fileID: 11400000, guid: d4c6bec1feef9df47ad3f9992235881a, type: 2}
+  - {fileID: 11400000, guid: ea292073072ffb04187e43b647743f38, type: 2}
+  - {fileID: 11400000, guid: 434b3bc7dd104c84f9acd5ab465ec25a, type: 2}
+  - {fileID: 11400000, guid: 373b48f9855ac4240934f101b0f94a44, type: 2}
+  - {fileID: 11400000, guid: d361a9619e8a600418ef7121a56066d2, type: 2}
+  - {fileID: 11400000, guid: 67dac38033fdd994284e139b57b7d729, type: 2}
+  - {fileID: 11400000, guid: 1e33b479bac07fc45bb32bf958d8ead4, type: 2}
+  - {fileID: 11400000, guid: 96e5dd5f6562984448fc41047b34bdec, type: 2}
 --- !u!4 &1030937916
 Transform:
   m_ObjectHideFlags: 0
@@ -3124,7 +3133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfb6c045871a61444ab3234915b3aecd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentSelectedStoriesListPath: Assets/StreamingAssets/FetretStories.json
+  CurrentSelectedStoriesListPath: Assets/StreamingAssets/KurulusStories.json
 --- !u!4 &1783223720
 Transform:
   m_ObjectHideFlags: 0

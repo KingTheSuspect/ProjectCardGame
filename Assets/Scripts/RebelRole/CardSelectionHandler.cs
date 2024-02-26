@@ -61,7 +61,8 @@ public class CardSelectionHandler : MonoBehaviour, IDragHandler, IBeginDragHandl
     private RebelOption _currentSelectedOption;
 
     CircleScript circleScript;
-
+    
+    private ScrollCount toScroollCount;
     private void Start()
     {
         Application.targetFrameRate = 60;
@@ -79,7 +80,8 @@ public class CardSelectionHandler : MonoBehaviour, IDragHandler, IBeginDragHandl
 
         List<StoryCard> stories = _storiesHandler.LoadStoriesList();
         HandleStory();
-
+        toScroollCount =  FindObjectOfType<ScrollCount>();
+        
     }
 
     private void Update()
@@ -90,7 +92,7 @@ public class CardSelectionHandler : MonoBehaviour, IDragHandler, IBeginDragHandl
         CardPuttingBackAnimation();
     }
 
-    //Kart hareketleri güncellernir.
+    //Kart hareketleri gï¿½ncellernir.
     private void CardMovementUpdate()
     {
         animationLeftTime -= Time.deltaTime;
@@ -112,15 +114,15 @@ public class CardSelectionHandler : MonoBehaviour, IDragHandler, IBeginDragHandl
         }
     }
 
-    //Kardýn seçimlerde alpha deðerinin deðiþmesini saðlar.
+    //Kardï¿½n seï¿½imlerde alpha deï¿½erinin deï¿½iï¿½mesini saï¿½lar.
     private void CardVisualUpdate()
     {
         gameObject.transform.GetChild(1).GetComponent<TextMeshProUGUI>().alpha = math.abs(gameObject.transform.position.x - 297) * 1 / 100f;
         gameObject.transform.GetChild(2).GetComponent<TextMeshProUGUI>().alpha = math.abs(gameObject.transform.position.x - 297) * 1 / 100f;
     }
 
-    //Kardýn hedefe varýp varmadýðý kontrol edilir, seçim yapýlýp kart býrakýldýðýnda
-    //oynatýlan animasyonun bitmesini bekler ve bitince kardý diðer event için sýfýrlar.
+    //Kardï¿½n hedefe varï¿½p varmadï¿½ï¿½ï¿½ kontrol edilir, seï¿½im yapï¿½lï¿½p kart bï¿½rakï¿½ldï¿½ï¿½ï¿½nda
+    //oynatï¿½lan animasyonun bitmesini bekler ve bitince kardï¿½ diï¿½er event iï¿½in sï¿½fï¿½rlar.
     private void HandleArrivalAndAnimationControl()
     {
         if (math.abs(gameObject.transform.position.x - targetPosition.x) <= 100 && math.abs(gameObject.transform.position.y - targetPosition.y) <= 100 && animationLeftTime <= 0 && AnimationControl == true)
@@ -171,7 +173,7 @@ public class CardSelectionHandler : MonoBehaviour, IDragHandler, IBeginDragHandl
         transform.rotation = Quaternion.Euler(0f, 0f, move_aim_x * rotateSpeed);
 
         card.anchoredPosition += pointerEventData.delta / canvas.scaleFactor;
-        //Bu sola ilk kaydýrdýðýmda gelen þey lütfen yazýn
+        //Bu sola ilk kaydï¿½rdï¿½ï¿½ï¿½mda gelen ï¿½ey lï¿½tfen yazï¿½n
         if (isInLeft)
         {
             gameObject.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = _currentHandlingStoryCard.OptionA.OptionName;
@@ -277,7 +279,7 @@ public class CardSelectionHandler : MonoBehaviour, IDragHandler, IBeginDragHandl
         //transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, 0f));
         //card.anchoredPosition = new Vector2(0f, 0f) / canvas.scaleFactor;
     }
-    //Kart býrakýldýðýnda yerine yumaþak þekilde geçiþ yapar.
+    //Kart bï¿½rakï¿½ldï¿½ï¿½ï¿½nda yerine yumaï¿½ak ï¿½ekilde geï¿½iï¿½ yapar.
     private void CardPuttingBackAnimation()
     {
         Vector2 targetPosition = Vector2.zero / canvas.scaleFactor;
@@ -292,11 +294,11 @@ public class CardSelectionHandler : MonoBehaviour, IDragHandler, IBeginDragHandl
         if (!isCardPuttingBack)
             return;
 
-        //10 deðeri keyfidir, bir deðiþkene atanabilir.
+        //10 deï¿½eri keyfidir, bir deï¿½iï¿½kene atanabilir.
         transform.rotation = Quaternion.Lerp(transform.rotation, targetQuaternion, Time.deltaTime * 10);
         card.anchoredPosition = Vector2.Lerp(card.anchoredPosition, targetPosition, Time.deltaTime * 10);
 
-        //Geri dönüþ animasyonu bitmeden kart tekrardan hareket ettirilemez.
+        //Geri dï¿½nï¿½ï¿½ animasyonu bitmeden kart tekrardan hareket ettirilemez.
         DisableTouch = true;
     }
     public void HandleStory()
@@ -342,6 +344,7 @@ public class CardSelectionHandler : MonoBehaviour, IDragHandler, IBeginDragHandl
     private void CardAnimation()
     {
         animationLeftTime = 0.6f;
+        ConnectToScrollCount();
         Debug.Log("CardAnimation");
         if (isInRight && chooseRight)
         {
@@ -354,6 +357,11 @@ public class CardSelectionHandler : MonoBehaviour, IDragHandler, IBeginDragHandl
             targetPosition = new Vector3(-640f, -500f, 0);
         }
         AnimationControl = true;
+    }
+
+    private void ConnectToScrollCount()
+    {
+      toScroollCount.IncreaseSlideCount();
     }
 
     private void RandomIndex()

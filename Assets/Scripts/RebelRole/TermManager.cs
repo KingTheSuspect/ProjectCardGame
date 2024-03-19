@@ -6,12 +6,12 @@ using UnityEngine;
 public class TermManager : MonoSingleton<TermManager>
 {
     [SerializeField] private List<TermVariablesContainer> _termVariablesContainers = new List<TermVariablesContainer>();
-    
+
     public TermVariablesContainer GetTermVairablesContainerWithIndex(int index)
     {
         if (index < 0 || index >= _termVariablesContainers.Count)
         {
-            Debug.LogError("Geçersiz Ýndex Giriþi, (dönem konteynýrý bulunamadý)");
+            Debug.LogError("Geï¿½ersiz ï¿½ndex Giriï¿½i, (dï¿½nem konteynï¿½rï¿½ bulunamadï¿½)");
             return null;
         }
 
@@ -20,6 +20,6 @@ public class TermManager : MonoSingleton<TermManager>
 
     public enum TermType
     {
-        Kurulus,Fetret,Lale,Cokus
+        Kurulus,Fetret,Lale,Cokus,KurulusAra
     }
 }

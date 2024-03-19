@@ -8,6 +8,7 @@ using UnityEngine.Events;
 public class StoriesHandlerWindow : EditorWindow
 {
     private TermManager.TermType _termType;
+    
     private int _termIndex = 0;
 
     private StoriesHandler _storiesHandler;
@@ -32,11 +33,11 @@ public class StoriesHandlerWindow : EditorWindow
     private RebelMainQuestModifierType rebelMainQuestModifierTypeOptionB;
 
 
-    private Vector2 scrollPosition; // Kaydýrma iþlemi için
+    private Vector2 scrollPosition; // Kaydï¿½rma iï¿½lemi iï¿½in
     private string searchQuery = ""; // Arama sorgusu
-    private int selectedStoryIndex = -1; // Seçilen hikaye indeksi
+    private int selectedStoryIndex = -1; // Seï¿½ilen hikaye indeksi
 
-    // Seçili hikayenin yazý stilleri
+    // Seï¿½ili hikayenin yazï¿½ stilleri
     private GUIStyle selectedStoryStyle = new GUIStyle();
 
     [MenuItem("Window/Stories Handler")]
@@ -48,16 +49,17 @@ public class StoriesHandlerWindow : EditorWindow
     private void OnEnable()
     {
         _storiesHandler = FindObjectOfType<StoriesHandler>();
-
-        // Seçilen hikaye stilini ayarla (yeþil renk)
+//SetTerm();
+        // Seï¿½ilen hikaye stilini ayarla (yeï¿½il renk)
         selectedStoryStyle.normal.textColor = Color.green;
-
     }
 
     private void OnGUI()
     {
-        
-        //Enum deðerlerine göre indexler atanýr
+
+      // SetTerm();
+
+        //Enum deï¿½erlerine gï¿½re indexler atanï¿½r
         switch (_termType)
         {
             case TermManager.TermType.Kurulus:
@@ -76,6 +78,10 @@ public class StoriesHandlerWindow : EditorWindow
                 _termIndex = 3;
                 _storiesHandler.CurrentSelectedStoriesListPath = StoriesHandler.CokusStoriesPath;
                 break;
+            case TermManager.TermType.KurulusAra:
+                _termIndex = 4;
+                _storiesHandler.CurrentSelectedStoriesListPath = StoriesHandler.KurulusAraStoriesPath;
+                break;
         }
 
         TermVariablesContainer currentTermContainer = null;
@@ -86,7 +92,7 @@ public class StoriesHandlerWindow : EditorWindow
 
             if (currentTermContainer == null)
             {
-                Debug.LogError("Ýndexe ait dönem kontainerý bulunamadý, eklenmemiþ olabilir.");
+                Debug.LogError("ï¿½ndexe ait dï¿½nem kontainerï¿½ bulunamadï¿½, eklenmemiï¿½ olabilir.");
             }
         }
 
@@ -97,24 +103,24 @@ public class StoriesHandlerWindow : EditorWindow
         EditorGUILayout.LabelField("Story Content");
         storyContentInput = EditorGUILayout.TextArea(storyContentInput, GUILayout.Height(100));
 
-        _termType = (TermManager.TermType)EditorGUILayout.EnumPopup("Dönem", _termType);
+        _termType = (TermManager.TermType)EditorGUILayout.EnumPopup("Dï¿½nem", _termType);
 
-        // Option A ve Option B alanlarýný ekleyin
-        storyOptionA = EditorGUILayout.TextField("Sol Seçenek", storyOptionA);
+        // Option A ve Option B alanlarï¿½nï¿½ ekleyin
+        storyOptionA = EditorGUILayout.TextField("Sol Seï¿½enek", storyOptionA);
         privacyInputA = EditorGUILayout.IntField(currentTermContainer.Variable1Name, privacyInputA);
         aggressivenessInputA = EditorGUILayout.IntField(currentTermContainer.Variable2Name, aggressivenessInputA);
         lawInputA = EditorGUILayout.IntField(currentTermContainer.Variable3Name, lawInputA);
         royaltyInputA = EditorGUILayout.IntField(currentTermContainer.Variable4Name, royaltyInputA);
         //rebelMainQuestModifierTypeOptionA = (RebelMainQuestModifierType)EditorGUILayout.EnumPopup("Main Quest",rebelMainQuestModifierTypeOptionA);
-        optionAEvent = EditorGUILayout.ObjectField("Sol Seçenek Event", optionAEvent, typeof(StoryEventContainer), true) as StoryEventContainer;
+        optionAEvent = EditorGUILayout.ObjectField("Sol Seï¿½enek Event", optionAEvent, typeof(StoryEventContainer), true) as StoryEventContainer;
         EditorGUILayout.Space();
-        storyOptionB = EditorGUILayout.TextField("Sað Seçenek", storyOptionB);
+        storyOptionB = EditorGUILayout.TextField("Saï¿½ Seï¿½enek", storyOptionB);
         privacyInputB = EditorGUILayout.IntField(currentTermContainer.Variable1Name, privacyInputB);
         aggressivenessInputB = EditorGUILayout.IntField(currentTermContainer.Variable2Name, aggressivenessInputB);
         lawInputB = EditorGUILayout.IntField(currentTermContainer.Variable3Name, lawInputB);
         royaltyInputB = EditorGUILayout.IntField(currentTermContainer.Variable4Name, royaltyInputB);
         //rebelMainQuestModifierTypeOptionB = (RebelMainQuestModifierType)EditorGUILayout.EnumPopup("Main Quest", rebelMainQuestModifierTypeOptionB);
-        optionBEvent = EditorGUILayout.ObjectField("Sað Seçenek Event", optionBEvent, typeof(StoryEventContainer), true) as StoryEventContainer;
+        optionBEvent = EditorGUILayout.ObjectField("Saï¿½ Seï¿½enek Event", optionBEvent, typeof(StoryEventContainer), true) as StoryEventContainer;
 
         ignoreRandomization = EditorGUILayout.Toggle("Dont Get With Random : ", ignoreRandomization);
 
@@ -159,7 +165,7 @@ public class StoriesHandlerWindow : EditorWindow
             }
             else
             {
-                Debug.LogWarning("Yeni bir kart eklemeye çalýþtýn ama StoriesHandler sahnede yok knk");
+                Debug.LogWarning("Yeni bir kart eklemeye ï¿½alï¿½ï¿½tï¿½n ama StoriesHandler sahnede yok knk");
             }
         }
         if (GUILayout.Button("Update Selected Story"))
@@ -201,7 +207,7 @@ public class StoriesHandlerWindow : EditorWindow
             }
             else
             {
-                Debug.LogWarning("Kartý güncelleyemezsin çünkü sahnede storieshandler yok dostum.");
+                Debug.LogWarning("Kartï¿½ gï¿½ncelleyemezsin ï¿½ï¿½nkï¿½ sahnede storieshandler yok dostum.");
             }
 
             stories[selectedStoryIndex] = card;
@@ -221,7 +227,7 @@ public class StoriesHandlerWindow : EditorWindow
                         stories[i].OptionB.StoryEventContainer.StoryID = i + "B";
                 }
 
-                // Güncellenmiþ hikayeleri dosyaya kaydet
+                // Gï¿½ncellenmiï¿½ hikayeleri dosyaya kaydet
                 _storiesHandler.SaveStoriesListToFile(stories);
             }
         }
@@ -229,29 +235,29 @@ public class StoriesHandlerWindow : EditorWindow
         // Arama kutusu
         searchQuery = EditorGUILayout.TextField("Search", searchQuery);
 
-        // Scrollview'ý baþlat
+        // Scrollview'ï¿½ baï¿½lat
         scrollPosition = EditorGUILayout.BeginScrollView(scrollPosition);
 
-        // Tablo baþlýklarý
+        // Tablo baï¿½lï¿½klarï¿½
         GUILayout.BeginHorizontal();
         GUILayout.Label("Story Index", EditorStyles.boldLabel, GUILayout.Width(100));
         EditorGUILayout.LabelField("Story Teller Name", EditorStyles.boldLabel, GUILayout.Width(200));
-        GUILayout.Space(50); // Diðer sütunlarýn geniþliði
+        GUILayout.Space(50); // Diï¿½er sï¿½tunlarï¿½n geniï¿½liï¿½i
         EditorGUILayout.LabelField("Actions", EditorStyles.boldLabel, GUILayout.Width(100));
         GUILayout.EndHorizontal();
 
-        // Hikaye kartlarýný listele
+        // Hikaye kartlarï¿½nï¿½ listele
         if (_storiesHandler != null)
         {
             List<StoryCard> stories = _storiesHandler.LoadStoriesList();
             for (int i = 0; i < stories.Count; i++)
             {
-                // Arama sorgusu ile karþýlaþtýrma yap
+                // Arama sorgusu ile karï¿½ï¿½laï¿½tï¿½rma yap
                 if (string.IsNullOrEmpty(searchQuery) || stories[i].StoryContent.ToLower().Contains(searchQuery.ToLower()))
                 {
                     GUILayout.BeginHorizontal();
 
-                    // Seçilen hikayenin yazý rengini ayarla
+                    // Seï¿½ilen hikayenin yazï¿½ rengini ayarla
                     if (i == selectedStoryIndex)
                     {
                         GUILayout.Label(i.ToString(), selectedStoryStyle, GUILayout.Width(100));
@@ -269,10 +275,10 @@ public class StoriesHandlerWindow : EditorWindow
                     }
                     if (GUILayout.Button("Select", GUILayout.Width(100)))
                     {
-                        // Seçilen hikayenin indeksini güncelle
+                        // Seï¿½ilen hikayenin indeksini gï¿½ncelle
                         selectedStoryIndex = i;
 
-                        // Seçilen hikaye verilerini giriþ alanlarýna aktar
+                        // Seï¿½ilen hikaye verilerini giriï¿½ alanlarï¿½na aktar
                         storyTellerNameInput = stories[i].StoryTellerName;
                         storyContentInput = stories[i].StoryContent;
                         storyOptionA = stories[i].OptionA.OptionName;
@@ -297,7 +303,7 @@ public class StoriesHandlerWindow : EditorWindow
             }
         }
 
-        // Scrollview'ý kapat
+        // Scrollview'ï¿½ kapat
         EditorGUILayout.EndScrollView();
     }
 }

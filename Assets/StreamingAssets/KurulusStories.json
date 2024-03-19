@@ -22,8 +22,9 @@
         "StoryID": "0B",
         "BothOptionsEvent": false,
         "Event": {},
-        "ContinueRandomStoryHandlingAfterEvent": true,
-        "name": "index2",
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "name": "0BK",
         "hideFlags": 0
       }
     },
@@ -757,6 +758,7 @@
         "BothOptionsEvent": false,
         "Event": {},
         "ContinueRandomStoryHandlingAfterEvent": true,
+        "scrollCountInStoryIndex": 0,
         "name": "32ABKurulus",
         "hideFlags": 0
       }
@@ -773,6 +775,7 @@
         "BothOptionsEvent": false,
         "Event": {},
         "ContinueRandomStoryHandlingAfterEvent": true,
+        "scrollCountInStoryIndex": 0,
         "name": "32ABKurulus",
         "hideFlags": 0
       }
@@ -955,6 +958,7 @@
         "BothOptionsEvent": false,
         "Event": {},
         "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
         "name": "40AK",
         "hideFlags": 0
       }
@@ -1110,7 +1114,7 @@
   },
   {
     "StoryTellerName": "ORHAN GAZİ ",
-    "StoryContent": ") Karamanoğullarından bir grup asker hasılatın bir kısmına arar verdi. Onları yakaladık ancak Sultan esirleri onlara vermemizi istiyor. Eğer ceza almazlarsa çiftçiler asabileşebilir.\r\n",
+    "StoryContent": "Karamanoğullarından bir grup asker hasılatın bir kısmına arar verdi. Onları yakaladık ancak Sultan esirleri onlara vermemizi istiyor. Eğer ceza almazlarsa çiftçiler asabileşebilir.\r\n",
     "OptionA": {
       "OptionName": "Bizim topraklarımızda bizim sözümüz geçer. ",
       "Privacy": 0,
@@ -1270,6 +1274,7 @@
         "BothOptionsEvent": false,
         "Event": {},
         "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
         "name": "53BK",
         "hideFlags": 0
       }
@@ -1659,6 +1664,7 @@
         "BothOptionsEvent": false,
         "Event": {},
         "ContinueRandomStoryHandlingAfterEvent": true,
+        "scrollCountInStoryIndex": 0,
         "name": "70AK",
         "hideFlags": 0
       }
@@ -1675,6 +1681,7 @@
         "BothOptionsEvent": false,
         "Event": {},
         "ContinueRandomStoryHandlingAfterEvent": true,
+        "scrollCountInStoryIndex": 0,
         "name": "70BK",
         "hideFlags": 0
       }
@@ -1912,6 +1919,7 @@
         "BothOptionsEvent": false,
         "Event": {},
         "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
         "name": "80BK",
         "hideFlags": 0
       }
@@ -2025,6 +2033,7 @@
         "BothOptionsEvent": false,
         "Event": {},
         "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
         "name": "85AK",
         "hideFlags": 0
       }

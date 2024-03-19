@@ -1,10 +1,230 @@
 [
   {
-    "StoryTellerName": "dsa",
-    "StoryContent": "",
+    "StoryTellerName": "Kadı",
+    "StoryContent": "Sultanım rüşvet alan birçok kadı var. ",
     "OptionA": {
-      "OptionName": "dsa",
+      "OptionName": "Bunları temizlemek gerek. ",
       "Privacy": 0,
+      "Aggressiveness": -1,
+      "Law": 0,
+      "Royalty": 1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Varsa ne olmuş? ",
+      "Privacy": 0,
+      "Aggressiveness": 1,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "0B",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "0Bco",
+        "hideFlags": 0
+      }
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Kadı",
+    "StoryContent": "Sultanım bir kalabalık var dışarıda. Suçlu olan arkadaşlarının yargılanmasına mani olurlar.",
+    "OptionA": {
+      "OptionName": "Yakalayın hepsini. ",
+      "Privacy": -1,
+      "Aggressiveness": 0,
+      "Law": 1,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Salın gitsin adamı. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": -1,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Kadı",
+    "StoryContent": "Sultanım bir yeniçeri ile halktan birisi kavga etmiş. İş kılıç çekmeye kadar gelince engel olmuşlar. Adamın dediğine göre sorun çıkaran Yeniçeriymiş.",
+    "OptionA": {
+      "OptionName": "Tam olayı öğrenebildiniz mi peki? ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "2A",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": true,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "2",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": "Tam olayı öğrenebildiniz mi peki? ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "2B",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": true,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "2",
+        "hideFlags": 0
+      }
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Kadı",
+    "StoryContent": "Öğrendik sultanım, adamın dediği doğru sorun çıkaran Yeniçeriymiş. Ne yapacağız.",
+    "OptionA": {
+      "OptionName": "Yeniçeriyi suçu bulursak bu sefer orduda itirazlar çıkacak, adamı nezarete atın. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": -1,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "3A",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 20,
+        "name": "3aco",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": "Adalet yerini bulmalı. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 1,
+      "Royalty": 1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Kadı",
+    "StoryContent": "Sultanım rüşvet vakalarına bir dur demeliyiz ama tehditler yağmakta.",
+    "OptionA": {
+      "OptionName": "Onlar kim ki padişahı tehdit ediyor! ",
+      "Privacy": 0,
+      "Aggressiveness": 1,
+      "Law": 1,
+      "Royalty": 1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Bir de onlarla uğraşmayalım. ",
+      "Privacy": 0,
+      "Aggressiveness": -1,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Kadı",
+    "StoryContent": "Sultanım yüksek zümreden birisi bir cinayet işlemi, ölen kişi fakir bir ailenin tek evladı. Halk yargılanmasını istemekte ama adamın…",
+    "OptionA": {
+      "OptionName": "Adamın kim olduğundan bizene. Ortada bir suç varsa cezası da olmalı. ",
+      "Privacy": 1,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Başımızı derde sokmayalım durduk yere. ",
+      "Privacy": -1,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Kadı",
+    "StoryContent": "Sultanım getirdiğimiz sıkı yasalar insanların pekte hoşuna gitmemekte.",
+    "OptionA": {
+      "OptionName": "Yapabileceğim hiçbir şey yok. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 2,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Tamam biraz yumuşatırız. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": -1,
+      "Royalty": -1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Kadı",
+    "StoryContent": "Sultanım adaleti sağlamak adına elimizden geleni yapmaktayız.",
+    "OptionA": {
+      "OptionName": "Sağ olun. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 1,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Sağ olun. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 1,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Kadı",
+    "StoryContent": "Sultanım verdiğimiz kararlar halkın bize olan inancını kaybettirdi.",
+    "OptionA": {
+      "OptionName": "",
+      "Privacy": -1,
       "Aggressiveness": 0,
       "Law": 0,
       "Royalty": 0,
@@ -12,7 +232,911 @@
       "StoryEventContainer": null
     },
     "OptionB": {
-      "OptionName": "dsa",
+      "OptionName": "",
+      "Privacy": -1,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": true
+  },
+  {
+    "StoryTellerName": "Kadı",
+    "StoryContent": "Sultanım rüşvet durumu fazla arttı.\r\n",
+    "OptionA": {
+      "OptionName": "",
+      "Privacy": 0,
+      "Aggressiveness": -1,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "",
+      "Privacy": 0,
+      "Aggressiveness": -1,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": true
+  },
+  {
+    "StoryTellerName": "Esnaf",
+    "StoryContent": "Sultanım size verdiğimiz para yetmezmiş gibi birde haraç kesmeye çalışanlar var.\r\n",
+    "OptionA": {
+      "OptionName": "Hepsiyle ilgileneceğim merak etmeyin. ",
+      "Privacy": 1,
+      "Aggressiveness": 1,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Bir şey olmaz. ",
+      "Privacy": -1,
+      "Aggressiveness": -1,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Esnaf",
+    "StoryContent": "Sultanım tütüne getirdiğiniz yasak hakkında emin misiniz?",
+    "OptionA": {
+      "OptionName": "Evet eminim. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Evet eminim. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Esnaf",
+    "StoryContent": "Sultanım insanların elinden kahveyi alacağınızı duyduk, emin misiniz?",
+    "OptionA": {
+      "OptionName": "Evet eminim. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Evet eminim. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Esnaf",
+    "StoryContent": "Sultanım kafasına göre satış yapanlar var. Bunlara dur demeliyiz.",
+    "OptionA": {
+      "OptionName": "Haklısın. ",
+      "Privacy": 0,
+      "Aggressiveness": 1,
+      "Law": 0,
+      "Royalty": 1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Daha sonra. ",
+      "Privacy": 0,
+      "Aggressiveness": -1,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Esnaf",
+    "StoryContent": "Sultanım bu tüccarlar fazla olmaya başladı. Aldıkları fiyatın kat ve kat fazlasını satıyorlar.",
+    "OptionA": {
+      "OptionName": "Öyle iş mi olur! ",
+      "Privacy": 1,
+      "Aggressiveness": 1,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Bir de onlarla uğraşamam. ",
+      "Privacy": 0,
+      "Aggressiveness": -1,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Esnaf",
+    "StoryContent": "Sultanım geçen adamın teki bir hırsızlığa karıştı. Yargılandığını duyduk ama o adamın ne evi vardır ne yiyecek yemeği. ",
+    "OptionA": {
+      "OptionName": "Suç suçtur. ",
+      "Privacy": -1,
+      "Aggressiveness": 0,
+      "Law": 1,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Tamam ilgileneceğim. ",
+      "Privacy": 1,
+      "Aggressiveness": -1,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Esnaf",
+    "StoryContent": "Sultanım kahvehanelerin kapatılması çoğu esnafın ekmek teknesini batırdı.",
+    "OptionA": {
+      "OptionName": "Yapabileceğim hiçbir şey yok. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Yapabileceğim hiçbir şey yok. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Esnaf",
+    "StoryContent": "Sultanım vergisini vermeyerek bizden fazla kazanan yerler var.",
+    "OptionA": {
+      "OptionName": "Engelleyeceğiz. ",
+      "Privacy": 1,
+      "Aggressiveness": 0,
+      "Law": 1,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Uydurmayın. ",
+      "Privacy": -1,
+      "Aggressiveness": -1,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Esnaf",
+    "StoryContent": "Sultanım Yeniçerilerin bize yaptığı muamele çekilmez derecede.",
+    "OptionA": {
+      "OptionName": "Halledeceğiz. ",
+      "Privacy": 1,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Abartmayın. ",
+      "Privacy": -1,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Esnaf",
+    "StoryContent": "Sultanım her şeye rağmen size güveniyoruz.",
+    "OptionA": {
+      "OptionName": "Sağ olun. ",
+      "Privacy": 1,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Sağ olun. ",
+      "Privacy": 1,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Yeniçeri ",
+    "StoryContent": "Sultanım yeniçerilere verilen maaş yetmemekte.  Arttırmanız gerek.\r\n",
+    "OptionA": {
+      "OptionName": "Bu adaletsizlik olur. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Peki. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": -1,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Yeniçeri ",
+    "StoryContent": "Sultanım her şeyden sonra şimdi de içkiyi yasaklamışsınız. Yeniçeriler bunlardan memnun değil.",
+    "OptionA": {
+      "OptionName": "Yapabileceğim hiçbir şey yok. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Yapabileceğim hiçbir şey yok. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Yeniçeri ",
+    "StoryContent": "Sultanım Sakarya’da bir şeyh kendini Mehdi ilan etmiş.",
+    "OptionA": {
+      "OptionName": "Alın gelin o adamı. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "22A",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "22",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": "Alın gelin o adamı. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "22B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "22",
+        "hideFlags": 0
+      }
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Yeniçeri ",
+    "StoryContent": "Sultanım birkaç denemenin ardından sonunda şeyhi yakaladık. Huzurunuza getirelim mi?",
+    "OptionA": {
+      "OptionName": "Getirin bakalım. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "23A",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "23",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": "Getirin bakalım. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "23B",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "23",
+        "hideFlags": 0
+      }
+    },
+    "IgnoreRandomization": true
+  },
+  {
+    "StoryTellerName": "Yeniçeri ",
+    "StoryContent": " “IV. Murad'ın huzuruna çıkarılan şeyh, padişah tarafından azarlanır. Parmakları kesilen Sakarya Şeyhi başında siyah bir sarık ile çıplak bırakılıp eşeğe bindirilerek teşhir edildikten sonra burnu, kulağı, elleri ve ayakları kesilir ve böylelikle Sakarya Şeyhi orada can verir.”\r\n",
+    "OptionA": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 1,
+      "Royalty": 1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 1,
+      "Royalty": 1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": true
+  },
+  {
+    "StoryTellerName": "Yeniçeri ",
+    "StoryContent": "Sultanım emrettiğiniz üzere Bağdat seferi için hazırlıklar tamamlandı. ",
+    "OptionA": {
+      "OptionName": "Bizim olanı geri alalım. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "25A",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "25",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": "Bizim olanı geri alalım. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "25B",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "25",
+        "hideFlags": 0
+      }
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Yeniçeri ",
+    "StoryContent": "Sultanım Bağdat sayenizde geri alındı.",
+    "OptionA": {
+      "OptionName": "Var olun . ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Var olun . ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": true
+  },
+  {
+    "StoryTellerName": "Yeniçeri ",
+    "StoryContent": "Sultanım halk bizi takmıyor. Yetkilerimizi arttırmalısınız.",
+    "OptionA": {
+      "OptionName": "Olmaz. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": -1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Peki. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Yeniçeri ",
+    "StoryContent": "Sultanım Lehistan’a saldırı için Edirne’ye yol alma vakti gelmiştir. ",
+    "OptionA": {
+      "OptionName": "Hadi bakalım. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "28A",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "28",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": "Hadi bakalım. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "28B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "28",
+        "hideFlags": 0
+      }
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Yeniçeri ",
+    "StoryContent": "Ordular birbirlerine doğru ilerlerken yoğun bir diplomasi yaşandı. Lehler 27 Temmuz'da Varşova'ya gönderilen Çavuş Şahin Ağa'yla anlaşmaya vardılar ve savaş sona erdi. Böylece IV. Murat savaşa gerek olmadan ordularıyla tekrar Edirne'den İstanbul'a geri döndü.",
+    "OptionA": {
+      "OptionName": ".",
+      "Privacy": 1,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": ".",
+      "Privacy": 1,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": true
+  },
+  {
+    "StoryTellerName": "Köylü",
+    "StoryContent": "Sultanım vergiler belimizi bükmekte.",
+    "OptionA": {
+      "OptionName": "ilgileneceğim merak etmeyin. ",
+      "Privacy": 1,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Abartmayın. ",
+      "Privacy": -1,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Köylü",
+    "StoryContent": "Sultanım cezalar çok ağır. Yeni koyduğunuz yasalardan dolayı halk mutsuz.\r\n\t",
+    "OptionA": {
+      "OptionName": "Mutsuzlarsa ne olmuş? ",
+      "Privacy": -1,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Tamam biraz zayıflatırız. ",
+      "Privacy": 1,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": -1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Köylü",
+    "StoryContent": "Sultanım Yeniçeriler bizi hor görüyor.\r\n",
+    "OptionA": {
+      "OptionName": "Abartıyorsunuz. ",
+      "Privacy": -1,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Peki, konuşurum. ",
+      "Privacy": 1,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Köylü",
+    "StoryContent": "Sultanım esnaflar zarar ediyoruz diyerek pahalı satış yapıyorlar.",
+    "OptionA": {
+      "OptionName": "Halledeceğiz. ",
+      "Privacy": 1,
+      "Aggressiveness": 1,
+      "Law": 0,
+      "Royalty": 1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Kanıtın var mı? ",
+      "Privacy": 0,
+      "Aggressiveness": -5,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Köylü",
+    "StoryContent": "Sultanım yüksek zümreden insanlar bizden öncelikli. O katı kurallarınız onları etkilemiyor mu?",
+    "OptionA": {
+      "OptionName": "Öyle şey mi olur! ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "34A",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "34",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": "Neyi ima etmek istersin? Açıkça söyle. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "34B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "34",
+        "hideFlags": 0
+      }
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Köylü",
+    "StoryContent": "Sultanım birkaç gün önce pazarda bir kavga çıktı. Yüksek zümreden birisi bir yoksulu ölesiye dövmüş. Nasılsa yargılanma da serbest kalmış.\r\n",
+    "OptionA": {
+      "OptionName": "Bu nasıl iş. Dikkate alacağım, emin ol. ",
+      "Privacy": 1,
+      "Aggressiveness": 0,
+      "Law": 1,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "35A",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "35",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": "Yargısı sonucunda serbest kaldıysa, olay öyle değildir. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": -3,
+      "Royalty": 3,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": true
+  },
+  {
+    "StoryTellerName": "Köylü",
+    "StoryContent": "Sultanım halk arasında sizin hakkınızda kötü konuşulmaya başlandı. ",
+    "OptionA": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": -1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": -1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Köylü",
+    "StoryContent": "Sultanım bazı aileler çocuklarını vermek istemezler, saklarlar.",
+    "OptionA": {
+      "OptionName": "Tespit edeceğiz. ",
+      "Privacy": -1,
+      "Aggressiveness": 0,
+      "Law": 1,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Birkaç kişi görmezden gelinebilir. ",
+      "Privacy": 1,
+      "Aggressiveness": 0,
+      "Law": -1,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Köylü",
+    "StoryContent": "Sultanım halkımız size inanmakta.",
+    "OptionA": {
+      "OptionName": "Var olun. ",
+      "Privacy": 1,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Var olun. ",
+      "Privacy": 1,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Köylü",
+    "StoryContent": "Sultanım tüccarlar kaliteli malların çoğunu yüksek zümredeki insanlara veriyor. Bu adalet midir?",
+    "OptionA": {
+      "OptionName": "Değildir, ilgileneceğim. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 1,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Bunu sorgulamak sana mı kaldı? ",
+      "Privacy": 0,
+      "Aggressiveness": -1,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Çiftçi",
+    "StoryContent": "Sultanım kullandığımız eşyalar eskidi, yenilenmeleri gerek.",
+    "OptionA": {
+      "OptionName": "Tamam halledeceğim. ",
+      "Privacy": 1,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Abartmayın. ",
+      "Privacy": -1,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Çiftçi",
+    "StoryContent": "Sultanım Yeniçeriler bizden izinsiz mahsullerimizi kullanıyorlar.",
+    "OptionA": {
+      "OptionName": "Tamam ilgileneceğim.  ",
+      "Privacy": 1,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Bir şey olmaz. ",
+      "Privacy": -1,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Çiftçi",
+    "StoryContent": "Sultanım aldığımız para bize yetmemekte.",
+    "OptionA": {
+      "OptionName": "Tamam arttırırız. ",
+      "Privacy": 1,
+      "Aggressiveness": 0,
+      "Law": -1,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "İdare edin. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": -1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Çiftçi",
+    "StoryContent": "Sultanım tarım alanlarını genişletirseniz çok daha iyi mahsul alabiliriz.",
+    "OptionA": {
+      "OptionName": "Peki. ",
+      "Privacy": 1,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": -1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Gereği yok. ",
       "Privacy": 0,
       "Aggressiveness": 0,
       "Law": 0,
@@ -21,5 +1145,812 @@
       "StoryEventContainer": null
     },
     "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Çiftçi",
+    "StoryContent": "Sultanım İstanbul’dan gelen askerler sarayın önüne doğru geliyor!",
+    "OptionA": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "44A",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "44",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "44B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "44",
+        "hideFlags": 0
+      }
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Çiftçi",
+    "StoryContent": "Topla Recep Paşa tarafından kışkırtılan öfkeli sipahiler At Meydanı'nda ayaklanarak Hüsrev Paşa'nın azline neden olanları IV. Murad'dan istediklerini beyan ettiler. Nihayet ayaklananlara sonraki gün bir yanıt verileceği duyuruldu. Hafız Ahmed Paşa da başına geleceklerden çekinmeyerek yola koyuldu.",
+    "OptionA": {
+      "OptionName": "Bu nasıl iş. Dikkate alacağım, emin ol. ",
+      "Privacy": 1,
+      "Aggressiveness": 0,
+      "Law": 1,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Yargısı sonucunda serbest kaldıysa, olay öyle değildir. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": -2,
+      "Royalty": 2,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": true
+  },
+  {
+    "StoryTellerName": "Çiftçi",
+    "StoryContent": "At üzerinde geçerken kendilerine selam veren Hafız Ahmed Paşa'ya içlerinden biri taş atınca diğerleri de ona uyarak Hafız Ahmed Paşa'yı taş yağmuruna tutup atından düşürdüler.",
+    "OptionA": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": -1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": -1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Çiftçi",
+    "StoryContent": "IV. Murad'ın huzuruna çıkan sadrazam Hafız Ahmed Paşa, mühri hümayunu eliyle teslim ederek sadrazamlıktan çekildi. IV. Murad ise ona kaçıp saklanmasını söyleyince kıyafet değiştirip kayığa binerek Üsküdar tarafına geçti.",
+    "OptionA": {
+      "OptionName": "Tespit edeceğiz. ",
+      "Privacy": -1,
+      "Aggressiveness": 0,
+      "Law": 1,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Birkaç kişi görmezden gelinebilir. ",
+      "Privacy": 1,
+      "Aggressiveness": 0,
+      "Law": -1,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Çiftçi",
+    "StoryContent": "Babüssaade önünde ayak divanı isteyen isyancı askerlere karşı enderun halkını silahlandıran IV. Murad ne istediklerini sordu. Verdikleri listedekileri öldürmek isteyen isyancılar, IV. Murad'a doğru hamlede bulununca padişah hızla geri çekilerek içeri girdi. Sarayda bulunan Topal Recep Paşa, Hafız Ahmed Paşa'nın geri getirtilmesini tavsiye etti?\r\n",
+    "OptionA": {
+      "OptionName": "Var olun. ",
+      "Privacy": 1,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Var olun. ",
+      "Privacy": 1,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Çiftçi",
+    "StoryContent": "Hafız Ahmed Paşa gelince padişah ikinci kez ayak divanına çıktı ancak kalabalık isteğinden vazgeçmiyordu. Hafız Ahmed Paşa da bunun üzerine, \"Padişahım ! Hezar Hafız kulun yoluna fedadır ancak ricam budur, beni sen öldürtme, bunlar öldürsün, şehit olayım!\" diyerek isyancılara doğru yürüyüp gitti. Hafız Ahmed Paşa pala ve kılıç darbeleriyle öldürüldü.",
+    "OptionA": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": -1,
+      "Royalty": 1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": -1,
+      "Royalty": 1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Sadrazam ",
+    "StoryContent": "Sultanım Mevlevi Şeyhi Ebubekir Çelebi hakkında şikayetler var.\r\n",
+    "OptionA": {
+      "OptionName": "Ne? ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "50A",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "50",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": "Ne? ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "50B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "50",
+        "hideFlags": 0
+      }
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Sadrazam ",
+    "StoryContent": "Revan seferine giderken Mevlevi Şeyhi Ebubekir Çelebi ile de görüşen IV. Murad, ona iltifatta bulunup tekkesi için ödenek verdi. Padişahın yakınlığını kazanan Ebubekir Çelebi, bu sayede çevresinde daha güçlü ve sözü geçer bir hale geldi.",
+    "OptionA": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "51B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "51",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "51B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "51",
+        "hideFlags": 0
+      }
+    },
+    "IgnoreRandomization": true
+  },
+  {
+    "StoryTellerName": "Sadrazam ",
+    "StoryContent": "Konya’daki hükûmet adamları ve kadılar ona başvurmadan bir iş göremez oldular. Bu durumundan rahatsız olanlar da IV. Murad Konya’ya tekrar geldiğinde şikayette bulundular. ",
+    "OptionA": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "52B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "52",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "52B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "52",
+        "hideFlags": 0
+      }
+    },
+    "IgnoreRandomization": true
+  },
+  {
+    "StoryTellerName": "Sadrazam ",
+    "StoryContent": "IV. Murad şikayetler dolayısıyla Ebubekir Çelebi’nin öldürülmesini emrettiyse de araya giren bazı kimselerin ricası üzerine Ebubekir Çelebi'yi bağışlayıp sürgüne gönderdi..",
+    "OptionA": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 1,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 1,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": true
+  },
+  {
+    "StoryTellerName": "Soylular ",
+    "StoryContent": "Sultanım daha fazla hak istiyoruz.\r\n",
+    "OptionA": {
+      "OptionName": "O niyeymiş?  ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "54B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "54",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": "Neden? ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "54B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "54",
+        "hideFlags": 0
+      }
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Soylular ",
+    "StoryContent": "Sultanım bizi o köylüler ile aynı kefeye mi koyuyorsunuz?",
+    "OptionA": {
+      "OptionName": "Evet. ",
+      "Privacy": 0,
+      "Aggressiveness": 1,
+      "Law": 0,
+      "Royalty": 1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Haklısınız. ",
+      "Privacy": 0,
+      "Aggressiveness": -1,
+      "Law": 0,
+      "Royalty": -1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": true
+  },
+  {
+    "StoryTellerName": "Soylular ",
+    "StoryContent": "Sultanım sizin kararlarınıza güvenirdik.",
+    "OptionA": {
+      "OptionName": "Doğru olan neyse onu yaptım. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Doğru olan neyse onu yaptım. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": true
+  },
+  {
+    "StoryTellerName": "Soylular ",
+    "StoryContent": "Sultanım koruma adına sizden birkaç Yeniçeri istemekteyim.",
+    "OptionA": {
+      "OptionName": "Peki olur. ",
+      "Privacy": 1,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": -1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Devletin askeri senin peşine mi düşecek? ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Soylular ",
+    "StoryContent": "Sultanım tüccarlar ile kurduğumuz bağ nedense esnafı rahatsız edermiş. Engel olacaklarmış.",
+    "OptionA": {
+      "OptionName": "Peki ilgileneceğim. ",
+      "Privacy": 0,
+      "Aggressiveness": -1,
+      "Law": 0,
+      "Royalty": -1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Onların işine mani oluyorsan ilk ben engel olurum. ",
+      "Privacy": 0,
+      "Aggressiveness": 1,
+      "Law": 0,
+      "Royalty": 1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Soylular ",
+    "StoryContent": "Sultanım halk bize karşı çok kaba.",
+    "OptionA": {
+      "OptionName": "Eminim bir nedenleri vardır. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Peki ilgileneceğim. ",
+      "Privacy": 1,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": -1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Soylular ",
+    "StoryContent": "Sultanım bazı işler yapmak isteriz, engel olmazsanız İki taraf içinde faydalı olacağına eminim.",
+    "OptionA": {
+      "OptionName": "Açık açık rüşvet mi teklif edersin? Alın şunun kellesini! ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Peki. ",
+      "Privacy": 0,
+      "Aggressiveness": -1,
+      "Law": -1,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Soylular ",
+    "StoryContent": "Sultanım kadılar bizim hakkımızda yalan yanlış yargılarda bulunmakta.",
+    "OptionA": {
+      "OptionName": "Bunu o tuttuğunuz diğer kadılar mı demekte? ",
+      "Privacy": 0,
+      "Aggressiveness": 1,
+      "Law": 1,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Eminim ki öyledir. ",
+      "Privacy": 0,
+      "Aggressiveness": -1,
+      "Law": -1,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Soylular ",
+    "StoryContent": "Sultanım vergiler konusunda bize bir şey yapamaz mısınız?\r\n",
+    "OptionA": {
+      "OptionName": "Size özel muamele mi istersin? ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "62A",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "62a",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": "Yapamam. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Soylular ",
+    "StoryContent": "Özel muamele demeyelim de iyilik diyelim.",
+    "OptionA": {
+      "OptionName": "Yapamam. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Peki. . ",
+      "Privacy": 0,
+      "Aggressiveness": -1,
+      "Law": -1,
+      "Royalty": -1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": true
+  },
+  {
+    "StoryTellerName": "Paşalar ",
+    "StoryContent": "Sultanım insanları daha sıkı bir şekilde denetlemeliyiz.\r\n",
+    "OptionA": {
+      "OptionName": "Haklısın. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Abartmayın. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": -1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Paşalar ",
+    "StoryContent": "Sultanım Yeniçerilere daha fazla hak tanımalısınız.",
+    "OptionA": {
+      "OptionName": "Olmaz. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Peki. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": -1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Paşalar ",
+    "StoryContent": "Sultanım bazı insanlar sizin hakkınızda iyi düşünmüyor. Dikkat edin.",
+    "OptionA": {
+      "OptionName": "Olmaz. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": -1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Peki. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": -1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Paşalar ",
+    "StoryContent": "Sultanım Yeniçerilerin bazı istekleri var. Kabul edelim, Yeniçerileri fazla kışkırtmamak iyi olur.",
+    "OptionA": {
+      "OptionName": "Haklısın. ",
+      "Privacy": 1,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Peki. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": -1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Paşalar ",
+    "StoryContent": "Sultanım insanların bir araya gelmelerine mani olmalıyız. ",
+    "OptionA": {
+      "OptionName": "Nedenmiş o?  ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "68B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "68",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": "Niye. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "68B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "68",
+        "hideFlags": 0
+      }
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Paşalar ",
+    "StoryContent": "Bir isyanın çıkmasını önlemek için.",
+    "OptionA": {
+      "OptionName": "Doğru diyorsun. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Gereksiz. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": -1,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": true
+  },
+  {
+    "StoryTellerName": "Paşalar ",
+    "StoryContent": "Sultanım size gelen bir mektup var. ",
+    "OptionA": {
+      "OptionName": "Ver bakalım. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Ver bakalım. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": true
+  },
+  {
+    "StoryTellerName": "Paşalar ",
+    "StoryContent": "“Tekrardan merhaba. Ben Oyun ustası, beni özledin değil mi? Elbette özledin.”",
+    "OptionA": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": true
+  },
+  {
+    "StoryTellerName": "Paşalar ",
+    "StoryContent": "“Normalde yüz yüze konuşmaktan hoşlanırım ama senin şu eleman beni engelliyor. Tek yapabildiğim şey bu mektubu gönderebilmek.”",
+    "OptionA": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": true
+  },
+  {
+    "StoryTellerName": "Paşalar ",
+    "StoryContent": "“Sadede gelecek olursak benim yüzümden ceza alman beni üzdü. Hediye anlamında bunu al. Sevgiler Oyun Ustası.” Mektuptan bir şişe çıkar. (Tanıtım yazısı gelir.) Ölümün gözyaşları kullanılan kişiye ikinci bir şans verir. Herhangi bir kaynak sebebi oyunu kaybederseniz o kaynağın çeyreği dolu şekilde geri doğarsınız.",
+    "OptionA": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": true
   }
 ]

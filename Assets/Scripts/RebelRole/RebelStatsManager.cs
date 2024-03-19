@@ -4,6 +4,7 @@ using UnityEngine;
 using KermansUtility.Patterns.Singleton;
 using Ink;
 
+// deger erttÄ±rma ve azaltma islemleri
 public class RebelStatsManager : MonoSingleton<RebelStatsManager>
 {
     public int PrivacyCount { get; private set; }
@@ -13,7 +14,7 @@ public class RebelStatsManager : MonoSingleton<RebelStatsManager>
 
     private void Awake()
     {
-        //Varsayýlan deðerler.
+        //Varsayï¿½lan deï¿½erler.
         PrivacyCount = 10;
         AggressivenessCount = 10;
         LawCount = 10;
@@ -37,7 +38,7 @@ public class RebelStatsManager : MonoSingleton<RebelStatsManager>
     {
         RoyaltyCount += value;
     }
-    //Verilen rastgelelik deðerlerine göre ihtimallere baðlý olarak stat deðiþikliði yapar.
+    //Verilen rastgelelik deï¿½erlerine gï¿½re ihtimallere baï¿½lï¿½ olarak stat deï¿½iï¿½ikliï¿½i yapar.
     public void AddRandomizationWithPosibility(List<StatRandomizationInfo> possibilities)
     {
 
@@ -78,7 +79,6 @@ public class RebelStatsManager : MonoSingleton<RebelStatsManager>
         FindObjectOfType<CardSelectionHandler>().RefreshStatsUi();
 
     }
-
 }
 public enum StatType
 {

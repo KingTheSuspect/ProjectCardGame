@@ -1,0 +1,415 @@
+[
+  {
+    "StoryTellerName": "?",
+    "StoryContent": "Hoş geldin.",
+    "OptionA": {
+      "OptionName": "Sen kimsin? ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "0A",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "name": "kara0A",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": "Burası neresi? ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "0B",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "name": "kara0B",
+        "hideFlags": 0
+      }
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "?",
+    "StoryContent": "Oyunun yapımcısı elbette! Sana ne yapman gerekeceğini açıklayacağım. Birazdan kendini bir Türk beyliğinin başında bulacaksın. İşleri batırma yeter.",
+    "OptionA": {
+      "OptionName": "İyi de ne yapacağım? ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "1A",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "name": "kara1A",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": "Denerim. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "1B",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "name": "kara1B",
+        "hideFlags": 0
+      }
+    },
+    "IgnoreRandomization": true
+  },
+  {
+    "StoryTellerName": "?",
+    "StoryContent": "Bak şimdi sen yeni kurulan bir beyliği yöneteceksin. Bundan dolayı dikkat etmen gereken 4 şey var.",
+    "OptionA": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "2B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "name": "kara2",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "2B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "name": "kara2",
+        "hideFlags": 0
+      }
+    },
+    "IgnoreRandomization": true
+  },
+  {
+    "StoryTellerName": "?",
+    "StoryContent": "Öncelikle yeni kurulan bir beylik olduğundan topraklarını arttırma ve koruman gerekmekte.",
+    "OptionA": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "3B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "name": "kara3",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "3B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "name": "kara3",
+        "hideFlags": 0
+      }
+    },
+    "IgnoreRandomization": true
+  },
+  {
+    "StoryTellerName": "?",
+    "StoryContent": "Ve tekrardan yeni kurulan bir beylik olduğundan diğer devlet ve beyliklerle olan ilişkilerine yani siyasete dikkat etmelisin. Onları hoşnut edecek ya da kızdıracak şeyler bu değeri etkileyecektir.",
+    "OptionA": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "4B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "name": "kara4",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "4B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "name": "kara4",
+        "hideFlags": 0
+      }
+    },
+    "IgnoreRandomization": true
+  },
+  {
+    "StoryTellerName": "?",
+    "StoryContent": "Son olarak Erzak ve Popülasyon kaldı. Erzak sahip olduğun tüm temel kaynakları temsil eder. Para, erzak, madenler ve benzeri şeyler. Popülasyonda askerlerini, obanda yaşayan halkını temsil eder. Anladın mı?",
+    "OptionA": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "5B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "name": "kara5",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "5B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "name": "kara5",
+        "hideFlags": 0
+      }
+    },
+    "IgnoreRandomization": true
+  },
+  {
+    "StoryTellerName": "?",
+    "StoryContent": "Maalesef ki sana ayrılan sürenin sonuna geldik. İyi şanslar!",
+    "OptionA": {
+      "OptionName": "DUR! ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "6B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "name": "kara6",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": "DUR! ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "6B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "name": "kara6",
+        "hideFlags": 0
+      }
+    },
+    "IgnoreRandomization": true
+  },
+  {
+    "StoryTellerName": "?",
+    "StoryContent": "Senin bilinçaltın, nasıl beğendin mi? ",
+    "OptionA": {
+      "OptionName": "Sen kimsin? ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "7A",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "name": "kara7A",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": "Dalga mı geçiyorsun, rüyada falan mıyım? ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "7B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "name": "kara7B",
+        "hideFlags": 0
+      }
+    },
+    "IgnoreRandomization": true
+  },
+  {
+    "StoryTellerName": "?",
+    "StoryContent": "Şaka yapmıyorum, bunlar tamamen gerçek.  Başlamaya hazır mısın?",
+    "OptionA": {
+      "OptionName": "Neye hazır mıyım? ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "8A",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "name": "kara8A",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": "Sanırım. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "8B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "name": "kara8B",
+        "hideFlags": 0
+      }
+    },
+    "IgnoreRandomization": true
+  },
+  {
+    "StoryTellerName": "?",
+    "StoryContent": "13. Yüzyılda yeni kurulan bir beyliği yöneteceksin. Çok zor olmasa gerek.",
+    "OptionA": {
+      "OptionName": "Ne yapacağımı bilmiyorum ki? ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "9A",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "name": "kara9A",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": "Evet çok zor olmasa gerek. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "9B",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "name": "kara9B",
+        "hideFlags": 0
+      }
+    },
+    "IgnoreRandomization": true
+  },
+  {
+    "StoryTellerName": "?",
+    "StoryContent": "Haydi Başlayalım !",
+    "OptionA": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": true
+  }
+]

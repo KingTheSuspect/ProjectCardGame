@@ -9,11 +9,13 @@ using Newtonsoft.Json.Linq;
 public class StoriesHandler : MonoBehaviour
 {
     [HideInInspector]public string CurrentSelectedStoriesListPath = "";
+
     //public static string RebelStoriesListPaths = "Assets/StreamingAssets/RebelStoriesList.json";
     public static string KurulusListPath = "Assets/StreamingAssets/KurulusStories.json";
     public static string FetretStoriesPath = "Assets/StreamingAssets/FetretStories.json";
     public static string LaleStoriesPath = "Assets/StreamingAssets/LaleStories.json";
     public static string CokusStoriesPath = "Assets/StreamingAssets/CokusStories.json";
+    public static string KurulusAraStoriesPath = "Assets/StreamingAssets/KurulusAraStories.json";
 
     [System.Obsolete]
     public List<StoryCard> LoadStoriesList()
@@ -28,7 +30,7 @@ public class StoriesHandler : MonoBehaviour
             Debug.Log(CurrentSelectedStoriesListPath);
         }
 #endif
-
+ 
 //#if UNITY_ANDROID
 //        CurrentSelectedStoriesListPath = Path.Combine(Application.streamingAssetsPath, "KurulusStories.json");
 
@@ -42,8 +44,6 @@ public class StoriesHandler : MonoBehaviour
 
         return result;
     }
-
-
     public void SaveStoriesListToFile(List<StoryCard> stories)
     {
         string json = JsonConvert.SerializeObject(stories, Formatting.Indented);
@@ -78,4 +78,38 @@ public class StoriesHandler : MonoBehaviour
         }
         return -1;
     }
+     public void ChangeTerm(string savedTermName)
+{
+  
+    switch (savedTermName)
+    {
+        case "Kurulus":
+            CurrentSelectedStoriesListPath = KurulusListPath;
+            LoadStoriesList();
+            break;
+
+        case "KurulusAra":
+            CurrentSelectedStoriesListPath = KurulusAraStoriesPath;
+            LoadStoriesList();
+           ScrollCount.dontUseSetTermWithScrollCount = true;
+            break;
+        case "Fetret":
+            CurrentSelectedStoriesListPath = FetretStoriesPath;
+            LoadStoriesList();
+            break;
+        case "Lale":
+            CurrentSelectedStoriesListPath = LaleStoriesPath;
+            LoadStoriesList();
+            break;
+        case "Cokus":
+            CurrentSelectedStoriesListPath = CokusStoriesPath;
+            LoadStoriesList();
+            break;
+
+        default:
+            Debug.LogError("Geçersiz dönem adı.");
+            break;
+    }
+
+}
 }

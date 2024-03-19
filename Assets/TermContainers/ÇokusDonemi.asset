@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72635413a36911442a5c7b58c66be863, type: 3}
   m_Name: "\xC7okusDonemi"
   m_EditorClassIdentifier: 
-  _variable1Name: Hakimiyet
-  _variable2Name: Para
-  _variable3Name: Asker
-  _variable4Name: Sanat ve Edebiyat
+  _variable1Name: Sadakat
+  _variable2Name: Temiz toplum
+  _variable3Name: Adalet
+  _variable4Name: Hakimiyet

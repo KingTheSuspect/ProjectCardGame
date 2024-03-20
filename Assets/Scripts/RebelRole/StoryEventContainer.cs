@@ -24,7 +24,7 @@ public class StoryEventContainer : ScriptableObject
     public void GoSpesificStoryWithPossibility(int storyIndex)
     {
         int randomChance = Random.Range(0, 101);
-        if (randomChance < percentPossibilityValue)
+        if (randomChance <= percentPossibilityValue)
         {
            GoSpesificStory(storyIndex);
         }else

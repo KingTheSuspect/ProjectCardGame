@@ -30,4 +30,5 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   ContinueRandomStoryHandlingAfterEvent: 0
-  scrollCountInStoryIndex: 0
+  scrollCountInStoryIndex: 10
+  percentPossibilityValue: 100

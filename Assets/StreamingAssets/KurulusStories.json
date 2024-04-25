@@ -24,6 +24,7 @@
         "Event": {},
         "ContinueRandomStoryHandlingAfterEvent": false,
         "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
         "name": "0BK",
         "hideFlags": 0
       }
@@ -759,6 +760,7 @@
         "Event": {},
         "ContinueRandomStoryHandlingAfterEvent": true,
         "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
         "name": "32ABKurulus",
         "hideFlags": 0
       }
@@ -776,6 +778,7 @@
         "Event": {},
         "ContinueRandomStoryHandlingAfterEvent": true,
         "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
         "name": "32ABKurulus",
         "hideFlags": 0
       }
@@ -959,6 +962,7 @@
         "Event": {},
         "ContinueRandomStoryHandlingAfterEvent": false,
         "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
         "name": "40AK",
         "hideFlags": 0
       }
@@ -1275,6 +1279,7 @@
         "Event": {},
         "ContinueRandomStoryHandlingAfterEvent": false,
         "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
         "name": "53BK",
         "hideFlags": 0
       }
@@ -1665,6 +1670,7 @@
         "Event": {},
         "ContinueRandomStoryHandlingAfterEvent": true,
         "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
         "name": "70AK",
         "hideFlags": 0
       }
@@ -1682,6 +1688,7 @@
         "Event": {},
         "ContinueRandomStoryHandlingAfterEvent": true,
         "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
         "name": "70BK",
         "hideFlags": 0
       }
@@ -1868,7 +1875,16 @@
       "Law": 0,
       "Royalty": 0,
       "MainQuestModifierType": 0,
-      "StoryEventContainer": null
+      "StoryEventContainer": {
+        "StoryID": "78B",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "78BK",
+        "hideFlags": 0
+      }
     },
     "IgnoreRandomization": false
   },
@@ -1920,6 +1936,7 @@
         "Event": {},
         "ContinueRandomStoryHandlingAfterEvent": false,
         "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
         "name": "80BK",
         "hideFlags": 0
       }
@@ -2034,6 +2051,7 @@
         "Event": {},
         "ContinueRandomStoryHandlingAfterEvent": false,
         "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
         "name": "85AK",
         "hideFlags": 0
       }
@@ -2140,5 +2158,581 @@
       "StoryEventContainer": null
     },
     "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "A ROTASYONU ",
+    "StoryContent": "Bizans’a karşı yapılan bir kuşatmaya geldin. İlk manevra çok önemlidir. Ne yapacaksın?",
+    "OptionA": {
+      "OptionName": "Kaleyi kuşatalım. Elbet erzakları bitecektir. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "90A",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "90A",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": "Zorla alacağız. Koçbaşını getirin! ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "90B",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "90B 1",
+        "hideFlags": 0
+      }
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "A ROTASYONU ",
+    "StoryContent": "Kaleyi kuşattın beklemedesin. Birkaç günün ardından Bizans askerleri açlıktan ölmektense savaşarak ölmeyi tercih etti. Zırhlı piyadeler ve okçular kalenin dışına çıkıyor. Seninse atlı ve yaya okçuların var. Ne yapacaksın?",
+    "OptionA": {
+      "OptionName": "Planları olabilir, dikkat etmeliyiz. Beklemeye devam edeceğiz. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "92A",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "91",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": "Bize yaklaşamadan ölmüş olacaklar. Atlılar açık alana yaklaştıkları anda onları çembere alacaklar. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "92B",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "91 1",
+        "hideFlags": 0
+      }
+    },
+    "IgnoreRandomization": true
+  },
+  {
+    "StoryTellerName": "A ROTASYONU ",
+    "StoryContent": "Beklemek bu durumda en doğru karardı. Saraydan çıkan askerler sadece bir kandırmacaydı. Sol tarafınızdan atlı piyadeler yaklaşmakta. Ne yapacaksın?\r\n",
+    "OptionA": {
+      "OptionName": "Hiçbir yere dağılmayın. Olduğunuz yerde yaylım ateşine geçin! ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "92A",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "92",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": "Durmak bir işimize yaramaz! Onlardan daha hızlı hareket edip oklarınız ile avlanın! ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "92B",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "92 1",
+        "hideFlags": 0
+      }
+    },
+    "IgnoreRandomization": true
+  },
+  {
+    "StoryTellerName": "A ROTASYONU ",
+    "StoryContent": "Askerleri bir süre boyunca ateşe tuttun ama yeterli kişiyi indiremediniz. Ordunun içine giren atlı piyadeler çok büyük hasara yol açtı. Piyadelerden geri kalanları o sırada hallettiniz. Bu sefer kale kapısından çıkanlar gelmekte. Ne yapacaksın?",
+    "OptionA": {
+      "OptionName": "Açık alana geçtikleri anda çember oluşturup ok yağmuruna tutun.  ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "93A",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "93",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": "Toparlanın, ondan sonrada olduğunuz yerde yaylım ateşine durun. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "93B",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "93 1",
+        "hideFlags": 0
+      }
+    },
+    "IgnoreRandomization": true
+  },
+  {
+    "StoryTellerName": "A ROTASYONU ",
+    "StoryContent": "Askerlerin rakip orduyu paramparça etti.  Ordundaki kayıp büyük olsa da savaşın galibi sensin.",
+    "OptionA": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": true
+  },
+  {
+    "StoryTellerName": "A ROTASYONU ",
+    "StoryContent": "Askerlerin rakip askerleri ok yağmuruna tuttu, ama aynı şeyi rakipte yaptığından kaybınız var. Çok kan akıtılan bir savaş oldu. Hangi savaş kanla kazanılmaz ki ama değil mi?",
+    "OptionA": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": true
+  },
+  {
+    "StoryTellerName": "A ROTASYONU ",
+    "StoryContent": "Askerlerin vur kaç yaparak rakip atlıların canını okudu lakin bu seferde kale kapısından çıkan ordu size doğru gelmekte. Ne yapacaksın?",
+    "OptionA": {
+      "OptionName": "Açık alana geçtikleri anda çember oluşturup ok yağmuruna tutun.  ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "96A",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "96A",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": "Toparlanın, ondan sonrada olduğunuz yerde yaylım ateşine durun. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "96B",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "96B",
+        "hideFlags": 0
+      }
+    },
+    "IgnoreRandomization": true
+  },
+  {
+    "StoryTellerName": "A ROTASYONU ",
+    "StoryContent": "Askerlerin rakip orduyu paramparça etti.  Neredeyse hiç kayıp vermediniz. Galibiyet senin.",
+    "OptionA": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": true
+  },
+  {
+    "StoryTellerName": "A ROTASYONU ",
+    "StoryContent": "Askerlerin rakip askerleri ok yağmuruna tuttu, ama aynı şeyi rakipte yaptığından kaybınız var. Az kayıp ile galibiyet senindir.",
+    "OptionA": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": true
+  },
+  {
+    "StoryTellerName": "A ROTASYONU ",
+    "StoryContent": "Fazla aceleci davrandın. Düşman tuzak kurmuş. Sen saray kapısına yaklaştığın sırada arkanızdan gelen atlı piyadeler sizi sıkıştırdı. Atlı askerlerinin çoğu öldü. Geri çekilme kararı aldınız. ",
+    "OptionA": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": true
+  },
+  {
+    "StoryTellerName": "A ROTASYONU ",
+    "StoryContent": "Sarayın kapısına dayandınız. Koçbaşı ile kapıyı zorlarken arka tarafınızda bir grup atlı piyade göründü. Ne yapacaksın?",
+    "OptionA": {
+      "OptionName": "Saldırıya geçeceğim. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "100A",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "100a",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": "Savunma yapacağım. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "100B",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "100a 1",
+        "hideFlags": 0
+      }
+    },
+    "IgnoreRandomization": true
+  },
+  {
+    "StoryTellerName": "A ROTASYONU ",
+    "StoryContent": "Saldırıya geçtiniz ama siz savaşırken arkanızdan kalenin kapıları açıldı. Arada kaldınız. Ordunun çoğunu kaybederek geri döndün.",
+    "OptionA": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": true
+  },
+  {
+    "StoryTellerName": "A ROTASYONU ",
+    "StoryContent": "Savunma yaptın ama arkanızdan kalenin kapıları açıldı. Mecbur askerlerini ikiye bölerek savunmaya devam ettin ve bulduğunuz ilk fırsatta geri çekildiniz. ",
+    "OptionA": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": true
+  },
+  {
+    "StoryTellerName": "Kale Fethi",
+    "StoryContent": "Beyim fetihler için gerekli araştırmalar tamamlandı, sadece sizin kararınız kaldı.",
+    "OptionA": {
+      "OptionName": "Söyle bakalım neler buldunuz? ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "103B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "103",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": "Söyle bakalım neler buldunuz? ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "103B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "103",
+        "hideFlags": 0
+      }
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "Kale Fethi",
+    "StoryContent": "Öncelikle, Bizansın doğusunda bulunan bir kale var. Kale iyi korunmakta ondan kaybımız fazla olabilir. Ayrıca önemli bir kale buranın gitmesi Bizansı rahatsız edecektir. Bunlara rağmen yüklü bir erzak stoğu var.\r\n",
+    "OptionA": {
+      "OptionName": "Peki ya diğeri? ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "104A",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "104",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": "Peki ya diğeri? ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "104B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "104",
+        "hideFlags": 0
+      }
+    },
+    "IgnoreRandomization": true
+  },
+  {
+    "StoryTellerName": "Kale Fethi",
+    "StoryContent": "Diğeri ise Bizansın güneyinde bulunmakta. Kale çok iyi korunmuyor ve pek önemli bir yerde değil. Bunlara rağmen kaleyi kazanmak dışında alabileceğimiz bir ganimet yok. Hangi kaleyi kuşatıyoruz?",
+    "OptionA": {
+      "OptionName": "Doğu. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "105A",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "105",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": "Güney. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "105B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "105 1",
+        "hideFlags": 0
+      }
+    },
+    "IgnoreRandomization": true
+  },
+  {
+    "StoryTellerName": "Kale Fethi",
+    "StoryContent": "Beyim kalenin fethi sonuçlandı. Başarıyla kaleyi aldık ancak kaybımız çok ve daha şimdiden Bizans tehditler yağdırmaya başladı. Tahmin ettiğimiz gibi bolca ganimet ele geçirdik. ",
+    "OptionA": {
+      "OptionName": "Sizden şüphem yoktu. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Sizden şüphem yoktu. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": true
+  },
+  {
+    "StoryTellerName": "Kale Fethi",
+    "StoryContent": "Beyim kalenin fethi sonuçlandı. Başarıyla kaleyi aldık ancak tahmin ettiğimiz gibi erzak konusunda karlı çıkamadık. Kaybımız az ve Bizans’dan hala ses çıkmadı. ",
+    "OptionA": {
+      "OptionName": "Sizden şüphem yoktu. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": "Sizden şüphem yoktu. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": true
   }
 ]

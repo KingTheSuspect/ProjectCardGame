@@ -46,6 +46,8 @@
         "BothOptionsEvent": false,
         "Event": {},
         "ContinueRandomStoryHandlingAfterEvent": true,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
         "name": "FetretIndex0",
         "hideFlags": 0
       }
@@ -941,6 +943,8 @@
         "BothOptionsEvent": false,
         "Event": {},
         "ContinueRandomStoryHandlingAfterEvent": true,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
         "name": "40AFetret",
         "hideFlags": 0
       }
@@ -1647,6 +1651,8 @@
         "BothOptionsEvent": false,
         "Event": {},
         "ContinueRandomStoryHandlingAfterEvent": true,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
         "name": "70BFetret",
         "hideFlags": 0
       }
@@ -1746,6 +1752,8 @@
         "BothOptionsEvent": false,
         "Event": {},
         "ContinueRandomStoryHandlingAfterEvent": true,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
         "name": "74BFetret",
         "hideFlags": 0
       }
@@ -2097,4 +2105,5 @@
     },
     "IgnoreRandomization": false
   }
+
 ]

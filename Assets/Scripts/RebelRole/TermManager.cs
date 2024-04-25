@@ -20,6 +20,6 @@ public class TermManager : MonoSingleton<TermManager>
 
     public enum TermType
     {
-        Kurulus,Fetret,Lale,Cokus,KurulusAra
+        KurulusAra,Kurulus,FetretBas,Fetret,LaleBas,Lale,CokusBas,Cokus
     }
 }

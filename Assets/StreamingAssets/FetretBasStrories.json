@@ -1,0 +1,376 @@
+[
+  {
+    "StoryTellerName": "?",
+    "StoryContent": "Hiç fena değildin. Bu konuda tecrüben var gibi.",
+    "OptionA": {
+      "OptionName": "Yine sen! ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "0A",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "fb0",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": "Yine sen! ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "0B",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "fb0 1",
+        "hideFlags": 0
+      }
+    },
+    "IgnoreRandomization": false
+  },
+  {
+    "StoryTellerName": "?",
+    "StoryContent": "EVET! Yine ben. Söyle bakalım başka bir maceraya hazır mısın?",
+    "OptionA": {
+      "OptionName": "Ne macerası? ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "1A",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "fb1",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": "Hazırım. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "1B",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 30,
+        "percentPossibilityValue": 100,
+        "name": "fb1 1",
+        "hideFlags": 0
+      }
+    },
+    "IgnoreRandomization": true
+  },
+  {
+    "StoryTellerName": "?",
+    "StoryContent": "Endişelenme bu sefer o beyliğin ileri bir dönemini yöneteceksin.",
+    "OptionA": {
+      "OptionName": "Rahatladım. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "2B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "fb2",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": "Rahatladım. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "2B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "fb2",
+        "hideFlags": 0
+      }
+    },
+    "IgnoreRandomization": true
+  },
+  {
+    "StoryTellerName": "?",
+    "StoryContent": "İleri dediysem sevinme. O yönettiğin beylik büyüdü ve üçlendi ama bir ara büyük bir mağlubiyet alarak taht kavgalarının içine düştü.\r\n",
+    "OptionA": {
+      "OptionName": "Sen ciddi misin? ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "3A",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "fb3",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": "Bu sefer ne yapmam lazım? ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "3B",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "fb3.2",
+        "hideFlags": 0
+      }
+    },
+    "IgnoreRandomization": true
+  },
+  {
+    "StoryTellerName": "?",
+    "StoryContent": "Evet hem de hiç olmadığım kadar.",
+    "OptionA": {
+      "OptionName": "Peki ne yapmam gerek? ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "4B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "fb4",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": "Peki ne yapmam gerek? ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "4B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "fb4",
+        "hideFlags": 0
+      }
+    },
+    "IgnoreRandomization": true
+  },
+  {
+    "StoryTellerName": "?",
+    "StoryContent": "Bu sefer duraklama dönemine girip 4 kardeş tarafından paylaşılamayan bir durumda olacaksın. Amacın kardeşlerini yenerek başa geçmek.\t",
+    "OptionA": {
+      "OptionName": "Dikkat etmem gerekenler neler? ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "5B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "fb5",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": "Dikkat etmem gerekenler neler? ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "5B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "fb5",
+        "hideFlags": 0
+      }
+    },
+    "IgnoreRandomization": true
+  },
+  {
+    "StoryTellerName": "?",
+    "StoryContent": "Öncelikle kardeşlerini yenmeyi istiyorsan halkın ve yeniçerileri kazanman gerek. Onlarla olan ilişkilerine dikkat etmelisin.",
+    "OptionA": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "6B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "fb6",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "6B",
+        "BothOptionsEvent": true,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 0,
+        "percentPossibilityValue": 100,
+        "name": "fb6",
+        "hideFlags": 0
+      }
+    },
+    "IgnoreRandomization": true
+  },
+  {
+    "StoryTellerName": "?",
+    "StoryContent": "Bunun yanı sıra parana ve bölgedeki Hakimiyet ini ve diğer topluluklara karşı olan gücüne dikkat etmen gerek.",
+    "OptionA": {
+      "OptionName": "Benim yerime başkasını bulsan olmaz mı? ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "7A",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 30,
+        "percentPossibilityValue": 100,
+        "name": "fb7",
+        "hideFlags": 0
+      }
+    },
+    "OptionB": {
+      "OptionName": "Tamamdır hazırım. ",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": {
+        "StoryID": "7B",
+        "BothOptionsEvent": false,
+        "Event": {},
+        "ContinueRandomStoryHandlingAfterEvent": false,
+        "scrollCountInStoryIndex": 30,
+        "percentPossibilityValue": 100,
+        "name": "fb7 1",
+        "hideFlags": 0
+      }
+    },
+    "IgnoreRandomization": true
+  },
+  {
+    "StoryTellerName": "?",
+    "StoryContent": "Peki o zaman bol şanslar.",
+    "OptionA": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": true
+  },
+  {
+    "StoryTellerName": "?",
+    "StoryContent": "Maalesef öyle bir seçeneğin yok. Görüşürüz!\r\n",
+    "OptionA": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "OptionB": {
+      "OptionName": ".",
+      "Privacy": 0,
+      "Aggressiveness": 0,
+      "Law": 0,
+      "Royalty": 0,
+      "MainQuestModifierType": 0,
+      "StoryEventContainer": null
+    },
+    "IgnoreRandomization": true
+  }
+]

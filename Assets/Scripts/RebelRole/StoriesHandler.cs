@@ -11,11 +11,19 @@ public class StoriesHandler : MonoBehaviour
     [HideInInspector]public string CurrentSelectedStoriesListPath = "";
 
     //public static string RebelStoriesListPaths = "Assets/StreamingAssets/RebelStoriesList.json";
-    public static string KurulusListPath = "Assets/StreamingAssets/KurulusStories.json";
-    public static string FetretStoriesPath = "Assets/StreamingAssets/FetretStories.json";
-    public static string LaleStoriesPath = "Assets/StreamingAssets/LaleStories.json";
-    public static string CokusStoriesPath = "Assets/StreamingAssets/CokusStories.json";
     public static string KurulusAraStoriesPath = "Assets/StreamingAssets/KurulusAraStories.json";
+    public static string KurulusListPath = "Assets/StreamingAssets/KurulusStories.json";
+
+    public static string FetretBasStoriesPath = "Assets/StreamingAssets/FetretBasStrories.json";
+    public static string FetretStoriesPath = "Assets/StreamingAssets/FetretStories.json";
+
+    public static string LaleBasStoriesPath = "Assets/StreamingAssets/LaleBasStories.json";
+    public static string LaleStoriesPath = "Assets/StreamingAssets/LaleStories.json";
+    
+    public static string CokusBasStoriesPath = "Assets/StreamingAssets/CokusBasStories.json";
+    public static string CokusStoriesPath = "Assets/StreamingAssets/CokusStories.json";
+
+    
 
     [System.Obsolete]
     public List<StoryCard> LoadStoriesList()
@@ -57,7 +65,6 @@ public class StoriesHandler : MonoBehaviour
         stories.Add(card);
         SaveStoriesListToFile(stories);
         Debug.Log("Yeni hikaye eklendi. Dosya yolu: " + CurrentSelectedStoriesListPath); // Debug log eklendi
-
     }
 
     public void DeleteStoryWithIndex(int index)
@@ -78,28 +85,44 @@ public class StoriesHandler : MonoBehaviour
         }
         return -1;
     }
+
+
      public void ChangeTerm(string savedTermName)
 {
   
     switch (savedTermName)
     {
+            case "KurulusAra":
+            CurrentSelectedStoriesListPath = KurulusAraStoriesPath;
+            LoadStoriesList();
+            //ScrollCount.dontUseSetTermWithScrollCount = true;
+            break;
         case "Kurulus":
             CurrentSelectedStoriesListPath = KurulusListPath;
             LoadStoriesList();
             break;
-
-        case "KurulusAra":
-            CurrentSelectedStoriesListPath = KurulusAraStoriesPath;
+        case "FetretBas":
+            CurrentSelectedStoriesListPath = FetretBasStoriesPath;
             LoadStoriesList();
-           ScrollCount.dontUseSetTermWithScrollCount = true;
-            break;
+            //ScrollCount.dontUseSetTermWithScrollCount = true;
+            break; 
         case "Fetret":
             CurrentSelectedStoriesListPath = FetretStoriesPath;
             LoadStoriesList();
             break;
+        case "LaleBas":
+            CurrentSelectedStoriesListPath = LaleBasStoriesPath;
+            LoadStoriesList();
+            //ScrollCount.dontUseSetTermWithScrollCount = true;
+            break;
         case "Lale":
             CurrentSelectedStoriesListPath = LaleStoriesPath;
             LoadStoriesList();
+            break;
+        case "CokusBas":
+            CurrentSelectedStoriesListPath = CokusBasStoriesPath;
+            LoadStoriesList();
+            //ScrollCount.dontUseSetTermWithScrollCount = true;
             break;
         case "Cokus":
             CurrentSelectedStoriesListPath = CokusStoriesPath;

@@ -15,9 +15,10 @@ public class StoryEventContainer : ScriptableObject
     public int percentPossibilityValue = 100;
     public void GoSpesificStory(int storyIndex)
     {
+         UnityEngine.Debug.Log("goSpesificStoryWorking");
         CardSelectionHandler cardSelectionHandler = FindObjectOfType<CardSelectionHandler>();
         StoriesHandler storiesHandler = FindObjectOfType<StoriesHandler>();
-        StoryCard card = storiesHandler.LoadStoriesList()[storyIndex];
+        StoryCard card = storiesHandler.LoadStoriesList()[storyIndex]; //kart hikaye listesindeki indextir
         cardSelectionHandler.HandleStory(card);
     }
 
@@ -44,12 +45,9 @@ public class StoryEventContainer : ScriptableObject
 
         public void GoSpesificStoryAndSetTermNow(int storyIndex)
     {
-        CardSelectionHandler cardSelectionHandler = FindObjectOfType<CardSelectionHandler>();
-        StoriesHandler storiesHandler = FindObjectOfType<StoriesHandler>();
-        StoryCard card = storiesHandler.LoadStoriesList()[storyIndex];
-        cardSelectionHandler.HandleStory(card);
+        GoSpesificStory(storyIndex);
         PlayerPrefs.SetInt("SavedScrollCount",scrollCountInStoryIndex);
-        ScrollCount.dontUseSetTermWithScrollCount = false; 
+        //ScrollCount.dontUseSetTermWithScrollCount = false; 
     }
  
     public void AddRandomizationStat(StatRandomizationInfoScriptableObject info)

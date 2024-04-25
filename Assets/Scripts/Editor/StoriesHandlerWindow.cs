@@ -62,26 +62,39 @@ public class StoriesHandlerWindow : EditorWindow
         //Enum de�erlerine g�re indexler atan�r
         switch (_termType)
         {
-            case TermManager.TermType.Kurulus:
-                _termIndex = 0;
-                _storiesHandler.CurrentSelectedStoriesListPath = StoriesHandler.KurulusListPath;
-                break;
-            case TermManager.TermType.Fetret:
-                _termIndex = 1;
-                _storiesHandler.CurrentSelectedStoriesListPath = StoriesHandler.FetretStoriesPath;
-                break;
-            case TermManager.TermType.Lale:
-                _termIndex = 2;
-                _storiesHandler.CurrentSelectedStoriesListPath = StoriesHandler.LaleStoriesPath;
-                break;
-            case TermManager.TermType.Cokus:
-                _termIndex = 3;
-                _storiesHandler.CurrentSelectedStoriesListPath = StoriesHandler.CokusStoriesPath;
-                break;
             case TermManager.TermType.KurulusAra:
-                _termIndex = 4;
+                _termIndex = 0;
                 _storiesHandler.CurrentSelectedStoriesListPath = StoriesHandler.KurulusAraStoriesPath;
                 break;
+            case TermManager.TermType.Kurulus:
+                _termIndex = 1;
+                _storiesHandler.CurrentSelectedStoriesListPath = StoriesHandler.KurulusListPath;
+                break;
+            case TermManager.TermType.FetretBas:
+                _termIndex = 2;
+                _storiesHandler.CurrentSelectedStoriesListPath = StoriesHandler.FetretBasStoriesPath;
+                break;
+            case TermManager.TermType.Fetret:
+                _termIndex = 3;
+                _storiesHandler.CurrentSelectedStoriesListPath = StoriesHandler.FetretStoriesPath;
+                break;
+            case TermManager.TermType.LaleBas:
+                _termIndex = 4;
+                _storiesHandler.CurrentSelectedStoriesListPath = StoriesHandler.LaleBasStoriesPath;
+                break;
+            case TermManager.TermType.Lale:
+                _termIndex = 5;
+                _storiesHandler.CurrentSelectedStoriesListPath = StoriesHandler.LaleStoriesPath;
+                break;
+            case TermManager.TermType.CokusBas:
+                _termIndex = 6;
+                _storiesHandler.CurrentSelectedStoriesListPath = StoriesHandler.CokusBasStoriesPath;
+                break;
+            case TermManager.TermType.Cokus:
+                _termIndex = 7;
+                _storiesHandler.CurrentSelectedStoriesListPath = StoriesHandler.CokusStoriesPath;
+                break;
+
         }
 
         TermVariablesContainer currentTermContainer = null;

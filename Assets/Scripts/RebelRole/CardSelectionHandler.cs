@@ -134,7 +134,7 @@ public class CardSelectionHandler : MonoBehaviour, IDragHandler, IBeginDragHandl
                 Debug.Log(_currentSelectedOption.StoryEventContainer.StoryID);
                 Debug.Log(_currentSelectedOption.StoryEventContainer.StoryID + " , id");
                 StoryEventHandler.Instance.ExecuteEvent(currentEventContainer.StoryID);
-
+// index ile alakalı hata id yanlış denebilir
                 if (currentEventContainer.ContinueRandomStoryHandlingAfterEvent)
                 {
                     if (RebelEndingsHandler.Instance.CheckAndGetEndingCard(out StoryCard card))

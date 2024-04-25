@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72635413a36911442a5c7b58c66be863, type: 3}
   m_Name: KurulusAraDonemi
   m_EditorClassIdentifier: 
-  _variable1Name: bir
-  _variable2Name: iki
-  _variable3Name: uc
-  _variable4Name: dort
+  _variable1Name: "Pop\xFClasyon"
+  _variable2Name: Siyaset
+  _variable3Name: Erzak
+  _variable4Name: Toprak

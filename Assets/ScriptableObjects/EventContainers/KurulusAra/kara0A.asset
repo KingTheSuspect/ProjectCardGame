@@ -19,7 +19,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 11400000}
         m_TargetAssemblyTypeName: StoryEventContainer, Assembly-CSharp
-        m_MethodName: GoSpesificStoryWithPossibility
+        m_MethodName: GoSpesificStory
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -31,4 +31,4 @@ MonoBehaviour:
         m_CallState: 2
   ContinueRandomStoryHandlingAfterEvent: 0
   scrollCountInStoryIndex: 0
-  percentPossibilityValue: 5
+  percentPossibilityValue: 100

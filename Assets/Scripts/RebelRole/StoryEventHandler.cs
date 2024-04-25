@@ -1,3 +1,4 @@
+using Ink.Parsed;
 using KermansUtility.Patterns.Singleton;
 using System.Collections;
 using System.Collections.Generic;
@@ -43,22 +44,25 @@ public class StoryEventHandler : MonoSingleton<StoryEventHandler>
     public void ExecuteEvent(string index)
     {
        
-
+         Debug.Log("index ="+ index );
         for (int i = 0; i < events.Count; i++)
         {
             if (events[i].BothOptionsEvent)
             {
                 if (events[i].StoryID == index)
-                {
-                    Debug.Log("Çalýþtý");
-                    events[i].Event?.Invoke();
+                {   
+                    Debug.Log("if Ã¼st " +"Story id bu : "+events[i].StoryID+"story id bu :"+index);
+                    Debug.Log("ï¿½alï¿½ï¿½tï¿½");
+                    events[i].Event?.Invoke(); // mesela event 7 yi Ã§aÄŸÄ±r ///dikkat
+                    Debug.Log("if alt " +"Story id bu : "+events[i].StoryID+"story id bu :"+index); 
                 }
             }
             else
             {
                 if (events[i].StoryID == index)
                 {
-                    events[i].Event?.Invoke();
+                    events[i].Event?.Invoke(); // dikkat
+                    Debug.Log("else if " +"Story id bu : "+events[i].StoryID+"story id bu :"+index);
                 }
             }
         }

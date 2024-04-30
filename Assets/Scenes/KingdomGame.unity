@@ -704,7 +704,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &344364448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1200,15 +1200,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slideCountText: {fileID: 304400143}
-  storyEventObjects:
-  - {fileID: 1474538782}
-  - {fileID: 1007789950}
-  - {fileID: 344364447}
-  - {fileID: 779399673}
-  - {fileID: 1030937914}
-  - {fileID: 1981826984}
-  - {fileID: 1837826897}
-  - {fileID: 292549968}
 --- !u!4 &684306427
 Transform:
   m_ObjectHideFlags: 0
@@ -1374,7 +1365,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &779399674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1430,7 +1421,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1007789951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1614,7 +1605,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1030937915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2011,7 +2002,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5b67f0b3cf76a444bcb57b4dd4cc782, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eslidecards: {fileID: 0}
+  eslidecards: {fileID: 1655203097}
 --- !u!4 &1084606806
 Transform:
   m_ObjectHideFlags: 0
@@ -2931,7 +2922,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1474538783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3484,7 +3475,7 @@ MonoBehaviour:
   index: 0
   controlLength: 0
   events: {fileID: 4900000, guid: b446f02b5ae2fc04d8c7edc9bbaa64e8, type: 3}
-  gameManagerObject: {fileID: 0}
+  gameManagerObject: {fileID: 1084606804}
   TopStory: {fileID: 0}
   Stats: {fileID: 0}
   GonnaChange:
@@ -3814,7 +3805,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1837826898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4416,7 +4407,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1981826985
 MonoBehaviour:
   m_ObjectHideFlags: 0

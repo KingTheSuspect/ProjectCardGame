@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class ScrollCount : MonoBehaviour
 {
@@ -10,28 +11,26 @@ public class ScrollCount : MonoBehaviour
     private StoriesHandler _storiesHandler;
     public static bool dontUseSetTermWithScrollCount;
     private string savedTermName;
+    private static ScrollCount instance;
 
-    // Kuyruk yapısı tanımlama
-    private Queue<GameObject> storyEventQueue;
-
-    // Kuyruk yapılacak nesneleri tanımla
-    public GameObject[] storyEventObjects;
-
-    void Start()
+   private void Awake()
     {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+private GameObject scrollCountText;
+    void Start()
+    {   
         dontUseSetTermWithScrollCount = false;
         GetScrollCount();
         _storiesHandler = GameObject.FindObjectOfType<StoriesHandler>();
-
-        // Kuyruğu başlatın
-        storyEventQueue = new Queue<GameObject>();
-
-        // storyEventObjects dizisini kuyruğa ekle
-        foreach (GameObject obj in storyEventObjects)
-        {
-            storyEventQueue.Enqueue(obj);
-        }
-
         SetTermWithScrollCount();
     }
 
@@ -53,58 +52,28 @@ public class ScrollCount : MonoBehaviour
         slideCountText.text = increasedSlideCount.ToString();
         SetTermWithScrollCount();
     }
-
-    // Çalıştığınız hikayelerle ilgili pencereler
     public void SetTermWithScrollCount()
     { 
         GetScrollCount();
-
         // Diziler ve değişkenler
-        string[] termNames = { "Cokus", "CokusBas", "Lale", "LaleBas", "Fetret", "FetretBas", "Kurulus", "KurulusAra" };
+        string[] termNames = { "Cokus", "CokusBas", "Lale", "LaleBas", "Fetret", "FetretBas", "Kurulus", "KurulusBas" };
         int[] scrollCounts = { 70, 60, 50, 40, 30, 20, 10, 0 };
 
         GetTermName();
 
         for (int i = 0; i < scrollCounts.Length; i++)
         {  
-            if (savedScrollCount -1 >= scrollCounts[i])
-            {
-
-            }
             if (savedScrollCount >= scrollCounts[i])
-            {   ProcessStoryEventQueue();
-                 _storiesHandler.LoadStoriesList();
+            {   
+                // _storiesHandler.LoadStoriesList();
                 savedTermName = termNames[i];
                 PlayerPrefs.SetString("SavedTermName", savedTermName);
                 _storiesHandler.ChangeTerm(savedTermName);
-                _storiesHandler.LoadStoriesList();
-                // Kuyrukta sırayla işlem yapma
-                //ProcessStoryEventQueue();
-                // İlgili nesneyi etkinleştir
-                storyEventObjects[i].SetActive(true);
-                _storiesHandler.LoadStoriesList();
+                //if(savedTermName != "KurulusBas"){SceneManager.LoadScene(savedTermName+"Scene");}
+                //_storiesHandler.LoadStoriesList();
+                SceneManager.LoadScene(savedTermName+"Scene");
                 break;
             }
         }
     }
-
-    // Kuyruktaki nesneleri sırayla işle ve devre dışı bırak
-    void ProcessStoryEventQueue()
-    {
-        while (storyEventQueue.Count > 0)
-        {   
-           _storiesHandler.LoadStoriesList();
-            GameObject obj = storyEventQueue.Dequeue();
-            obj.SetActive(false);
-           _storiesHandler.LoadStoriesList();
-        }
-        
-        // Kuyruğa yeni nesneler ekle
-        foreach (GameObject obj in storyEventObjects)
-        {   
-           _storiesHandler.LoadStoriesList();
-            storyEventQueue.Enqueue(obj);
-            _storiesHandler.LoadStoriesList();
-        }
-    }
-}
+} 

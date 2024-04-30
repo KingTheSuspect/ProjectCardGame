@@ -22,7 +22,6 @@ public class StoriesHandler : MonoBehaviour
     
     public static string CokusBasStoriesPath = "Assets/StreamingAssets/CokusBasStories.json";
     public static string CokusStoriesPath = "Assets/StreamingAssets/CokusStories.json";
-
     
 
     [System.Obsolete]
@@ -92,21 +91,25 @@ public class StoriesHandler : MonoBehaviour
   
     switch (savedTermName)
     {
-            case "KurulusAra":
+            case "KurulusBas":
+            SceneManager.LoadScene("KurulusBasScene");
             CurrentSelectedStoriesListPath = KurulusAraStoriesPath;
             LoadStoriesList();
             //ScrollCount.dontUseSetTermWithScrollCount = true;
             break;
         case "Kurulus":
+            SceneManager.LoadScene("KurulusScene");
             CurrentSelectedStoriesListPath = KurulusListPath;
             LoadStoriesList();
             break;
         case "FetretBas":
+            SceneManager.LoadScene("FetretBasScene");
             CurrentSelectedStoriesListPath = FetretBasStoriesPath;
             LoadStoriesList();
             //ScrollCount.dontUseSetTermWithScrollCount = true;
             break; 
         case "Fetret":
+            SceneManager.LoadScene("FetretScene");
             CurrentSelectedStoriesListPath = FetretStoriesPath;
             LoadStoriesList();
             break;
